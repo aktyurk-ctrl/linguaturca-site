@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { AboutSection } from '@/components/AboutSection'
-import AdvantagesSection from '@/components/AdvantagesSection'
+import HowWeTeachSection from '@/components/HowWeTeachSection'
 
 const sectionClass = "container py-20 md:py-28 max-w-6xl"
 
@@ -33,7 +33,7 @@ export default function HomePage() {
 
       <AboutSection />
 
-      <AdvantagesSection />
+      <HowWeTeachSection />
 
       <section className={`${sectionClass} bg-brand-beige`}>
         <div className="rounded-xl bg-brand-beige p-8 border border-brand-soft">
