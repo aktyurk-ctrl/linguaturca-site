@@ -1,8 +1,5 @@
 node_modules
-.next
-out
-dist
-.vscode
-.DS_Store
+.next/cache
+.env.local
 
 
