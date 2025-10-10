@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { AboutSection } from '@/components/AboutSection'
 import HowWeTeachSection from '@/components/HowWeTeachSection'
+import CourseMiniGroupSection from '@/components/CourseMiniGroupSection'
 
 const sectionClass = "container py-20 md:py-28 max-w-6xl"
 
@@ -36,6 +37,8 @@ export default function HomePage() {
       <AboutSection />
 
       <HowWeTeachSection />
+
+      <CourseMiniGroupSection />
 
       <section className={`${sectionClass} bg-[#FFF8F5]`}>
         <div className="rounded-xl bg-brand-beige p-8 border border-brand-soft">
