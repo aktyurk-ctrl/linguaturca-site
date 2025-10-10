@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import '../src/styles/ui-kit.css';
 
 :root {
   --radius: 1.5rem;

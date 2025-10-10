@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export default function HowWeTeachSection() {
   return (
-    <section className="bg-[#FFF8F5] py-20 relative overflow-hidden">
+    <section className="bg-brand-bg py-20 relative overflow-hidden">
       {/* Анимированная чайка */}
       <motion.img
         src="/images/seagull.svg"
@@ -18,7 +18,7 @@ export default function HowWeTeachSection() {
 
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#1E3A8A] mb-4">
+          <h2 className="text-4xl font-bold text-brand-violet mb-4">
             🇹🇷 Как мы учим турецкому
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">

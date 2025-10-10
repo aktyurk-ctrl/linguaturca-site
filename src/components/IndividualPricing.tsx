@@ -10,7 +10,7 @@ export default function IndividualPricing() {
       price: "Бесплатно",
       button: "Попробовать",
       color: "bg-[#FFF7A5]",
-      buttonColor: "bg-[#FF70A6] hover:bg-[#FF5893]",
+      buttonColor: "bg-brand-pink hover:bg-brand-pink/80",
     },
     {
       title: "Индивидуальный курс",
@@ -23,17 +23,17 @@ export default function IndividualPricing() {
   ];
 
   return (
-    <section className="py-20 bg-[#FFF9F7] text-center relative overflow-hidden">
+    <section className="py-20 bg-brand-bg text-center relative overflow-hidden">
       {/* Декоративный фон */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-[#4A007E] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-[#FFD84D] rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-[#FF70A6] rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-brand-violet rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-brand-yellow rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-brand-pink rounded-full blur-3xl"></div>
       </div>
 
       {/* Декоративные элементы */}
       <motion.div
-        className="absolute top-10 right-20 w-8 h-8 bg-[#FFD84D] rounded-full flex items-center justify-center"
+        className="absolute top-10 right-20 w-8 h-8 bg-brand-yellow rounded-full flex items-center justify-center"
         animate={{ 
           y: [0, -10, 0],
           rotate: [0, 10, -10, 0]
@@ -48,7 +48,7 @@ export default function IndividualPricing() {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-10 left-20 w-6 h-6 bg-[#4A007E] rounded-full flex items-center justify-center"
+        className="absolute bottom-10 left-20 w-6 h-6 bg-brand-violet rounded-full flex items-center justify-center"
         animate={{ 
           x: [0, 5, 0],
           y: [0, -5, 0]
@@ -70,10 +70,10 @@ export default function IndividualPricing() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#4A007E] mb-2">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-violet mb-2">
             Стоимость обучения индивидуально
           </h2>
-          <div className="h-1 w-32 bg-[#FFD84D] mx-auto mb-12 rounded-full"></div>
+          <div className="h-1 w-32 bg-brand-yellow mx-auto mb-12 rounded-full"></div>
         </motion.div>
 
         <div className="flex flex-col md:flex-row justify-center gap-8 px-6 md:px-12 max-w-4xl mx-auto">
@@ -87,9 +87,9 @@ export default function IndividualPricing() {
               whileHover={{ y: -8, scale: 1.02 }}
               className={`flex-1 rounded-2xl shadow-md hover:shadow-lg p-8 ${plan.color} border border-gray-100 transition-all duration-300`}
             >
-              <h3 className="text-lg font-semibold mb-3 text-[#4A007E]">{plan.title}</h3>
+              <h3 className="text-lg font-semibold mb-3 text-brand-violet">{plan.title}</h3>
               <p className="text-gray-700 mb-6 text-sm leading-relaxed">{plan.description}</p>
-              <p className="text-2xl font-extrabold mb-6 text-[#4A007E]">{plan.price}</p>
+              <p className="text-2xl font-extrabold mb-6 text-brand-violet">{plan.price}</p>
               <motion.button
                 className={`${plan.buttonColor} text-white font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-md hover:shadow-lg`}
                 whileHover={{ scale: 1.05 }}

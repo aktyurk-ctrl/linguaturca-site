@@ -7,6 +7,8 @@ import HowWeTeachSection from '@/components/HowWeTeachSection'
 import CourseMiniGroupSection from '@/components/CourseMiniGroupSection'
 import PricingSection from '@/components/PricingSection'
 import IndividualPricing from '@/components/IndividualPricing'
+import ScheduleSection from '@/components/ScheduleSection'
+import ReviewsSection from '@/components/ReviewsSection'
 
 const sectionClass = "container py-20 md:py-28 max-w-6xl"
 
@@ -46,7 +48,11 @@ export default function HomePage() {
 
       <IndividualPricing />
 
-      <section className={`${sectionClass} bg-[#FFF8F5]`}>
+      <ScheduleSection />
+
+      <ReviewsSection />
+
+      <section className={`${sectionClass} bg-brand-bg`}>
         <div className="rounded-xl bg-brand-beige p-8 border border-brand-soft">
           <h3 className="font-manrope text-2xl font-semibold tracking-tight text-brand-blue">
             Преподаватели — магистры турецкого языка
@@ -74,7 +80,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={`${sectionClass} bg-[#FFF8F5]`}>
+      <section className={`${sectionClass} bg-brand-bg`}>
         <div className="card p-8 md:p-12">
           <div className="md:flex items-center justify-between gap-8">
             <div>
@@ -92,7 +98,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={`${sectionClass} bg-[#FFF8F5]`}>
+      <section className={`${sectionClass} bg-brand-bg`}>
         <div className="flex items-center justify-between">
           <h2 className="font-manrope text-3xl font-semibold tracking-tight text-brand-blue">Курсы</h2>
           <Link href="/courses" className="text-brand-blue hover:text-brand-coral">Все курсы</Link>
@@ -117,7 +123,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={`${sectionClass} bg-[#FFF8F5]`}>
+      <section className={`${sectionClass} bg-brand-bg`}>
         <div className="card p-6">
           <div className="md:flex items-center justify-between gap-6">
             <div>

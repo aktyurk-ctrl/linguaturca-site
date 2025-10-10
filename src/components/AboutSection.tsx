@@ -10,7 +10,7 @@ export function AboutSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative border-t border-brand-blue/10 bg-[#FFF8F5]"
+      className="relative border-t border-brand-violet/10 bg-brand-bg"
     >
       {/* Decorative seagulls */}
       <svg
@@ -20,7 +20,7 @@ export function AboutSection() {
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden
       >
-        <path d="M10 34c10-8 18-6 22 0m22-2c-10-8-18-6-22 0" stroke="#0056A4" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M10 34c10-8 18-6 22 0m22-2c-10-8-18-6-22 0" stroke="#3E2B8F" strokeWidth="2" strokeLinecap="round"/>
       </svg>
       <svg
         className="pointer-events-none absolute top-8 left-10 w-8 h-8 opacity-60 transition-transform duration-300 hover:scale-105"
@@ -29,7 +29,7 @@ export function AboutSection() {
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden
       >
-        <path d="M8 28c8-6 14-5 18 0m18-2c-8-6-14-5-18 0" stroke="#E46B4B" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M8 28c8-6 14-5 18 0m18-2c-8-6-14-5-18 0" stroke="#FF6F91" strokeWidth="2" strokeLinecap="round"/>
       </svg>
 
       <div className="grid md:grid-cols-2 gap-12 items-center py-24 px-8 md:px-16">
@@ -58,7 +58,7 @@ export function AboutSection() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl font-bold text-brand-blue mb-4"
+            className="text-4xl font-bold text-brand-violet mb-4"
           >
             Merhaba! <span className="align-middle">🇹🇷</span>
           </motion.h2>

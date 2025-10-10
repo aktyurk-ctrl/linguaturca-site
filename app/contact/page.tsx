@@ -1,7 +1,7 @@
 export default function ContactPage() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-[#FFF8F5] text-center px-6 py-20">
-      <h1 className="text-4xl font-bold text-[#1E3A8A] mb-6">
+      <h1 className="text-4xl font-bold text-brand-violet mb-6">
         Страница в разработке 💬
       </h1>
       <p className="text-lg text-gray-600 max-w-xl">
@@ -21,7 +21,7 @@ export default function ContactPage() {
           href="https://instagram.com/linguaturca"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 py-3 rounded-full border border-[#1E3A8A] text-[#1E3A8A] font-semibold hover:bg-[#1E3A8A] hover:text-white transition"
+          className="px-6 py-3 rounded-full border border-brand-violet text-brand-violet font-semibold hover:bg-brand-violet hover:text-white transition"
         >
           Instagram
         </a>
