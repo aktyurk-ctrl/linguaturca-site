@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ScheduleSection() {
   return (
-    <section className="bg-brand-bg py-20 px-6 md:px-20">
+    <section className="section">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -26,7 +26,7 @@ export default function ScheduleSection() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-brand-pink to-brand-pink/80 text-white font-semibold py-3 px-8 rounded-full shadow-lg mt-6"
+            className="btn-gradient mt-6"
           >
             Занять место
           </motion.button>

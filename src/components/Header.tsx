@@ -18,10 +18,10 @@ export function Header() {
   return (
     <header className={cn('sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-blue-50')}> 
       <div className="container flex items-center justify-between py-4">
-        <Link href="/" className="font-manrope font-bold text-xl tracking-tight text-brand-blue">LinguaTurca</Link>
+        <Link href="/" className="font-manrope font-bold text-xl tracking-tight text-brand-violet">LinguaTurca</Link>
         <nav className="hidden md:flex gap-6 text-[15px]">
           {nav.map((n) => (
-            <Link key={n.href} href={n.href} className="hover:text-brand-blue transition-colors">
+            <Link key={n.href} href={n.href} className="hover:text-brand-pink transition-colors">
               {n.label}
             </Link>
           ))}

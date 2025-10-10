@@ -31,7 +31,7 @@ export default function AdvantagesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-brand-blue mb-12 text-center"
+          className="text-3xl md:text-4xl font-bold text-brand-violet mb-12 text-center"
         >
           Преимущества
         </motion.h2>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export default function HowWeTeachSection() {
   return (
-    <section className="bg-brand-bg py-20 relative overflow-hidden">
+    <section className="section relative overflow-hidden">
       {/* Анимированная чайка */}
       <motion.img
         src="/images/seagull.svg"

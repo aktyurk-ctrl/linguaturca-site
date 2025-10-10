@@ -45,7 +45,7 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="py-20 bg-brand-bg text-center">
+    <section className="section text-center">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ export default function PricingSection() {
             transition={{ duration: 0.6, delay: i * 0.2 }}
             viewport={{ once: true }}
             whileHover={{ y: -8 }}
-            className={`flex-1 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 ${tariff.color} border border-gray-100`}
+            className={`card flex-1 ${tariff.color} border border-brand-gray`}
           >
             <h3 className="text-lg font-bold mb-4 uppercase text-brand-violet">{tariff.title}</h3>
             <ul className="text-left list-disc list-inside text-gray-700 space-y-2 mb-4">
@@ -98,7 +98,7 @@ export default function PricingSection() {
         className="mt-12"
       >
         <motion.button 
-          className="bg-brand-pink hover:bg-brand-pink/80 text-white font-bold py-4 px-12 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+          className="btn-primary text-lg py-4 px-12"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

@@ -23,7 +23,7 @@ export default function IndividualPricing() {
   ];
 
   return (
-    <section className="py-20 bg-brand-bg text-center relative overflow-hidden">
+    <section className="section text-center relative overflow-hidden">
       {/* Декоративный фон */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-brand-violet rounded-full blur-3xl"></div>
@@ -85,13 +85,13 @@ export default function IndividualPricing() {
               transition={{ duration: 0.5, delay: i * 0.2 }}
               viewport={{ once: true }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className={`flex-1 rounded-2xl shadow-md hover:shadow-lg p-8 ${plan.color} border border-gray-100 transition-all duration-300`}
+              className={`card flex-1 ${plan.color} border border-brand-gray`}
             >
               <h3 className="text-lg font-semibold mb-3 text-brand-violet">{plan.title}</h3>
               <p className="text-gray-700 mb-6 text-sm leading-relaxed">{plan.description}</p>
               <p className="text-2xl font-extrabold mb-6 text-brand-violet">{plan.price}</p>
               <motion.button
-                className={`${plan.buttonColor} text-white font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-md hover:shadow-lg`}
+                className={plan.button === "Попробовать" ? "btn-primary" : "btn-secondary"}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

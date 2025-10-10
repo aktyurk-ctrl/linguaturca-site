@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function CourseMiniGroupSection() {
   return (
-    <section className="py-20 md:py-24 bg-brand-bg">
+    <section className="section">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-6 md:px-12">
         
         {/* Текстовая часть */}
@@ -21,7 +21,7 @@ export default function CourseMiniGroupSection() {
           </h2>
           <p className="text-lg italic mb-6 text-gray-600">5 недель, 10 живых онлайн-уроков</p>
           
-          <div className="bg-brand-pink/10 p-6 rounded-2xl shadow-sm border border-brand-pink/30">
+          <div className="bg-brand-pink/10 p-6 rounded-2xl shadow-soft border border-brand-pink/30">
             <ul className="space-y-2 text-gray-700 leading-relaxed">
               <li>– 10 занятий в мини-группе в Zoom</li>
               <li>– записи уроков</li>

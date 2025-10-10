@@ -18,36 +18,28 @@ h2 {
 
 /* ✨ Кнопки */
 .btn-primary {
-  @apply bg-brand-pink text-white font-semibold py-3 px-8 rounded-full shadow-soft transition-all duration-200;
-}
-
-.btn-primary:hover {
-  @apply bg-brand-violet shadow-glow scale-105;
+  @apply bg-brand-pink hover:bg-brand-violet text-white font-semibold py-3 px-8 rounded-full shadow-soft transition-all duration-300 hover:scale-105;
 }
 
 .btn-outline {
-  @apply border-2 border-brand-violet text-brand-violet font-semibold py-3 px-8 rounded-full transition-all duration-200;
-}
-
-.btn-outline:hover {
-  @apply bg-brand-violet text-white scale-105;
+  @apply border-2 border-brand-violet text-brand-violet hover:bg-brand-violet hover:text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105;
 }
 
 .btn-secondary {
-  @apply bg-brand-yellow text-brand-violet font-semibold py-3 px-8 rounded-full shadow-soft transition-all duration-200;
+  @apply bg-brand-yellow hover:bg-brand-mint text-brand-violet font-semibold py-3 px-8 rounded-full shadow-soft transition-all duration-300 hover:scale-105;
 }
 
-.btn-secondary:hover {
-  @apply bg-brand-mint text-brand-violet scale-105;
+.btn-gradient {
+  @apply bg-gradient-to-r from-brand-pink to-brand-yellow text-white font-semibold py-3 px-8 rounded-full shadow-soft transition-all duration-300 hover:scale-105 hover:shadow-glow;
 }
 
 /* 📦 Карточки */
 .card {
-  @apply bg-white rounded-2xl shadow-soft p-6 transition-transform hover:-translate-y-2 hover:shadow-glow;
+  @apply bg-brand-white rounded-2xl shadow-soft p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow border border-brand-gray;
 }
 
 .card-hover {
-  @apply bg-white rounded-2xl shadow-soft p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow hover:scale-105;
+  @apply bg-brand-white rounded-2xl shadow-soft p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow hover:scale-105 border border-brand-gray;
 }
 
 /* 💬 Подписи и детали */
@@ -131,6 +123,11 @@ h2 {
 
 .text-accent {
   @apply text-brand-pink;
+}
+
+/* 🔗 Ссылки */
+a {
+  @apply text-brand-violet hover:text-brand-pink transition-colors duration-300;
 }
 
 /* 🎨 Цветовые утилиты */

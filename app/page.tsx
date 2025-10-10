@@ -15,7 +15,7 @@ const sectionClass = "container py-20 md:py-28 max-w-6xl"
 export default function HomePage() {
   return (
     <div>
-      <section className="relative py-0 bg-gradient-to-br from-brand-beige to-brand-soft">
+      <section className="relative py-0 bg-gradient-to-br from-brand-bg to-brand-mint">
         <div className="absolute inset-0">
           <Image src="/images/hero.jpg" alt="Изучайте турецкий онлайн" fill priority className="object-cover" />
           <div className="absolute inset-0 bg-black/40" />
@@ -28,10 +28,10 @@ export default function HomePage() {
             Учите турецкий эффективно и с удовольствием — с преподавателями, окончившими турецкие университеты.
           </p>
           <div className="mt-8 flex gap-3">
-            <Link href="/contact" className="px-6 py-3 rounded-full bg-brand-coral hover:bg-[#CF5D3E] text-white font-semibold shadow-md transition">
+            <Link href="/contact" className="btn-primary">
               Бесплатная консультация
             </Link>
-            <Link href="/free-lesson" className="px-6 py-3 rounded-full bg-white border border-brand-blue text-brand-blue hover:bg-brand-soft transition">
+            <Link href="/free-lesson" className="btn-outline">
               Пройти мини-урок
             </Link>
           </div>
@@ -53,11 +53,11 @@ export default function HomePage() {
       <ReviewsSection />
 
       <section className={`${sectionClass} bg-brand-bg`}>
-        <div className="rounded-xl bg-brand-beige p-8 border border-brand-soft">
-          <h3 className="font-manrope text-2xl font-semibold tracking-tight text-brand-blue">
+        <div className="card">
+          <h3 className="font-manrope text-2xl font-semibold tracking-tight text-brand-violet">
             Преподаватели — магистры турецкого языка
           </h3>
-          <div className="w-16 h-1 bg-brand-coral rounded mt-2" />
+          <div className="w-16 h-1 bg-brand-pink rounded mt-2" />
           <p className="text-brand-gray mt-4 max-w-3xl">
             Команда LinguaTurca — выпускники ведущих университетов Турции. Они преподают на родном языке и знают, как объяснять сложное просто.
           </p>
@@ -66,7 +66,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0 }}
-              className="bg-white rounded-2xl overflow-hidden ring-4 ring-brand-soft shadow-sm"
+              className="card overflow-hidden"
             >
               <div className="relative h-40">
                 <Image src="/images/teacher1.jpg" alt="Преподаватель LinguaTurca" fill className="object-cover" />
@@ -81,17 +81,17 @@ export default function HomePage() {
       </section>
 
       <section className={`${sectionClass} bg-brand-bg`}>
-        <div className="card p-8 md:p-12">
+        <div className="card">
           <div className="md:flex items-center justify-between gap-8">
             <div>
-              <h2 className="font-manrope text-3xl font-semibold tracking-tight text-brand-blue">Попробуйте бесплатно: мини-урок + тест уровня</h2>
+              <h2 className="font-manrope text-3xl font-semibold tracking-tight text-brand-violet">Попробуйте бесплатно: мини-урок + тест уровня</h2>
               <ul className="mt-3 list-disc list-inside text-gray-700 space-y-1">
                 <li>Видео-мини-урок (10 мин)</li>
                 <li>Авто-проверка теста</li>
                 <li>Рекомендации по курсу</li>
               </ul>
             </div>
-            <Link href="/free-lesson" className="mt-4 md:mt-0 px-6 py-3 rounded-full bg-brand-coral hover:bg-[#CF5D3E] text-white font-semibold shadow-md transition">
+            <Link href="/free-lesson" className="mt-4 md:mt-0 btn-primary">
               Начать сейчас
             </Link>
           </div>
@@ -100,8 +100,8 @@ export default function HomePage() {
 
       <section className={`${sectionClass} bg-brand-bg`}>
         <div className="flex items-center justify-between">
-          <h2 className="font-manrope text-3xl font-semibold tracking-tight text-brand-blue">Курсы</h2>
-          <Link href="/courses" className="text-brand-blue hover:text-brand-coral">Все курсы</Link>
+          <h2 className="font-manrope text-3xl font-semibold tracking-tight text-brand-violet">Курсы</h2>
+          <Link href="/courses" className="text-brand-violet hover:text-brand-pink">Все курсы</Link>
         </div>
         <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
@@ -124,13 +124,13 @@ export default function HomePage() {
       </section>
 
       <section className={`${sectionClass} bg-brand-bg`}>
-        <div className="card p-6">
+        <div className="card">
           <div className="md:flex items-center justify-between gap-6">
             <div>
               <h3 className="font-manrope text-2xl font-semibold tracking-tight">Записаться на бесплатную консультацию</h3>
               <p className="text-gray-700 mt-1">Оставьте контакт — подберём курс и расписание.</p>
             </div>
-            <Link href="/contact" className="mt-4 md:mt-0 px-6 py-3 rounded-full bg-brand-blue text-white hover:shadow-soft transition shadow-md">
+            <Link href="/contact" className="mt-4 md:mt-0 btn-primary">
               Записаться
             </Link>
           </div>

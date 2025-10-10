@@ -10,7 +10,7 @@ export function AboutSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative border-t border-brand-violet/10 bg-brand-bg"
+      className="section relative border-t border-brand-gray"
     >
       {/* Decorative seagulls */}
       <svg
@@ -32,7 +32,7 @@ export function AboutSection() {
         <path d="M8 28c8-6 14-5 18 0m18-2c-8-6-14-5-18 0" stroke="#FF6F91" strokeWidth="2" strokeLinecap="round"/>
       </svg>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center py-24 px-8 md:px-16">
+      <div className="grid md:grid-cols-2 gap-12 items-center px-8 md:px-16">
         <div className="flex justify-center items-center w-full">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}

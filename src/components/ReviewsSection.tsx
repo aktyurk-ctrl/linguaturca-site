@@ -18,7 +18,7 @@ export default function ReviewsSection() {
   ];
 
   return (
-    <section className="py-24 bg-brand-bg text-center relative">
+    <section className="section text-center relative">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export default function ReviewsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
             viewport={{ once: true }}
-            className="bg-white rounded-2xl shadow-md p-6 text-left hover:-translate-y-2 transition-transform"
+            className="card text-left"
           >
             <p className="text-brand-violet font-semibold mb-2">{r.quote}</p>
             <p className="text-gray-700 text-sm leading-relaxed">{r.text}</p>
@@ -52,7 +52,7 @@ export default function ReviewsSection() {
         viewport={{ once: true }}
         className="mt-14"
       >
-        <button className="bg-brand-pink hover:bg-brand-pink/80 text-white font-bold py-3 px-10 rounded-full text-lg shadow-lg hover:scale-105 transition-transform">
+        <button className="btn-primary text-lg">
           Хочу занять место!
         </button>
       </motion.div>
