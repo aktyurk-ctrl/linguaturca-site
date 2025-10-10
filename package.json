@@ -6,14 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write .",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "test:ui": "vitest",
-    "sitemap": "next-sitemap",
-    "fix": "node ./project-fix.mjs || true"
+    "start": "next start"
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.1",
