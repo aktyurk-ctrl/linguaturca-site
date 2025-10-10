@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { AboutSection } from '@/components/AboutSection'
 import HowWeTeachSection from '@/components/HowWeTeachSection'
 
@@ -35,7 +36,7 @@ export default function HomePage() {
 
       <HowWeTeachSection />
 
-      <section className={`${sectionClass} bg-brand-beige`}>
+      <section className={`${sectionClass} bg-[#FFF8F5]`}>
         <div className="rounded-xl bg-brand-beige p-8 border border-brand-soft">
           <h3 className="font-manrope text-2xl font-semibold tracking-tight text-brand-blue">
             Преподаватели — магистры турецкого языка
@@ -45,7 +46,12 @@ export default function HomePage() {
             Команда LinguaTurca — выпускники ведущих университетов Турции. Они преподают на родном языке и знают, как объяснять сложное просто.
           </p>
           <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div className="bg-white rounded-2xl overflow-hidden ring-4 ring-brand-soft shadow-sm">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0 }}
+              className="bg-white rounded-2xl overflow-hidden ring-4 ring-brand-soft shadow-sm"
+            >
               <div className="relative h-40">
                 <Image src="/images/teacher1.jpg" alt="Преподаватель LinguaTurca" fill className="object-cover" />
               </div>
@@ -53,12 +59,12 @@ export default function HomePage() {
                 <div className="font-semibold text-brand-blue">Айше К.</div>
                 <div className="text-sm text-brand-gray">Магистр турецкого языка, 6+ лет опыта</div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className={`${sectionClass}`}>
+      <section className={`${sectionClass} bg-[#FFF8F5]`}>
         <div className="card p-8 md:p-12">
           <div className="md:flex items-center justify-between gap-8">
             <div>
@@ -76,7 +82,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={`${sectionClass}`}>
+      <section className={`${sectionClass} bg-[#FFF8F5]`}>
         <div className="flex items-center justify-between">
           <h2 className="font-manrope text-3xl font-semibold tracking-tight text-brand-blue">Курсы</h2>
           <Link href="/courses" className="text-brand-blue hover:text-brand-coral">Все курсы</Link>
@@ -101,7 +107,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={`${sectionClass}`}>
+      <section className={`${sectionClass} bg-[#FFF8F5]`}>
         <div className="card p-6">
           <div className="md:flex items-center justify-between gap-6">
             <div>

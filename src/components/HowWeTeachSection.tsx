@@ -1,10 +1,21 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 export default function HowWeTeachSection() {
   return (
-    <section className="bg-[#FFF8F5] py-20">
+    <section className="bg-[#FFF8F5] py-20 relative overflow-hidden">
+      {/* Анимированная чайка */}
+      <motion.img
+        src="/images/seagull.svg"
+        alt="Чайка"
+        initial={{ x: -200, y: 0, opacity: 0 }}
+        animate={{ x: [ -200, 1100 ], opacity: [0, 1, 0] }}
+        transition={{ duration: 6, ease: "easeInOut" }}
+        className="absolute top-10 left-0 w-16 h-auto pointer-events-none"
+      />
+
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#1E3A8A] mb-4">
@@ -17,7 +28,12 @@ export default function HowWeTeachSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16">
           {/* Карточка 1: Мини-группы */}
-          <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0 }}
+            className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden"
+          >
             <div className="md:flex">
               <div className="md:w-1/2">
                 <div className="relative h-64 md:h-full">
@@ -35,16 +51,21 @@ export default function HowWeTeachSection() {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500 transition-colors text-center"
+                  className="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500 transition-colors text-center pulse-cta"
                 >
                   Хочу в мини-группу
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Карточка 2: Индивидуально */}
-          <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden"
+          >
             <div className="md:flex">
               <div className="md:w-1/2">
                 <div className="relative h-64 md:h-full">
@@ -62,27 +83,32 @@ export default function HowWeTeachSection() {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-block px-6 py-3 bg-pink-400 text-black font-semibold rounded-full hover:bg-pink-500 transition-colors text-center"
+                  className="inline-block px-6 py-3 bg-pink-400 text-black font-semibold rounded-full hover:bg-pink-500 transition-colors text-center pulse-cta"
                 >
                   Выбрать индивидуально
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* CTA внизу */}
-        <div className="text-center">
-          <p className="text-gray-700 text-lg mb-6">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto bg-gradient-to-r from-[#F97362] to-[#FF8C66] rounded-2xl shadow-lg py-10 px-8 mt-16 text-center text-white"
+        >
+          <p className="text-lg font-medium mb-4">
             Не знаешь, что подойдёт тебе? Пройди мини-тест уровня и получи консультацию.
           </p>
-          <Link
-            href="/contact"
-            className="inline-block px-8 py-4 bg-[#F97362] text-white font-semibold rounded-full hover:bg-[#E85A4F] transition-colors"
-          >
-            Пройти тест
+          <Link href="/contact">
+            <button className="bg-white text-[#F97362] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition hover:scale-[1.05] transition-transform duration-300 ease-out pulse-cta">
+              Пройти тест
+            </button>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

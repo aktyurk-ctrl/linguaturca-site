@@ -6,7 +6,13 @@
   --radius: 1.5rem;
 }
 
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth; 
+}
+
+* {
+  transition: all 0.3s ease;
+}
 
 body {
   @apply bg-brand-beige text-brand-gray antialiased leading-relaxed;
@@ -20,5 +26,15 @@ a { @apply underline-offset-2 text-brand-blue hover:text-brand-coral transition-
 
 /* Accessibility focus */
 :focus-visible { @apply outline-none ring-2 ring-blue-500 ring-offset-2; }
+
+/* Pulse animation for CTA buttons */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 rgba(249,115,98,0); }
+  50% { box-shadow: 0 0 15px rgba(249,115,98,0.3); }
+}
+
+.pulse-cta { 
+  animation: pulseGlow 3s infinite; 
+}
 
 
