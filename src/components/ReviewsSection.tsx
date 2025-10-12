@@ -1,24 +1,34 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ReviewsSection() {
   const reviews = [
     {
+      name: "Марина П.",
+      avatar: "/images/review-avatar-1.jpg",
       quote: "«Качество, организованность, актуальность!»",
       text: "Занятия проходят живо, с интересом, Дарья всегда на связи и вдохновляет учиться.",
+      screenshot: "/images/review-1.png",
     },
     {
+      name: "Алихан К.",
+      avatar: "/images/review-avatar-2.jpg",
       quote: "«Шикарные презентации!»",
       text: "Все темы объяснены чётко, с примерами. Никогда не думала, что смогу говорить по-турецки так быстро!",
+      screenshot: "/images/review-2.png",
     },
     {
+      name: "Ирина С.",
+      avatar: "/images/review-avatar-3.jpg",
       quote: "«Любить учителя — любить занятия»",
       text: "С Дарьей хочется учить, смеяться и говорить! Атмосфера уюта и поддержки.",
+      screenshot: "/images/review-3.png",
     },
   ];
 
   return (
-    <section className="section text-center relative">
+    <section className="section text-center relative bg-[#FFF8F5]">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -29,18 +39,47 @@ export default function ReviewsSection() {
         Отзывы учеников
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-12 max-w-7xl mx-auto">
         {reviews.map((r, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: i * 0.2 }}
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.6, delay: i * 0.1 }}
             viewport={{ once: true }}
-            className="card text-left"
+            whileHover={{ y: -4 }}
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center"
           >
-            <p className="text-brand-violet font-semibold mb-2">{r.quote}</p>
-            <p className="text-gray-700 text-sm leading-relaxed">{r.text}</p>
+            {/* Аватар и имя */}
+            <div className="flex flex-col items-center mb-4">
+              <div className="relative w-16 h-16 rounded-full border-2 border-[#F9A8D4] overflow-hidden mb-3">
+                <Image
+                  src={r.avatar}
+                  alt={r.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="font-bold text-brand-violet text-base">{r.name}</p>
+            </div>
+
+            {/* Цитата и текст отзыва */}
+            <div className="text-center mb-4">
+              <p className="text-brand-violet font-semibold mb-2 text-base">{r.quote}</p>
+              <p className="text-gray-700 text-sm leading-relaxed">{r.text}</p>
+            </div>
+
+            {/* Скриншот отзыва */}
+            <div className="w-full mt-auto">
+              <div className="relative w-full h-[200px] rounded-xl overflow-hidden shadow-sm">
+                <Image
+                  src={r.screenshot}
+                  alt={`Скриншот отзыва ${r.name}`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>

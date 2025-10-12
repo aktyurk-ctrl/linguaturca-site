@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import { AboutSection } from '@/components/AboutSection'
 import HowWeTeachSection from '@/components/HowWeTeachSection'
 import CourseMiniGroupSection from '@/components/CourseMiniGroupSection'
@@ -27,11 +26,11 @@ export default function HomePage() {
           <p className="mt-4 text-lg text-white/90 max-w-2xl">
             Учите турецкий эффективно и с удовольствием — с преподавателями, окончившими турецкие университеты.
           </p>
-          <div className="mt-8 flex gap-3">
-            <Link href="/contact" className="btn-primary">
+          <div className="mt-8 flex flex-col md:flex-row gap-3 w-full max-w-md md:max-w-none">
+            <Link href="/contact" className="btn-primary w-full md:w-auto text-center">
               Бесплатная консультация
             </Link>
-            <Link href="/free-lesson" className="btn-outline">
+            <Link href="/free-lesson" className="btn-outline w-full md:w-auto text-center">
               Пройти мини-урок
             </Link>
           </div>
@@ -51,77 +50,6 @@ export default function HomePage() {
       <ScheduleSection />
 
       <ReviewsSection />
-
-      <section className={`${sectionClass} bg-brand-bg`}>
-        <div className="card">
-          <h3 className="font-manrope text-2xl font-semibold tracking-tight text-brand-violet">
-            Преподаватели — магистры турецкого языка
-          </h3>
-          <div className="w-16 h-1 bg-brand-pink rounded mt-2" />
-          <p className="text-brand-gray mt-4 max-w-3xl">
-            Команда LinguaTurca — выпускники ведущих университетов Турции. Они преподают на родном языке и знают, как объяснять сложное просто.
-          </p>
-          <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0 }}
-              className="card overflow-hidden"
-            >
-              <div className="relative h-40">
-                <Image src="/images/teacher1.jpg" alt="Преподаватель LinguaTurca" fill className="object-cover" />
-              </div>
-              <div className="p-4">
-                <div className="font-semibold text-brand-blue">Айше К.</div>
-                <div className="text-sm text-brand-gray">Магистр турецкого языка, 6+ лет опыта</div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      <section className={`${sectionClass} bg-brand-bg`}>
-        <div className="card">
-          <div className="md:flex items-center justify-between gap-8">
-            <div>
-              <h2 className="font-manrope text-3xl font-semibold tracking-tight text-brand-violet">Попробуйте бесплатно: мини-урок + тест уровня</h2>
-              <ul className="mt-3 list-disc list-inside text-gray-700 space-y-1">
-                <li>Видео-мини-урок (10 мин)</li>
-                <li>Авто-проверка теста</li>
-                <li>Рекомендации по курсу</li>
-              </ul>
-            </div>
-            <Link href="/free-lesson" className="mt-4 md:mt-0 btn-primary">
-              Начать сейчас
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className={`${sectionClass} bg-brand-bg`}>
-        <div className="flex items-center justify-between">
-          <h2 className="font-manrope text-3xl font-semibold tracking-tight text-brand-violet">Курсы</h2>
-          <Link href="/courses" className="text-brand-violet hover:text-brand-pink">Все курсы</Link>
-        </div>
-        <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            { level: 'A1', desc: 'с нуля: алфавит, базовые фразы, чтение, простые диалоги' },
-            { level: 'A2', desc: 'расширяем словарь, времена, бытовые ситуации' },
-            { level: 'B1', desc: 'уверенное общение, сложные времена, работа/учёба' },
-            { level: 'B2', desc: 'быстрая речь, нюансы грамматики, деловая коммуникация' },
-          ].map((c) => (
-            <div key={c.level} className={`${c.level==='A1'?'bg-[#F9EDE1]':c.level==='A2'?'bg-[#E4EDF2]':c.level==='B1'?'bg-[#FFF3E9]':'bg-[#EAF3EC]'} rounded-2xl p-6 shadow-sm`}>
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="font-semibold text-brand-blue">Курс {c.level}</div>
-                  <div className="text-brand-gray text-sm">{c.desc}</div>
-                </div>
-                <Link href={`/courses/${c.level.toLowerCase()}`} className="text-brand-blue hover:text-brand-coral">Подробнее</Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <section className={`${sectionClass} bg-brand-bg`}>
         <div className="card">

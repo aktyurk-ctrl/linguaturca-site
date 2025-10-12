@@ -26,17 +26,18 @@ export default function HowWeTeachSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch mb-16">
           {/* Карточка 1: Мини-группы */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0 }}
-            className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden"
+            whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15)" }}
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
           >
-            <div className="md:flex">
-              <div className="md:w-1/2">
-                <div className="relative h-64 md:h-full">
+            <div className="flex flex-col md:flex-row min-h-[340px]">
+              <div className="md:w-1/2 h-64 md:h-auto">
+                <div className="relative h-full w-full">
                   <Image
                     src="/images/class1.jpg"
                     alt="Урок в мини-группе"
@@ -45,13 +46,13 @@ export default function HowWeTeachSection() {
                   />
                 </div>
               </div>
-              <div className="md:w-1/2 p-8 flex flex-col justify-center">
-                <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+              <div className="md:w-1/2 p-8 flex flex-col justify-between">
+                <p className="text-gray-700 text-lg leading-relaxed">
                   Уроки в мини-группах — больше общения, больше практики, больше мотивации.
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500 transition-colors text-center pulse-cta"
+                  className="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500 transition-colors text-center pulse-cta mt-6"
                 >
                   Хочу в мини-группу
                 </Link>
@@ -64,11 +65,12 @@ export default function HowWeTeachSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden"
+            whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15)" }}
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
           >
-            <div className="md:flex">
-              <div className="md:w-1/2">
-                <div className="relative h-64 md:h-full">
+            <div className="flex flex-col md:flex-row min-h-[340px]">
+              <div className="md:w-1/2 h-64 md:h-auto">
+                <div className="relative h-full w-full">
                   <Image
                     src="/images/class2.jpg"
                     alt="Индивидуальное занятие"
@@ -77,13 +79,13 @@ export default function HowWeTeachSection() {
                   />
                 </div>
               </div>
-              <div className="md:w-1/2 p-8 flex flex-col justify-center">
-                <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+              <div className="md:w-1/2 p-8 flex flex-col justify-between">
+                <p className="text-gray-700 text-lg leading-relaxed">
                   Индивидуальные занятия — в своём темпе и по персональной программе.
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-block px-6 py-3 bg-pink-400 text-black font-semibold rounded-full hover:bg-pink-500 transition-colors text-center pulse-cta"
+                  className="inline-block px-6 py-3 bg-pink-400 text-black font-semibold rounded-full hover:bg-pink-500 transition-colors text-center pulse-cta mt-6"
                 >
                   Выбрать индивидуально
                 </Link>

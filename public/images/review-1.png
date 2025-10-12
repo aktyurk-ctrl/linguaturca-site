@@ -1,0 +1,28 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF1F8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FCE7F3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#bg1)" rx="12"/>
+  
+  <!-- Header -->
+  <rect x="20" y="20" width="40" height="40" fill="#F9A8D4" rx="20"/>
+  <text x="40" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="bold">МП</text>
+  <text x="70" y="35" fill="#8B5CF6" font-family="Arial" font-size="14" font-weight="bold">Марина П.</text>
+  <text x="70" y="52" fill="#9CA3AF" font-family="Arial" font-size="11">2 дня назад</text>
+  
+  <!-- Stars -->
+  <text x="20" y="80" fill="#FBBF24" font-size="18">★★★★★</text>
+  
+  <!-- Message -->
+  <text x="20" y="105" fill="#4B5563" font-family="Arial" font-size="12" font-weight="600">Качество, организованность, актуальность!</text>
+  <text x="20" y="125" fill="#6B7280" font-family="Arial" font-size="11">Занятия проходят живо, с интересом.</text>
+  <text x="20" y="142" fill="#6B7280" font-family="Arial" font-size="11">Дарья всегда на связи и вдохновляет</text>
+  <text x="20" y="159" fill="#6B7280" font-family="Arial" font-size="11">учиться. Рекомендую!</text>
+  
+  <!-- Like icon -->
+  <text x="20" y="185" fill="#EC4899" font-size="14">❤️ 45</text>
+</svg>
+
