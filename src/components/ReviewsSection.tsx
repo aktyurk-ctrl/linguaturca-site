@@ -28,13 +28,13 @@ export default function ReviewsSection() {
   ];
 
   return (
-    <section className="section text-center relative bg-[#FFF8F5]">
+    <section className="section text-center relative bg-brand-bg">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="text-3xl md:text-4xl font-extrabold text-brand-violet mb-12"
+        className="text-3xl md:text-4xl font-extrabold text-brand-heading mb-12"
       >
         Отзывы учеников
       </motion.h2>
@@ -60,13 +60,13 @@ export default function ReviewsSection() {
                   className="object-cover"
                 />
               </div>
-              <p className="font-bold text-brand-violet text-base">{r.name}</p>
+              <p className="font-bold text-brand-heading text-base">{r.name}</p>
             </div>
 
             {/* Цитата и текст отзыва */}
             <div className="text-center mb-4">
-              <p className="text-brand-violet font-semibold mb-2 text-base">{r.quote}</p>
-              <p className="text-gray-700 text-sm leading-relaxed">{r.text}</p>
+              <p className="text-brand-heading font-semibold mb-2 text-base">{r.quote}</p>
+              <p className="text-brand-text text-sm leading-relaxed">{r.text}</p>
             </div>
 
             {/* Скриншот отзыва */}

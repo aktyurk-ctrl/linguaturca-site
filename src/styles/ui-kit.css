@@ -9,7 +9,7 @@ body {
 
 /* 🎯 Заголовки */
 h1, h2, h3 {
-  @apply font-extrabold text-brand-violet;
+  @apply font-extrabold text-brand-heading;
 }
 
 h2 {
@@ -18,41 +18,41 @@ h2 {
 
 /* ✨ Кнопки */
 .btn-primary {
-  @apply bg-[#FF6FAE] text-white font-semibold py-3.5 px-8 rounded-xl shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-[#ff5a9e] active:scale-[0.98];
+  @apply bg-brand-primary text-white font-semibold py-3.5 px-8 rounded-xl shadow-soft transition-all duration-300 hover:bg-gradient-to-r hover:from-brand-primary hover:to-brand-hover hover:shadow-glow active:scale-[0.98];
 }
 
 .btn-outline {
-  @apply bg-transparent border-2 border-[#FF6FAE] text-[#1A1A2E] font-semibold py-3.5 px-8 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#ff5a9e] hover:bg-[#FF6FAE]/5 active:scale-[0.98];
+  @apply bg-transparent border-2 border-brand-primary text-brand-primary font-semibold py-3.5 px-8 rounded-xl transition-all duration-300 hover:bg-brand-primary hover:text-white hover:shadow-soft active:scale-[0.98];
 }
 
 .btn-secondary {
-  @apply bg-brand-yellow hover:bg-brand-mint text-brand-violet font-semibold py-3 px-8 rounded-full shadow-soft transition-all duration-300 hover:scale-105;
+  @apply bg-brand-accent text-brand-text font-semibold py-3.5 px-8 rounded-xl shadow-soft transition-all duration-300 hover:bg-brand-accent/80 hover:shadow-hover active:scale-[0.98];
 }
 
 .btn-gradient {
-  @apply bg-gradient-to-r from-brand-pink to-brand-yellow text-white font-semibold py-3 px-8 rounded-full shadow-soft transition-all duration-300 hover:scale-105 hover:shadow-glow;
+  @apply bg-gradient-to-r from-brand-primary to-brand-hover text-white font-semibold py-3.5 px-8 rounded-xl shadow-soft transition-all duration-300 hover:scale-105 hover:shadow-glow;
 }
 
 /* 📦 Карточки */
 .card {
-  @apply bg-brand-white rounded-2xl shadow-soft p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow border border-brand-gray;
+  @apply bg-brand-card rounded-[20px] shadow-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-hover;
 }
 
 .card-hover {
-  @apply bg-brand-white rounded-2xl shadow-soft p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow hover:scale-105 border border-brand-gray;
+  @apply bg-brand-card rounded-[20px] shadow-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-hover hover:scale-[1.02];
 }
 
 /* 💬 Подписи и детали */
 .badge {
-  @apply inline-block bg-brand-yellow text-brand-violet font-semibold text-xs px-3 py-1 rounded-full;
+  @apply inline-block bg-brand-secondary text-brand-text font-semibold text-xs px-3 py-1 rounded-full;
 }
 
-.badge-pink {
-  @apply inline-block bg-brand-pink text-white font-semibold text-xs px-3 py-1 rounded-full;
+.badge-accent {
+  @apply inline-block bg-brand-accent text-brand-text font-semibold text-xs px-3 py-1 rounded-full;
 }
 
-.badge-mint {
-  @apply inline-block bg-brand-mint text-brand-violet font-semibold text-xs px-3 py-1 rounded-full;
+.badge-primary {
+  @apply inline-block bg-brand-primary text-white font-semibold text-xs px-3 py-1 rounded-full;
 }
 
 /* ⚡ CTA-секции */
@@ -66,11 +66,11 @@ h2 {
 
 /* 🎨 Декоративные элементы */
 .gradient-bg {
-  @apply bg-gradient-to-br from-brand-pink/10 via-brand-yellow/5 to-brand-mint/10;
+  @apply bg-gradient-to-br from-brand-bg via-brand-secondary/20 to-brand-primary/10;
 }
 
 .text-gradient {
-  @apply bg-gradient-to-r from-brand-violet to-brand-pink bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-brand-heading to-brand-primary bg-clip-text text-transparent;
 }
 
 /* 📱 Адаптивные утилиты */
@@ -122,35 +122,20 @@ h2 {
 }
 
 .text-accent {
-  @apply text-brand-pink;
+  @apply text-brand-primary;
 }
 
 /* 🔗 Ссылки */
 a {
-  @apply text-brand-violet hover:text-brand-pink transition-colors duration-300;
+  @apply text-brand-primary hover:text-brand-hover transition-colors duration-300;
 }
 
-/* 🎨 Цветовые утилиты */
-.bg-brand-primary {
-  @apply bg-brand-violet;
+/* 🎨 Pulse эффект для CTA */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(57, 199, 229, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(57, 199, 229, 0.5); }
 }
 
-.bg-brand-secondary {
-  @apply bg-brand-pink;
-}
-
-.bg-brand-accent {
-  @apply bg-brand-yellow;
-}
-
-.text-brand-primary {
-  @apply text-brand-violet;
-}
-
-.text-brand-secondary {
-  @apply text-brand-pink;
-}
-
-.text-brand-accent {
-  @apply text-brand-yellow;
+.pulse-cta {
+  animation: pulse-glow 2s ease-in-out infinite;
 }

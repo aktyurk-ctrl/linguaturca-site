@@ -16,12 +16,12 @@ export default function CourseMiniGroupSection() {
           viewport={{ once: true }}
           className="flex-1"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-violet mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-heading mb-4">
             Что такое курс в мини-группе?
           </h2>
           <p className="text-lg italic mb-6 text-gray-600">5 недель, 10 живых онлайн-уроков</p>
           
-          <div className="bg-brand-pink/10 p-6 rounded-2xl shadow-soft border border-brand-pink/30">
+          <div className="bg-brand-primary/10 p-6 rounded-2xl shadow-soft border border-brand-primary/30">
             <ul className="space-y-2 text-gray-700 leading-relaxed">
               <li>– 10 занятий в мини-группе в Zoom</li>
               <li>– записи уроков</li>
@@ -34,7 +34,7 @@ export default function CourseMiniGroupSection() {
           </div>
 
           <motion.div 
-            className="mt-6 inline-block rounded-full border-4 border-brand-mint text-brand-text font-semibold px-5 py-2 text-sm shadow-md hover:scale-105 transition-transform duration-300"
+            className="mt-6 inline-block rounded-xl border-3 border-brand-secondary text-brand-text font-semibold px-5 py-2 text-sm shadow-md hover:scale-105 hover:bg-brand-secondary/10 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -74,7 +74,7 @@ export default function CourseMiniGroupSection() {
             />
             {/* Декоративные элементы */}
             <motion.div
-              className="absolute -top-4 -right-4 w-8 h-8 bg-brand-pink/20 rounded-full flex items-center justify-center"
+              className="absolute -top-4 -right-4 w-8 h-8 bg-brand-secondary/40 rounded-full flex items-center justify-center"
               animate={{ 
                 y: [0, -5, 0],
                 rotate: [0, 5, -5, 0]
@@ -88,7 +88,7 @@ export default function CourseMiniGroupSection() {
               <span className="text-lg">🇹🇷</span>
             </motion.div>
             <motion.div
-              className="absolute -bottom-4 -left-4 w-6 h-6 bg-brand-mint rounded-full flex items-center justify-center"
+              className="absolute -bottom-4 -left-4 w-6 h-6 bg-brand-heading/30 rounded-full flex items-center justify-center"
               animate={{ 
                 y: [0, 3, 0],
                 x: [0, 2, 0]

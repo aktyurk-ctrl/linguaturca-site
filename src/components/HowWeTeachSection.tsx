@@ -18,7 +18,7 @@ export default function HowWeTeachSection() {
 
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-brand-violet mb-4">
+          <h2 className="text-4xl font-bold text-brand-text mb-4">
             🇹🇷 Как мы учим турецкому
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -52,7 +52,7 @@ export default function HowWeTeachSection() {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500 transition-colors text-center pulse-cta mt-6"
+                  className="inline-flex items-center justify-center min-h-[52px] min-w-[220px] px-6 py-3 bg-[#39C7E5] text-white font-semibold uppercase tracking-wide rounded-xl shadow-md hover:bg-[#2183A2] transition-all duration-200 mt-6"
                 >
                   Хочу в мини-группу
                 </Link>
@@ -85,7 +85,7 @@ export default function HowWeTeachSection() {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-block px-6 py-3 bg-pink-400 text-black font-semibold rounded-full hover:bg-pink-500 transition-colors text-center pulse-cta mt-6"
+                  className="inline-flex items-center justify-center min-h-[52px] min-w-[220px] px-6 py-3 bg-[#FFB69E] text-[#2B2B2B] font-semibold uppercase tracking-wide rounded-xl shadow-md hover:bg-[#F9A98C] transition-all duration-200 mt-6"
                 >
                   Выбрать индивидуально
                 </Link>
@@ -100,13 +100,13 @@ export default function HowWeTeachSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto bg-gradient-to-r from-[#F97362] to-[#FF8C66] rounded-2xl shadow-lg py-10 px-8 mt-16 text-center text-white"
+          className="max-w-4xl mx-auto bg-gradient-to-r from-brand-primary to-brand-hover rounded-2xl shadow-card hover:shadow-hover transition-shadow duration-300 py-10 px-8 mt-16 text-center text-white"
         >
           <p className="text-lg font-medium mb-4">
             Не знаешь, что подойдёт тебе? Пройди мини-тест уровня и получи консультацию.
           </p>
           <Link href="/contact">
-            <button className="bg-white text-[#F97362] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition hover:scale-[1.05] transition-transform duration-300 ease-out pulse-cta">
+            <button className="bg-white text-brand-primary font-semibold px-8 py-3 rounded-xl hover:bg-brand-bg hover:text-brand-hover transition-all duration-300 shadow-soft hover:shadow-hover">
               Пройти тест
             </button>
           </Link>

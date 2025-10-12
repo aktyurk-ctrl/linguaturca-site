@@ -2,30 +2,32 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <footer className="mt-20 border-t-4 border-brand-coral bg-brand-blue">
+    <footer className="mt-20 border-t-4 border-brand-primary bg-brand-hover">
       <div className="container py-12 grid md:grid-cols-4 gap-10 text-sm text-white/90">
         <div>
           <div className="font-manrope font-bold text-xl text-white">LinguaTurca</div>
           <p className="mt-2">Онлайн-школа турецкого языка</p>
         </div>
         <div>
-          <div className="font-semibold">Контакты</div>
+          <div className="font-semibold text-white">Контакты</div>
           <ul className="mt-2 space-y-1">
             <li>Email: hello@example.com</li>
             <li>Тел: +90 000 000 00 00</li>
           </ul>
         </div>
         <div>
-          <div className="font-semibold">Навигация</div>
+          <div className="font-semibold text-white">Навигация</div>
           <ul className="mt-2 space-y-1">
-            <li><Link href="/privacy" className="hover:text-brand-coral">Политика конфиденциальности</Link></li>
-            <li><Link href="/terms" className="hover:text-brand-coral">Пользовательское соглашение</Link></li>
+            <li><Link href="/privacy" className="hover:text-brand-primary transition-colors">Политика конфиденциальности</Link></li>
+            <li><Link href="/terms" className="hover:text-brand-primary transition-colors">Пользовательское соглашение</Link></li>
           </ul>
         </div>
         <div>
-          <div className="font-semibold">Мы в соцсетях</div>
+          <div className="font-semibold text-white">Мы в соцсетях</div>
           <div className="mt-2 flex gap-3">
-            <span>VK</span><span>Telegram</span><span>Instagram</span>
+            <span className="hover:text-brand-primary transition-colors cursor-pointer">VK</span>
+            <span className="hover:text-brand-primary transition-colors cursor-pointer">Telegram</span>
+            <span className="hover:text-brand-primary transition-colors cursor-pointer">Instagram</span>
           </div>
         </div>
       </div>

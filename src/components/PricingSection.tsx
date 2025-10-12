@@ -6,7 +6,7 @@ export default function PricingSection() {
   const tariffs = [
     {
       title: "Тариф Базовый",
-      color: "bg-white",
+      isHighlighted: false,
       features: [
         "занятия в группе, материалы",
         "обратная связь от преподавателя",
@@ -17,20 +17,20 @@ export default function PricingSection() {
     },
     {
       title: "Тариф Комфорт",
-      color: "bg-[#FFF2F5]",
+      isHighlighted: true,
       features: [
         "занятия в группе, материалы",
         "обратная связь от преподавателя",
         "лекция о турецком менталитете или истории Турции на выбор",
         "«Турецкая гостиная» — групповой созвон с Дарьей, чат поддержки и коммьюнити",
       ],
-      bonus: "🎁 Рабочая тетрадь с упражнениями + памятка «Такие похожие слова»",
+      bonus: "Рабочая тетрадь с упражнениями + памятка «Такие похожие слова»",
       price: "8600 руб",
       oldPrice: "9200 руб",
     },
     {
       title: "Тариф Бизнес",
-      color: "bg-[#E5F0FA]",
+      isHighlighted: false,
       features: [
         "занятия в группе, материалы",
         "обратная связь от преподавателя",
@@ -38,7 +38,7 @@ export default function PricingSection() {
         "«Турецкая гостиная» — групповой созвон с Дарьей, чат поддержки и коммьюнити",
         "дополнительный урок с преподавателем каждую неделю (30 мин индивидуально)",
       ],
-      bonus: "🎁 Курс по произношению в подарок",
+      bonus: "Курс по произношению в подарок",
       price: "13000 руб",
       oldPrice: "15 200 руб",
     },
@@ -52,13 +52,13 @@ export default function PricingSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl md:text-4xl font-extrabold text-brand-violet mb-2">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-brand-text mb-2">
           Стоимость обучения в мини-группе
         </h2>
-        <div className="h-1 w-32 bg-brand-yellow mx-auto mb-12 rounded-full"></div>
+        <div className="h-1 w-32 bg-brand-secondary mx-auto mb-12 rounded-full"></div>
       </motion.div>
 
-      <div className="flex flex-col md:flex-row justify-center gap-6 px-6 md:px-12 max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 px-6 md:px-12 max-w-6xl mx-auto">
         {tariffs.map((tariff, i) => (
           <motion.div
             key={i}
@@ -66,26 +66,43 @@ export default function PricingSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
             viewport={{ once: true }}
-            whileHover={{ y: -8 }}
-            className={`card flex-1 ${tariff.color} border border-brand-gray`}
+            whileHover={{ y: -6, boxShadow: tariff.isHighlighted ? "0 20px 50px rgba(57, 199, 229, 0.25)" : "0 15px 35px rgba(0, 0, 0, 0.12)" }}
+            className={`bg-brand-card rounded-2xl p-6 flex flex-col flex-1 transition-all duration-300 ${
+              tariff.isHighlighted 
+                ? "border-2 border-brand-primary shadow-xl" 
+                : "border border-gray-200 shadow-md"
+            }`}
           >
-            <h3 className="text-lg font-bold mb-4 uppercase text-brand-violet">{tariff.title}</h3>
-            <ul className="text-left list-disc list-inside text-gray-700 space-y-2 mb-4">
+            <h3 className="text-xl font-bold mb-6 uppercase text-brand-primary tracking-wide">{tariff.title}</h3>
+            
+            <ul className="text-left space-y-3 mb-6 flex-grow">
               {tariff.features.map((f, j) => (
-                <li key={j} className="text-sm leading-relaxed">{f}</li>
+                <li key={j} className="text-base leading-relaxed text-brand-text flex items-start">
+                  <span className="text-brand-primary mr-2 flex-shrink-0">•</span>
+                  <span>{f}</span>
+                </li>
               ))}
             </ul>
+            
             {tariff.bonus && (
-              <div className="bg-brand-violet/5 p-3 rounded-lg mb-4">
-                <p className="text-brand-violet font-medium text-sm">{tariff.bonus}</p>
+              <div className="bg-brand-secondary/20 border border-brand-secondary/40 p-4 rounded-xl mb-6">
+                <p className="text-brand-text font-medium text-sm flex items-start gap-2">
+                  <span className="text-lg flex-shrink-0">🎁</span>
+                  <span>{tariff.bonus}</span>
+                </p>
               </div>
             )}
-            <div className="mb-4">
+            
+            <div className="mb-6">
               {tariff.oldPrice && (
-                <p className="text-gray-400 line-through text-sm mb-1">{tariff.oldPrice}</p>
+                <p className="text-gray-400 line-through text-base mb-1">{tariff.oldPrice}</p>
               )}
-              <p className="text-2xl font-bold text-brand-violet">{tariff.price}</p>
+              <p className="text-2xl font-bold text-brand-text">{tariff.price}</p>
             </div>
+            
+            <button className="w-full bg-brand-primary text-white font-semibold py-3.5 px-6 rounded-xl hover:bg-brand-heading transition-all duration-300 shadow-soft hover:shadow-hover mt-auto">
+              Записаться
+            </button>
           </motion.div>
         ))}
       </div>

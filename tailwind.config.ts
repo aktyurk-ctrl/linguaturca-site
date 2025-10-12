@@ -12,21 +12,27 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          // Основная палитра LinguaTurca
-          violet: '#3E2B8F',   // основной фиолетово-синий
-          pink: '#FF6F91',     // акцент — розово-коралловый
-          yellow: '#FFD84D',   // дополнительный — жёлтый солнечный
-          mint: '#C5E4D6',     // вторичный — мятный
-          bg: '#FFF9F7',       // фон сайта
-          text: '#1C1C1C',     // основной текст
-          white: '#FFFFFF',    // белый для карточек
-          gray: '#EDEDED',     // нейтрально-серый для границ
-          // Старые цвета для совместимости
-          blue: '#1E5D8C',
-          coral: '#E46B4B',
-          beige: '#FFF9F2',
+          // Новая фирменная палитра (без красного)
+          primary: '#39C7E5',  // голубой-бирюзовый для CTA
+          accent: '#FFB69E',   // персиково-коралловый
+          secondary: '#FFE9B3',// песочный для акцентов
+          text: '#2B2B2B',     // графитовый текст
+          hover: '#2183A2',    // глубокий лазурный для hover
+          bg: '#FAFAF8',       // молочный белый фон
+          card: '#FFFFFF',     // белый для карточек
+          // Обратная совместимость
+          heading: '#39C7E5',
+          violet: '#39C7E5',
+          pink: '#FFB69E',
+          yellow: '#FFE9B3',
+          blue: '#39C7E5',
+          coral: '#FFB69E',
+          mint: '#C5E4D6',
+          beige: '#FAFAF8',
           soft: '#E4EDF2',
           green: '#89B78C',
+          white: '#FFFFFF',
+          gray: '#E5E5E5',
         },
       },
       container: {
@@ -46,9 +52,10 @@ const config: Config = {
         "3xl": "1.75rem",
       },
       boxShadow: {
-        soft: '0 8px 20px rgba(62, 43, 143, 0.08)',
-        glow: '0 0 25px rgba(255, 111, 145, 0.25)',
-        card: "0 4px 24px rgba(0,0,0,0.06)",
+        soft: '0 6px 16px rgba(0, 0, 0, 0.05)',
+        glow: '0 0 20px rgba(57, 199, 229, 0.4)',
+        card: '0 6px 16px rgba(0, 0, 0, 0.05)',
+        hover: '0 10px 24px rgba(0, 0, 0, 0.08)',
       },
     },
   },

@@ -13,10 +13,10 @@ export default function ScheduleSection() {
           viewport={{ once: true }}
           className="md:w-1/2 space-y-4"
         >
-          <h2 className="text-3xl font-extrabold text-brand-violet">
-            Расписание ближайших <span className="text-brand-pink">групп</span>
+          <h2 className="text-3xl font-extrabold text-brand-heading">
+            Расписание ближайших <span className="text-brand-primary">групп</span>
           </h2>
-          <div className="bg-brand-pink/10 inline-block px-4 py-1 rounded-full text-sm font-semibold text-brand-violet mt-2">
+          <div className="bg-brand-primary/10 inline-block px-4 py-1 rounded-full text-sm font-semibold text-brand-heading mt-2">
             Курс с нуля — для самых новичков
           </div>
           <p className="mt-6 text-gray-700">
