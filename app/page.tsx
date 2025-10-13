@@ -1,7 +1,9 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import { AboutSection } from '@/components/AboutSection'
+import WhyUsSection from '@/components/WhyUsSection'
 import HowWeTeachSection from '@/components/HowWeTeachSection'
 import CourseMiniGroupSection from '@/components/CourseMiniGroupSection'
 import PricingSection from '@/components/PricingSection'
@@ -14,30 +16,62 @@ const sectionClass = "container py-20 md:py-28 max-w-6xl"
 export default function HomePage() {
   return (
     <div>
-      <section className="relative py-0 bg-gradient-to-br from-brand-bg via-brand-secondary/30 to-brand-primary/20">
-        <div className="absolute inset-0">
-          <Image src="/images/hero.jpg" alt="Изучайте турецкий онлайн" fill priority className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-hover/60 via-black/40 to-brand-primary/30" />
+      <section
+        id="hero"
+        className="relative flex flex-col items-center justify-center text-center min-h-screen py-32 px-6 overflow-hidden"
+      >
+        {/* Фоновое изображение */}
+        <div className="absolute inset-0 -z-10">
+          <img
+            src="/images/istanbul.jpg"
+            alt="Стамбул — фоновое изображение"
+            className="w-full h-full object-cover object-center opacity-70"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#39C7E5]/20 via-white/70 to-white backdrop-blur-[1px]" />
         </div>
-        <div className="container max-w-6xl h-[90vh] flex flex-col justify-center items-start px-8 md:px-16 relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
-            Турецкий с магистрами турецкого языка
-          </h1>
-          <p className="mt-4 text-lg md:text-xl text-white/95 max-w-2xl drop-shadow-md">
-            Учите турецкий эффективно и с удовольствием — с преподавателями, окончившими турецкие университеты.
-          </p>
-          <div className="mt-8 flex flex-col md:flex-row gap-4 w-full max-w-md md:max-w-none">
-            <Link href="/contact" className="btn-primary w-full md:w-auto text-center pulse-cta">
-              Бесплатная консультация
-            </Link>
-            <Link href="/free-lesson" className="btn-outline bg-white/95 border-white text-brand-primary hover:bg-white hover:text-brand-hover w-full md:w-auto text-center">
-              Пройти мини-урок
-            </Link>
-          </div>
-        </div>
+
+        {/* Контент */}
+        <motion.h1 
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-6xl font-extrabold text-[#1F1F1F] drop-shadow-[0_2px_6px_rgba(255,255,255,0.8)] mb-6"
+        >
+          Турецкий с магистрами турецкого языка
+        </motion.h1>
+        <motion.p 
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-lg md:text-xl text-gray-800 max-w-2xl mb-10 leading-relaxed"
+        >
+          Учите турецкий эффективно и с удовольствием — с преподавателями, окончившими турецкие университеты.
+        </motion.p>
+
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <a
+            href="/contact"
+            className="bg-[#39C7E5] text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl hover:bg-[#1D8BA3] transition-all duration-200"
+          >
+            Бесплатная консультация
+          </a>
+          <a
+            href="#courses"
+            className="border-2 border-[#39C7E5] text-[#39C7E5] font-semibold py-3 px-8 rounded-full hover:bg-[#39C7E5] hover:text-white transition-all duration-200"
+          >
+            Пройти мини-урок
+          </a>
+        </motion.div>
       </section>
 
       <AboutSection />
+
+      <WhyUsSection />
 
       <HowWeTeachSection />
 
@@ -58,7 +92,7 @@ export default function HomePage() {
         <ReviewsSection />
       </div>
 
-      <section id="contacts" className={`${sectionClass} bg-brand-bg`}>
+      <section id="contact" className={`${sectionClass} bg-brand-bg`}>
         <div className="card">
           <div className="md:flex items-center justify-between gap-6">
             <div>
@@ -74,5 +108,6 @@ export default function HomePage() {
     </div>
   )
 }
+
 
 

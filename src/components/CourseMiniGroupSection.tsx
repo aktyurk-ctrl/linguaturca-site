@@ -16,12 +16,12 @@ export default function CourseMiniGroupSection() {
           viewport={{ once: true }}
           className="flex-1"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-heading mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-text mb-4">
             Что такое курс в мини-группе?
           </h2>
           <p className="text-lg italic mb-6 text-gray-600">5 недель, 10 живых онлайн-уроков</p>
           
-          <div className="bg-brand-primary/10 p-6 rounded-2xl shadow-soft border border-brand-primary/30">
+          <div className="bg-brand-secondary p-6 rounded-2xl shadow-soft">
             <ul className="space-y-2 text-gray-700 leading-relaxed">
               <li>– 10 занятий в мини-группе в Zoom</li>
               <li>– записи уроков</li>

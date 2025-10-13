@@ -18,15 +18,15 @@ h2 {
 
 /* ✨ Кнопки */
 .btn-primary {
-  @apply bg-brand-primary text-white font-semibold py-3.5 px-8 rounded-xl shadow-soft transition-all duration-300 hover:bg-gradient-to-r hover:from-brand-primary hover:to-brand-hover hover:shadow-glow active:scale-[0.98];
+  @apply bg-brand-primary text-white font-semibold py-3 px-5 rounded-full shadow-sm hover:bg-brand-hover hover:shadow-md transition-all duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2;
 }
 
 .btn-outline {
-  @apply bg-transparent border-2 border-brand-primary text-brand-primary font-semibold py-3.5 px-8 rounded-xl transition-all duration-300 hover:bg-brand-primary hover:text-white hover:shadow-soft active:scale-[0.98];
+  @apply bg-transparent border-2 border-brand-primary text-brand-primary font-semibold py-3 px-5 rounded-full transition-all duration-200 hover:bg-brand-primary hover:text-white hover:shadow-sm active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2;
 }
 
 .btn-secondary {
-  @apply bg-brand-accent text-brand-text font-semibold py-3.5 px-8 rounded-xl shadow-soft transition-all duration-300 hover:bg-brand-accent/80 hover:shadow-hover active:scale-[0.98];
+  @apply bg-brand-accent text-white font-semibold py-3 px-5 rounded-full shadow-sm transition-all duration-200 hover:bg-[#F39C7F] hover:shadow-md active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2;
 }
 
 .btn-gradient {

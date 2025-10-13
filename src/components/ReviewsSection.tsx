@@ -47,12 +47,12 @@ export default function ReviewsSection() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
             viewport={{ once: true }}
-            whileHover={{ y: -4 }}
-            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center"
+            whileHover={{ y: -5 }}
+            className="bg-white rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 p-6 flex flex-col"
           >
             {/* Аватар и имя */}
-            <div className="flex flex-col items-center mb-4">
-              <div className="relative w-16 h-16 rounded-full border-2 border-[#F9A8D4] overflow-hidden mb-3">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="relative w-14 h-14 rounded-full border-2 border-brand-primary overflow-hidden flex-shrink-0">
                 <Image
                   src={r.avatar}
                   alt={r.name}
@@ -60,12 +60,12 @@ export default function ReviewsSection() {
                   className="object-cover"
                 />
               </div>
-              <p className="font-bold text-brand-heading text-base">{r.name}</p>
+              <p className="font-bold text-brand-text text-base">{r.name}</p>
             </div>
 
             {/* Цитата и текст отзыва */}
-            <div className="text-center mb-4">
-              <p className="text-brand-heading font-semibold mb-2 text-base">{r.quote}</p>
+            <div className="mb-4">
+              <p className="text-brand-primary font-semibold mb-2 text-base">{r.quote}</p>
               <p className="text-brand-text text-sm leading-relaxed">{r.text}</p>
             </div>
 

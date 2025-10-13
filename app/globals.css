@@ -1,3 +1,8 @@
+/* === БАЗОВЫЕ ДИРЕКТИВЫ TAILWIND === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import '../src/styles/ui-kit.css';
 
 :root {
@@ -8,27 +13,80 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  transition: all 0.3s ease;
-}
-
 body {
-  @apply bg-brand-beige text-brand-gray antialiased leading-relaxed;
+  @apply bg-brand-bg text-brand-text antialiased leading-relaxed;
 }
 
-.card {
-  @apply rounded-3xl shadow-card bg-white border border-gray-100;
+/* === УМЕНЬШАЕМ ОТСТУПЫ МЕЖДУ СЕКЦИЯМИ === */
+@layer base {
+  section {
+    @apply py-16 md:py-20 relative overflow-hidden;
+  }
+
+  section + section {
+    @apply mt-0 md:mt-2;
+  }
+
+  h1, h2, h3, h4 {
+    @apply mb-4;
+  }
+
+  p {
+    @apply mb-3;
+  }
 }
 
-a { @apply underline-offset-2 text-brand-blue hover:text-brand-coral transition-colors; }
+/* === ВИЗУАЛЬНЫЕ ПЕРЕХОДЫ МЕЖДУ СЕКЦИЯМИ === */
+section::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,1));
+  pointer-events: none;
+}
+
+/* Разделитель секций */
+.section-divider {
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0,0.04), rgba(255,255,255,0));
+  height: 40px;
+  width: 100%;
+  opacity: 0.3;
+}
+
+/* === ПРИМЕНЕНИЕ ДЛЯ ОТДЕЛЬНЫХ СЕКЦИЙ === */
+.hero-section {
+  @apply pt-24 pb-16 md:pt-32 md:pb-20;
+}
+
+.about-section,
+.courses-section,
+.reviews-section,
+.contact-section {
+  @apply py-14 md:py-18;
+}
+
+/* Легкая тень между блоками */
+section {
+  box-shadow: 0 0 20px rgba(0,0,0,0.02);
+}
+
+/* Добавляем мягкий фон секциям для ритма */
+section:nth-child(even) {
+  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+}
 
 /* Accessibility focus */
-:focus-visible { @apply outline-none ring-2 ring-blue-500 ring-offset-2; }
+:focus-visible { 
+  @apply outline-none ring-2 ring-brand-primary ring-offset-2; 
+}
 
 /* Pulse animation for CTA buttons */
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 0 rgba(249,115,98,0); }
-  50% { box-shadow: 0 0 15px rgba(249,115,98,0.3); }
+  0%, 100% { box-shadow: 0 0 0 rgba(57, 199, 229, 0); }
+  50% { box-shadow: 0 0 15px rgba(57, 199, 229, 0.3); }
 }
 
 .pulse-cta { 

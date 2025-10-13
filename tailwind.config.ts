@@ -12,13 +12,13 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          // Новая фирменная палитра (без красного)
-          primary: '#39C7E5',  // голубой-бирюзовый для CTA
-          accent: '#FFB69E',   // персиково-коралловый
-          secondary: '#FFE9B3',// песочный для акцентов
-          text: '#2B2B2B',     // графитовый текст
-          hover: '#2183A2',    // глубокий лазурный для hover
-          bg: '#FAFAF8',       // молочный белый фон
+          // Финальная палитра в стиле логотипа чайки
+          primary: '#39C7E5',  // бирюзовый для CTA
+          accent: '#FFB8A5',   // персиковый
+          secondary: '#A1E4F2',// светло-голубой
+          text: '#1F1F1F',     // тёмный текст
+          hover: '#1D8BA3',    // насыщенный голубой для hover
+          bg: '#FAFAFA',       // светлый фон
           card: '#FFFFFF',     // белый для карточек
           // Обратная совместимость
           heading: '#39C7E5',
@@ -52,10 +52,13 @@ const config: Config = {
         "3xl": "1.75rem",
       },
       boxShadow: {
-        soft: '0 6px 16px rgba(0, 0, 0, 0.05)',
-        glow: '0 0 20px rgba(57, 199, 229, 0.4)',
-        card: '0 6px 16px rgba(0, 0, 0, 0.05)',
-        hover: '0 10px 24px rgba(0, 0, 0, 0.08)',
+        soft: '0 2px 8px rgba(0, 0, 0, 0.05)',
+        glow: '0 4px 12px rgba(57, 199, 229, 0.3)',
+        card: '0 4px 16px rgba(0, 0, 0, 0.05)',
+        hover: '0 8px 20px rgba(0, 0, 0, 0.08)',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
     },
   },

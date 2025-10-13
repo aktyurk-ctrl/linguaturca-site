@@ -82,7 +82,7 @@ export default function IndividualPricing() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
               viewport={{ once: true }}
-              whileHover={{ y: -6, boxShadow: plan.isHighlighted ? "0 20px 50px rgba(232, 93, 117, 0.25)" : "0 15px 35px rgba(0, 0, 0, 0.12)" }}
+              whileHover={{ y: -5, boxShadow: plan.isHighlighted ? "0 12px 24px rgba(57, 199, 229, 0.2)" : "0 8px 20px rgba(0, 0, 0, 0.08)" }}
               className={`bg-brand-card rounded-2xl p-6 flex flex-col flex-1 transition-all duration-300 ${
                 plan.isHighlighted 
                   ? "border-2 border-brand-primary shadow-xl" 
@@ -94,7 +94,7 @@ export default function IndividualPricing() {
               <div className="mb-6">
                 <p className="text-2xl font-bold text-brand-heading">{plan.price}</p>
               </div>
-              <button className="w-full bg-brand-primary text-white font-semibold py-3.5 px-6 rounded-xl hover:bg-brand-heading transition-all duration-300 shadow-soft hover:shadow-hover mt-auto">
+              <button className="w-full bg-brand-primary text-white font-semibold py-3.5 px-6 rounded-full hover:bg-brand-hover hover:shadow-md active:scale-95 transition-all duration-200 shadow-sm mt-auto focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2">
                 {plan.button}
               </button>
             </motion.div>
