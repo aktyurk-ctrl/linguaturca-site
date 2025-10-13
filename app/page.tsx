@@ -68,12 +68,16 @@ export default function HomePage() {
       <HowWeTeachSection />
 
       <div id="courses">
-        <CourseMiniGroupSection />
+        <div id="mini-group">
+          <CourseMiniGroupSection />
+        </div>
       </div>
 
       <div id="pricing">
         <PricingSection />
-        <IndividualPricing />
+        <div id="individual">
+          <IndividualPricing />
+        </div>
       </div>
 
       <div id="teachers">
