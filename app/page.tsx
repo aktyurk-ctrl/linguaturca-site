@@ -35,7 +35,7 @@ export default function HomePage() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
         >
-          Учи турецкий эффективно и прямо из дома
+          Учи турецкий эффективно и прямо из дома с командой профессионалов
         </motion.p>
 
         <motion.div 
