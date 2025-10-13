@@ -14,17 +14,17 @@ html {
 }
 
 body {
-  @apply bg-brand-bg text-brand-text antialiased leading-relaxed;
+  @apply bg-[#f7f8f8] text-brand-text antialiased leading-relaxed;
 }
 
 /* === УМЕНЬШАЕМ ОТСТУПЫ МЕЖДУ СЕКЦИЯМИ === */
 @layer base {
   section {
-    @apply py-16 md:py-20 relative overflow-hidden;
+    @apply py-16 relative overflow-hidden bg-transparent;
   }
 
   section + section {
-    @apply mt-0 md:mt-2;
+    @apply mt-0;
   }
 
   h1, h2, h3, h4 {
@@ -33,6 +33,12 @@ body {
 
   p {
     @apply mb-3;
+  }
+
+  @media (min-width: 768px) {
+    section {
+      @apply py-20;
+    }
   }
 }
 
@@ -57,15 +63,30 @@ section::after {
 }
 
 /* === ПРИМЕНЕНИЕ ДЛЯ ОТДЕЛЬНЫХ СЕКЦИЙ === */
-.hero-section {
-  @apply pt-24 pb-16 md:pt-32 md:pb-20;
-}
+@layer base {
+  .hero-section {
+    @apply pt-24 pb-16;
+  }
 
-.about-section,
-.courses-section,
-.reviews-section,
-.contact-section {
-  @apply py-14 md:py-18;
+  .about-section,
+  .courses-section,
+  .reviews-section,
+  .contact-section {
+    @apply py-14;
+  }
+
+  @media (min-width: 768px) {
+    .hero-section {
+      @apply pt-32 pb-20;
+    }
+
+    .about-section,
+    .courses-section,
+    .reviews-section,
+    .contact-section {
+      @apply py-20;
+    }
+  }
 }
 
 /* Легкая тень между блоками */
@@ -73,10 +94,8 @@ section {
   box-shadow: 0 0 20px rgba(0,0,0,0.02);
 }
 
-/* Добавляем мягкий фон секциям для ритма */
-section:nth-child(even) {
-  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
-}
+/* Убираем чередующиеся фоны - теперь единый серый фон */
+/* section:nth-child(even) закомментирован для единообразия */
 
 /* Accessibility focus */
 :focus-visible { 

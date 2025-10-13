@@ -7,7 +7,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="relative flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-20 py-20 bg-white"
+      className="relative flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-20 py-20 bg-transparent"
     >
       {/* Фото Дарьи */}
       <motion.div 

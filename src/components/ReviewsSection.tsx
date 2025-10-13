@@ -48,7 +48,7 @@ export default function ReviewsSection() {
             transition={{ duration: 0.6, delay: i * 0.1 }}
             viewport={{ once: true }}
             whileHover={{ y: -5 }}
-            className="bg-white rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 p-6 flex flex-col"
+            className="bg-brand-card rounded-2xl shadow-card hover:shadow-hover transition-all duration-300 p-6 flex flex-col"
           >
             {/* Аватар и имя */}
             <div className="flex items-center gap-3 mb-4">

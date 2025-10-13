@@ -27,7 +27,7 @@ export default function HomePage() {
             alt="Стамбул — фоновое изображение"
             className="w-full h-full object-cover object-center opacity-70"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#39C7E5]/20 via-white/70 to-white backdrop-blur-[1px]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#39C7E5]/20 via-white/70 to-[#f7f8f8] backdrop-blur-[1px]" />
         </div>
 
         {/* Контент */}
@@ -45,7 +45,7 @@ export default function HomePage() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-xl text-gray-800 max-w-2xl mb-10 leading-relaxed"
         >
-          Учите турецкий эффективно и с удовольствием — с преподавателями, окончившими турецкие университеты.
+          Учи турецкий эффективно и прямо из дома
         </motion.p>
 
         <motion.div 

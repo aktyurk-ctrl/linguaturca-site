@@ -33,7 +33,7 @@ export default function HowWeTeachSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0 }}
             whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15)" }}
-            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+            className="bg-brand-card rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
           >
             <div className="flex flex-col md:flex-row min-h-[340px]">
               <div className="md:w-1/2 h-64 md:h-auto">
@@ -66,7 +66,7 @@ export default function HowWeTeachSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15)" }}
-            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+            className="bg-brand-card rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
           >
             <div className="flex flex-col md:flex-row min-h-[340px]">
               <div className="md:w-1/2 h-64 md:h-auto">
@@ -106,7 +106,7 @@ export default function HowWeTeachSection() {
             Не знаешь, что подойдёт тебе? Пройди мини-тест уровня и получи консультацию.
           </p>
           <Link href="/contact">
-            <button className="bg-white text-brand-primary font-semibold px-8 py-3 rounded-full hover:bg-brand-primary hover:text-white transition-all duration-200 shadow-sm hover:shadow-md active:scale-95">
+            <button className="bg-brand-card text-brand-primary font-semibold px-8 py-3 rounded-full hover:bg-brand-primary hover:text-white transition-all duration-200 shadow-sm hover:shadow-md active:scale-95">
               Пройти тест
             </button>
           </Link>
