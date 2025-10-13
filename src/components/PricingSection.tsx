@@ -2,14 +2,28 @@
 
 import { motion } from "framer-motion";
 
+interface Feature {
+  text: string;
+  bold: boolean;
+}
+
+interface Tariff {
+  title: string;
+  isHighlighted: boolean;
+  features: Feature[];
+  price: string;
+  oldPrice: string | null;
+  bonus: string | null;
+}
+
 export default function PricingSection() {
-  const tariffs = [
+  const tariffs: Tariff[] = [
     {
       title: "Тариф Базовый",
       isHighlighted: false,
       features: [
-        "занятия в группе, материалы",
-        "обратная связь от преподавателя",
+        { text: "занятия в группе, материалы", bold: false },
+        { text: "обратная связь от преподавателя", bold: false },
       ],
       price: "7590 руб",
       oldPrice: null,
@@ -19,10 +33,10 @@ export default function PricingSection() {
       title: "Тариф Комфорт",
       isHighlighted: true,
       features: [
-        "занятия в группе, материалы",
-        "обратная связь от преподавателя",
-        "лекция о турецком менталитете или истории Турции на выбор",
-        "«Турецкая гостиная» — групповой созвон с Дарьей, чат поддержки и коммьюнити",
+        { text: "занятия в группе, материалы", bold: false },
+        { text: "обратная связь от преподавателя", bold: false },
+        { text: "лекция о турецком менталитете или истории Турции на выбор", bold: true },
+        { text: "«Турецкая гостиная» — групповой созвон с Дарьей, чат поддержки и коммьюнити", bold: true },
       ],
       bonus: "Рабочая тетрадь с упражнениями + памятка «Такие похожие слова»",
       price: "8600 руб",
@@ -32,11 +46,11 @@ export default function PricingSection() {
       title: "Тариф Бизнес",
       isHighlighted: false,
       features: [
-        "занятия в группе, материалы",
-        "обратная связь от преподавателя",
-        "лекция о турецком менталитете или истории Турции на выбор",
-        "«Турецкая гостиная» — групповой созвон с Дарьей, чат поддержки и коммьюнити",
-        "дополнительный урок с преподавателем каждую неделю (30 мин индивидуально)",
+        { text: "занятия в группе, материалы", bold: false },
+        { text: "обратная связь от преподавателя", bold: false },
+        { text: "лекция о турецком менталитете или истории Турции на выбор", bold: true },
+        { text: "«Турецкая гостиная» — групповой созвон с Дарьей, чат поддержки и коммьюнити", bold: true },
+        { text: "дополнительный урок с преподавателем каждую неделю (30 мин индивидуально)", bold: true },
       ],
       bonus: "Курс по произношению в подарок",
       price: "13000 руб",
@@ -55,7 +69,7 @@ export default function PricingSection() {
         <h2 className="text-3xl md:text-4xl font-extrabold text-brand-text mb-2">
           Стоимость обучения в мини-группе
         </h2>
-        <div className="h-1 w-32 bg-brand-secondary mx-auto mb-12 rounded-full"></div>
+        <div className="h-1 w-32 bg-brand-primary mx-auto mb-12 rounded-full"></div>
       </motion.div>
 
       <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 px-6 md:px-12 max-w-6xl mx-auto">
@@ -79,7 +93,9 @@ export default function PricingSection() {
               {tariff.features.map((f, j) => (
                 <li key={j} className="text-base leading-relaxed text-brand-text flex items-start">
                   <span className="text-brand-primary mr-2 flex-shrink-0">•</span>
-                  <span>{f}</span>
+                  <span className={f.bold ? "font-semibold text-[#1b1b1b]" : ""}>
+                    {f.text}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -93,36 +109,37 @@ export default function PricingSection() {
               </div>
             )}
             
-            <div className="mb-6">
+            <div className="text-center space-y-2 mb-6">
               {tariff.oldPrice && (
-                <p className="text-gray-400 line-through text-base mb-1">{tariff.oldPrice}</p>
+                <p className="text-gray-400 line-through text-sm">{tariff.oldPrice}</p>
               )}
-              <p className="text-2xl font-bold text-brand-text">{tariff.price}</p>
+              <p className="text-lg font-semibold text-gray-900">
+                Полный курс — <span className="text-brand-primary font-bold text-2xl">{tariff.price}</span>
+              </p>
+              <p className="text-sm text-gray-600">
+                (10 уроков — {Math.round(parseInt(tariff.price.replace(/\s/g, '')) / 10)} ₽ за урок)
+              </p>
             </div>
             
-            <button className="w-full bg-brand-primary text-white font-semibold py-3.5 px-6 rounded-full hover:bg-brand-hover hover:shadow-md active:scale-95 transition-all duration-200 shadow-sm mt-auto focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2">
-              Записаться
+            <button className="w-full bg-brand-primary text-white font-semibold py-3 px-6 rounded-full hover:bg-brand-hover hover:shadow-md active:scale-95 transition-all duration-200 shadow-sm mt-auto focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2">
+              Хочу занять место
             </button>
+            <p className="text-xs text-gray-500 italic mt-2 text-center">
+              Оплата возможна в 2 частях
+            </p>
           </motion.div>
         ))}
       </div>
 
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}
         viewport={{ once: true }}
-        className="mt-12"
+        className="mt-12 text-center"
       >
-        <motion.button 
-          className="btn-primary text-lg py-4 px-12"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Хочу занять место!
-        </motion.button>
-        <p className="text-sm text-gray-500 mt-3 italic">
-          *у нас возможна оплата в 2 частях
+        <p className="text-sm text-gray-600">
+          Не можете определиться? <a href="/contact" className="text-brand-primary hover:text-brand-hover font-semibold underline">Получите бесплатную консультацию</a>
         </p>
       </motion.div>
     </section>

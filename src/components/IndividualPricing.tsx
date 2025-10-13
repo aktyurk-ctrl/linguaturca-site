@@ -68,10 +68,10 @@ export default function IndividualPricing() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-heading mb-2">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-text mb-2">
             Стоимость обучения индивидуально
           </h2>
-          <div className="h-1 w-32 bg-brand-secondary mx-auto mb-12 rounded-full"></div>
+          <div className="h-1 w-32 bg-brand-primary mx-auto mb-12 rounded-full"></div>
         </motion.div>
 
         <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 px-6 md:px-12 max-w-4xl mx-auto">
@@ -89,14 +89,33 @@ export default function IndividualPricing() {
                   : "border border-gray-200 shadow-md"
               }`}
             >
-              <h3 className="text-xl font-bold mb-6 uppercase text-brand-heading tracking-wide">{plan.title}</h3>
+              <h3 className="text-xl font-bold mb-6 uppercase text-brand-primary tracking-wide">{plan.title}</h3>
               <p className="text-brand-text mb-8 text-base leading-relaxed flex-grow">{plan.description}</p>
-              <div className="mb-6">
-                <p className="text-2xl font-bold text-brand-heading">{plan.price}</p>
+              
+              <div className="text-center space-y-2 mb-6">
+                {plan.price === "Бесплатно" ? (
+                  <p className="text-2xl font-bold text-brand-primary">{plan.price}</p>
+                ) : (
+                  <>
+                    <p className="text-lg font-semibold text-gray-900">
+                      Абонемент на 5 занятий — <span className="text-brand-primary font-bold text-2xl">{plan.price}</span>
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      (1 урок — 1640 ₽)
+                    </p>
+                    <p className="text-sm text-gray-700 mt-2">
+                      Можно добавить дополнительный урок — <span className="font-semibold">1900 ₽</span>
+                    </p>
+                  </>
+                )}
               </div>
-              <button className="w-full bg-brand-primary text-white font-semibold py-3.5 px-6 rounded-full hover:bg-brand-hover hover:shadow-md active:scale-95 transition-all duration-200 shadow-sm mt-auto focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2">
+              
+              <button className="w-full bg-brand-primary text-white font-semibold py-3 px-6 rounded-full hover:bg-brand-hover hover:shadow-md active:scale-95 transition-all duration-200 shadow-sm mt-auto focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2">
                 {plan.button}
               </button>
+              <p className="text-xs text-gray-500 italic mt-2 text-center">
+                Оплата возможна в 2 частях
+              </p>
             </motion.div>
           ))}
         </div>

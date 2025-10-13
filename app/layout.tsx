@@ -13,7 +13,28 @@ export const metadata: Metadata = {
   title: 'LinguaTurca — Школа турецкого языка',
   description:
     'Уроки турецкого онлайн: мини-группы, индивидуально, бесплатный мини-урок и тест уровня.',
-}
+  icons: {
+    icon: '/favicon/favicon.ico',
+    shortcut: '/favicon/favicon.ico',
+    apple: '/favicon/apple-touch-icon.png',
+    other: [
+      {
+        rel: 'icon',
+        url: '/favicon/favicon-32x32.png',
+        sizes: '32x32',
+      },
+      {
+        rel: 'icon',
+        url: '/favicon/favicon-16x16.png',
+        sizes: '16x16',
+      },
+      {
+        rel: 'manifest',
+        url: '/favicon/site.webmanifest',
+      },
+    ],
+  },
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -54,7 +54,7 @@ export default function HowWeTeachSection() {
                   href="/contact"
                   className="inline-flex items-center justify-center min-h-[52px] px-6 py-3 bg-brand-primary text-white font-semibold rounded-full shadow-sm hover:bg-brand-hover hover:shadow-md transition-all duration-200 mt-6"
                 >
-                  Присоединиться к мини-группе
+                  Присоединиться
                 </Link>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function HowWeTeachSection() {
                   href="/contact"
                   className="inline-flex items-center justify-center min-h-[52px] px-6 py-3 bg-brand-accent text-white font-semibold rounded-full shadow-sm hover:bg-[#F39C7F] hover:shadow-md transition-all duration-200 mt-6"
                 >
-                  Начать индивидуально
+                  Начать
                 </Link>
               </div>
             </div>

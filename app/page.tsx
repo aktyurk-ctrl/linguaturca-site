@@ -18,24 +18,14 @@ export default function HomePage() {
     <div>
       <section
         id="hero"
-        className="relative flex flex-col items-center justify-center text-center min-h-screen py-32 px-6 overflow-hidden"
+        className="hero-section flex flex-col items-center justify-center text-center min-h-screen py-32 px-6 overflow-hidden"
       >
-        {/* Фоновое изображение */}
-        <div className="absolute inset-0 -z-10">
-          <img
-            src="/images/istanbul.jpg"
-            alt="Стамбул — фоновое изображение"
-            className="w-full h-full object-cover object-center opacity-70"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#39C7E5]/20 via-white/70 to-[#f7f8f8] backdrop-blur-[1px]" />
-        </div>
-
         {/* Контент */}
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-extrabold text-[#1F1F1F] drop-shadow-[0_2px_6px_rgba(255,255,255,0.8)] mb-6"
+          className="text-4xl md:text-6xl font-extrabold mb-6"
         >
           Турецкий с магистрами турецкого языка
         </motion.h1>
@@ -43,7 +33,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl text-gray-800 max-w-2xl mb-10 leading-relaxed"
+          className="text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
         >
           Учи турецкий эффективно и прямо из дома
         </motion.p>
@@ -71,7 +61,9 @@ export default function HomePage() {
 
       <AboutSection />
 
-      <WhyUsSection />
+      <div id="how-we-teach">
+        <WhyUsSection />
+      </div>
 
       <HowWeTeachSection />
 
@@ -92,7 +84,7 @@ export default function HomePage() {
         <ReviewsSection />
       </div>
 
-      <section id="contact" className={`${sectionClass} bg-brand-bg`}>
+      <section id="contacts" className={`${sectionClass}`}>
         <div className="card">
           <div className="md:flex items-center justify-between gap-6">
             <div>

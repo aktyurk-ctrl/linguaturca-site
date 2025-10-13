@@ -21,15 +21,15 @@ export function Header() {
 
         {/* Навигация */}
         <nav className="hidden md:flex gap-6 text-gray-800 font-medium">
-          <a href="#hero" className="hover:text-[#39C7E5] transition">Главная</a>
-          <a href="#courses" className="hover:text-[#39C7E5] transition">Курсы</a>
-          <a href="#teachers" className="hover:text-[#39C7E5] transition">Преподаватели</a>
-          <a href="#pricing" className="hover:text-[#39C7E5] transition">Цены</a>
-          <a href="#reviews" className="hover:text-[#39C7E5] transition">Отзывы</a>
-          <a href="#contact" className="hover:text-[#39C7E5] transition">Контакты</a>
+          <a href="#hero">Главная</a>
+          <a href="#how-we-teach">Как мы учим</a>
+          <a href="#courses">Курсы</a>
+          <a href="#teachers">Преподаватели</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
         </nav>
 
-        <a href="/contact" className="hidden md:block bg-[#39C7E5] text-white px-5 py-2 rounded-full shadow-md hover:bg-[#1D8BA3] transition">
+        <a href="/contact" className="hidden md:block header-cta">
           Записаться
         </a>
 
@@ -49,13 +49,13 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
           <nav className="px-6 py-6 flex flex-col gap-4">
-            <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 hover:text-[#39C7E5] transition font-medium py-2">Главная</a>
-            <a href="#courses" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 hover:text-[#39C7E5] transition font-medium py-2">Курсы</a>
-            <a href="#teachers" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 hover:text-[#39C7E5] transition font-medium py-2">Преподаватели</a>
-            <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 hover:text-[#39C7E5] transition font-medium py-2">Цены</a>
-            <a href="#reviews" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 hover:text-[#39C7E5] transition font-medium py-2">Отзывы</a>
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 hover:text-[#39C7E5] transition font-medium py-2">Контакты</a>
-            <a href="/contact" className="mt-4 px-6 py-3 rounded-full bg-[#39C7E5] text-white font-semibold text-center hover:bg-[#1D8BA3] transition shadow-md">
+            <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Главная</a>
+            <a href="#how-we-teach" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Как мы учим</a>
+            <a href="#courses" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Курсы</a>
+            <a href="#teachers" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Преподаватели</a>
+            <a href="#reviews" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Отзывы</a>
+            <a href="#contacts" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Контакты</a>
+            <a href="/contact" className="mt-4 header-cta text-center" onClick={() => setIsMobileMenuOpen(false)}>
               Записаться
             </a>
           </nav>
