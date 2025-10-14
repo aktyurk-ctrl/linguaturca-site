@@ -6,67 +6,71 @@ export default function ScheduleSection() {
     {
       tag: "Курс с нуля — для самых новичков",
       startDate: "1 ноября",
+      time: "19:00",
       teacher: "Дарья",
+      level: "A1",
     },
     {
       tag: "Разговорный клуб — уровень A2–B1",
       startDate: "15 ноября",
+      time: "20:00",
       teacher: "Али",
+      level: "A2-B1",
+    },
+    {
+      tag: "Интенсивный курс — для быстрого результата",
+      startDate: "20 ноября",
+      time: "18:00",
+      teacher: "Дарья",
+      level: "A1-A2",
     },
   ];
 
   return (
-    <section id="schedule" className="schedule-section py-20 bg-white">
-      <div className="container mx-auto flex flex-col md:flex-row items-stretch gap-12 px-6">
-        
-        {/* Левая колонка с карточками */}
-        <div className="flex-1 flex flex-col justify-center gap-10">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-4xl font-bold text-gray-900"
-          >
-            Расписание ближайших <span className="text-sky-500">групп</span>
-          </motion.h2>
+    <section id="schedule" className="section bg-gray-50">
+      <div className="container mx-auto px-6">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-4xl font-bold text-gray-900 text-center mb-12"
+        >
+          Расписание ближайших <span className="text-sky-500">групп</span>
+        </motion.h2>
 
-          {/* Карточки */}
+        {/* Карточки */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {groups.map((group, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.2 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition-all duration-300 h-full flex flex-col"
             >
-              <span className="inline-block bg-sky-200 text-sky-900 font-semibold px-4 py-1.5 rounded-full mb-4">
+              <span className="inline-block bg-sky-100 text-sky-800 font-semibold px-3 py-1 rounded-full mb-4 text-sm">
                 {group.tag}
               </span>
-              <p className="text-lg mb-1 text-gray-700">📅 Старт <strong>{group.startDate}</strong></p>
-              <p className="text-lg mb-4 text-gray-700">👩‍🏫 Преподаватель курса — {group.teacher}</p>
-              <button className="bg-sky-500 text-white font-semibold rounded-2xl px-6 py-3 hover:bg-sky-600 transition active:scale-95">
+              <div className="space-y-2 mb-6 flex-grow">
+                <p className="text-gray-700">📅 Старт <strong>{group.startDate}</strong></p>
+                <p className="text-gray-700">🕓 Время <strong>{group.time}</strong></p>
+                <p className="text-gray-700">🎓 Уровень <strong>{group.level}</strong></p>
+                <p className="text-gray-700">👩‍🏫 Преподаватель — <strong>{group.teacher}</strong></p>
+              </div>
+              <button className="btn-main w-full">
                 Занять место
               </button>
             </motion.div>
           ))}
         </div>
 
-        {/* Правая колонка с одним изображением */}
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="flex-1 flex items-center justify-center"
-        >
-          <img
-            src="/images/schedule.jpg"
-            alt="Istanbul view"
-            className="object-cover w-full h-full rounded-3xl shadow-lg"
-          />
-        </motion.div>
+        <div className="text-center">
+          <button className="btn-outline">
+            Смотреть все группы
+          </button>
+        </div>
       </div>
     </section>
   );

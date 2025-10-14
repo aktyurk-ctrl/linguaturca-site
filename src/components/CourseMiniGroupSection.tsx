@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function CourseMiniGroupSection() {
   return (
-    <section className="section">
+    <section className="section bg-sky-50">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-6 md:px-12">
         
         {/* Текстовая часть */}
@@ -16,12 +16,12 @@ export default function CourseMiniGroupSection() {
           viewport={{ once: true }}
           className="flex-1"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-text mb-4">
-            Что такое курс в мини-группе?
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
+            Мини-группы
           </h2>
           <p className="text-lg italic mb-6 text-gray-600">5 недель, 10 живых онлайн-уроков</p>
           
-          <div className="bg-brand-secondary p-6 rounded-2xl shadow-soft">
+          <div className="bg-white p-6 rounded-2xl shadow-md">
             <ul className="space-y-2 text-gray-700 leading-relaxed">
               <li>– 10 занятий в мини-группе в Zoom</li>
               <li>– записи уроков</li>
@@ -33,27 +33,14 @@ export default function CourseMiniGroupSection() {
             </ul>
           </div>
 
-          <motion.div 
-            className="mt-6 inline-block rounded-xl border-3 border-brand-secondary text-brand-text font-semibold px-5 py-2 text-sm shadow-md hover:scale-105 hover:bg-brand-secondary/10 transition-all duration-300"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            2–4 человека в группе
-            <motion.span
-              className="ml-2 inline-block"
-              animate={{ 
-                scale: [1, 1.2, 1],
-                rotate: [0, 10, -10, 0]
-              }}
-              transition={{ 
-                duration: 2,
-                repeat: Infinity,
-                repeatDelay: 3
-              }}
-            >
-              ❤️
-            </motion.span>
-          </motion.div>
+          <div className="mt-6">
+            <button className="btn-main">
+              Записаться в мини-группу
+            </button>
+            <p className="text-sm text-gray-600 mt-2">
+              до 6 человек в группе
+            </p>
+          </div>
         </motion.div>
 
         {/* Изображение */}
@@ -66,42 +53,12 @@ export default function CourseMiniGroupSection() {
         >
           <div className="relative">
             <Image
-              src="/tea-minigroup.png"
-              alt="Чай и разговоры о Турции"
+              src="/images/class1.jpg"
+              alt="Мини-группа изучает турецкий"
               width={500}
               height={500}
               className="rounded-2xl shadow-md object-cover hover:shadow-lg transition-shadow duration-300"
             />
-            {/* Декоративные элементы */}
-            <motion.div
-              className="absolute -top-4 -right-4 w-8 h-8 bg-brand-secondary/40 rounded-full flex items-center justify-center"
-              animate={{ 
-                y: [0, -5, 0],
-                rotate: [0, 5, -5, 0]
-              }}
-              transition={{ 
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              <span className="text-lg">🇹🇷</span>
-            </motion.div>
-            <motion.div
-              className="absolute -bottom-4 -left-4 w-6 h-6 bg-brand-heading/30 rounded-full flex items-center justify-center"
-              animate={{ 
-                y: [0, 3, 0],
-                x: [0, 2, 0]
-              }}
-              transition={{ 
-                duration: 2.5,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0.5
-              }}
-            >
-              <span className="text-sm">☕</span>
-            </motion.div>
           </div>
         </motion.div>
       </div>

@@ -41,7 +41,7 @@ export default function PricingSection() {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-gray-50">
+    <section id="pricing" className="section bg-white">
       <div className="container mx-auto text-center px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -62,10 +62,16 @@ export default function PricingSection() {
               transition={{ duration: 0.5, delay: i * 0.15 }}
               viewport={{ once: true }}
               whileHover={{ y: -4, boxShadow: "0 12px 24px rgba(0, 0, 0, 0.1)" }}
-              className={`flex flex-col justify-between bg-white rounded-3xl shadow-md hover:shadow-xl transition-all p-8 min-h-[500px] ${
-                tariff.isHighlighted ? "border border-sky-200" : ""
+              className={`relative flex flex-col justify-between bg-gray-50 rounded-2xl shadow-md hover:shadow-lg transition-all p-8 min-h-[500px] ${
+                tariff.isHighlighted ? "border-2 border-sky-500" : ""
               }`}
             >
+              {tariff.isHighlighted && (
+                <span className="absolute top-0 right-6 bg-sky-500 text-white text-xs px-3 py-1 rounded-b-md shadow">
+                  Популярный
+                </span>
+              )}
+              
               <div>
                 <h3 className="text-xl font-bold text-sky-600 mb-6 uppercase">
                   {tariff.title}
@@ -98,7 +104,7 @@ export default function PricingSection() {
                 <p className="text-lg font-semibold text-gray-900">
                   Полный курс — <span className="text-sky-600 text-2xl font-bold">{tariff.price}</span>
                 </p>
-                <button className="mt-6 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full px-6 py-3 transition active:scale-95">
+                <button className="mt-6 btn-main w-full">
                   Записаться
                 </button>
               </div>

@@ -36,10 +36,10 @@ export default function WhyUsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-text mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Как мы учим турецкому
           </h2>
-          <div className="h-1 w-24 bg-brand-primary mx-auto rounded-full"></div>
+          <div className="h-1 w-24 bg-sky-500 mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -50,11 +50,11 @@ export default function WhyUsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
               viewport={{ once: true }}
-              whileHover={{ y: -5 }}
-              className="bg-[#FFF3D3] rounded-2xl p-8 shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-hover transition-all duration-300 text-center"
+              whileHover={{ y: -5, scale: 1.02 }}
+              className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center"
             >
               <div className="text-5xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold text-brand-text mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
               <p className="text-gray-600 leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}

@@ -22,11 +22,12 @@ export function Header() {
         {/* Навигация */}
         <nav className="hidden md:flex gap-6 text-gray-800 font-medium">
           <a href="#hero">Главная</a>
+          <a href="#about">О школе</a>
           <a href="#how-we-teach">Как мы учим</a>
           <a href="#courses">Курсы</a>
-          <a href="#teachers">Преподаватели</a>
+          <a href="#pricing">Тарифы</a>
+          <a href="#schedule">Расписание</a>
           <a href="#reviews">Отзывы</a>
-          <a href="#contacts">Контакты</a>
         </nav>
 
         <a href="/contact" className="hidden md:block header-cta">
@@ -39,9 +40,9 @@ export function Header() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Меню"
         >
-          <span className={`block h-0.5 w-6 bg-[#39C7E5] transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-          <span className={`block h-0.5 w-6 bg-[#39C7E5] transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-          <span className={`block h-0.5 w-6 bg-[#39C7E5] transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+          <span className={`block h-0.5 w-6 bg-sky-500 transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+          <span className={`block h-0.5 w-6 bg-sky-500 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
+          <span className={`block h-0.5 w-6 bg-sky-500 transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
         </button>
       </div>
 
@@ -50,11 +51,12 @@ export function Header() {
         <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
           <nav className="px-6 py-6 flex flex-col gap-4">
             <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Главная</a>
+            <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">О школе</a>
             <a href="#how-we-teach" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Как мы учим</a>
             <a href="#courses" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Курсы</a>
-            <a href="#teachers" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Преподаватели</a>
+            <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Тарифы</a>
+            <a href="#schedule" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Расписание</a>
             <a href="#reviews" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Отзывы</a>
-            <a href="#contacts" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Контакты</a>
             <a href="/contact" className="mt-4 header-cta text-center" onClick={() => setIsMobileMenuOpen(false)}>
               Записаться
             </a>
