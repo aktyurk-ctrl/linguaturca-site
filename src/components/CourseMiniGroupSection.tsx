@@ -57,7 +57,7 @@ export default function CourseMiniGroupSection() {
               alt="Мини-группа изучает турецкий"
               width={500}
               height={500}
-              className="rounded-2xl shadow-md object-cover hover:shadow-lg transition-shadow duration-300"
+              className="rounded-2xl shadow-md object-cover hover:shadow-lg transition-shadow duration-300 aspect-square"
             />
           </div>
         </motion.div>

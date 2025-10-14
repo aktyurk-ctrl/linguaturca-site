@@ -4,25 +4,22 @@ import { motion } from "framer-motion";
 export default function ScheduleSection() {
   const groups = [
     {
-      tag: "Курс с нуля — для самых новичков",
+      title: "Курс с нуля — для самых новичков",
       startDate: "1 ноября",
       time: "19:00",
       teacher: "Дарья",
       level: "A1",
+      image: "/images/schedule1.jpg",
+      alt: "Турецкий курс для новичков",
     },
     {
-      tag: "Разговорный клуб — уровень A2–B1",
+      title: "Разговорный клуб — уровень A2–B1",
       startDate: "15 ноября",
       time: "20:00",
       teacher: "Али",
       level: "A2-B1",
-    },
-    {
-      tag: "Интенсивный курс — для быстрого результата",
-      startDate: "20 ноября",
-      time: "18:00",
-      teacher: "Дарья",
-      level: "A1-A2",
+      image: "/images/schedule2.jpg",
+      alt: "Разговорный клуб по турецкому",
     },
   ];
 
@@ -40,33 +37,48 @@ export default function ScheduleSection() {
         </motion.h2>
 
         {/* Карточки */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="space-y-8 mb-12">
           {groups.map((group, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              transition={{ duration: 0.6, delay: i * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition-all duration-300 h-full flex flex-col"
+              className="flex flex-col md:flex-row bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
             >
-              <span className="inline-block bg-sky-100 text-sky-800 font-semibold px-3 py-1 rounded-full mb-4 text-sm">
-                {group.tag}
-              </span>
-              <div className="space-y-2 mb-6 flex-grow">
-                <p className="text-gray-700">📅 Старт <strong>{group.startDate}</strong></p>
-                <p className="text-gray-700">🕓 Время <strong>{group.time}</strong></p>
-                <p className="text-gray-700">🎓 Уровень <strong>{group.level}</strong></p>
-                <p className="text-gray-700">👩‍🏫 Преподаватель — <strong>{group.teacher}</strong></p>
+              {/* Левая часть - текст */}
+              <div className="p-6 md:w-3/5 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    {group.title}
+                  </h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>📅 Старт: <strong>{group.startDate}</strong></li>
+                    <li>🕓 Время: <strong>{group.time}</strong></li>
+                    <li>🎓 Уровень: <strong>{group.level}</strong></li>
+                    <li>👩‍🏫 Преподаватель: <strong>{group.teacher}</strong></li>
+                  </ul>
+                </div>
+                <button className="btn-main mt-6 w-full md:w-auto self-start">
+                  Занять место
+                </button>
               </div>
-              <button className="btn-main w-full">
-                Занять место
-              </button>
+              
+              {/* Правая часть - изображение */}
+              <div className="md:w-2/5 relative">
+                <img 
+                  src={group.image}
+                  alt={group.alt}
+                  className="object-cover h-full w-full md:rounded-r-2xl rounded-b-2xl md:rounded-b-none"
+                />
+              </div>
             </motion.div>
           ))}
         </div>
 
-        <div className="text-center">
+        {/* CTA кнопка */}
+        <div className="text-center mt-10">
           <button className="btn-outline">
             Смотреть все группы
           </button>

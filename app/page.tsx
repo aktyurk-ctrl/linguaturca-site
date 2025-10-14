@@ -8,9 +8,10 @@ import HowWeTeachSection from '@/components/HowWeTeachSection'
 import CourseMiniGroupSection from '@/components/CourseMiniGroupSection'
 import PricingSection from '@/components/PricingSection'
 import IndividualPricing from '@/components/IndividualPricing'
+import FreeConsultationSection from '@/components/FreeConsultationSection'
 import ScheduleSection from '@/components/ScheduleSection'
 import ReviewsSection from '@/components/ReviewsSection'
-import { Footer } from '@/components/Footer'
+import FinalCTASection from '@/components/FinalCTASection'
 
 const sectionClass = "container py-20 md:py-28 max-w-6xl"
 
@@ -70,9 +71,12 @@ export default function HomePage() {
 
       <div id="pricing">
         <PricingSection />
-        <div id="individual">
-          <IndividualPricing />
-        </div>
+      </div>
+
+      <FreeConsultationSection />
+
+      <div id="individual">
+        <IndividualPricing />
       </div>
 
       <div id="teachers">
@@ -83,7 +87,7 @@ export default function HomePage() {
         <ReviewsSection />
       </div>
 
-      <Footer />
+      <FinalCTASection />
     </div>
   )
 }

@@ -22,10 +22,10 @@ export function AboutSection() {
           alt="Дарья Колосова — основатель LinguaTurca"
           width={500}
           height={600}
-          className="rounded-2xl shadow-lg object-cover max-w-md w-full"
+          className="rounded-2xl shadow-lg object-cover max-w-md w-full aspect-[5/6]"
         />
         <p className="mt-4 text-gray-600 text-sm text-center">
-          Дарья Колосова — преподаватель, магистр турецкой филологии.
+        Дарья Колосова — лингвист, специалист по турецкому языку, основатель школы LinguaTurca.
         </p>
       </motion.div>
 
