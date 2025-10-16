@@ -2,8 +2,22 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+import SignupModal from "./SignupModal";
 
 export default function CourseMiniGroupSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContext, setModalContext] = useState({ section: "", action: "" });
+
+  const handleOpenModal = (section: string, action: string) => {
+    setModalContext({ section, action });
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalContext({ section: "", action: "" });
+  };
   return (
     <section className="section bg-sky-50">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-6 md:px-12">
@@ -34,7 +48,10 @@ export default function CourseMiniGroupSection() {
           </div>
 
           <div className="mt-6">
-            <button className="btn-main">
+            <button 
+              className="btn-main"
+              onClick={() => handleOpenModal("pricing", "group")}
+            >
               Записаться в мини-группу
             </button>
             <p className="text-sm text-gray-600 mt-2">
@@ -62,6 +79,9 @@ export default function CourseMiniGroupSection() {
           </div>
         </motion.div>
       </div>
+
+      {/* Модальное окно */}
+      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }

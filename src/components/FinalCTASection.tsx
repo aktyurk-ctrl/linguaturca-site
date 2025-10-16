@@ -1,8 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
+import SignupModal from "./SignupModal";
 
 export default function FinalCTASection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContext, setModalContext] = useState({ section: "", action: "" });
+
+  const handleOpenModal = (section: string, action: string) => {
+    setModalContext({ section, action });
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalContext({ section: "", action: "" });
+  };
   return (
     <section 
       className="w-full text-center relative overflow-hidden"
@@ -50,6 +64,7 @@ export default function FinalCTASection() {
               fontSize: '18px',
               fontWeight: '600'
             }}
+            onClick={() => handleOpenModal("hero", "signup")}
             whileHover={{ 
               scale: 1.05,
               boxShadow: '0 10px 25px rgba(255, 255, 255, 0.3)'
@@ -68,6 +83,9 @@ export default function FinalCTASection() {
           </motion.button>
         </motion.div>
       </div>
+
+      {/* Модальное окно */}
+      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }

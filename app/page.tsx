@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import { AboutSection } from '@/components/AboutSection'
 import WhyUsSection from '@/components/WhyUsSection'
 import HowWeTeachSection from '@/components/HowWeTeachSection'
@@ -12,10 +13,24 @@ import FreeConsultationSection from '@/components/FreeConsultationSection'
 import ScheduleSection from '@/components/ScheduleSection'
 import ReviewsSection from '@/components/ReviewsSection'
 import FinalCTASection from '@/components/FinalCTASection'
+import SignupModal from '@/components/SignupModal'
 
 const sectionClass = "container py-20 md:py-28 max-w-6xl"
 
 export default function HomePage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContext, setModalContext] = useState({ section: "", action: "" });
+
+  const handleOpenModal = (section: string, action: string) => {
+    setModalContext({ section, action });
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalContext({ section: "", action: "" });
+  };
+
   return (
     <div>
       <section
@@ -49,7 +64,10 @@ export default function HomePage() {
           <button className="btn-white">
             Пройти тест
           </button>
-          <button className="btn-main">
+          <button 
+            className="btn-main"
+            onClick={() => handleOpenModal("hero", "signup")}
+          >
             Записаться на курс
           </button>
         </motion.div>
@@ -132,31 +150,35 @@ export default function HomePage() {
             >
               Пройдите короткий тест — мы подберём курс и преподавателя под ваш уровень и цели.
             </p>
-            <motion.button
-              style={{
-                backgroundColor: '#009EFF',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '30px',
-                padding: '14px 36px',
-                fontWeight: '600',
-                cursor: 'pointer',
-                transition: 'background-color 0.25s ease'
-              }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#007ACC';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#009EFF';
-              }}
-            >
-              Пройти тест
-            </motion.button>
+          <motion.button
+            onClick={() => handleOpenModal("hero", "signup")}
+            style={{
+              backgroundColor: '#009EFF',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '30px',
+              padding: '14px 36px',
+              fontWeight: '600',
+              cursor: 'pointer',
+              transition: 'background-color 0.25s ease'
+            }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#007ACC';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#009EFF';
+            }}
+          >
+            Пройти тест
+          </motion.button>
           </motion.div>
         </div>
       </section>
+
+      {/* Модальное окно */}
+      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </div>
   )
 }

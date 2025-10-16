@@ -1,8 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
+import SignupModal from "./SignupModal";
 
 export default function PricingSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContext, setModalContext] = useState({ section: "", action: "" });
+
+  const handleOpenModal = (section: string, action: string) => {
+    setModalContext({ section, action });
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalContext({ section: "", action: "" });
+  };
   const tariffs = [
     {
       title: "Тариф базовый",
@@ -104,7 +118,10 @@ export default function PricingSection() {
                 <p className="text-lg font-semibold text-gray-900">
                   Полный курс — <span className="text-sky-600 text-2xl font-bold">{tariff.price}</span>
                 </p>
-                <button className="mt-6 btn-main w-full">
+                <button 
+                  className="mt-6 btn-main w-full"
+                  onClick={() => handleOpenModal("pricing", "group")}
+                >
                   Записаться
                 </button>
               </div>
@@ -112,6 +129,9 @@ export default function PricingSection() {
           ))}
         </div>
       </div>
+
+      {/* Модальное окно */}
+      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }

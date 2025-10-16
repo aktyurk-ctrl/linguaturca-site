@@ -2,8 +2,23 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+import SignupModal from "./SignupModal";
 
 export default function IndividualPricing() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContext, setModalContext] = useState({ section: "", action: "" });
+
+  const handleOpenModal = (section: string, action: string) => {
+    setModalContext({ section, action });
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalContext({ section: "", action: "" });
+  };
+
   return (
     <section 
       className="py-16"
@@ -179,6 +194,7 @@ export default function IndividualPricing() {
               </div>
               
               <button 
+                onClick={() => handleOpenModal("consultation", "signup")}
                 className="w-full px-6 py-3 rounded-full text-white font-semibold transition-all duration-200"
                 style={{ backgroundColor: '#00AEEF' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0095D8'}
@@ -216,6 +232,7 @@ export default function IndividualPricing() {
               </div>
               
               <button 
+                onClick={() => handleOpenModal("pricing", "individual")}
                 className="w-full px-6 py-3 rounded-full font-semibold transition-all duration-200"
                 style={{ 
                   border: '2px solid #00AEEF', 
@@ -288,9 +305,10 @@ export default function IndividualPricing() {
                 >
                   1 занятие = 1640 ₽ вместо 1900 ₽
                 </p>
-              </div>
-              
+        </div>
+
               <button 
+                onClick={() => handleOpenModal("pricing", "individual")}
                 className="w-full px-6 py-3 rounded-full text-white font-semibold transition-all duration-200"
                 style={{ backgroundColor: '#00AEEF' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0095D8'}
@@ -302,6 +320,9 @@ export default function IndividualPricing() {
           </div>
         </motion.div>
       </div>
+
+      {/* Модальное окно */}
+      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }

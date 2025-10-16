@@ -1,7 +1,21 @@
 "use client";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import SignupModal from "./SignupModal";
 
 export default function ScheduleSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContext, setModalContext] = useState({ section: "", action: "" });
+
+  const handleOpenModal = (section: string, action: string) => {
+    setModalContext({ section, action });
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalContext({ section: "", action: "" });
+  };
   const groups = [
     {
       title: "Курс с нуля — для самых новичков",
@@ -34,17 +48,17 @@ export default function ScheduleSection() {
       }}
     >
       <div className="container mx-auto px-6">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
           className="text-4xl font-bold text-gray-900 text-center mb-12"
-        >
-          Расписание ближайших <span className="text-sky-500">групп</span>
-        </motion.h2>
+          >
+            Расписание ближайших <span className="text-sky-500">групп</span>
+          </motion.h2>
 
-        {/* Карточки */}
+          {/* Карточки */}
         <div className="space-y-8 mb-12">
           {groups.map((group, i) => (
             <motion.div
@@ -89,6 +103,7 @@ export default function ScheduleSection() {
                   <div className="mt-4">
                     <motion.button 
                       className="btn-main px-8 py-3 text-lg font-semibold"
+                      onClick={() => handleOpenModal("upcoming_groups", "reserve")}
                       whileHover={{ 
                         scale: 1.05,
                         boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
@@ -159,13 +174,14 @@ export default function ScheduleSection() {
                   <div className="mt-4">
                     <motion.button 
                       className="btn-main w-full px-8 py-3 text-lg font-semibold"
+                      onClick={() => handleOpenModal("upcoming_groups", "reserve")}
                       whileHover={{ 
                         scale: 1.05,
                         boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
                       }}
                       whileTap={{ scale: 0.98 }}
                     >
-                      Занять место
+                Занять место
                     </motion.button>
                     <p className="text-sm text-orange-600 font-medium mt-2 text-center">
                       Осталось 3 места
@@ -184,6 +200,9 @@ export default function ScheduleSection() {
           </button>
         </div>
       </div>
+
+      {/* Модальное окно */}
+      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }
