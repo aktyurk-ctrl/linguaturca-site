@@ -5,17 +5,13 @@ import { motion } from "framer-motion";
 export default function FinalCTASection() {
   return (
     <section 
-      className="w-full py-20 text-center relative overflow-hidden"
+      className="w-full text-center relative overflow-hidden"
       style={{
-        background: 'linear-gradient(to bottom, #EAF7FF, #FFFFFF)'
+        backgroundColor: '#00AEEF',
+        paddingTop: '80px',
+        paddingBottom: '80px'
       }}
     >
-      {/* Декоративный фон */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 right-10 w-32 h-32 bg-sky-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-20 w-24 h-24 bg-blue-400 rounded-full blur-2xl"></div>
-        <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-sky-300 rounded-full blur-xl"></div>
-      </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -26,42 +22,46 @@ export default function FinalCTASection() {
           className="max-w-2xl mx-auto"
         >
           <h2 
-            className="font-bold mb-4"
+            className="font-bold mb-4 text-white"
             style={{ 
-              fontSize: '32px', 
-              fontWeight: '700', 
-              color: '#072635'
+              fontSize: '28px', 
+              fontWeight: '700'
             }}
           >
             Хочешь начать учить турецкий?
           </h2>
           
           <p 
-            className="mb-8 leading-relaxed"
+            className="mb-8 text-white"
             style={{ 
               fontSize: '18px', 
-              color: '#4F6372'
+              lineHeight: '1.6',
+              fontWeight: '400'
             }}
           >
             Пройди короткий тест — мы подберём формат и уровень именно для тебя.
           </p>
           
           <motion.button 
-            className="px-10 py-4 rounded-full text-white font-semibold transition-all duration-300 ease-in-out"
+            className="px-10 py-4 rounded-full font-semibold transition-all duration-300 ease-in-out"
             style={{ 
-              backgroundColor: '#00AEEF',
-              fontSize: '18px'
+              backgroundColor: '#FFFFFF',
+              color: '#007BFF',
+              fontSize: '18px',
+              fontWeight: '600'
             }}
             whileHover={{ 
               scale: 1.05,
-              boxShadow: '0 10px 25px rgba(0, 174, 239, 0.3)'
+              boxShadow: '0 10px 25px rgba(255, 255, 255, 0.3)'
             }}
             whileTap={{ scale: 0.98 }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#0095D8';
+              e.currentTarget.style.backgroundColor = '#E6F7FF';
+              e.currentTarget.style.color = '#007BFF';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#00AEEF';
+              e.currentTarget.style.backgroundColor = '#FFFFFF';
+              e.currentTarget.style.color = '#007BFF';
             }}
           >
             Пройти тест

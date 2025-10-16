@@ -83,11 +83,80 @@ export default function HomePage() {
         <ScheduleSection />
       </div>
 
+      <FinalCTASection />
+
       <div id="reviews">
         <ReviewsSection />
       </div>
 
-      <FinalCTASection />
+      {/* Финальный CTA блок */}
+      <section 
+        className="final-cta"
+        style={{
+          width: '100vw',
+          background: 'linear-gradient(180deg, #F8FBFF 0%, #E6F3FF 100%)',
+          textAlign: 'center',
+          padding: '80px 20px',
+          overflowX: 'hidden',
+          borderRadius: '0'
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '900px',
+            margin: '0 auto'
+          }}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2
+              style={{
+                fontSize: '28px',
+                fontWeight: '700',
+                color: '#032B41',
+                marginBottom: '8px'
+              }}
+            >
+              🌿 Готовы сделать первый шаг в турецкий?
+            </h2>
+            <p
+              style={{
+                fontSize: '18px',
+                color: 'rgba(0,0,0,0.7)',
+                marginBottom: '24px'
+              }}
+            >
+              Пройдите короткий тест — мы подберём курс и преподавателя под ваш уровень и цели.
+            </p>
+            <motion.button
+              style={{
+                backgroundColor: '#009EFF',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '30px',
+                padding: '14px 36px',
+                fontWeight: '600',
+                cursor: 'pointer',
+                transition: 'background-color 0.25s ease'
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#007ACC';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#009EFF';
+              }}
+            >
+              Пройти тест
+            </motion.button>
+          </motion.div>
+        </div>
+      </section>
     </div>
   )
 }

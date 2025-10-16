@@ -33,11 +33,6 @@ body {
   hover:bg-gray-50 transition-all duration-200 ease-in-out;
 }
 
-/* === ОТСТУП МЕЖДУ CTA И FOOTER === */
-footer {
-  margin-top: 64px;
-}
-
 /* === АДАПТИВНОСТЬ ДЛЯ IPAD (768-1024px) === */
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {

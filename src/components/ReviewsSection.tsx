@@ -11,27 +11,30 @@ export default function ReviewsSection() {
       text: "Занятия проходят живо, с интересом, Дарья всегда на связи и вдохновляет учиться.",
       level: "Уровень A2",
       format: "Мини-группа",
+      screenshot: "/images/review-screenshot-1.jpg",
     },
     {
-      name: "Алихан К.",
-      avatar: "/images/review-avatar-2.jpg",
+      name: "Марина П.",
+      avatar: "/images/review-avatar-1.jpg",
       quote: "«Шикарные презентации!»",
       text: "Все темы объяснены чётко, с примерами. Никогда не думала, что смогу говорить по-турецки так быстро!",
       level: "Уровень B1",
       format: "Индивидуально",
+      screenshot: "/images/review-screenshot-2.jpg",
     },
     {
-      name: "Ирина С.",
-      avatar: "/images/review-avatar-3.jpg",
+      name: "Марина П.",
+      avatar: "/images/review-avatar-1.jpg",
       quote: "«Любить учителя — любить занятия»",
       text: "С Дарьей хочется учить, смеяться и говорить! Атмосфера уюта и поддержки.",
       level: "Уровень A1",
       format: "Мини-группа",
+      screenshot: "/images/review-screenshot-3.jpg",
     },
   ];
 
   return (
-    <section className="section text-center bg-sky-50">
+    <section className="section text-center">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +54,7 @@ export default function ReviewsSection() {
             transition={{ duration: 0.6, delay: i * 0.1 }}
             viewport={{ once: true }}
             whileHover={{ y: -5 }}
-            className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-6 flex flex-col"
+            className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-6 flex flex-col relative"
           >
             {/* Аватар и имя */}
             <div className="flex items-center gap-3 mb-4">
@@ -74,6 +77,62 @@ export default function ReviewsSection() {
               <p className="text-sky-600 font-semibold mb-2 text-base">{r.quote}</p>
               <p className="text-gray-700 text-sm leading-relaxed">{r.text}</p>
             </div>
+
+            {/* REVIEW SCREENSHOT BLOCK START */}
+            {r.screenshot && (
+              <>
+                {/* Разделитель */}
+                <div 
+                  className="mt-3"
+                  style={{ 
+                    height: '1px', 
+                    backgroundColor: '#E6E6E6' 
+                  }}
+                ></div>
+
+                {/* Область скриншота */}
+                <div className="flex flex-col items-center pb-4">
+                  <p 
+                    className="mt-1 text-center"
+                    style={{ 
+                      fontSize: '12px', 
+                      color: '#6B7280',
+                      fontWeight: '400',
+                      letterSpacing: '0.2px'
+                    }}
+                  >
+                    📸 Скриншот отзыва
+                  </p>
+                  
+                  <div
+                    className="cursor-pointer w-full max-w-[90%] md:max-w-[90%] mt-1.5"
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      backgroundColor: '#fff',
+                      borderRadius: '10px',
+                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
+                      overflow: 'hidden',
+                      maxHeight: '180px'
+                    }}
+                  >
+                    <Image
+                      src={r.screenshot}
+                      alt="Скриншот отзыва"
+                      width={400}
+                      height={300}
+                      className="object-contain transition-transform duration-250 ease-in-out hover:scale-102"
+                      style={{
+                        width: '100%',
+                        maxHeight: '180px'
+                      }}
+                    />
+                  </div>
+                </div>
+              </>
+            )}
+            {/* REVIEW SCREENSHOT BLOCK END */}
           </motion.div>
         ))}
       </div>

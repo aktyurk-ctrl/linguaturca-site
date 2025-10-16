@@ -40,7 +40,7 @@ export default function IndividualPricing() {
         </motion.div>
 
         {/* Основной контент - двухколоночная компоновка */}
-        <div className="flex flex-col lg:flex-row items-center gap-10 mb-16">
+        <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-10 mb-16">
           
           {/* Изображение */}
           <motion.div
@@ -48,16 +48,16 @@ export default function IndividualPricing() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9 }}
             viewport={{ once: true }}
-            className="flex-1 flex justify-center"
-            style={{ maxWidth: '45%' }}
+            className="flex-1 flex justify-center w-full lg:w-auto"
+            style={{ maxWidth: '100%' }}
           >
-            <div className="relative">
+            <div className="relative w-full max-w-[340px] lg:max-w-none">
               <Image
                 src="/images/class2.jpg"
                 alt="Индивидуальное обучение турецкому"
                 width={500}
                 height={500}
-                className="rounded-2xl object-cover aspect-square"
+                className="rounded-2xl object-cover aspect-square w-full"
               />
             </div>
           </motion.div>
@@ -68,49 +68,127 @@ export default function IndividualPricing() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="flex-1"
-            style={{ maxWidth: '50%' }}
+            className="flex-1 w-full lg:w-auto"
+            style={{ maxWidth: '100%' }}
           >
-            <ul className="space-y-3 leading-relaxed" style={{ color: '#1C2A38' }}>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3 text-lg">✓</span>
-                <span className="text-lg">Индивидуальные занятия с преподавателем</span>
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3 text-lg">✓</span>
-                <span className="text-lg">Гибкое расписание под ваши возможности</span>
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3 text-lg">✓</span>
-                <span className="text-lg">Персональная программа обучения</span>
-              </li>
-              <li className="flex items-center mt-6">
-                <span className="text-green-500 mr-3 text-lg">✓</span>
-                <span className="text-lg">Фокус на ваших конкретных целях</span>
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3 text-lg">✓</span>
-                <span className="text-lg">Быстрый прогресс и результат</span>
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3 text-lg">✓</span>
-                <span className="text-lg">Поддержка между занятиями</span>
-              </li>
-            </ul>
+            <div className="max-w-[320px] mx-auto lg:max-w-none lg:mx-0">
+              <ul className="space-y-2 lg:space-y-2 text-left lg:text-left mb-8" style={{ color: '#1C2A38' }}>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3 text-base lg:text-lg flex-shrink-0 mt-0.5">✓</span>
+                  <span className="text-base lg:text-lg leading-tight lg:leading-relaxed">Индивидуальные занятия с преподавателем</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3 text-base lg:text-lg flex-shrink-0 mt-0.5">✓</span>
+                  <span className="text-base lg:text-lg leading-tight lg:leading-relaxed">Гибкое расписание под ваши возможности</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3 text-base lg:text-lg flex-shrink-0 mt-0.5">✓</span>
+                  <span className="text-base lg:text-lg leading-tight lg:leading-relaxed">Персональная программа обучения</span>
+                </li>
+                <li className="flex items-start mt-3 lg:mt-4">
+                  <span className="text-green-500 mr-3 text-base lg:text-lg flex-shrink-0 mt-0.5">✓</span>
+                  <span className="text-base lg:text-lg leading-tight lg:leading-relaxed">Фокус на ваших конкретных целях</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3 text-base lg:text-lg flex-shrink-0 mt-0.5">✓</span>
+                  <span className="text-base lg:text-lg leading-tight lg:leading-relaxed">Быстрый прогресс и результат</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3 text-base lg:text-lg flex-shrink-0 mt-0.5">✓</span>
+                  <span className="text-base lg:text-lg leading-tight lg:leading-relaxed">Поддержка между занятиями</span>
+                </li>
+              </ul>
+              
+              {/* Описательный абзац */}
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-left lg:text-left"
+                style={{
+                  fontSize: '17px',
+                  lineHeight: '1.75',
+                  color: '#4A5568',
+                  maxWidth: '440px',
+                  marginTop: '24px'
+                }}
+              >
+                Мы верим, что изучение языка — это не гонка, а путешествие.<br />
+                И нам важно, чтобы каждое занятие приносило радость, не только результат.
+              </motion.p>
+            </div>
           </motion.div>
         </div>
 
         {/* Ценовые карточки */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+              viewport={{ once: true }}
           className="mt-10 mb-16"
         >
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8 max-w-4xl mx-auto">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-6 max-w-6xl mx-auto">
             
-            {/* Карточка 1 - Одно занятие */}
+            {/* Карточка 1 - Бесплатная консультация */}
+            <div 
+              className="flex-1 rounded-[20px] p-9 min-h-[380px] flex flex-col justify-between transition-all duration-300 ease-in-out hover:transform hover:-translate-y-1"
+              style={{ 
+                backgroundColor: '#F8FBFF',
+                boxShadow: '0 2px 10px rgba(0,0,0,0.03)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-3px)';
+                e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.05)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.03)';
+              }}
+            >
+              <div className="text-center">
+                <h3 
+                  className="font-bold mb-2"
+                  style={{ fontSize: '20px', fontWeight: '700', color: '#0B1F33' }}
+                >
+                  🎁 Бесплатная консультация
+                </h3>
+                <p 
+                  className="mt-4 mb-3"
+                  style={{ fontSize: '16px', color: '#0B1F33' }}
+                >
+                  Определим ваш уровень и подберём программу обучения.
+                </p>
+                <p 
+                  className="mb-4"
+                  style={{ fontSize: '14px', color: '#6B7280' }}
+                >
+                  10–15 минут, онлайн, без обязательств.
+                </p>
+                <p 
+                  className="font-bold"
+                  style={{ 
+                    fontSize: '27px', 
+                    fontWeight: '700', 
+                    color: '#00A3FF'
+                  }}
+                >
+                  💬 Бесплатно
+                </p>
+              </div>
+              
+              <button 
+                className="w-full px-6 py-3 rounded-full text-white font-semibold transition-all duration-200"
+                style={{ backgroundColor: '#00AEEF' }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0095D8'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#00AEEF'}
+              >
+                Записаться
+              </button>
+            </div>
+
+            {/* Карточка 2 - Одно занятие */}
             <div className="flex-1 bg-white border border-gray-300 rounded-xl shadow-sm p-8 min-h-[380px] flex flex-col justify-between">
               <div className="text-center">
                 <h3 
@@ -155,7 +233,7 @@ export default function IndividualPricing() {
               </button>
             </div>
 
-            {/* Карточка 2 - Абонемент на 5 занятий */}
+            {/* Карточка 3 - Абонемент на 5 занятий */}
             <div className="flex-1 rounded-xl shadow-md relative p-8 min-h-[380px] flex flex-col justify-between" style={{ backgroundColor: '#EAF7FF' }}>
               {/* Бейдж */}
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -175,32 +253,34 @@ export default function IndividualPricing() {
                   Абонемент на 5 занятий
                 </h3>
                 
-                {/* Цена в капсуле */}
-                <div 
-                  className="inline-block mt-4"
-                  style={{ 
-                    backgroundColor: 'rgba(255, 255, 255, 0.9)', 
-                    padding: '4px 12px', 
-                    borderRadius: '6px'
-                  }}
-                >
+                {/* Цена с эмодзи и подтекстом */}
+                <div className="mt-4">
                   <p 
                     className="font-bold"
                     style={{ 
-                      fontSize: '27px', 
+                      fontSize: '29px', 
                       fontWeight: '700', 
-                      color: '#007EA7'
+                      color: '#007EA7',
+                      letterSpacing: '0.5px'
                     }}
                   >
-                    8200 ₽
+                    💎 8200 ₽
                   </p>
-                </div>
-                
-                <p 
+                  <p 
+                    className="mt-1"
+                    style={{ 
+                      fontSize: '14px', 
+                      color: '#6B7280'
+                    }}
+                  >
+                    за 5 занятий
+                  </p>
+        </div>
+        <p 
                   className="mt-4 text-gray-600"
                   style={{ fontSize: '16px' }}
                 >
-                  + можно добавить 1 урок за 1900 ₽
+                  60 минут индивидуальной работы с преподавателем (в Zoom)
                 </p>
                 <p 
                   className="mt-2"
