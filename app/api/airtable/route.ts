@@ -1,61 +1,78 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from "next/server";
 
-export async function POST(request: NextRequest) {
+// ⚙️ Этот API-роут принимает данные формы LinguaTurca и отправляет их в Airtable.
+// Ожидаемые поля: name, phone, email, format, section, button
+
+export async function POST(req: Request) {
   try {
-    const body = await request.json()
-    const { name, phone, email, format, section, button } = body
+    const body = await req.json();
 
-    // Проверяем обязательные поля
-    if (!name || !phone) {
+    console.log("📩 Получен запрос:", body);
+
+    // соответствие английских ключей и русских полей
+    const Имя = body.name || body.Имя;
+    const Телефон = body.phone || body.Телефон;
+    const Email = body.email || body.Email;
+    const Формат = body.format || body["Формат обучения"];
+    const Секция = body.section || body["Секция сайта"];
+    const Кнопка = body.button || body["Текст кнопки"];
+
+    if (!Имя || !Телефон || !Email) {
+      console.error("❌ Отсутствуют обязательные поля:", {
+        name: !!Имя,
+        phone: !!Телефон,
+        email: !!Email,
+      });
       return NextResponse.json(
-        { success: false, error: 'Имя и телефон обязательны' },
+        { success: false, error: "Missing required fields" },
         { status: 400 }
-      )
+      );
     }
 
-    // Данные для отправки в Airtable
-    const airtableData = {
-      fields: {
-        'Имя': name,
-        'Телефон': phone,
-        'Email': email || '',
-        'Формат занятий': format || '',
-        'Секция сайта': section || '',
-        'Кнопка': button || '',
-        'Дата заявки': new Date().toISOString(),
-        'Источник': 'Сайт LinguaTurca'
-      }
-    }
-
-    // Отправляем данные в Airtable
-    const response = await fetch(`https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/Заявки`, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${process.env.AIRTABLE_API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(airtableData),
-    })
-
-    if (!response.ok) {
-      const errorData = await response.text()
-      console.error('Airtable API Error:', errorData)
+    if (!process.env.AIRTABLE_API_KEY || !process.env.AIRTABLE_BASE_ID || !process.env.AIRTABLE_TABLE_NAME) {
+      console.error('❌ Отсутствуют переменные окружения Airtable')
       return NextResponse.json(
-        { success: false, error: 'Ошибка при сохранении данных' },
+        { success: false, error: 'Ошибка конфигурации сервера' },
         { status: 500 }
       )
     }
 
-    const result = await response.json()
-    console.log('Successfully saved to Airtable:', result)
+    const airtablePayload = {
+      fields: {
+        Имя,
+        Телефон,
+        Email,
+        "Формат обучения": Формат || '',
+        "Секция сайта": Секция || '',
+        "Текст кнопки": Кнопка || '',
+      },
+    };
 
-    return NextResponse.json({ success: true, data: result })
+    console.log('📤 Отправляем в Airtable:', airtablePayload);
 
+    const res = await fetch(
+      `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/${process.env.AIRTABLE_TABLE_NAME}`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.AIRTABLE_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(airtablePayload),
+      }
+    );
+
+    const data = await res.json();
+    console.log("✅ Ответ Airtable:", data);
+
+    if (!res.ok) throw new Error(JSON.stringify(data));
+
+    return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('API Error:', error)
+    console.error("💥 Ошибка при отправке в Airtable:", error);
     return NextResponse.json(
-      { success: false, error: 'Внутренняя ошибка сервера' },
+      { success: false, error: "Server error" },
       { status: 500 }
-    )
+    );
   }
 }
