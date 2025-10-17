@@ -101,17 +101,18 @@ export default function ScheduleSection() {
                   </div>
                   
                   <div className="mt-4">
-                    <motion.button 
-                      className="btn-main px-8 py-3 text-lg font-semibold"
-                      onClick={() => handleOpenModal("upcoming_groups", "reserve")}
-                      whileHover={{ 
-                        scale: 1.05,
-                        boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
-                      }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      Занять место
-                    </motion.button>
+                     <motion.button 
+                       className="btn-main px-8 py-3 text-lg font-semibold"
+                       data-form-button
+                       data-section="Расписание"
+                       whileHover={{ 
+                         scale: 1.05,
+                         boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
+                       }}
+                       whileTap={{ scale: 0.98 }}
+                     >
+                       Занять место
+                     </motion.button>
                     <p className="text-sm text-orange-600 font-medium mt-2">
                       Осталось 3 места
                     </p>
@@ -172,17 +173,18 @@ export default function ScheduleSection() {
                   </div>
                   
                   <div className="mt-4">
-                    <motion.button 
-                      className="btn-main w-full px-8 py-3 text-lg font-semibold"
-                      onClick={() => handleOpenModal("upcoming_groups", "reserve")}
-                      whileHover={{ 
-                        scale: 1.05,
-                        boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
-                      }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                Занять место
-                    </motion.button>
+                     <motion.button 
+                       className="btn-main w-full px-8 py-3 text-lg font-semibold"
+                       data-form-button
+                       data-section="Расписание"
+                       whileHover={{ 
+                         scale: 1.05,
+                         boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
+                       }}
+                       whileTap={{ scale: 0.98 }}
+                     >
+                 Занять место
+                     </motion.button>
                     <p className="text-sm text-orange-600 font-medium mt-2 text-center">
                       Осталось 3 места
                     </p>

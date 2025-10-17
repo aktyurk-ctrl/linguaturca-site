@@ -4,6 +4,7 @@ import { Inter, Manrope } from 'next/font/google'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { CookieConsent } from '@/components/CookieConsent'
+import ModalForm from '@/components/ModalForm'
 import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['cyrillic', 'latin'], variable: '--font-inter' })
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <CookieConsent />
+        <ModalForm />
         <Analytics />
       </body>
     </html>

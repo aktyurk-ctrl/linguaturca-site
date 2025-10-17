@@ -48,12 +48,13 @@ export default function CourseMiniGroupSection() {
           </div>
 
           <div className="mt-6">
-            <button 
-              className="btn-main"
-              onClick={() => handleOpenModal("pricing", "group")}
-            >
-              Записаться в мини-группу
-            </button>
+             <button 
+               className="btn-main"
+               data-form-button
+               data-section="Мини-группы"
+             >
+               Записаться в мини-группу
+             </button>
             <p className="text-sm text-gray-600 mt-2">
               до 6 человек в группе
             </p>

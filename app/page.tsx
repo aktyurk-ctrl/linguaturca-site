@@ -61,12 +61,17 @@ export default function HomePage() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <button className="btn-white">
+          <button 
+            className="btn-white"
+            data-form-button
+            data-section="Hero"
+          >
             Пройти тест
           </button>
           <button 
             className="btn-main"
-            onClick={() => handleOpenModal("hero", "signup")}
+            data-form-button
+            data-section="Hero"
           >
             Записаться на курс
           </button>
@@ -151,7 +156,8 @@ export default function HomePage() {
               Пройдите короткий тест — мы подберём курс и преподавателя под ваш уровень и цели.
             </p>
           <motion.button
-            onClick={() => handleOpenModal("hero", "signup")}
+            data-form-button
+            data-section="Финальный CTA"
             style={{
               backgroundColor: '#009EFF',
               color: '#fff',

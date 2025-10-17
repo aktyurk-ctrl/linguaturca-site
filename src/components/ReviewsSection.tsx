@@ -144,7 +144,11 @@ export default function ReviewsSection() {
         viewport={{ once: true }}
         className="mt-14"
       >
-        <button className="btn-main text-lg">
+        <button 
+          className="btn-main text-lg"
+          data-form-button
+          data-section="Отзывы"
+        >
           Хочу занять место!
         </button>
       </motion.div>

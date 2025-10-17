@@ -120,7 +120,8 @@ export default function PricingSection() {
                 </p>
                 <button 
                   className="mt-6 btn-main w-full"
-                  onClick={() => handleOpenModal("pricing", "group")}
+                  data-form-button
+                  data-section="Тарифы"
                 >
                   Записаться
                 </button>

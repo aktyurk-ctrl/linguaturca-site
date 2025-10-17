@@ -36,11 +36,13 @@ export default function HowWeTeachSection() {
               <h3 className="text-lg md:text-xl font-medium text-gray-800 mb-3">
                 Уроки в мини-группах — больше общения, больше практики, больше мотивации.
               </h3>
-              <a href="#mini-group">
-                <button className="bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full px-8 py-3 mt-3 transition-all duration-200 active:scale-95">
-                  Присоединиться
-                </button>
-              </a>
+              <button 
+                className="bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full px-8 py-3 mt-3 transition-all duration-200 active:scale-95"
+                data-form-button
+                data-section="Как мы учим"
+              >
+                Присоединиться
+              </button>
             </div>
           </motion.div>
 
@@ -64,11 +66,13 @@ export default function HowWeTeachSection() {
               <h3 className="text-lg md:text-xl font-medium text-gray-800 mb-3">
                 Индивидуальные занятия — в своём темпе и по персональной программе.
               </h3>
-              <a href="#individual">
-                <button className="bg-rose-400 hover:bg-rose-500 text-white font-semibold rounded-full px-8 py-3 mt-3 transition-all duration-200 active:scale-95">
-                  Начать
-                </button>
-              </a>
+              <button 
+                className="bg-rose-400 hover:bg-rose-500 text-white font-semibold rounded-full px-8 py-3 mt-3 transition-all duration-200 active:scale-95"
+                data-form-button
+                data-section="Как мы учим"
+              >
+                Начать
+              </button>
             </div>
           </motion.div>
         </div>

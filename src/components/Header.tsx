@@ -30,7 +30,7 @@ export function Header() {
           <a href="#reviews">Отзывы</a>
         </nav>
 
-        <a href="/contact" className="hidden md:block header-cta">
+        <a href="/contact" className="hidden md:block header-cta" data-form-button data-section="Header">
           Записаться
         </a>
 
@@ -57,7 +57,7 @@ export function Header() {
             <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Тарифы</a>
             <a href="#schedule" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Расписание</a>
             <a href="#reviews" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Отзывы</a>
-            <a href="/contact" className="mt-4 header-cta text-center" onClick={() => setIsMobileMenuOpen(false)}>
+            <a href="/contact" className="mt-4 header-cta text-center" onClick={() => setIsMobileMenuOpen(false)} data-form-button data-section="Header">
               Записаться
             </a>
           </nav>
