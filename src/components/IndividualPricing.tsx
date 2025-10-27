@@ -255,10 +255,14 @@ export default function IndividualPricing() {
               {/* Бейдж */}
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                 <span 
-                  className="px-3 py-1 rounded-full text-white text-sm font-semibold"
-                  style={{ backgroundColor: '#00AEEF' }}
+                  className="px-3 py-1 rounded-full text-sm font-semibold"
+                  style={{ 
+                    backgroundColor: '#E0F6FF',
+                    color: '#009DFF',
+                    border: '1px solid #B3E5FC'
+                  }}
                 >
-                  💙 Выгоднее
+                  💎 Выгоднее
                 </span>
               </div>
               
@@ -270,19 +274,48 @@ export default function IndividualPricing() {
                   Абонемент на 5 занятий
                 </h3>
                 
-                {/* Цена с эмодзи и подтекстом */}
+                {/* Цена с зачёркнутой ценой и экономией */}
                 <div className="mt-4">
+                  {/* Зачёркнутая цена */}
                   <p 
-                    className="font-bold"
+                    className="mb-1"
                     style={{ 
-                      fontSize: '29px', 
-                      fontWeight: '700', 
-                      color: '#007EA7',
+                      fontSize: '18px', 
+                      fontWeight: '500', 
+                      color: '#6B7280',
+                      opacity: 0.6,
+                      textDecoration: 'line-through'
+                    }}
+                  >
+                    9500 ₽
+                  </p>
+                  
+                  {/* Текущая цена */}
+                  <p 
+                    className="font-bold mb-2"
+                    style={{ 
+                      fontSize: '32px', 
+                      fontWeight: '800', 
+                      color: '#009DFF',
                       letterSpacing: '0.5px'
                     }}
                   >
-                    💎 8200 ₽
+                    8200 ₽
                   </p>
+                  
+                  {/* Мини-бэдж экономии */}
+                  <div className="inline-block mb-2">
+                    <span 
+                      className="px-3 py-1 rounded-full text-xs font-semibold"
+                      style={{ 
+                        backgroundColor: '#009DFF',
+                        color: '#FFFFFF'
+                      }}
+                    >
+                      экономия 1300 ₽
+                    </span>
+                  </div>
+                  
                   <p 
                     className="mt-1"
                     style={{ 
@@ -292,8 +325,9 @@ export default function IndividualPricing() {
                   >
                     за 5 занятий
                   </p>
-        </div>
-        <p 
+                </div>
+                
+                <p 
                   className="mt-4 text-gray-600"
                   style={{ fontSize: '16px' }}
                 >
@@ -305,7 +339,7 @@ export default function IndividualPricing() {
                 >
                   1 занятие = 1640 ₽ вместо 1900 ₽
                 </p>
-        </div>
+              </div>
 
               <button 
                 onClick={() => handleOpenModal("pricing", "individual")}

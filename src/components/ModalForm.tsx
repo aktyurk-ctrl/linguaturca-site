@@ -127,7 +127,7 @@ export default function ModalForm() {
               <div>
                 <input
                   type="email"
-                  placeholder="Email (необязательно)"
+                  placeholder="Email (обязательно)"
                   value={formData.email}
                   className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-400 focus:border-transparent outline-none transition-all"
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}

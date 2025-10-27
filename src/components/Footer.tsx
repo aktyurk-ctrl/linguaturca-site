@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer 
       className="text-white"
-      style={{ backgroundColor: '#0B2239' }}
+      style={{ backgroundColor: '#031E33' }}
     >
         <div 
           className="container py-12 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10"
@@ -31,7 +31,8 @@ export function Footer() {
             <ul className="mt-2 space-y-2 text-base" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
               <li>📧 hello@linguaturca.com</li>
               <li>📱 Telegram: @linguaturca</li>
-              <li>📷 Instagram: @linguaturca</li>
+              {/* Instagram скрыт от пользователей */}
+              {/* <li>📷 Instagram: @linguaturca</li> */}
             </ul>
           </div>
           <div>
@@ -44,17 +45,17 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <div className="font-semibold text-white mb-3 text-base">Мы в соцсетях</div>
-            <div className="mt-2 flex gap-4">
-              <a href="https://t.me/linguaturca" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sky-500/20 flex items-center justify-center hover:bg-sky-500 hover:scale-110 transition-all duration-200">
-                <span className="text-lg">📱</span>
-              </a>
-              <a href="https://instagram.com/linguaturca" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center hover:bg-pink-500 hover:scale-110 transition-all duration-200">
-                <span className="text-lg">📷</span>
-              </a>
-            </div>
+            <div className="font-semibold text-white mb-3 text-base">Юридическая информация</div>
+            <ul className="mt-2 space-y-2 text-base" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <li><Link href="/legal" className="hover:text-white transition-colors">Публичная оферта</Link></li>
+              <li><Link href="/policy" className="hover:text-white transition-colors">Политика в отношении обработки персональных данных</Link></li>
+            </ul>
           </div>
         </div>
+        
+        {/* Разделительная линия */}
+        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}></div>
+        
         <div 
           className="py-6 text-center"
           style={{ 
@@ -62,7 +63,7 @@ export function Footer() {
             color: 'rgba(255, 255, 255, 0.6)'
           }}
         >
-          LinguaTurca © 2025
+          © LinguaTurca 2025
         </div>
       </footer>
   )

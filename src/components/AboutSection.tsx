@@ -49,14 +49,14 @@ export function AboutSection() {
         <p className="text-gray-800 text-lg leading-relaxed mb-6">
         Поэтому я собрала команду тюркологов и создала свои учебные материалы, чтобы сделать турецкий понятным и легким для каждого!
         </p>
-         <a 
+         {/* <a 
            href="#about" 
            className="btn-outline"
            data-form-button
            data-section="О школе"
          >
            Подробнее о преподавателе
-         </a>
+         </a> */}
       </motion.div>
     </section>
   )

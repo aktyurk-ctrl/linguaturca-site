@@ -21,18 +21,17 @@ export function Header() {
 
         {/* Навигация */}
         <nav className="hidden md:flex gap-6 text-gray-800 font-medium">
-          <a href="#hero">Главная</a>
+          <a href="/">Главная</a>
           <a href="#about">О школе</a>
           <a href="#how-we-teach">Как мы учим</a>
-          <a href="#courses">Курсы</a>
-          <a href="#pricing">Тарифы</a>
+          <a href="#learning-options">Курсы</a>
           <a href="#schedule">Расписание</a>
           <a href="#reviews">Отзывы</a>
         </nav>
 
-        <a href="/contact" className="hidden md:block header-cta" data-form-button data-section="Header">
+        <button className="hidden md:block header-cta" data-form-button data-section="Header">
           Записаться
-        </a>
+        </button>
 
         {/* Мобильное меню - бургер */}
         <button
@@ -50,16 +49,16 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
           <nav className="px-6 py-6 flex flex-col gap-4">
-            <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Главная</a>
+            <a href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Главная</a>
             <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">О школе</a>
             <a href="#how-we-teach" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Как мы учим</a>
             <a href="#courses" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Курсы</a>
             <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Тарифы</a>
             <a href="#schedule" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Расписание</a>
             <a href="#reviews" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Отзывы</a>
-            <a href="/contact" className="mt-4 header-cta text-center" onClick={() => setIsMobileMenuOpen(false)} data-form-button data-section="Header">
+            <button className="mt-4 header-cta text-center" onClick={() => setIsMobileMenuOpen(false)} data-form-button data-section="Header">
               Записаться
-            </a>
+            </button>
           </nav>
         </div>
       )}

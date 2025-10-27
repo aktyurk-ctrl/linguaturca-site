@@ -13,7 +13,7 @@ const manrope = Manrope({ subsets: ['cyrillic', 'latin'], variable: '--font-manr
 export const metadata: Metadata = {
   title: 'LinguaTurca — Школа турецкого языка',
   description:
-    'Уроки турецкого онлайн: мини-группы, индивидуально, бесплатный мини-урок и тест уровня.',
+    'Уроки турецкого онлайн: мини-группы, индивидуально, бесплатный мини-урок и определение уровня.',
   icons: {
     icon: '/favicon/favicon.ico',
     shortcut: '/favicon/favicon.ico',

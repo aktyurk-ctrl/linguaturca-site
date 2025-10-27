@@ -26,8 +26,7 @@ export default function FinalCTASection() {
         paddingBottom: '80px'
       }}
     >
-
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -38,8 +37,9 @@ export default function FinalCTASection() {
           <h2 
             className="font-bold mb-4 text-white"
             style={{ 
-              fontSize: '28px', 
-              fontWeight: '700'
+              fontSize: 'clamp(24px, 4vw, 32px)', 
+              fontWeight: '700',
+              lineHeight: '1.2'
             }}
           >
             Хочешь начать учить турецкий?
@@ -48,38 +48,43 @@ export default function FinalCTASection() {
           <p 
             className="mb-8 text-white"
             style={{ 
-              fontSize: '18px', 
+              fontSize: 'clamp(16px, 3vw, 18px)', 
               lineHeight: '1.6',
-              fontWeight: '400'
+              fontWeight: '400',
+              opacity: 0.9
             }}
           >
-            Пройди короткий тест — мы подберём формат и уровень именно для тебя.
+            Запишись на бесплатную консультацию — мы подберём формат и уровень именно для тебя.
           </p>
           
           <motion.button 
-            className="px-10 py-4 rounded-full font-semibold transition-all duration-300 ease-in-out"
+            className="px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold transition-all duration-300 ease-in-out text-sm md:text-lg"
             style={{ 
               backgroundColor: '#FFFFFF',
-              color: '#007BFF',
-              fontSize: '18px',
+              color: '#00AEEF',
               fontWeight: '600'
             }}
             onClick={() => handleOpenModal("hero", "signup")}
             whileHover={{ 
               scale: 1.05,
-              boxShadow: '0 10px 25px rgba(255, 255, 255, 0.3)'
+              boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15)'
             }}
             whileTap={{ scale: 0.98 }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#E6F7FF';
-              e.currentTarget.style.color = '#007BFF';
+              e.currentTarget.style.backgroundColor = 'transparent';
+              e.currentTarget.style.color = '#FFFFFF';
+              e.currentTarget.style.borderColor = '#FFFFFF';
+              e.currentTarget.style.borderWidth = '2px';
+              e.currentTarget.style.borderStyle = 'solid';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = '#FFFFFF';
-              e.currentTarget.style.color = '#007BFF';
+              e.currentTarget.style.color = '#00AEEF';
+              e.currentTarget.style.borderColor = 'transparent';
+              e.currentTarget.style.borderWidth = '0px';
             }}
           >
-            Пройти тест
+            Записаться на консультацию
           </motion.button>
         </motion.div>
       </div>

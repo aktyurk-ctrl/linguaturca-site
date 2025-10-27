@@ -35,14 +35,18 @@ export default function HomePage() {
     <div>
       <section
         id="hero"
-        className="hero-section flex flex-col items-center justify-center text-center min-h-screen py-32 px-6 overflow-hidden"
+        className="hero-section flex flex-col items-center justify-center text-center min-h-screen py-32 px-6 overflow-hidden relative"
+        style={{
+          animation: 'fadeIn 1s ease-in-out'
+        }}
       >
         {/* Контент */}
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-extrabold mb-6"
+          className="text-4xl md:text-6xl font-extrabold mb-6 text-white"
+          style={{ textShadow: '0 2px 6px rgba(0, 0, 0, 0.35)' }}
         >
           Турецкий с магистрами турецкого языка
         </motion.h1>
@@ -50,30 +54,30 @@ export default function HomePage() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
+          className="text-lg md:text-xl max-w-2xl mb-10 leading-relaxed text-white"
+          style={{ textShadow: '0 2px 6px rgba(0, 0, 0, 0.35)' }}
         >
-          Онлайн-школа турецкого языка от магистров турецкой филологии.
+          Учи турецкий эффективно и прямо из дома с командой профессионалов
         </motion.p>
 
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
         >
+          <a 
+            href="#learning-options"
+            className="px-6 py-3 bg-white text-[#009FE3] border border-white rounded-lg font-semibold text-lg hover:bg-[#009FE3] hover:text-white transition-all duration-300"
+          >
+            Список курсов
+          </a>
           <button 
-            className="btn-white"
+            className="px-8 py-4 bg-[#009FE3] text-white rounded-lg font-semibold text-lg hover:bg-[#0084C1] transition-all duration-300 shadow-lg"
             data-form-button
             data-section="Hero"
           >
-            Пройти тест
-          </button>
-          <button 
-            className="btn-main"
-            data-form-button
-            data-section="Hero"
-          >
-            Записаться на курс
+            Записаться на консультацию
           </button>
         </motion.div>
       </section>
@@ -106,88 +110,23 @@ export default function HomePage() {
         <ScheduleSection />
       </div>
 
-      <FinalCTASection />
-
       <div id="reviews">
         <ReviewsSection />
       </div>
 
-      {/* Финальный CTA блок */}
-      <section 
-        className="final-cta"
-        style={{
-          width: '100vw',
-          background: 'linear-gradient(180deg, #F8FBFF 0%, #E6F3FF 100%)',
-          textAlign: 'center',
-          padding: '80px 20px',
-          overflowX: 'hidden',
-          borderRadius: '0'
-        }}
-      >
-        <div
-          style={{
-            maxWidth: '900px',
-            margin: '0 auto'
-          }}
-        >
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2
-              style={{
-                fontSize: '28px',
-                fontWeight: '700',
-                color: '#032B41',
-                marginBottom: '8px'
-              }}
-            >
-              🌿 Готовы сделать первый шаг в турецкий?
-            </h2>
-            <p
-              style={{
-                fontSize: '18px',
-                color: 'rgba(0,0,0,0.7)',
-                marginBottom: '24px'
-              }}
-            >
-              Пройдите короткий тест — мы подберём курс и преподавателя под ваш уровень и цели.
-            </p>
-          <motion.button
-            data-form-button
-            data-section="Финальный CTA"
-            style={{
-              backgroundColor: '#009EFF',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '30px',
-              padding: '14px 36px',
-              fontWeight: '600',
-              cursor: 'pointer',
-              transition: 'background-color 0.25s ease'
-            }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#007ACC';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#009EFF';
-            }}
-          >
-            Пройти тест
-          </motion.button>
-          </motion.div>
-        </div>
-      </section>
+      <FinalCTASection />
 
       {/* Модальное окно */}
       <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </div>
   )
 }
+
+
+
+
+
+
 
 
 
