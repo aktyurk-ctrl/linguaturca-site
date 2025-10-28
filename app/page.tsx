@@ -96,7 +96,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div id="pricing">
+      <div id="groups">
         <PricingSection />
       </div>
 

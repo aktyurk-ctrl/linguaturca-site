@@ -29,8 +29,8 @@ export function Footer() {
           <div>
             <div className="font-semibold text-white mb-3 text-base">Контакты</div>
             <ul className="mt-2 space-y-2 text-base" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-              <li>📧 hello@linguaturca.com</li>
-              <li>📱 Telegram: @linguaturca</li>
+              <li>📧 study@linguaturca.ru</li>
+              <li>📱 Telegram: @Daria_Kolosova</li>
               {/* Instagram скрыт от пользователей */}
               {/* <li>📷 Instagram: @linguaturca</li> */}
             </ul>

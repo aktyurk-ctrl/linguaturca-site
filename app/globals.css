@@ -13,6 +13,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Учет высоты фиксированного header при прокрутке к якорям */
+html {
+  scroll-padding-top: 80px;
+}
+
 body {
   @apply bg-white text-brand-text antialiased leading-relaxed;
 }

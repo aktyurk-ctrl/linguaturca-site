@@ -36,7 +36,7 @@ export default function PricingSection() {
         "🕊 «Турецкая гостиная» — групповой созвон с Дарьей, чат поддержки и коммьюнити",
       ],
       bonus: "🎁 Рабочая тетрадь с упражнениями + памятка «Такие похожие слова»",
-      price: "8600 руб",
+      price: "9200 ₽ 8600 ₽",
       isHighlighted: true,
     },
     {
@@ -49,7 +49,7 @@ export default function PricingSection() {
         "👩‍🏫 Дополнительный урок с преподавателем каждую неделю (30 мин индивидуально)",
       ],
       bonus: "🎁 Курс по произношению в подарок",
-      price: "13000 руб",
+      price: "15200 ₽ 13000 ₽",
       isHighlighted: false,
     },
   ];
@@ -116,7 +116,16 @@ export default function PricingSection() {
 
               <div className="mt-8">
                 <p className="text-lg font-semibold text-gray-900">
-                  Полный курс — <span className="text-sky-600 text-2xl font-bold">{tariff.price}</span>
+                  Полный курс — <span className="text-sky-600 text-2xl font-bold">
+                    {tariff.price.includes('₽') && tariff.price.split('₽').length > 2 ? (
+                      <>
+                        <span className="line-through text-gray-400 mr-2 text-lg sm:text-2xl">{tariff.price.split('₽')[0].trim()} ₽</span>
+                        <span className="text-xl sm:text-2xl">{tariff.price.split('₽')[1].trim()} ₽</span>
+                      </>
+                    ) : (
+                      tariff.price
+                    )}
+                  </span>
                 </p>
                 <button 
                   className="mt-6 btn-main w-full"

@@ -56,7 +56,7 @@ export default function CourseMiniGroupSection() {
                Записаться в мини-группу
              </button>
             <p className="text-sm text-gray-600 mt-2">
-              до 6 человек в группе
+              от 2 до 4 человек в группе
             </p>
           </div>
         </motion.div>

@@ -167,7 +167,7 @@ export default function IndividualPricing() {
                   className="font-bold mb-2"
                   style={{ fontSize: '20px', fontWeight: '700', color: '#0B1F33' }}
                 >
-                  🎁 Бесплатная консультация
+                  Бесплатная консультация
                 </h3>
                 <p 
                   className="mt-4 mb-3"

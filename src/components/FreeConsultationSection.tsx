@@ -36,7 +36,7 @@ export default function FreeConsultationSection() {
             className="font-bold mb-6"
             style={{ fontSize: '24px', color: '#0B2239' }}
           >
-            🎁 Индивидуальная консультация
+            Индивидуальная консультация
           </h2>
           
           <p 
@@ -54,7 +54,7 @@ export default function FreeConsultationSection() {
             <span>•</span>
             <span>💬 Без обязательств</span>
             <span>•</span>
-            <span style={{ color: '#00AEEF', fontWeight: '600' }}>💙 Бесплатно</span>
+            <span style={{ color: '#00AEEF', fontWeight: '600' }}>Бесплатно</span>
           </div>
           
           <motion.button 

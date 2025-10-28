@@ -5,7 +5,7 @@ const defaultSEO: DefaultSeoProps = {
   titleTemplate: 'LinguaTurca | %s',
   defaultTitle: 'LinguaTurca — Школа турецкого языка онлайн',
   description:
-    'Онлайн-уроки турецкого языка: мини-группы, индивидуально, бесплатный мини-урок и определение уровня.',
+    'Онлайн-уроки турецкого языка: мини-группы, индивидуально, определение уровня и консультации.',
   openGraph: {
     type: 'website',
     locale: 'ru_RU',
