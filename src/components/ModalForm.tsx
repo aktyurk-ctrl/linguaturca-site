@@ -20,7 +20,7 @@ export default function ModalForm() {
       const button = target.closest("[data-form-button]") as HTMLElement;
       if (button) {
         const section = button.dataset.section || "Не указано";
-        const text = button.innerText.trim();
+        const text = button.innerText?.trim() || "";
         setContext({ section, button: text });
         setOpen(true);
         // Сбрасываем состояние формы

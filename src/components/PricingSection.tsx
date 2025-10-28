@@ -117,13 +117,13 @@ export default function PricingSection() {
               <div className="mt-8">
                 <p className="text-lg font-semibold text-gray-900">
                   Полный курс — <span className="text-sky-600 text-2xl font-bold">
-                    {tariff.price.includes('₽') && tariff.price.split('₽').length > 2 ? (
+                    {tariff.price?.includes('₽') && tariff.price?.split('₽').length > 2 ? (
                       <>
-                        <span className="line-through text-gray-400 mr-2 text-lg sm:text-2xl">{tariff.price.split('₽')[0].trim()} ₽</span>
-                        <span className="text-xl sm:text-2xl">{tariff.price.split('₽')[1].trim()} ₽</span>
+                        <span className="line-through text-gray-400 mr-2 text-lg sm:text-2xl">{tariff.price?.split('₽')[0]?.trim()} ₽</span>
+                        <span className="text-xl sm:text-2xl">{tariff.price?.split('₽')[1]?.trim()} ₽</span>
                       </>
                     ) : (
-                      tariff.price
+                      tariff.price ?? ''
                     )}
                   </span>
                 </p>
