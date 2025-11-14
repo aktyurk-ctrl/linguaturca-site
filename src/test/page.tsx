@@ -2,19 +2,36 @@
 
 import { useEffect } from "react";
 
+declare global {
+  interface TelegramWebApp {
+    ready: () => void;
+    expand: () => void;
+    sendData: (data: string) => void;
+  }
+
+  interface TelegramNamespace {
+    WebApp?: TelegramWebApp;
+  }
+
+  interface Window {
+    Telegram?: TelegramNamespace;
+  }
+}
+
 export default function TestPage() {
   useEffect(() => {
-    // Инициализация Telegram Mini App
     if (typeof window !== "undefined" && window.Telegram?.WebApp) {
       const tg = window.Telegram.WebApp;
-
-      tg.ready();   // Сообщаем Telegram, что страница загружена
-      tg.expand();  // Растягиваем мини-приложение на весь экран
+      tg.ready();
+      tg.expand();
     }
   }, []);
 
   const sendDemoResult = () => {
-    if (window?.Telegram?.WebApp?.sendData) {
+    if (
+      typeof window !== "undefined" &&
+      window.Telegram?.WebApp?.sendData
+    ) {
       window.Telegram.WebApp.sendData(
         JSON.stringify({
           level: "A1",
