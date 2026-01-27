@@ -2,22 +2,10 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
-import SignupModal from "./SignupModal";
+import { useLeadModal } from "@/contexts/LeadModalContext";
 
 export default function CourseMiniGroupSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContext, setModalContext] = useState({ section: "", action: "" });
-
-  const handleOpenModal = (section: string, action: string) => {
-    setModalContext({ section, action });
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setModalContext({ section: "", action: "" });
-  };
+  const { openModal } = useLeadModal();
   return (
     <section className="section bg-sky-50">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-6 md:px-12">
@@ -50,8 +38,12 @@ export default function CourseMiniGroupSection() {
           <div className="mt-6">
              <button 
                className="btn-main"
-               data-form-button
-               data-section="Мини-группы"
+               onClick={() => openModal({
+                 title: "Записаться в мини-группу",
+                 subtitle: "Оставьте контакты, и мы свяжемся с вами в течение 15 минут",
+                 defaultFormat: "Мини-группа",
+                 source: "mini-groups"
+               })}
              >
                Записаться в мини-группу
              </button>
@@ -80,9 +72,6 @@ export default function CourseMiniGroupSection() {
           </div>
         </motion.div>
       </div>
-
-      {/* Модальное окно */}
-      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }

@@ -1,25 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import SignupModal from "./SignupModal";
+import { useLeadModal } from "@/contexts/LeadModalContext";
 
 export default function ScheduleSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContext, setModalContext] = useState({ section: "", action: "" });
-
-  const handleOpenModal = (section: string, action: string) => {
-    setModalContext({ section, action });
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setModalContext({ section: "", action: "" });
-  };
+  const { openModal } = useLeadModal();
+  
   const groups = [
     {
       title: "Курс с нуля",
-      startDate: "1 ноября",
+      startDate: "1 февраля",
       time: "19:00",
       teacher: "Дарья",
       level: "нулевой",
@@ -29,7 +18,7 @@ export default function ScheduleSection() {
     },
     {
       title: "Группа A2",
-      startDate: "1 ноября",
+      startDate: "1 февраля",
       time: "20:00",
       teacher: "Дарья",
       level: "средний",
@@ -48,17 +37,17 @@ export default function ScheduleSection() {
       }}
     >
       <div className="container mx-auto px-6">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="text-4xl font-bold text-gray-900 text-center mb-12"
-          >
-            Расписание ближайших <span className="text-sky-500">групп</span>
-          </motion.h2>
+        >
+          Расписание ближайших <span className="text-sky-500">групп</span>
+        </motion.h2>
 
-          {/* Карточки */}
+        {/* Карточки */}
         <div className="space-y-8 mb-12">
           {groups.map((group, i) => (
             <motion.div
@@ -101,18 +90,24 @@ export default function ScheduleSection() {
                   </div>
                   
                   <div className="mt-4">
-                     <motion.button 
-                       className="btn-main px-8 py-3 text-lg font-semibold"
-                       data-form-button
-                       data-section="Расписание"
-                       whileHover={{ 
-                         scale: 1.05,
-                         boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
-                       }}
-                       whileTap={{ scale: 0.98 }}
-                     >
-                       Занять место
-                     </motion.button>
+                    <motion.button 
+                      className="btn-main px-8 py-3 text-lg font-semibold"
+                      onClick={() => openModal({
+                        title: "Занять место в группе",
+                        subtitle: "Оставьте контакты, и мы свяжемся с вами в течение 15 минут",
+                        defaultFormat: group.title,
+                        source: "schedule",
+                        level: group.level,
+                        startDate: group.startDate
+                      })}
+                      whileHover={{ 
+                        scale: 1.05,
+                        boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
+                      }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      Занять место
+                    </motion.button>
                     <p className="text-sm text-orange-600 font-medium mt-2">
                       Осталось 3 места
                     </p>
@@ -173,18 +168,24 @@ export default function ScheduleSection() {
                   </div>
                   
                   <div className="mt-4">
-                     <motion.button 
-                       className="btn-main w-full px-8 py-3 text-lg font-semibold"
-                       data-form-button
-                       data-section="Расписание"
-                       whileHover={{ 
-                         scale: 1.05,
-                         boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
-                       }}
-                       whileTap={{ scale: 0.98 }}
-                     >
-                 Занять место
-                     </motion.button>
+                    <motion.button 
+                      className="btn-main w-full px-8 py-3 text-lg font-semibold"
+                      onClick={() => openModal({
+                        title: "Занять место в группе",
+                        subtitle: "Оставьте контакты, и мы свяжемся с вами в течение 15 минут",
+                        defaultFormat: group.title,
+                        source: "schedule",
+                        level: group.level,
+                        startDate: group.startDate
+                      })}
+                      whileHover={{ 
+                        scale: 1.05,
+                        boxShadow: '0 10px 25px rgba(34, 197, 94, 0.3)'
+                      }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      Занять место
+                    </motion.button>
                     <p className="text-sm text-orange-600 font-medium mt-2 text-center">
                       Осталось 3 места
                     </p>
@@ -202,9 +203,6 @@ export default function ScheduleSection() {
           </button>
         </div>
       </div>
-
-      {/* Модальное окно */}
-      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }

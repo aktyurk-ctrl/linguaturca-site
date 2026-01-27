@@ -1,8 +1,10 @@
 "use client"
 import { useState } from 'react'
+import { useLeadModal } from '@/contexts/LeadModalContext'
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { openModal } = useLeadModal()
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
@@ -23,13 +25,20 @@ export function Header() {
         <nav className="hidden md:flex gap-6 text-gray-800 font-medium">
           <a href="/">Главная</a>
           <a href="#about">О школе</a>
-          <a href="#how-we-teach">Как мы учим</a>
+          <a href="#teachers">Преподаватели</a>
           <a href="#learning-options">Курсы</a>
           <a href="#schedule">Расписание</a>
           <a href="#reviews">Отзывы</a>
         </nav>
 
-        <button className="hidden md:block header-cta" data-form-button data-section="Header">
+        <button 
+          className="hidden md:block header-cta" 
+          onClick={() => openModal({
+            title: "Записаться на занятие",
+            subtitle: "Оставьте контакты, и мы свяжемся с вами в течение 15 минут",
+            source: "header"
+          })}
+        >
           Записаться
         </button>
 
@@ -51,12 +60,22 @@ export function Header() {
           <nav className="px-6 py-6 flex flex-col gap-4">
             <a href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Главная</a>
             <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">О школе</a>
-            <a href="#how-we-teach" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Как мы учим</a>
+            <a href="#teachers" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Преподаватели</a>
             <a href="#courses" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Курсы</a>
             <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Тарифы</a>
             <a href="#schedule" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Расписание</a>
             <a href="#reviews" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Отзывы</a>
-            <button className="mt-4 header-cta text-center" onClick={() => setIsMobileMenuOpen(false)} data-form-button data-section="Header">
+            <button 
+              className="mt-4 header-cta text-center" 
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openModal({
+                  title: "Записаться на занятие",
+                  subtitle: "Оставьте контакты, и мы свяжемся с вами в течение 15 минут",
+                  source: "header"
+                });
+              }}
+            >
               Записаться
             </button>
           </nav>

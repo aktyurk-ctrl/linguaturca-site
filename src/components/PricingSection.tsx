@@ -1,22 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
-import SignupModal from "./SignupModal";
+import { useLeadModal } from "@/contexts/LeadModalContext";
 
 export default function PricingSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContext, setModalContext] = useState({ section: "", action: "" });
-
-  const handleOpenModal = (section: string, action: string) => {
-    setModalContext({ section, action });
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setModalContext({ section: "", action: "" });
-  };
+  const { openModal } = useLeadModal();
   const tariffs = [
     {
       title: "Тариф базовый",
@@ -129,8 +117,12 @@ export default function PricingSection() {
                 </p>
                 <button 
                   className="mt-6 btn-main w-full"
-                  data-form-button
-                  data-section="Тарифы"
+                  onClick={() => openModal({
+                    title: "Записаться на курс",
+                    subtitle: "Оставьте контакты, и мы свяжемся с вами в течение 15 минут",
+                    defaultFormat: "Мини-группа",
+                    source: "pricing"
+                  })}
                 >
                   Записаться
                 </button>
@@ -139,9 +131,6 @@ export default function PricingSection() {
           ))}
         </div>
       </div>
-
-      {/* Модальное окно */}
-      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }

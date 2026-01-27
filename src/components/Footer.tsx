@@ -8,7 +8,7 @@ export function Footer() {
       style={{ backgroundColor: '#031E33' }}
     >
         <div 
-          className="container py-12 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10"
+          className="container py-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-10"
           style={{ borderTop: '1px solid rgba(255, 255, 255, 0.13)' }}
         >
           <div>
@@ -49,6 +49,14 @@ export function Footer() {
             <ul className="mt-2 space-y-2 text-base" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
               <li><Link href="/legal" className="hover:text-white transition-colors">Публичная оферта</Link></li>
               <li><Link href="/policy" className="hover:text-white transition-colors">Политика в отношении обработки персональных данных</Link></li>
+            </ul>
+          </div>
+          <div>
+            <div className="font-semibold text-white mb-3 text-base">Полезное</div>
+            <ul className="mt-2 space-y-2 text-base" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <li><Link href="/articles/kak-vyuchit-turetskiy" className="hover:text-white transition-colors">Как выучить турецкий</Link></li>
+              <li><Link href="/articles/turetskiy-yazyk-s-nulya" className="hover:text-white transition-colors">Турецкий язык с нуля</Link></li>
+              <li><Link href="/articles/turetskiy-dlya-pereezda" className="hover:text-white transition-colors">Турецкий для переезда</Link></li>
             </ul>
           </div>
         </div>

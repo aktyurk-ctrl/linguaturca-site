@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function ModalForm() {
   const [open, setOpen] = useState(false);
-  const [context, setContext] = useState({ section: "", button: "" });
+  const [context, setContext] = useState({ section: "", button: "", level: "" });
   const [formData, setFormData] = useState({ 
     name: "", 
     phone: "", 
@@ -21,7 +21,8 @@ export default function ModalForm() {
       if (button) {
         const section = button.dataset.section || "Не указано";
         const text = button.innerText?.trim() || "";
-        setContext({ section, button: text });
+        const level = button.dataset.level || "";
+        setContext({ section, button: text, level });
         setOpen(true);
         // Сбрасываем состояние формы
         setSent(false);
@@ -44,6 +45,7 @@ export default function ModalForm() {
           ...formData,
           section: context.section,
           button: context.button,
+          level: context.level,
         }),
       });
 

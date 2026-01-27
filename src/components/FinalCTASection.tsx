@@ -1,22 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
-import SignupModal from "./SignupModal";
+import { useLeadModal } from "@/contexts/LeadModalContext";
 
 export default function FinalCTASection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContext, setModalContext] = useState({ section: "", action: "" });
-
-  const handleOpenModal = (section: string, action: string) => {
-    setModalContext({ section, action });
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setModalContext({ section: "", action: "" });
-  };
+  const { openModal } = useLeadModal();
   return (
     <section 
       className="w-full text-center relative overflow-hidden"
@@ -64,7 +52,12 @@ export default function FinalCTASection() {
               color: '#00AEEF',
               fontWeight: '600'
             }}
-            onClick={() => handleOpenModal("hero", "signup")}
+            onClick={() => openModal({
+              title: "Записаться на консультацию",
+              subtitle: "Оставьте контакты, и мы свяжемся с вами в течение 15 минут",
+              defaultFormat: "Бесплатная консультация",
+              source: "final-cta"
+            })}
             whileHover={{ 
               scale: 1.05,
               boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15)'
@@ -88,9 +81,6 @@ export default function FinalCTASection() {
           </motion.button>
         </motion.div>
       </div>
-
-      {/* Модальное окно */}
-      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }

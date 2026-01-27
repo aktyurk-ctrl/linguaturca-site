@@ -1,22 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
-import SignupModal from "./SignupModal";
+import { useLeadModal } from "@/contexts/LeadModalContext";
 
 export default function FreeConsultationSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContext, setModalContext] = useState({ section: "", action: "" });
-
-  const handleOpenModal = (section: string, action: string) => {
-    setModalContext({ section, action });
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setModalContext({ section: "", action: "" });
-  };
+  const { openModal } = useLeadModal();
   return (
     <section 
       className="w-full py-20 text-center"
@@ -63,7 +51,12 @@ export default function FreeConsultationSection() {
               backgroundColor: '#00AEEF',
               fontSize: '18px'
             }}
-            onClick={() => handleOpenModal("consultation", "signup")}
+            onClick={() => openModal({
+              title: "Бесплатная консультация",
+              subtitle: "Познакомьтесь с преподавателем и узнайте свой уровень",
+              defaultFormat: "Бесплатная консультация",
+              source: "consultation"
+            })}
             whileHover={{ 
               scale: 1.05,
               boxShadow: '0 10px 25px rgba(0, 174, 239, 0.3)'
@@ -80,9 +73,6 @@ export default function FreeConsultationSection() {
           </motion.button>
         </motion.div>
       </div>
-
-      {/* Модальное окно */}
-      <SignupModal isOpen={isModalOpen} onClose={handleCloseModal} context={modalContext} />
     </section>
   );
 }
