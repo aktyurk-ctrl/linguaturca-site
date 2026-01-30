@@ -7,6 +7,7 @@ import { CookieConsent } from '@/components/CookieConsent'
 import { LeadModalProvider } from '@/contexts/LeadModalContext'
 import LeadModal from '@/components/LeadModal'
 import { Analytics } from '@vercel/analytics/react'
+import YandexMetrika from '@/components/YandexMetrika'
 
 const inter = Inter({ subsets: ['cyrillic', 'latin'], variable: '--font-inter' })
 const manrope = Manrope({ subsets: ['cyrillic', 'latin'], variable: '--font-manrope' })
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ru">
       <body className={`${inter.variable} ${manrope.variable} font-inter`}>
+        <YandexMetrika />
         <LeadModalProvider>
           <Header />
           <main>{children}</main>
