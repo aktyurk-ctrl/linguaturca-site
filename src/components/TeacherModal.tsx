@@ -61,7 +61,10 @@ export default function TeacherModal({ teacher, isOpen, onClose }: TeacherModalP
                 alt={teacher.imageAlt}
                 width={200}
                 height={250}
+                sizes="200px"
                 className="rounded-xl shadow-md object-cover w-full max-w-[200px] mx-auto"
+                quality={75}
+                loading="lazy"
               />
             </div>
 

@@ -14,10 +14,12 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Image 
-                src="/logo.png" 
+                src="/logo.png"
                 alt="LinguaTurca" 
-                width={40} 
+                width={40}
                 height={40}
+                sizes="40px"
+                priority
                 className="w-10 h-10 rounded-full"
               />
               <div className="font-bold text-lg text-white">LinguaTurca</div>

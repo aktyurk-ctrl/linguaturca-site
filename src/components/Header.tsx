@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react'
+import Image from 'next/image'
 import { useLeadModal } from '@/contexts/LeadModalContext'
 
 export function Header() {
@@ -11,11 +12,17 @@ export function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-6">
         {/* Логотип + текст */}
         <div className="flex items-center gap-3">
-          <img
-            src="/logo.png"
-            alt="LinguaTurca логотип"
-            className="w-10 h-10 rounded-full"
-          />
+          <div className="relative w-10 h-10 flex-shrink-0">
+            <Image
+              src="/logo.png"
+              alt="LinguaTurca логотип"
+              width={40}
+              height={40}
+              className="rounded-full object-cover"
+              sizes="40px"
+              priority
+            />
+          </div>
           <span className="text-xl font-bold text-[#1F1F1F] tracking-tight">
             LinguaTurca
           </span>

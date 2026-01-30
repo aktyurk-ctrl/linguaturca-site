@@ -7,7 +7,7 @@ export default function FreeConsultationSection() {
   const { openModal } = useLeadModal();
   return (
     <section 
-      className="w-full py-20 text-center"
+      className="w-full py-8 md:py-20 text-center"
       style={{
         background: 'linear-gradient(180deg, #EAF8FF)'
       }}
@@ -21,15 +21,15 @@ export default function FreeConsultationSection() {
           className="max-w-2xl mx-auto"
         >
           <h2 
-            className="font-bold mb-6"
-            style={{ fontSize: '24px', color: '#0B2239' }}
+            className="font-bold mb-4 md:mb-6"
+            style={{ fontSize: 'clamp(20px, 5vw, 24px)', color: '#0B2239', lineHeight: '1.3' }}
           >
             Индивидуальная консультация
           </h2>
           
           <p 
-            className="mb-8 leading-relaxed"
-            style={{ fontSize: '18px', color: '#3A4754' }}
+            className="mb-4 md:mb-8 leading-relaxed"
+            style={{ fontSize: '15px', color: '#3A4754' }}
           >
             Начните с бесплатной встречи — определим уровень и подберём формат под ваши цели.
           </p>
@@ -46,10 +46,11 @@ export default function FreeConsultationSection() {
           </div>
           
           <motion.button 
-            className="px-10 py-4 rounded-full text-white font-semibold transition-all duration-300 ease-in-out"
+            className="px-6 md:px-10 py-2.5 md:py-4 rounded-full text-white font-semibold transition-all duration-300 ease-in-out"
             style={{ 
               backgroundColor: '#00AEEF',
-              fontSize: '18px'
+              fontSize: '15px',
+              minHeight: '44px'
             }}
             onClick={() => openModal({
               title: "Бесплатная консультация",

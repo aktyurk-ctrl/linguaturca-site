@@ -80,7 +80,7 @@ export default function HeroForm() {
   return (
     <div
       id="hero-form"
-      className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-md mx-auto border border-gray-100"
+      className="bg-white rounded-2xl shadow-2xl p-4 md:p-6 w-full max-w-md mx-auto border border-gray-100"
     >
         {success ? (
           <div className="text-center py-4">

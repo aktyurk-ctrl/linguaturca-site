@@ -56,9 +56,10 @@ export default function ImageModal({ isOpen, imageSrc, alt, onClose }: ImageModa
               <Image
                 src={imageSrc}
                 alt={alt}
-                width={1200}
-                height={800}
-                className="object-contain w-full h-full"
+                fill
+                sizes="(max-width: 768px) 100vw, 1200px"
+                className="object-contain"
+                quality={85}
                 priority
               />
             </div>

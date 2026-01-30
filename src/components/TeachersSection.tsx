@@ -66,7 +66,10 @@ export default function TeachersSection() {
                     src={teacher.image}
                     alt={teacher.imageAlt}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
+                    quality={75}
+                    loading="lazy"
                   />
                 </div>
 

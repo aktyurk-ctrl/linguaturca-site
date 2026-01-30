@@ -1,21 +1,24 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
+import MobileCarousel from './MobileCarousel'
 
 export default function HowWeTeachSection() {
   return (
-    <section id="learning-options" className="py-20 bg-white">
+    <section id="learning-options" className="py-8 md:py-20 bg-white">
       <div className="container mx-auto text-center px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-2xl md:text-3xl font-semibold text-gray-800 mb-10 flex items-center justify-center gap-2"
+          className="text-[22px] md:text-3xl font-semibold text-gray-800 mb-6 md:mb-10 flex items-center justify-center gap-2 leading-[1.3] md:leading-normal"
         >
           <span>💬</span> Выберите, как вам удобнее учиться
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {/* Desktop Grid */}
+        <div className="hidden md:grid grid-cols-2 gap-4 md:gap-8 max-w-6xl mx-auto">
           {/* Карточка 1 — мини-группы */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -25,20 +28,24 @@ export default function HowWeTeachSection() {
             whileHover={{ y: -4, boxShadow: "0 12px 24px rgba(0, 0, 0, 0.1)" }}
             className="flex flex-col md:flex-row bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden min-h-[300px]"
           >
-            <div className="md:w-1/2 h-64 md:h-auto">
-              <img
+            <div className="md:w-1/2 relative h-[200px] md:h-auto overflow-hidden">
+              <Image
                 src="/images/class1.jpg"
                 alt="Уроки в мини-группах"
-                className="object-cover w-full h-full md:rounded-l-3xl"
+                fill
+                sizes="50vw"
+                className="object-cover md:rounded-l-3xl"
+                quality={75}
+                loading="lazy"
               />
             </div>
-            <div className="md:w-1/2 flex flex-col justify-center p-8 text-left">
-              <h3 className="text-lg md:text-xl font-medium text-gray-800 mb-3">
+            <div className="md:w-1/2 flex flex-col justify-center p-4 md:p-8 text-left">
+              <h3 className="text-[15px] md:text-xl font-medium text-gray-800 mb-3 leading-relaxed">
                 Уроки в мини-группах — больше общения, больше практики, больше мотивации.
               </h3>
               <a 
                 href="#groups"
-                className="bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full px-8 py-3 mt-3 transition-all duration-200 active:scale-95 inline-block text-center"
+                className="bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full px-6 py-2.5 md:px-8 md:py-3 mt-2 md:mt-3 transition-all duration-200 active:scale-95 inline-block text-center text-[15px] md:text-base"
               >
                 Присоединиться
               </a>
@@ -54,26 +61,85 @@ export default function HowWeTeachSection() {
             whileHover={{ y: -4, boxShadow: "0 12px 24px rgba(0, 0, 0, 0.1)" }}
             className="flex flex-col md:flex-row bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden min-h-[300px]"
           >
-            <div className="md:w-1/2 h-64 md:h-auto">
-              <img
+            <div className="md:w-1/2 relative h-[200px] md:h-auto overflow-hidden">
+              <Image
                 src="/images/class2.jpg"
                 alt="Индивидуальные занятия"
-                className="object-cover w-full h-full md:rounded-l-3xl"
+                fill
+                sizes="50vw"
+                className="object-cover md:rounded-l-3xl"
+                quality={75}
+                loading="lazy"
               />
             </div>
-            <div className="md:w-1/2 flex flex-col justify-center p-8 text-left">
-              <h3 className="text-lg md:text-xl font-medium text-gray-800 mb-3">
+            <div className="md:w-1/2 flex flex-col justify-center p-4 md:p-8 text-left">
+              <h3 className="text-[15px] md:text-xl font-medium text-gray-800 mb-3 leading-relaxed">
                 Индивидуальные занятия — в своём темпе и по персональной программе.
               </h3>
               <a 
                 href="#individual"
-                className="bg-rose-400 hover:bg-rose-500 text-white font-semibold rounded-full px-8 py-3 mt-3 transition-all duration-200 active:scale-95 inline-block text-center"
+                className="bg-rose-400 hover:bg-rose-500 text-white font-semibold rounded-full px-6 py-2.5 md:px-8 md:py-3 mt-2 md:mt-3 transition-all duration-200 active:scale-95 inline-block text-center text-[15px] md:text-base"
               >
                 Начать
               </a>
             </div>
           </motion.div>
         </div>
+
+        {/* Mobile Carousel */}
+        <MobileCarousel
+          items={[
+            {
+              image: "/images/class1.jpg",
+              alt: "Уроки в мини-группах",
+              title: "Уроки в мини-группах — больше общения, больше практики, больше мотивации.",
+              href: "#groups",
+              buttonText: "Присоединиться",
+              buttonClass: "bg-sky-500 hover:bg-sky-600"
+            },
+            {
+              image: "/images/class2.jpg",
+              alt: "Индивидуальные занятия",
+              title: "Индивидуальные занятия — в своём темпе и по персональной программе.",
+              href: "#individual",
+              buttonText: "Начать",
+              buttonClass: "bg-rose-400 hover:bg-rose-500"
+            }
+          ]}
+          renderItem={(item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="flex flex-col bg-white rounded-3xl shadow-md transition-all duration-300 overflow-hidden min-h-[200px]"
+            >
+              <div className="relative w-full h-[200px] overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  fill
+                  sizes="90vw"
+                  className="object-cover"
+                  quality={75}
+                  loading="lazy"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-4 text-left">
+                <h3 className="text-[15px] font-medium text-gray-800 mb-3 leading-relaxed">
+                  {item.title}
+                </h3>
+                <a 
+                  href={item.href}
+                  className={`${item.buttonClass} text-white font-semibold rounded-full px-6 py-2.5 mt-2 transition-all duration-200 active:scale-95 inline-block text-center text-[15px]`}
+                >
+                  {item.buttonText}
+                </a>
+              </div>
+            </motion.div>
+          )}
+        />
       </div>
     </section>
   );
