@@ -19,7 +19,7 @@ export function AboutSection() {
       >
         <div className="relative w-full max-w-[320px] md:max-w-md aspect-[5/6] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/founder.jpg"
+            src="/images/founder-optimized.webp"
             alt="Дарья Колосова — основатель LinguaTurca"
             fill
             sizes="(max-width: 768px) 320px, 50vw"

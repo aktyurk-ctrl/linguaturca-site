@@ -14,7 +14,7 @@ export const teachers: Teacher[] = [
     id: "darya-1",
     name: "Дарья",
     role: "Основатель и преподаватель школы Linguaturca",
-    image: "/images/founder.jpg",
+    image: "/images/founder-optimized.webp",
     imageAlt: "Дарья — преподаватель турецкого языка",
     levelChip: "С нуля до B2",
     highlights: [
@@ -28,7 +28,7 @@ export const teachers: Teacher[] = [
     id: "darya-2",
     name: "Дарья",
     role: "Преподаватель турецкого языка",
-    image: "/images/founder.jpg",
+    image: "/images/founder-optimized.webp",
     imageAlt: "Дарья — преподаватель турецкого языка",
     levelChip: "С нуля до B2",
     highlights: [
@@ -42,7 +42,7 @@ export const teachers: Teacher[] = [
     id: "darya-3",
     name: "Дарья",
     role: "Преподаватель турецкого языка",
-    image: "/images/founder.jpg",
+    image: "/images/founder-optimized.webp",
     imageAlt: "Дарья — преподаватель турецкого языка",
     levelChip: "С нуля до B2",
     highlights: [

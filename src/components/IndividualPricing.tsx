@@ -98,7 +98,7 @@ export default function IndividualPricing() {
           >
             <div className="relative w-full max-w-[340px] lg:max-w-none">
               <Image
-                src="/images/class2.jpg"
+                src="/images/class2-optimized.webp"
                 alt="Индивидуальное обучение турецкому"
                 width={500}
                 height={500}

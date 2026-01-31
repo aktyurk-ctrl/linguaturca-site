@@ -13,7 +13,7 @@ export default function ScheduleSection() {
       time: "19:00",
       teacher: "Дарья",
       level: "нулевой",
-      image: "/images/schedule1.jpg",
+      image: "/images/schedule1-optimized.webp",
       alt: "Турецкий курс для новичков",
       description: "Начнёте говорить по-турецки с первых занятий, освоите базовую грамматику и лексику для общения в повседневных ситуациях. Подходит тем, кто никогда не учил язык раньше."
     },
@@ -23,7 +23,7 @@ export default function ScheduleSection() {
       time: "20:00",
       teacher: "Дарья",
       level: "средний",
-      image: "/images/schedule1.jpg",
+      image: "/images/schedule1-optimized.webp",
       alt: "Турецкий курс среднего уровня",
       description: "Продолжайте изучение турецкого языка на среднем уровне. Углубите знания грамматики и расширите словарный запас для более свободного общения."
     },

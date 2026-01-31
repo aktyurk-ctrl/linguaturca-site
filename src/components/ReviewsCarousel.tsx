@@ -20,17 +20,17 @@ export default function ReviewsCarousel() {
     {
       name: "Марина П.",
       level: "A2 • Мини-группа",
-      screenshot: "/images/review-screenshot-1.jpg",
+      screenshot: "/images/review-screenshot-1-optimized.webp",
     },
     {
       name: "Марина П.",
       level: "B1 • Индивидуально",
-      screenshot: "/images/review-screenshot-2.jpg",
+      screenshot: "/images/review-screenshot-2-optimized.webp",
     },
     {
       name: "Марина П.",
       level: "A1 • Мини-группа",
-      screenshot: "/images/review-screenshot-3.jpg",
+      screenshot: "/images/review-screenshot-3-optimized.webp",
     },
   ];
 

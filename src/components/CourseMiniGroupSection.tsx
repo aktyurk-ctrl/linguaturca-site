@@ -19,7 +19,7 @@ export default function CourseMiniGroupSection() {
         >
           <div className="relative w-full h-[200px] rounded-2xl overflow-hidden">
             <Image
-              src="/images/class1.jpg"
+              src="/images/class1-optimized.webp"
               alt="Мини-группа изучает турецкий"
               fill
               sizes="100vw"
@@ -84,7 +84,7 @@ export default function CourseMiniGroupSection() {
           >
             <div className="relative w-full max-w-[500px] aspect-square rounded-2xl overflow-hidden">
               <Image
-                src="/images/class1.jpg"
+                src="/images/class1-optimized.webp"
                 alt="Мини-группа изучает турецкий"
                 fill
                 sizes="50vw"

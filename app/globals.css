@@ -192,7 +192,7 @@ body {
 /* === HERO СЕКЦИЯ С ФОНОМ === */
 .hero-section {
   position: relative;
-  background-image: url('/images/istanbul.jpg');
+  background-image: url('/images/istanbul-optimized.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -233,6 +233,8 @@ body {
 /* Адаптивность для мобильных устройств */
 @media (max-width: 767px) {
   .hero-section {
+    height: auto !important;
+    min-height: auto !important;
     padding-top: 95px !important;
     padding-bottom: 48px !important;
   }

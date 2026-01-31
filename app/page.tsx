@@ -22,7 +22,7 @@ export default function HomePage() {
     <div>
       <section
         id="hero"
-        className="hero-section px-6 overflow-hidden relative flex items-center justify-center"
+        className="hero-section px-6 overflow-hidden relative md:flex md:items-center md:justify-center"
         style={{
           animation: 'fadeIn 1s ease-in-out',
           height: '100vh',

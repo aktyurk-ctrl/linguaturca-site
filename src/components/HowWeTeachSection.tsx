@@ -29,7 +29,7 @@ export default function HowWeTeachSection() {
           >
             <div className="md:w-1/2 relative h-[200px] md:h-auto overflow-hidden">
               <Image
-                src="/images/class1.jpg"
+                src="/images/class1-optimized.webp"
                 alt="Уроки в мини-группах"
                 fill
                 sizes="50vw"
@@ -62,7 +62,7 @@ export default function HowWeTeachSection() {
           >
             <div className="md:w-1/2 relative h-[200px] md:h-auto overflow-hidden">
               <Image
-                src="/images/class2.jpg"
+                src="/images/class2-optimized.webp"
                 alt="Индивидуальные занятия"
                 fill
                 sizes="50vw"
@@ -97,7 +97,7 @@ export default function HowWeTeachSection() {
           >
             <div className="relative w-full h-[180px] overflow-hidden">
               <Image
-                src="/images/class1.jpg"
+                src="/images/class1-optimized.webp"
                 alt="Уроки в мини-группах"
                 fill
                 sizes="100vw"
@@ -129,7 +129,7 @@ export default function HowWeTeachSection() {
           >
             <div className="relative w-full h-[180px] overflow-hidden">
               <Image
-                src="/images/class2.jpg"
+                src="/images/class2-optimized.webp"
                 alt="Индивидуальные занятия"
                 fill
                 sizes="100vw"
