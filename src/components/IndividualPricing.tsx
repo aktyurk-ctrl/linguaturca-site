@@ -7,7 +7,8 @@ import { useLeadModal } from "@/contexts/LeadModalContext";
 
 export default function IndividualPricing() {
   const { openModal } = useLeadModal();
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Default to "1 занятие" (index 1)
+  const [currentIndex, setCurrentIndex] = useState(1);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToIndex = useCallback((index: number) => {
@@ -145,25 +146,7 @@ export default function IndividualPricing() {
                   <span className="text-base lg:text-lg leading-tight lg:leading-relaxed">Поддержка между занятиями</span>
                 </li>
               </ul>
-              
-              {/* Описательный абзац */}
-              <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="text-left lg:text-left"
-                style={{
-                  fontSize: '17px',
-                  lineHeight: '1.75',
-                  color: '#4A5568',
-                  maxWidth: '440px',
-                  marginTop: '24px'
-                }}
-              >
-                Мы верим, что изучение языка — это не гонка, а путешествие.<br />
-                И нам важно, чтобы каждое занятие приносило радость, не только результат.
-              </motion.p>
+
             </div>
           </motion.div>
         </div>
@@ -295,20 +278,6 @@ export default function IndividualPricing() {
 
             {/* Карточка 3 - Абонемент на 5 занятий */}
             <div className="flex-1 rounded-xl shadow-md relative p-8 min-h-[380px] flex flex-col justify-between" style={{ backgroundColor: '#EAF7FF' }}>
-              {/* Бейдж */}
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <span 
-                  className="px-3 py-1 rounded-full text-sm font-semibold"
-                  style={{ 
-                    backgroundColor: '#E0F6FF',
-                    color: '#009DFF',
-                    border: '1px solid #B3E5FC'
-                  }}
-                >
-                  💎 Выгоднее
-                </span>
-              </div>
-              
               <div className="text-center">
                 <h3 
                   className="font-bold mb-2"
@@ -333,26 +302,37 @@ export default function IndividualPricing() {
                     9500 ₽
                   </p>
                   
-                  {/* Текущая цена */}
-                  <p 
-                    className="font-bold mb-2"
-                    style={{ 
-                      fontSize: '32px', 
-                      fontWeight: '800', 
-                      color: '#009DFF',
-                      letterSpacing: '0.5px'
-                    }}
-                  >
-                    8200 ₽
-                  </p>
+                  {/* Текущая цена с бейджем */}
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <p 
+                      className="font-bold"
+                      style={{ 
+                        fontSize: '32px', 
+                        fontWeight: '800', 
+                        color: '#009DFF',
+                        letterSpacing: '0.5px'
+                      }}
+                    >
+                      8200 ₽
+                    </p>
+                    <span 
+                      className="px-2 py-0.5 rounded-full text-xs font-semibold"
+                      style={{ 
+                        backgroundColor: '#009DFF',
+                        color: '#FFFFFF'
+                      }}
+                    >
+                      Выгоднее
+                    </span>
+                  </div>
                   
                   {/* Мини-бэдж экономии */}
                   <div className="inline-block mb-2">
                     <span 
-                      className="px-3 py-1 rounded-full text-xs font-semibold"
+                      className="px-2 py-1 rounded text-xs font-medium"
                       style={{ 
-                        backgroundColor: '#009DFF',
-                        color: '#FFFFFF'
+                        backgroundColor: '#E0F6FF',
+                        color: '#009DFF'
                       }}
                     >
                       экономия 1300 ₽
@@ -477,11 +457,6 @@ export default function IndividualPricing() {
               {/* Карточка 3 - Абонемент на 5 занятий */}
               <div className="flex-shrink-0 snap-center" style={{ width: '90%', minWidth: '90%', maxWidth: '90%' }}>
                 <div className="rounded-xl shadow-md relative p-6 min-h-[360px] flex flex-col justify-between" style={{ backgroundColor: '#EAF7FF' }}>
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold" style={{ backgroundColor: '#E0F6FF', color: '#009DFF', border: '1px solid #B3E5FC' }}>
-                      💎 Выгоднее
-                    </span>
-                  </div>
                   <div className="text-center">
                     <h3 className="font-bold mb-2 text-[18px]" style={{ fontWeight: '700', color: '#0B2239' }}>
                       Абонемент на 5 занятий
@@ -490,11 +465,16 @@ export default function IndividualPricing() {
                       <p className="mb-1 text-[16px]" style={{ color: '#6B7280', opacity: 0.6, textDecoration: 'line-through' }}>
                         9500 ₽
                       </p>
-                      <p className="font-bold mb-2 text-[28px]" style={{ fontWeight: '800', color: '#009DFF' }}>
-                        8200 ₽
-                      </p>
+                      <div className="flex items-center justify-center gap-2 mb-2">
+                        <p className="font-bold text-[28px]" style={{ fontWeight: '800', color: '#009DFF' }}>
+                          8200 ₽
+                        </p>
+                        <span className="px-2 py-0.5 rounded-full text-xs font-semibold" style={{ backgroundColor: '#009DFF', color: '#FFFFFF' }}>
+                          Выгоднее
+                        </span>
+                      </div>
                       <div className="inline-block mb-2">
-                        <span className="px-3 py-1 rounded-full text-xs font-semibold" style={{ backgroundColor: '#009DFF', color: '#FFFFFF' }}>
+                        <span className="px-2 py-1 rounded text-xs font-medium" style={{ backgroundColor: '#E0F6FF', color: '#009DFF' }}>
                           экономия 1300 ₽
                         </span>
                       </div>

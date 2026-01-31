@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 export default function HeroForm() {
@@ -29,11 +29,10 @@ export default function HeroForm() {
 
     try {
       const payload = {
-        name: formData.name,
-        phone: formData.phone,
+        name: formData.name.trim(),
+        phone: formData.phone.trim(),
         format: "Бесплатная консультация",
         source: "hero",
-        page: pathname || "/",
       };
 
       const res = await fetch("/api/airtable", {
@@ -60,27 +59,20 @@ export default function HeroForm() {
     }
   };
 
-  const handleReset = () => {
-    setSuccess(false);
-    setError(null);
-    setFormData({ name: "", phone: "" });
-    nameInputRef.current?.focus();
-  };
-
-  const scrollToForm = () => {
-    const formElement = document.getElementById("hero-form");
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: "smooth", block: "center" });
-      setTimeout(() => {
-        nameInputRef.current?.focus();
-      }, 500);
+  // Auto-close success after 3 seconds
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        // Optional: scroll to next section or just keep success message
+      }, 3000);
+      return () => clearTimeout(timer);
     }
-  };
+  }, [success]);
 
   return (
     <div
       id="hero-form"
-      className="bg-white rounded-2xl shadow-2xl p-4 md:p-6 w-full max-w-md mx-auto border border-gray-100"
+      className="bg-white rounded-2xl shadow-2xl px-4 md:px-6 py-5 md:py-6 w-full max-w-md mx-auto border border-gray-100"
     >
         {success ? (
           <div className="text-center py-4">
@@ -99,25 +91,19 @@ export default function HeroForm() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
               Спасибо!
             </h3>
-            <p className="text-gray-600 text-sm mb-4">
-              Мы получили заявку и скоро свяжемся с вами.
+            <p className="text-gray-700 text-sm">
+              Мы получили заявку и свяжемся с вами в течение 24 часов.
             </p>
-            <button
-              onClick={handleReset}
-              className="text-sm text-sky-600 hover:text-sky-700 font-medium"
-            >
-              Отправить ещё одну
-            </button>
           </div>
         ) : (
           <>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">
+            <h3 className="text-xl font-bold text-sky-600 mb-3 text-center">
               Бесплатная консультация
             </h3>
-            <p className="text-gray-800 text-sm mb-6 font-medium" style={{ color: '#374151' }}>
+            <p className="text-gray-800 text-sm mb-5 font-medium text-center">
               Оставьте контакты — мы свяжемся с вами в течение 24 часов
             </p>
 
@@ -129,9 +115,10 @@ export default function HeroForm() {
                   name="name"
                   placeholder="Ваше имя"
                   required
+                  minLength={2}
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all"
+                  className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-600 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all"
                 />
               </div>
 
@@ -139,11 +126,12 @@ export default function HeroForm() {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Телефон"
+                  placeholder="+7 (999) 123-45-67"
                   required
+                  minLength={10}
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all"
+                  className="w-full border-2 border-gray-300 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-600 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all"
                 />
               </div>
 
@@ -187,7 +175,7 @@ export default function HeroForm() {
               </button>
             </form>
 
-            <p className="text-xs md:text-sm text-center mt-4 leading-relaxed" style={{ color: '#6B7280', fontSize: '13px' }}>
+            <p className="text-xs text-center mt-4 leading-relaxed text-gray-600">
               Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
             </p>
           </>

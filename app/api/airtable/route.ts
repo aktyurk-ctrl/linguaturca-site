@@ -34,11 +34,10 @@ export async function POST(req: Request) {
     console.log("📩 Получен запрос:", body);
 
     // соответствие английских ключей и русских полей
-    const Имя = body.name || body.Имя;
-    const Телефон = body.phone || body.Телефон;
-    const Email = body.email || body.Email;
+    const Имя = (body.name || body.Имя || "").trim();
+    const Телефон = (body.phone || body.Телефон || "").trim();
+    const Email = (body.email || body.Email || "").trim();
     const source = body.source || body["Секция сайта"] || "";
-    const page = body.page || "";
     const level = body.level || "";
     const startDate = body.startDate || "";
     

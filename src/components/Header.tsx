@@ -21,6 +21,7 @@ export function Header() {
               className="rounded-full object-cover"
               sizes="40px"
               priority
+              quality={75}
             />
           </div>
           <span className="text-xl font-bold text-[#1F1F1F] tracking-tight">

@@ -6,7 +6,6 @@ import { useLeadModal } from "@/contexts/LeadModalContext";
 
 export default function PricingSection() {
   const { openModal } = useLeadModal();
-  const [currentIndex, setCurrentIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const tariffs = [
     {
@@ -45,6 +44,10 @@ export default function PricingSection() {
     },
   ];
 
+  // Find popular tariff index (isHighlighted: true)
+  const popularIndex = tariffs.findIndex(t => t.isHighlighted);
+  const [currentIndex, setCurrentIndex] = useState(popularIndex >= 0 ? popularIndex : 0);
+
   // Carousel navigation functions
   const scrollToIndex = useCallback((index: number, updateState: boolean = true) => {
     if (scrollContainerRef.current) {
@@ -76,6 +79,18 @@ export default function PricingSection() {
       scrollToIndex(currentIndex + 1);
     }
   }, [currentIndex, scrollToIndex, tariffs.length]);
+
+  // Initialize scroll to popular tariff on mount (mobile)
+  useEffect(() => {
+    if (scrollContainerRef.current && popularIndex >= 0) {
+      const container = scrollContainerRef.current;
+      const containerWidth = container.offsetWidth;
+      const cardWidth = containerWidth * 0.9;
+      const gap = 16;
+      const scrollPosition = popularIndex * (cardWidth + gap);
+      container.scrollLeft = scrollPosition;
+    }
+  }, [popularIndex]);
 
   // Track scroll position to update current index
   useEffect(() => {

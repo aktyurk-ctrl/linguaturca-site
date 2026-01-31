@@ -17,13 +17,14 @@ export function AboutSection() {
         viewport={{ once: true }}
         className="flex-1 flex flex-col items-center"
       >
-        <div className="relative w-full max-w-md aspect-[5/6] max-h-[220px] md:max-h-none rounded-2xl overflow-hidden">
+        <div className="relative w-full max-w-[320px] md:max-w-md aspect-[5/6] rounded-2xl overflow-hidden shadow-lg">
           <Image
             src="/images/founder.jpg"
             alt="Дарья Колосова — основатель LinguaTurca"
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover object-[50%_20%]"
+            sizes="(max-width: 768px) 320px, 50vw"
+            className="object-cover"
+            style={{ objectPosition: 'center top' }}
             quality={75}
             loading="lazy"
           />

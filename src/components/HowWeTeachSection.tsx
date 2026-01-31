@@ -1,7 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import MobileCarousel from './MobileCarousel'
 
 export default function HowWeTeachSection() {
   return (
@@ -86,60 +85,72 @@ export default function HowWeTeachSection() {
           </motion.div>
         </div>
 
-        {/* Mobile Carousel */}
-        <MobileCarousel
-          items={[
-            {
-              image: "/images/class1.jpg",
-              alt: "Уроки в мини-группах",
-              title: "Уроки в мини-группах — больше общения, больше практики, больше мотивации.",
-              href: "#groups",
-              buttonText: "Присоединиться",
-              buttonClass: "bg-sky-500 hover:bg-sky-600"
-            },
-            {
-              image: "/images/class2.jpg",
-              alt: "Индивидуальные занятия",
-              title: "Индивидуальные занятия — в своём темпе и по персональной программе.",
-              href: "#individual",
-              buttonText: "Начать",
-              buttonClass: "bg-rose-400 hover:bg-rose-500"
-            }
-          ]}
-          renderItem={(item, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              viewport={{ once: true }}
-              className="flex flex-col bg-white rounded-3xl shadow-md transition-all duration-300 overflow-hidden min-h-[200px]"
-            >
-              <div className="relative w-full h-[200px] overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.alt}
-                  fill
-                  sizes="90vw"
-                  className="object-cover"
-                  quality={75}
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex flex-col justify-center p-4 text-left">
-                <h3 className="text-[15px] font-medium text-gray-800 mb-3 leading-relaxed">
-                  {item.title}
-                </h3>
-                <a 
-                  href={item.href}
-                  className={`${item.buttonClass} text-white font-semibold rounded-full px-6 py-2.5 mt-2 transition-all duration-200 active:scale-95 inline-block text-center text-[15px]`}
-                >
-                  {item.buttonText}
-                </a>
-              </div>
-            </motion.div>
-          )}
-        />
+        {/* Mobile: Stacked cards */}
+        <div className="md:hidden space-y-4 max-w-md mx-auto">
+          {/* Карточка 1 — мини-группы */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="flex flex-col bg-white rounded-2xl shadow-md transition-all duration-300 overflow-hidden"
+          >
+            <div className="relative w-full h-[180px] overflow-hidden">
+              <Image
+                src="/images/class1.jpg"
+                alt="Уроки в мини-группах"
+                fill
+                sizes="100vw"
+                className="object-cover"
+                quality={75}
+                loading="lazy"
+              />
+            </div>
+            <div className="flex flex-col justify-center p-4 text-left">
+              <h3 className="text-[15px] font-medium text-gray-800 mb-3 leading-relaxed">
+                Уроки в мини-группах — больше общения, больше практики, больше мотивации.
+              </h3>
+              <a 
+                href="#groups"
+                className="bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-full px-6 py-2.5 mt-2 transition-all duration-200 active:scale-95 inline-block text-center text-[15px]"
+              >
+                Присоединиться
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Карточка 2 — индивидуальные */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="flex flex-col bg-white rounded-2xl shadow-md transition-all duration-300 overflow-hidden"
+          >
+            <div className="relative w-full h-[180px] overflow-hidden">
+              <Image
+                src="/images/class2.jpg"
+                alt="Индивидуальные занятия"
+                fill
+                sizes="100vw"
+                className="object-cover"
+                quality={75}
+                loading="lazy"
+              />
+            </div>
+            <div className="flex flex-col justify-center p-4 text-left">
+              <h3 className="text-[15px] font-medium text-gray-800 mb-3 leading-relaxed">
+                Индивидуальные занятия — в своём темпе и по персональной программе.
+              </h3>
+              <a 
+                href="#individual"
+                className="bg-rose-400 hover:bg-rose-500 text-white font-semibold rounded-full px-6 py-2.5 mt-2 transition-all duration-200 active:scale-95 inline-block text-center text-[15px]"
+              >
+                Начать
+              </a>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
