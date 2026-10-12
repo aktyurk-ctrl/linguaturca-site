@@ -2,11 +2,14 @@
   "name": "linguaturca",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "npm@11.21.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "next typegen && tsc --noEmit",
+    "lint": "eslint .",
+    "sitemap": "next-sitemap"
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.1",
@@ -15,12 +18,12 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.22",
     "lucide-react": "^0.460.0",
-    "next": "14.2.5",
+    "next": "16.4.0",
     "next-seo": "^6.5.0",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.4.47",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "remark-gfm": "^4.0.0",
     "tailwind-merge": "^2.5.3",
     "tailwindcss": "^3.4.13",
@@ -30,20 +33,19 @@
     "@tailwindcss/typography": "^0.5.15",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.0",
-    "@types/node": "^20.12.12",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "eslint": "8.57.0",
-    "eslint-config-next": "^14.2.5",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.0",
     "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.3.3",
     "typescript": "^5.6.2",
     "vite-tsconfig-paths": "^5.1.2",
     "vitest": "^2.1.3"
   },
-  "overrides": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "eslint": "8.57.0"
+  "engines": {
+    "node": "24.x",
+    "npm": "11.x"
   }
 }

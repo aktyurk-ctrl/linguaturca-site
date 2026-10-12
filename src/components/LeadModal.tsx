@@ -33,6 +33,8 @@ export default function LeadModal() {
   // Reset form when modal opens/closes
   useEffect(() => {
     if (isOpen && config) {
+      // Keep the existing reset-on-open behavior for every form configuration.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setFormData({
         name: "",
         phone: "",

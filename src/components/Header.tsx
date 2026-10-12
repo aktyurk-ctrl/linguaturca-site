@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useLeadModal } from '@/contexts/LeadModalContext'
 
 export function Header() {
@@ -31,7 +32,7 @@ export function Header() {
 
         {/* Навигация */}
         <nav className="hidden md:flex gap-6 text-gray-800 font-medium">
-          <a href="/">Главная</a>
+          <Link href="/">Главная</Link>
           <a href="#about">О школе</a>
           <a href="#teachers">Преподаватели</a>
           <a href="#learning-options">Курсы</a>
@@ -66,7 +67,7 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
           <nav className="px-6 py-6 flex flex-col gap-4">
-            <a href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Главная</a>
+            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Главная</Link>
             <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">О школе</a>
             <a href="#teachers" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Преподаватели</a>
             <a href="#courses" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Курсы</a>

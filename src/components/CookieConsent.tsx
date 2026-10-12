@@ -7,6 +7,8 @@ export function CookieConsent() {
 
   useEffect(() => {
     const accepted = typeof window !== 'undefined' && localStorage.getItem('cookie-consent')
+    // Read browser storage after hydration, preserving the server's hidden banner.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (!accepted) setVisible(true)
   }, [])
 

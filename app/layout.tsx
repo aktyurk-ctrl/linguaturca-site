@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ru">
+    <html lang="ru" data-scroll-behavior="smooth">
       <body className={`${inter.variable} ${manrope.variable} font-inter`}>
         <YandexMetrika />
         <LeadModalProvider>
