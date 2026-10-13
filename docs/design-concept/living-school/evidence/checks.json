@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-13",
+  "scope": "Isolated prototype, no production implementation",
+  "browser": "Codex in-app Chromium",
+  "viewports": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "layout_evidence": "layout.json",
+  "local_html_missing_targets": [],
+  "duplicate_ids": [],
+  "font_coverage": [
+    {
+      "font": "onest-Onest[wght].ttf",
+      "sha256": "966c5c29b4755da84b6854d5c21dd4eaa2420225d0e9874de602de176d4a9f31",
+      "tested": "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяÇĞİÖŞÜçğıöşü₽",
+      "missing": [],
+      "same_verified_file": true
+    },
+    {
+      "font": "manrope-Manrope[wght].ttf",
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
+      "tested": "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяÇĞİÖŞÜçğıöşü₽",
+      "missing": [],
+      "same_verified_file": true
+    }
+  ],
+  "contrast": [
+    {
+      "role": "body",
+      "foreground": "#282e30",
+      "background": "#faf8f3",
+      "ratio": 12.99,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "muted",
+      "foreground": "#606b6d",
+      "background": "#faf8f3",
+      "ratio": 5.18,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "CTA",
+      "foreground": "#282e30",
+      "background": "#00d2f2",
+      "ratio": 7.55,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "CTA hover",
+      "foreground": "#282e30",
+      "background": "#16bfd8",
+      "ratio": 6.22,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "CTA pressed",
+      "foreground": "#282e30",
+      "background": "#00abc5",
+      "ratio": 5.01,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "link",
+      "foreground": "#006877",
+      "background": "#faf8f3",
+      "ratio": 6.09,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "focus on CTA",
+      "foreground": "#006877",
+      "background": "#00d2f2",
+      "ratio": 3.54,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "role": "warm caption",
+      "foreground": "#a84935",
+      "background": "#f5e9df",
+      "ratio": 4.8,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "input boundary",
+      "foreground": "#819192",
+      "background": "#ffffff",
+      "ratio": 3.28,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "role": "placeholder",
+      "foreground": "#606b6d",
+      "background": "#ffffff",
+      "ratio": 5.5,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "footer body",
+      "foreground": "#bccbcb",
+      "background": "#282e30",
+      "ratio": 8.23,
+      "threshold": 4.5,
+      "pass": true
+    }
+  ],
+  "verified_interactions": [
+    "mobile menu open / navigation closes it",
+    "pricing tabs / selection transfers format and plan to demo form",
+    "FAQ disclosure",
+    "phrase translation by tap",
+    "review original dialog / Escape",
+    "empty required fields / focus first invalid field",
+    "email optional",
+    "loading disables fields and submit",
+    "demo error preserves entered data",
+    "retry to demo success / return to form"
+  ],
+  "network": "No request or persistent storage in prototype form; synthetic test fields only",
+  "existing_next_links": {
+    "/articles/turetskiy-yazyk-s-nulya": 200,
+    "/articles/turetskiy-dlya-pereezda": 200,
+    "/policy": 200,
+    "/legal": 200
+  },
+  "limitations": [
+    "No real CRM delivery tested",
+    "No production browser matrix or screen-reader audit",
+    "Photo permissions / tariffs / program scope require owner confirmation"
+  ]
+}

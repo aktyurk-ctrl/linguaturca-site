@@ -1,0 +1,367 @@
+[
+  {
+    "client": 320,
+    "fonts": "loaded",
+    "height": 12326,
+    "missingImages": [],
+    "outside": [],
+    "scale": 1,
+    "scrollWidth": 320,
+    "sections": [
+      {
+        "bottom": 1134.5859375,
+        "id": "hero",
+        "top": 108
+      },
+      {
+        "bottom": 1656.2109375,
+        "id": "school",
+        "top": 1134.5859375
+      },
+      {
+        "bottom": 2987.8125,
+        "id": "formats",
+        "top": 1656.2109375
+      },
+      {
+        "bottom": 4187.7265625,
+        "id": "method",
+        "top": 2987.8125
+      },
+      {
+        "bottom": 5269.4375,
+        "id": "teachers",
+        "top": 4187.7265625
+      },
+      {
+        "bottom": 6208.5859375,
+        "id": "lessons",
+        "top": 5269.4375
+      },
+      {
+        "bottom": 8191.890625,
+        "id": "pricing",
+        "top": 6208.5859375
+      },
+      {
+        "bottom": 9031.90625,
+        "id": "culture",
+        "top": 8191.890625
+      },
+      {
+        "bottom": 9992.453125,
+        "id": "reviews",
+        "top": 9031.90625
+      },
+      {
+        "bottom": 10633,
+        "id": "faq",
+        "top": 9992.453125
+      },
+      {
+        "bottom": 11821.125,
+        "id": "signup",
+        "top": 10633
+      },
+      {
+        "bottom": 12326.4453125,
+        "id": "footer",
+        "top": 11821.125
+      }
+    ],
+    "viewport": 320,
+    "requested": 320
+  },
+  {
+    "client": 390,
+    "fonts": "loaded",
+    "height": 12076,
+    "missingImages": [],
+    "outside": [],
+    "scale": 1,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "bottom": 1178.9296875,
+        "id": "hero",
+        "top": 114.796875
+      },
+      {
+        "bottom": 1595.4609375,
+        "id": "school",
+        "top": 1178.9296875
+      },
+      {
+        "bottom": 2924.546875,
+        "id": "formats",
+        "top": 1595.4609375
+      },
+      {
+        "bottom": 4089.2421875,
+        "id": "method",
+        "top": 2924.546875
+      },
+      {
+        "bottom": 5144.3046875,
+        "id": "teachers",
+        "top": 4089.2421875
+      },
+      {
+        "bottom": 5980.0078125,
+        "id": "lessons",
+        "top": 5144.3046875
+      },
+      {
+        "bottom": 7982.28125,
+        "id": "pricing",
+        "top": 5980.0078125
+      },
+      {
+        "bottom": 8815.984375,
+        "id": "culture",
+        "top": 7982.28125
+      },
+      {
+        "bottom": 9740.078125,
+        "id": "reviews",
+        "top": 8815.984375
+      },
+      {
+        "bottom": 10374.8125,
+        "id": "faq",
+        "top": 9740.078125
+      },
+      {
+        "bottom": 11564.5390625,
+        "id": "signup",
+        "top": 10374.8125
+      },
+      {
+        "bottom": 12076.046875,
+        "id": "footer",
+        "top": 11564.5390625
+      }
+    ],
+    "viewport": 390,
+    "requested": 390
+  },
+  {
+    "client": 768,
+    "fonts": "loaded",
+    "height": 7700,
+    "missingImages": [],
+    "outside": [],
+    "scale": 1,
+    "scrollWidth": 768,
+    "sections": [
+      {
+        "bottom": 812.46875,
+        "id": "hero",
+        "top": 118
+      },
+      {
+        "bottom": 1161.109375,
+        "id": "school",
+        "top": 812.46875
+      },
+      {
+        "bottom": 1953.3359375,
+        "id": "formats",
+        "top": 1161.109375
+      },
+      {
+        "bottom": 2595.578125,
+        "id": "method",
+        "top": 1953.3359375
+      },
+      {
+        "bottom": 3313.7890625,
+        "id": "teachers",
+        "top": 2595.578125
+      },
+      {
+        "bottom": 3853.7890625,
+        "id": "lessons",
+        "top": 3313.7890625
+      },
+      {
+        "bottom": 4875.515625,
+        "id": "pricing",
+        "top": 3853.7890625
+      },
+      {
+        "bottom": 5430.6484375,
+        "id": "culture",
+        "top": 4875.515625
+      },
+      {
+        "bottom": 6045.96875,
+        "id": "reviews",
+        "top": 5430.6484375
+      },
+      {
+        "bottom": 6532.4375,
+        "id": "faq",
+        "top": 6045.96875
+      },
+      {
+        "bottom": 7354.5703125,
+        "id": "signup",
+        "top": 6532.4375
+      },
+      {
+        "bottom": 7699.7578125,
+        "id": "footer",
+        "top": 7354.5703125
+      }
+    ],
+    "viewport": 768,
+    "requested": 768
+  },
+  {
+    "client": 1024,
+    "fonts": "loaded",
+    "height": 7944,
+    "missingImages": [],
+    "outside": [],
+    "scale": 1,
+    "scrollWidth": 1024,
+    "sections": [
+      {
+        "bottom": 881.328125,
+        "id": "hero",
+        "top": 132
+      },
+      {
+        "bottom": 1150.421875,
+        "id": "school",
+        "top": 881.328125
+      },
+      {
+        "bottom": 1998.6328125,
+        "id": "formats",
+        "top": 1150.421875
+      },
+      {
+        "bottom": 2745.5625,
+        "id": "method",
+        "top": 1998.6328125
+      },
+      {
+        "bottom": 3331.3359375,
+        "id": "teachers",
+        "top": 2745.5625
+      },
+      {
+        "bottom": 3903.828125,
+        "id": "lessons",
+        "top": 3331.3359375
+      },
+      {
+        "bottom": 4953.7890625,
+        "id": "pricing",
+        "top": 3903.828125
+      },
+      {
+        "bottom": 5514.8828125,
+        "id": "culture",
+        "top": 4953.7890625
+      },
+      {
+        "bottom": 6190.3828125,
+        "id": "reviews",
+        "top": 5514.8828125
+      },
+      {
+        "bottom": 6740.8515625,
+        "id": "faq",
+        "top": 6190.3828125
+      },
+      {
+        "bottom": 7592.53125,
+        "id": "signup",
+        "top": 6740.8515625
+      },
+      {
+        "bottom": 7943.90625,
+        "id": "footer",
+        "top": 7592.53125
+      }
+    ],
+    "viewport": 1024,
+    "requested": 1024
+  },
+  {
+    "client": 1440,
+    "fonts": "loaded",
+    "height": 7866,
+    "missingImages": [],
+    "outside": [],
+    "scale": 1,
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "bottom": 907.4296875,
+        "id": "hero",
+        "top": 132
+      },
+      {
+        "bottom": 1156.375,
+        "id": "school",
+        "top": 907.4296875
+      },
+      {
+        "bottom": 1952.28125,
+        "id": "formats",
+        "top": 1156.375
+      },
+      {
+        "bottom": 2682.1640625,
+        "id": "method",
+        "top": 1952.28125
+      },
+      {
+        "bottom": 3273.6328125,
+        "id": "teachers",
+        "top": 2682.1640625
+      },
+      {
+        "bottom": 3851.8203125,
+        "id": "lessons",
+        "top": 3273.6328125
+      },
+      {
+        "bottom": 4895.96875,
+        "id": "pricing",
+        "top": 3851.8203125
+      },
+      {
+        "bottom": 5457.0625,
+        "id": "culture",
+        "top": 4895.96875
+      },
+      {
+        "bottom": 6112.453125,
+        "id": "reviews",
+        "top": 5457.0625
+      },
+      {
+        "bottom": 6662.921875,
+        "id": "faq",
+        "top": 6112.453125
+      },
+      {
+        "bottom": 7514.6015625,
+        "id": "signup",
+        "top": 6662.921875
+      },
+      {
+        "bottom": 7865.9765625,
+        "id": "footer",
+        "top": 7514.6015625
+      }
+    ],
+    "viewport": 1440,
+    "requested": 1440
+  }
+]

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ru">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Linguaturca · новая школа · скриншоты</title>
+  <style>
+    @font-face {
+      font-family: Onest;
+      src: url('../prototype/fonts/onest-Onest[wght].ttf') format('truetype');
+      font-weight: 100 900;
+      font-display: swap;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #faf8f3;
+      color: #282e30;
+      font:
+        16px/1.5 Onest,
+        Arial,
+        sans-serif;
+    }
+    main {
+      max-width: 1600px;
+      margin: auto;
+      padding: 32px;
+    }
+    h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      margin: 16px 0;
+    }
+    p {
+      max-width: 850px;
+    }
+    a {
+      color: #006877;
+    }
+    header {
+      border-bottom: 1px solid #d7dedc;
+      padding-bottom: 24px;
+    }
+    .tag {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .tools {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+    select {
+      font: inherit;
+      color: inherit;
+      background: white;
+      padding: 10px;
+      border: 1px solid #889496;
+      border-radius: 4px;
+    }
+    a:focus-visible,
+    select:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #006877;
+      outline-offset: 4px;
+    }
+    .views {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 24px;
+      align-items: start;
+    }
+    figure {
+      margin: 0;
+    }
+    figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #d7dedc;
+      background: white;
+    }
+    .note {
+      color: #606b6d;
+      font-size: 14px;
+    }
+    .states {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      max-width: 1150px;
+    }
+    .states img {
+      width: 100%;
+    }
+    details {
+      margin-top: 32px;
+      border-top: 1px solid #d7dedc;
+      padding: 24px 0;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+    details img {
+      width: 100%;
+      max-width: 1100px;
+      margin-top: 20px;
+    }
+    .downloads {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 24px 0;
+    }
+    @media (max-width: 720px) {
+      main {
+        padding: 20px;
+      }
+      .views {
+        grid-template-columns: 1fr;
+      }
+      .views figure:last-child {
+        max-width: 390px;
+      }
+      .states {
+        grid-template-columns: 1fr;
+        max-width: 390px;
+      }
+    }
+  </style>
+  <main>
+    <header>
+      <span class="tag">LINGUATURCA · НОВАЯ ИТЕРАЦИЯ · НА СОГЛАСОВАНИЕ</span>
+      <h1>Турецкий, на котором говорят.</h1>
+      <p>
+        Реальная школа и реальные люди. Бирюзовый из логотипа, понятные форматы и спокойная
+        культурная часть. Скриншоты работающего изолированного прототипа.
+      </p>
+      <nav>
+        <a href="index.html">Открыть интерактивный макет ↗</a
+        ><a href="README.md">Источники и материалы от владельца</a
+        ><a href="evidence/desktop-overview.jpg">Вся страница: обзор</a>
+      </nav>
+    </header>
+    <div class="tools">
+      <label for="section">Раздел:</label
+      ><select id="section">
+        <option value="hero">Первый экран</option>
+        <option value="school">Почему Linguaturca</option>
+        <option value="formats">Форматы обучения</option>
+        <option value="method">Как учим</option>
+        <option value="teachers">Преподаватели</option>
+        <option value="lessons">Как проходят занятия</option>
+        <option value="pricing">Тарифы</option>
+        <option value="culture">Турецкий вне учебника</option>
+        <option value="reviews">Отзывы</option>
+        <option value="faq">FAQ</option>
+        <option value="signup">Запись</option>
+        <option value="footer">Footer</option>
+        <option value="full">Вся страница</option></select
+      ><span class="note">Нажмите на изображение, чтобы открыть оригинал.</span>
+    </div>
+    <div class="views">
+      <figure>
+        <figcaption>
+          <strong>Desktop · 1440 px</strong
+          ><a id="desktop-link" href="evidence/hero-1440.jpg">Оригинал ↗</a>
+        </figcaption>
+        <a id="desktop-image-link" href="evidence/hero-1440.jpg"
+          ><img
+            id="desktop"
+            src="evidence/hero-1440.jpg"
+            alt="Новый макет Linguaturca, desktop 1440 px"
+        /></a>
+      </figure>
+      <figure>
+        <figcaption>
+          <strong>Mobile · 390 px</strong
+          ><a id="mobile-link" href="evidence/hero-390.jpg">Оригинал ↗</a>
+        </figcaption>
+        <a id="mobile-image-link" href="evidence/hero-390.jpg"
+          ><img
+            id="mobile"
+            src="evidence/hero-390.jpg"
+            alt="Новый макет Linguaturca, mobile 390 px"
+        /></a>
+      </figure>
+    </div>
+    <div class="downloads">
+      <a href="evidence/full-320.jpg">320 px</a><a href="evidence/full-390.jpg">390 px</a
+      ><a href="evidence/full-768.jpg">768 px</a><a href="evidence/full-1024.jpg">1024 px</a
+      ><a href="evidence/full-1440.jpg">1440 px</a>
+    </div>
+    <details>
+      <summary>Состояния формы: ошибка, загрузка, успех</summary>
+      <p class="note">
+        Тестовые данные. Ничего не отправляется и не сохраняется. Текущие формы и Airtable не
+        затронуты.
+      </p>
+      <div class="states">
+        <figure>
+          <figcaption>Ошибка</figcaption>
+          <a href="evidence/form-error-390.jpg"
+            ><img
+              src="evidence/form-error-390.jpg"
+              alt="Ошибка с сохранёнными полями"
+              loading="lazy"
+          /></a>
+        </figure>
+        <figure>
+          <figcaption>Загрузка</figcaption>
+          <a href="evidence/form-loading-390.jpg"
+            ><img
+              src="evidence/form-loading-390.jpg"
+              alt="Загрузка и недоступная кнопка"
+              loading="lazy"
+          /></a>
+        </figure>
+        <figure>
+          <figcaption>Успех</figcaption>
+          <a href="evidence/form-success-390.jpg"
+            ><img
+              src="evidence/form-success-390.jpg"
+              alt="Демонстрация успешной отправки"
+              loading="lazy"
+          /></a>
+        </figure>
+      </div>
+    </details>
+    <details>
+      <summary>Отклонённый вариант — только для сравнения</summary>
+      <p class="note">
+        Предыдущая концепция с крупным konuşalım. не использована как основа новой композиции. Здесь
+        она сохранена для визуального сравнения.
+      </p>
+      <a href="../language-notes/evidence/after-1440-hero.png"
+        ><img
+          src="../language-notes/evidence/after-1440-hero.png"
+          alt="Предыдущая отклонённая концепция"
+          loading="lazy"
+      /></a>
+      <p><a href="../language-notes/compare.html">Архив предыдущей итерации ↗</a></p>
+    </details>
+    <p class="note">
+      Фото Дарьи и иллюстрация — из проекта. Фото парома: Tarik Kaan Muslu, CC BY-SA 4.0. Авторство,
+      лицензии, источники и ограничения перечислены в <a href="README.md">описании концепции</a>.
+      Production UI не изменён.
+    </p>
+  </main>
+  <script>
+    document.querySelector('#section').addEventListener('change', (event) => {
+      for (const [name, width] of [
+        ['desktop', 1440],
+        ['mobile', 390],
+      ]) {
+        const src = `evidence/${event.target.value}-${width}.jpg`;
+        document.getElementById(name).src = src;
+        document.getElementById(name + '-link').href = src;
+        document.getElementById(name + '-image-link').href = src;
+      }
+    });
+  </script>
+</html>
