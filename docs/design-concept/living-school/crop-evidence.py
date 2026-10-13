@@ -59,3 +59,12 @@ for index, part in enumerate(parts):
     ImageDraw.Draw(board).text((16 + index * 800, 12),
                               f'Desktop 1440 - {index + 1}/3', fill='#282e30')
 board.save(ROOT / 'desktop-overview.jpg', quality=93)
+
+desktop_hero = Image.open(ROOT / 'hero-1440.jpg')
+mobile_hero = Image.open(ROOT / 'hero-390.jpg')
+board = Image.new('RGB', (1882, max(desktop_hero.height, mobile_hero.height) + 56), '#e8e5df')
+board.paste(desktop_hero, (16, 40))
+board.paste(mobile_hero, (1476, 40))
+ImageDraw.Draw(board).text((20, 14), 'DESKTOP / 1440 px', fill='#282e30')
+ImageDraw.Draw(board).text((1480, 14), 'MOBILE / 390 px', fill='#282e30')
+board.save(ROOT / 'hero-desktop-mobile.jpg', quality=94)

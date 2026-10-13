@@ -25,6 +25,39 @@ function node(tag, value, className) {
   if (className) el.className = className;
   return el;
 }
+const team = document.querySelector('#school-team');
+window.schoolTeam.forEach((person) => {
+  const article = node('article', null, 'team-person');
+  article.dataset.person = person.id;
+  const copy = node('div', null, 'team-person-copy');
+  if (person.pending) {
+    article.classList.add('pending-profile');
+    const portrait = node('div', null, 'team-portrait-placeholder');
+    portrait.append(node('span', 'Фото преподавателя'), node('small', 'НУЖЕН РЕАЛЬНЫЙ ПОРТРЕТ'));
+    article.append(portrait);
+    copy.append(
+      node('span', 'ПРОФИЛЬ ДЛЯ ЗАПОЛНЕНИЯ', 'label'),
+      node('h3', 'Имя преподавателя'),
+      node('p', 'Образование, специализация и уровни преподавания.'),
+      node('p', 'Здесь — короткий рассказ человека о себе и турецком.', 'person-detail')
+    );
+  } else {
+    const portrait = node('img');
+    portrait.src = person.photo;
+    portrait.alt = person.name + ' — ' + person.role;
+    article.append(portrait);
+    copy.append(
+      node('span', person.role, 'label'),
+      node('h3', person.name),
+      node('p', person.description),
+      node('p', person.education, 'person-detail'),
+      node('small', person.note, 'content-note')
+    );
+  }
+  article.append(copy);
+  team.append(article);
+});
+
 const tariffs = document.querySelector('#group-tariffs');
 window.schoolTariffs.forEach((plan) => {
   const card = node('article', null, 'tariff');

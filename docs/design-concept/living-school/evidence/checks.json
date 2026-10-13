@@ -141,5 +141,40 @@
     "No real CRM delivery tested",
     "No production browser matrix or screen-reader audit",
     "Photo permissions / tariffs / program scope require owner confirmation"
-  ]
+  ],
+  "brand_finish": {
+    "baseline": "dd10b24",
+    "section_order_preserved": [
+      "hero",
+      "school",
+      "formats",
+      "method",
+      "teachers",
+      "lessons",
+      "pricing",
+      "culture",
+      "reviews",
+      "faq",
+      "signup"
+    ],
+    "hero_copy_unchanged": true,
+    "format_and_price_copy_unchanged": true,
+    "tariff_data_unchanged": true,
+    "faq_and_form_markup_copy_unchanged": true,
+    "team_records": 4,
+    "real_profile_records": 1,
+    "explicit_pending_profile_records": 3,
+    "local_html_missing_targets": [],
+    "duplicate_ids": [],
+    "current_interactions": [
+      "mobile menu navigation closes menu",
+      "individual pricing selection transfers format and plan",
+      "required fields and focus",
+      "phrase expands translation",
+      "FAQ expands"
+    ],
+    "console_errors": [],
+    "preview_alias": "http://localhost:8765/design-preview",
+    "production_routes_added": false
+  }
 }

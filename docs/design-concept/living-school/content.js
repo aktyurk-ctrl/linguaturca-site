@@ -35,3 +35,20 @@ window.schoolTariffs = [
     ],
   },
 ];
+
+// Slots are explicitly incomplete review content, not invented teacher identities.
+window.schoolTeam = [
+  {
+    id: 'darya',
+    name: 'Дарья Колосова',
+    role: 'Основатель и куратор школы',
+    photo: '../../../public/images/founder-optimized.webp',
+    description:
+      'Лингвист, специалист по турецкому языку. Собирает команду и учебные материалы Linguaturca.',
+    education: 'СПбГУ · тюркская филология',
+    note: 'В исходных данных указана аспирантура. Точную формулировку образования нужно сверить.',
+  },
+  { id: 'pending-2', pending: true },
+  { id: 'pending-3', pending: true },
+  { id: 'pending-4', pending: true },
+];

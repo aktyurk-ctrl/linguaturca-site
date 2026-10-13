@@ -6,10 +6,11 @@
     <meta name="robots" content="noindex,nofollow" />
     <title>Linguaturca — турецкий, на котором говорят</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="brand-finish.css" />
   </head>
   <body>
     <div class="reviewbar">
-      <span>НОВЫЙ ДИЗАЙН-ПРОТОТИП · НА СОГЛАСОВАНИЕ</span>
+      <span>ДИЗАЙН-ПРОТОТИП · ФИНАЛЬНЫЕ ДЕТАЛИ</span>
       <div>
         <a href="preview.html">Скриншоты</a><a href="README.md">Материалы и уточнения ↗</a>
       </div>
@@ -99,6 +100,7 @@
           <h2 id="why-title">Язык изучают <br />с людьми.</h2>
         </div>
         <div class="why-quote">
+          <p class="margin-note"><span lang="tr">birlikte öğreniyoruz</span> / учимся вместе</p>
           <blockquote>
             «Поэтому я собрала команду тюркологов и создала свои учебные материалы»
           </blockquote>
@@ -229,7 +231,9 @@
             <figcaption>Изображение с текущего сайта</figcaption>
           </figure>
           <div class="teacher-note">
-            <span class="label">СЛОВО ПРЕПОДАВАТЕЛЮ</span>
+            <span class="label"
+              ><span lang="tr">gerçek konuşma örneği</span> / пример живой речи</span
+            >
             <h3>А как это звучит <br />в обычной жизни?</h3>
             <p class="todo">
               <b>Нужен материал школы</b> Короткий разбор реальной фразы: ситуация, объяснение и
@@ -248,48 +252,12 @@
             </div>
             <p>За школой — преподаватели, <br />которые выбрали турецкий своей профессией.</p>
           </div>
-          <div class="team-grid">
-            <article class="darya-profile">
-              <img
-                src="../../../public/images/founder-optimized.webp"
-                alt="Дарья Колосова — основатель Linguaturca"
-              />
-              <div>
-                <span class="label">ОСНОВАТЕЛЬ ШКОЛЫ</span>
-                <h3>Дарья Колосова</h3>
-                <p>Лингвист, специалист по турецкому языку. Основатель и куратор Linguaturca.</p>
-                <dl>
-                  <div>
-                    <dt>Образование</dt>
-                    <dd>СПбГУ · тюркская филология</dd>
-                  </div>
-                  <div>
-                    <dt>В школе</dt>
-                    <dd>Преподавание, команда и материалы</dd>
-                  </div>
-                </dl>
-                <small class="content-note"
-                  >В исходных данных указана аспирантура. Точный статус и формулировку образования
-                  нужно сверить.</small
-                >
-              </div>
-            </article>
-            <div class="teacher-placeholder">
-              <div class="portrait-placeholder">
-                <span class="crop-mark" aria-hidden="true"></span
-                ><span>Фото <br />преподавателя</span
-                ><small>РЕАЛЬНЫЙ ЧЕЛОВЕК · НУЖЕН МАТЕРИАЛ</small>
-              </div>
-              <div>
-                <h3>Здесь будет команда</h3>
-                <p>Нужны имена, портреты, специализации и короткие рассказы преподавателей.</p>
-                <span class="content-note"
-                  >В текущих данных один портрет повторён трижды. Мы не создаём из него новых
-                  людей.</span
-                >
-              </div>
-            </div>
-          </div>
+          <div class="team-grid" id="school-team"></div>
+          <p class="content-note team-content-note">
+            Места для трёх реальных профилей: нужны фотографии, имена, образование и короткий
+            рассказ каждого преподавателя. Это заполнители макета, не заявленный состав команды. В
+            данных сайта повторяется профиль Дарьи.
+          </p>
         </div>
       </section>
 
@@ -428,19 +396,30 @@
             Слова встречаются в разговорах, вывесках и привычных делах. Давайте замечать их вместе.
           </p>
           <div class="phrase-card">
-            <span class="label">МАЛЕНЬКАЯ ФРАЗА ДЛЯ ЖИЗНИ</span
-            ><button id="phrase-toggle" aria-expanded="false" aria-controls="phrase-meaning">
-              <span lang="tr">Bir çay, lütfen.</span><span aria-hidden="true">+</span>
+            <span class="label"><span lang="tr">kısa not</span> / короткая заметка</span>
+            <p class="phrase-context">В кафе. Заказываем чай.</p>
+            <button id="phrase-toggle" aria-expanded="false" aria-controls="phrase-meaning">
+              <span lang="tr">Bir <span class="word-mark">çay</span>, lütfen.</span
+              ><span aria-hidden="true">+</span>
             </button>
             <p id="phrase-meaning" hidden>Чай, пожалуйста.</p>
-            <small>Нажмите, чтобы открыть перевод.</small>
+            <small>Нажмите на фразу — откроется перевод.</small>
+            <div class="phrase-note">
+              <span lang="tr">çay</span>
+              <p>
+                Чай. Буква <b lang="tr">ç</b> звучит как русское «ч».<br /><span lang="tr"
+                  >Lütfen</span
+                >
+                — «пожалуйста».
+              </p>
+            </div>
           </div>
         </div>
         <div class="culture-content">
-          <figure>
+          <figure class="city-photo">
             <img src="../bosphorus/assets/vapur.jpg" alt="Городской паром Kadıköy на Босфоре" />
             <figcaption>
-              <span lang="tr">vapur / паром</span><span>İstanbul · городская повседневность</span>
+              <span lang="tr">vapur / паром</span><span>İstanbul · Босфор</span>
             </figcaption>
           </figure>
           <div class="journal-links">
@@ -660,6 +639,9 @@
             ></a
           >
           <p>Турецкий язык из реальной жизни. <br />С людьми, которые его знают.</p>
+          <p class="footer-language">
+            <span lang="tr">Görüşürüz!</span><small>До встречи на занятиях.</small>
+          </p>
         </div>
         <div>
           <h2>Школа</h2>

@@ -1,0 +1,564 @@
+/* Final brand pass over the approved layout. Palette, headings and section order stay intact. */
+.hero-visual {
+  padding: 0 0 12px;
+}
+.hero-visual::before {
+  inset: 30px -12px 58px auto;
+  width: 38px;
+  border-radius: 0;
+  transform: rotate(2deg);
+}
+.founder-photo {
+  overflow: visible;
+  border-radius: 0;
+  background: transparent;
+}
+.founder-photo > img {
+  height: 490px;
+  border-radius: 2px;
+  object-position: 50% 25%;
+}
+.founder-photo > figcaption {
+  padding: 16px 0 0;
+}
+.language-note {
+  bottom: 98px;
+  left: -30px;
+  border: 0;
+  box-shadow: none;
+  border-bottom: 2px solid var(--warm);
+}
+.photo-place {
+  right: 14px;
+  top: 15px;
+}
+.margin-note {
+  margin: 0 0 12px !important;
+  font-size: 11px !important;
+  color: var(--link) !important;
+}
+.why-quote {
+  border-left: 0;
+  padding-left: 0;
+}
+.why-quote blockquote {
+  position: relative;
+  padding-bottom: 15px;
+}
+.why-quote blockquote::after {
+  content: '';
+  width: 78px;
+  height: 2px;
+  background: var(--brand);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(-2deg);
+}
+.format-card {
+  border: 0;
+  border-radius: 3px;
+}
+.format-card.group {
+  border: 0;
+  padding-top: 32px;
+  background: var(--tint);
+}
+.format-card.individual {
+  background: transparent;
+  border-top: 1px solid #b8c7c7;
+  border-bottom: 1px solid #b8c7c7;
+}
+.format-top .label,
+.individual .format-top .label {
+  background: none;
+  padding: 0;
+  color: var(--link);
+}
+.format-bottom {
+  border-top-color: #b8c7c7;
+}
+.lesson-board {
+  border-radius: 0;
+}
+.teacher-note {
+  box-shadow: none;
+  border-radius: 0;
+}
+.teacher-note > .label {
+  line-height: 1.6;
+  display: block;
+}
+
+/* One data record per person; no fixed count, carousel or duplicated identity. */
+.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 28px;
+}
+.team-person {
+  min-width: 0;
+}
+.team-person > img,
+.team-portrait-placeholder {
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+  object-position: 50% 25%;
+  border-radius: 2px;
+}
+.team-portrait-placeholder {
+  padding: 24px;
+  background: #efeee7;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  color: var(--muted);
+  position: relative;
+}
+.team-portrait-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 17px 17px auto;
+  height: 26px;
+  border-top: 1px solid #a9b8b5;
+  border-left: 1px solid #a9b8b5;
+  border-right: 1px solid #a9b8b5;
+}
+.team-portrait-placeholder > span {
+  font-size: 18px;
+}
+.team-portrait-placeholder > small {
+  font-size: 9px;
+  letter-spacing: 0.04em;
+}
+.team-person:nth-child(3n) .team-portrait-placeholder {
+  background: #eaf3f1;
+}
+.team-person-copy {
+  padding-top: 20px;
+}
+.team-person .label {
+  font-size: 10px;
+  color: var(--link);
+}
+.team-person h3 {
+  font-size: 24px;
+  margin: 10px 0 14px;
+}
+.team-person p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.team-person .person-detail {
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+  padding-top: 14px;
+  font-size: 12px;
+  color: var(--ink);
+}
+.team-person .content-note {
+  display: block;
+  margin-top: 14px;
+  font-size: 10px;
+}
+.team-content-note {
+  max-width: 760px;
+  margin-top: 25px;
+}
+.process-visual {
+  border-radius: 0;
+  background: #eaf3f1;
+}
+
+/* Quiet price columns, open at the edges, with the same reading order and CTA alignment. */
+.tariff-grid {
+  background: transparent;
+  border: 0;
+  border-block: 1px solid #b8c7c7;
+  border-radius: 0;
+  overflow: visible;
+}
+.tariff {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding-block: 28px;
+}
+.tariff + .tariff {
+  border-left: 1px solid #bccbc9;
+}
+.tariff:first-child {
+  padding-left: 0;
+}
+.tariff:last-child {
+  padding-right: 0;
+}
+.tariff-description {
+  min-height: 42px;
+}
+.price-tabs button,
+.price-tabs button[aria-selected='true'] {
+  background: transparent;
+  border-radius: 0;
+}
+.individual-prices {
+  gap: 32px;
+}
+.individual-prices > article {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #b8c7c7;
+  border-radius: 0;
+  padding-inline: 0;
+}
+
+/* A compact bilingual field note, not an extra magazine section. */
+.culture {
+  position: relative;
+}
+.culture::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 32px -28px;
+  background: #f2eee5;
+}
+.phrase-card {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  border-top: 1px solid #b9c6c3;
+  padding-top: 19px;
+}
+.phrase-card .phrase-context {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 12px;
+  padding: 0;
+}
+.phrase-card button {
+  padding-block: 13px;
+  font-size: 27px;
+}
+.word-mark {
+  position: relative;
+}
+.word-mark::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  background: var(--warm);
+  transform: rotate(-3deg);
+}
+.phrase-note {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  border-left: 2px solid var(--warm);
+  padding-left: 14px;
+  margin-top: 20px;
+}
+.phrase-note > span {
+  color: var(--warm);
+  font: 550 19px Manrope;
+}
+.phrase-note p {
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.culture-content {
+  padding-top: 6px;
+}
+.culture-content figure > img {
+  height: 288px;
+  border-radius: 1px;
+}
+.culture-content figcaption {
+  border-bottom: 1px solid #bec8c5;
+  padding-bottom: 12px;
+}
+.journal-links {
+  margin-top: 20px;
+}
+.journal-links > a {
+  border-top: 0;
+  padding-top: 0;
+}
+.review-card,
+.review-card:first-child {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 28px 0 0;
+}
+.review-card + .review-card {
+  border-left: 1px solid var(--line);
+  padding-left: 30px;
+  padding-right: 0;
+}
+.review-card:first-child blockquote {
+  font-size: 25px;
+}
+.review-card figcaption {
+  border-top: 0;
+  padding-top: 10px;
+}
+.footer-language {
+  margin-top: 24px !important;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.footer-language > span {
+  color: var(--brand);
+  font: 550 24px/1.25 Manrope;
+}
+.footer-language small {
+  font: 400 11px/1.5 Onest;
+  color: #bccbcb;
+}
+
+@media (max-width: 1190px) {
+  .founder-photo > img {
+    height: 455px;
+  }
+  .team-grid {
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+  .team-person > img,
+  .team-portrait-placeholder {
+    height: 255px;
+  }
+  .team-person h3 {
+    font-size: 23px;
+  }
+  .culture::before {
+    inset-inline: -12px;
+  }
+}
+@media (max-width: 900px) {
+  .founder-photo > img {
+    height: 360px;
+  }
+  .hero-visual::before {
+    width: 26px;
+    right: -7px;
+    bottom: 60px;
+  }
+  .language-note {
+    left: -18px;
+    bottom: 88px;
+  }
+  .format-card.group {
+    padding-top: 23px;
+  }
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px 24px;
+  }
+  .team-person > img,
+  .team-portrait-placeholder {
+    height: 250px;
+  }
+  .tariff {
+    padding-inline: 20px;
+  }
+  .culture {
+    gap: 34px;
+  }
+  .culture-content figure > img {
+    height: 260px;
+  }
+  .phrase-note {
+    gap: 10px;
+  }
+  .review-card:first-child blockquote {
+    font-size: 21px;
+  }
+  .review-card + .review-card {
+    padding-left: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-visual {
+    padding: 0;
+    margin-top: 29px;
+  }
+  .founder-photo > img {
+    height: 310px;
+  }
+  .founder-photo > figcaption {
+    padding: 0 0 15px;
+  }
+  .hero-visual::before {
+    inset: 88px -5px 15px auto;
+    width: 26px;
+  }
+  .photo-place {
+    top: auto;
+    bottom: 12px;
+    right: 10px;
+  }
+  .language-note {
+    left: -5px;
+    bottom: 25px;
+    padding: 11px 16px;
+  }
+  .language-note > span {
+    font-size: 25px;
+  }
+  .why-quote {
+    padding-left: 0;
+  }
+  .format-card.group {
+    padding-top: 25px;
+  }
+  .format-card.individual {
+    padding-inline: 0;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .team-person > img {
+    height: 310px;
+  }
+  .team-person-copy {
+    padding-top: 18px;
+  }
+  .team-person h3 {
+    font-size: 25px;
+  }
+  .pending-profile {
+    display: grid;
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 18px;
+    border-top: 1px solid var(--line);
+    padding-top: 23px;
+  }
+  .pending-profile .team-portrait-placeholder {
+    height: 152px;
+    padding: 16px 10px;
+    gap: 7px;
+  }
+  .pending-profile .team-portrait-placeholder > span {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .pending-profile .team-portrait-placeholder > small {
+    font-size: 7px;
+  }
+  .team-portrait-placeholder::before {
+    inset: 10px 10px auto;
+    height: 17px;
+  }
+  .pending-profile .team-person-copy {
+    padding-top: 0;
+  }
+  .pending-profile .label {
+    font-size: 8px;
+  }
+  .pending-profile h3 {
+    font-size: 19px;
+    margin: 7px 0 10px;
+  }
+  .pending-profile p {
+    font-size: 12px;
+  }
+  .pending-profile .person-detail {
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 10px;
+    font-size: 11px;
+  }
+  .team-content-note {
+    margin-top: 22px;
+  }
+  .tariff-grid {
+    gap: 0;
+    border-bottom: 0;
+  }
+  .tariff,
+  .tariff:first-child,
+  .tariff:last-child {
+    padding: 25px 0;
+    border: 0;
+    border-radius: 0;
+  }
+  .tariff + .tariff {
+    border-left: 0;
+    border-top: 1px solid #b8c7c7;
+  }
+  .tariff-description {
+    min-height: 0;
+  }
+  .tariff ul {
+    margin-top: 16px;
+    padding-top: 16px;
+  }
+  .individual-prices > article {
+    padding: 24px 0;
+  }
+  .culture {
+    gap: 25px;
+  }
+  .culture::before {
+    inset: 18px -20px;
+  }
+  .phrase-card {
+    padding-top: 18px;
+    margin-top: 20px;
+  }
+  .phrase-note {
+    margin-top: 18px;
+  }
+  .culture-content figure > img {
+    height: 224px;
+  }
+  .review-grid {
+    gap: 28px;
+  }
+  .review-card,
+  .review-card:first-child {
+    padding: 0;
+  }
+  .review-card + .review-card {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 24px 0 0;
+  }
+  .review-card:first-child blockquote {
+    font-size: 22px;
+  }
+  .footer-language {
+    margin-top: 20px !important;
+  }
+}
+@media (max-width: 359px) {
+  .founder-photo > img {
+    height: 285px;
+  }
+  .language-note > span {
+    font-size: 23px;
+  }
+  .format-card.group {
+    padding-top: 20px;
+  }
+  .pending-profile {
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 14px;
+  }
+  .pending-profile h3 {
+    font-size: 18px;
+  }
+  .culture::before {
+    inset-inline: -16px;
+  }
+}
