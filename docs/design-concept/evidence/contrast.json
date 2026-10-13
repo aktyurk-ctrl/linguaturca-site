@@ -1,0 +1,156 @@
+[
+  {
+    "role": "A body",
+    "foreground": "#143B3A",
+    "background": "#F7F5EF",
+    "ratio": 11.22,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A muted",
+    "foreground": "#526562",
+    "background": "#F7F5EF",
+    "ratio": 5.67,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A button",
+    "foreground": "#FFFFFF",
+    "background": "#006B65",
+    "ratio": 6.38,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A hover",
+    "foreground": "#FFFFFF",
+    "background": "#00544F",
+    "ratio": 8.82,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A active",
+    "foreground": "#FFFFFF",
+    "background": "#003F3B",
+    "ratio": 11.84,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A cyan",
+    "foreground": "#143B3A",
+    "background": "#39C7E5",
+    "ratio": 6.1,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A lime",
+    "foreground": "#143B3A",
+    "background": "#DCE898",
+    "ratio": 9.34,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A mint",
+    "foreground": "#143B3A",
+    "background": "#DCEBE3",
+    "ratio": 9.93,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A coral",
+    "foreground": "#143B3A",
+    "background": "#F2B5A0",
+    "ratio": 6.93,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A secondary on mint",
+    "foreground": "#526562",
+    "background": "#DCEBE3",
+    "ratio": 5.02,
+    "normal_text_AA": true
+  },
+  {
+    "role": "A inverse annotation",
+    "foreground": "#BECFC8",
+    "background": "#143B3A",
+    "ratio": 7.54,
+    "normal_text_AA": true
+  },
+  {
+    "role": "B body",
+    "foreground": "#402131",
+    "background": "#F5EEE3",
+    "ratio": 12.31,
+    "normal_text_AA": true
+  },
+  {
+    "role": "B muted",
+    "foreground": "#725460",
+    "background": "#F5EEE3",
+    "ratio": 5.78,
+    "normal_text_AA": true
+  },
+  {
+    "role": "B button",
+    "foreground": "#FFFFFF",
+    "background": "#752C43",
+    "ratio": 9.56,
+    "normal_text_AA": true
+  },
+  {
+    "role": "B hover",
+    "foreground": "#FFFFFF",
+    "background": "#5B2033",
+    "ratio": 12.36,
+    "normal_text_AA": true
+  },
+  {
+    "role": "B active",
+    "foreground": "#FFFFFF",
+    "background": "#461727",
+    "ratio": 14.87,
+    "normal_text_AA": true
+  },
+  {
+    "role": "B accent",
+    "foreground": "#402131",
+    "background": "#ECD872",
+    "ratio": 9.89,
+    "normal_text_AA": true
+  },
+  {
+    "role": "B mint",
+    "foreground": "#402131",
+    "background": "#E9DDE8",
+    "ratio": 10.79,
+    "normal_text_AA": true
+  },
+  {
+    "role": "B secondary on mint",
+    "foreground": "#725460",
+    "background": "#E9DDE8",
+    "ratio": 5.07,
+    "normal_text_AA": true
+  },
+  {
+    "role": "Current cyan on white",
+    "foreground": "#39C7E5",
+    "background": "#FFFFFF",
+    "ratio": 2.0,
+    "normal_text_AA": false
+  },
+  {
+    "role": "Current sky button",
+    "foreground": "#FFFFFF",
+    "background": "#0EA5E9",
+    "ratio": 2.77,
+    "normal_text_AA": false
+  },
+  {
+    "role": "Current article headings",
+    "foreground": "#008CFF",
+    "background": "#F7FAFC",
+    "ratio": 3.23,
+    "normal_text_AA": false
+  }
+]

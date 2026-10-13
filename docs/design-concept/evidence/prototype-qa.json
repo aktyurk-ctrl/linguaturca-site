@@ -1,0 +1,53 @@
+[
+  {
+    "width": 390,
+    "height": 8205,
+    "scrollWidth": 390,
+    "fonts": true,
+    "missingAnchors": [],
+    "brokenImages": [],
+    "menuWorks": true,
+    "faqWorks": true,
+    "formStatus": "Поля заполнены. Это макет: заявка не отправлена.",
+    "escapeCloses": true,
+    "focusReturns": true,
+    "reviewOpens": true,
+    "guideWidth": 390,
+    "errors": [],
+    "network": []
+  },
+  {
+    "width": 768,
+    "height": 6665,
+    "scrollWidth": 768,
+    "fonts": true,
+    "missingAnchors": [],
+    "brokenImages": [],
+    "menuWorks": true,
+    "faqWorks": true,
+    "formStatus": "Поля заполнены. Это макет: заявка не отправлена.",
+    "escapeCloses": true,
+    "focusReturns": true,
+    "reviewOpens": true,
+    "guideWidth": 768,
+    "errors": [],
+    "network": []
+  },
+  {
+    "width": 1440,
+    "height": 6816,
+    "scrollWidth": 1440,
+    "fonts": true,
+    "missingAnchors": [],
+    "brokenImages": [],
+    "menuWorks": "desktop navigation",
+    "faqWorks": true,
+    "formStatus": "Поля заполнены. Это макет: заявка не отправлена.",
+    "escapeCloses": true,
+    "focusReturns": true,
+    "reviewOpens": true,
+    "guideWidth": 1440,
+    "errors": [],
+    "network": []
+  }
+]
