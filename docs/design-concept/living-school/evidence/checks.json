@@ -1,13 +1,11 @@
 {
   "date": "2026-10-13",
-  "scope": "Isolated prototype, no production implementation",
+  "scope": "living-school readability/content pass; isolated docs only",
   "browser": "Codex in-app Chromium",
   "viewports": [
-    320,
+    1440,
     390,
-    768,
-    1024,
-    1440
+    360
   ],
   "layout_evidence": "layout.json",
   "local_html_missing_targets": [],
@@ -118,63 +116,35 @@
       "pass": true
     }
   ],
-  "verified_interactions": [
-    "mobile menu open / navigation closes it",
-    "pricing tabs / selection transfers format and plan to demo form",
-    "FAQ disclosure",
-    "phrase translation by tap",
-    "review original dialog / Escape",
-    "empty required fields / focus first invalid field",
-    "email optional",
-    "loading disables fields and submit",
-    "demo error preserves entered data",
-    "retry to demo success / return to form"
-  ],
-  "network": "No request or persistent storage in prototype form; synthetic test fields only",
-  "existing_next_links": {
-    "/articles/turetskiy-yazyk-s-nulya": 200,
-    "/articles/turetskiy-dlya-pereezda": 200,
-    "/policy": 200,
-    "/legal": 200
+  "inherited_checks_note": "Font files and palette unchanged; font coverage/contrast records retained from a8b04fe. Current browser confirms both local fonts loaded.",
+  "current_checks": {
+    "all_tariff_transfers": "15/15: three mini-group and two individual options at each requested width; selected format/plan visible and focus on name",
+    "evidence": "tariff-form-checks.json",
+    "format_change": "clears incompatible selected plan",
+    "form_required_fields": "empty name and phone show errors; email optional",
+    "form_states": "loading disables submit; error preserves test fields; success explicitly states no sending; return and resubmit work",
+    "mobile_navigation": "opens; pricing anchor closes menu",
+    "faq": "opens/closes",
+    "phrase": "tap shows Чай, пожалуйста.; second tap collapses",
+    "clean_preview": "reviewbar, pending team slots, TODO and state controls absent",
+    "review_mode": "four profile records including three labelled pending slots and state controls visible",
+    "layout": "no missing visible images, no horizontal overflow at all requested widths; onboarding heading precedes steps",
+    "console": "no error/warn at final clean-page check",
+    "mobile_body": "15–16px descriptions and tariff bullets",
+    "language_note": "mobile scale .75",
+    "screenshots": "full 1440/390/360, section crops, form states, selected plan"
+  },
+  "height_comparison": {
+    "baseline": "a8b04fe",
+    "mobile_390_before": 12431,
+    "mobile_390_after": 10260,
+    "desktop_1440_before": 8140,
+    "desktop_1440_after": 6974
   },
   "limitations": [
-    "No real CRM delivery tested",
-    "No production browser matrix or screen-reader audit",
-    "Photo permissions / tariffs / program scope require owner confirmation"
-  ],
-  "brand_finish": {
-    "baseline": "dd10b24",
-    "section_order_preserved": [
-      "hero",
-      "school",
-      "formats",
-      "method",
-      "teachers",
-      "lessons",
-      "pricing",
-      "culture",
-      "reviews",
-      "faq",
-      "signup"
-    ],
-    "hero_copy_unchanged": true,
-    "format_and_price_copy_unchanged": true,
-    "tariff_data_unchanged": true,
-    "faq_and_form_markup_copy_unchanged": true,
-    "team_records": 4,
-    "real_profile_records": 1,
-    "explicit_pending_profile_records": 3,
-    "local_html_missing_targets": [],
-    "duplicate_ids": [],
-    "current_interactions": [
-      "mobile menu navigation closes menu",
-      "individual pricing selection transfers format and plan",
-      "required fields and focus",
-      "phrase expands translation",
-      "FAQ expands"
-    ],
-    "console_errors": [],
-    "preview_alias": "http://localhost:8765/design-preview",
-    "production_routes_added": false
-  }
+    "No alternate Darya portrait, approved other teachers or authentic class/lesson material found.",
+    "Content is sourced from repository; current prices, payment period and rights need owner confirmation.",
+    "No production form integration or real submission tested.",
+    "320/768/1024 screenshots belong to previous iterations."
+  ]
 }

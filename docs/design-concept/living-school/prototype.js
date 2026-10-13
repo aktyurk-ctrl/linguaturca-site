@@ -25,8 +25,11 @@ function node(tag, value, className) {
   if (className) el.className = className;
   return el;
 }
+const reviewMode = document.documentElement.classList.contains('review-mode');
 const team = document.querySelector('#school-team');
-window.schoolTeam.forEach((person) => {
+const visibleTeam = window.schoolTeam.filter((person) => !person.pending || reviewMode);
+team.classList.toggle('compact-team', visibleTeam.length === 1);
+visibleTeam.forEach((person) => {
   const article = node('article', null, 'team-person');
   article.dataset.person = person.id;
   const copy = node('div', null, 'team-person-copy');
@@ -43,17 +46,18 @@ window.schoolTeam.forEach((person) => {
     );
   } else {
     const portrait = node('img');
-    portrait.src = person.photo;
+    if (person.photo) portrait.src = person.photo;
     portrait.alt = person.name + ' — ' + person.role;
-    article.append(portrait);
+    if (person.photo) article.append(portrait);
+    else article.classList.add('text-profile');
     copy.append(
       node('span', person.role, 'label'),
       node('h3', person.name),
-      node('p', person.description),
-      node('p', person.education, 'person-detail'),
-      node('small', person.note, 'content-note')
+      node('p', person.description)
     );
   }
+  if (person.education) copy.append(node('p', person.education, 'person-detail'));
+  if (person.note && reviewMode) copy.append(node('small', person.note, 'content-note'));
   article.append(copy);
   team.append(article);
 });
@@ -65,8 +69,10 @@ window.schoolTariffs.forEach((plan) => {
   card.append(node('h3', plan.title), node('p', plan.description, 'tariff-description'));
   const price = node('p', plan.price + ' ', 'price');
   price.append(node('span', '₽'));
-  if (plan.oldPrice) price.append(node('s', plan.oldPrice + ' ₽'));
-  card.append(price, node('p', 'стоимость предложения*', 'price-unit'));
+  card.append(price);
+  card.append(
+    node('p', plan.id === 'base' ? 'В тарифе' : 'Дополнительно к общей основе', 'tariff-includes')
+  );
   const ul = node('ul');
   plan.features.forEach((f) => ul.append(node('li', f)));
   card.append(ul);

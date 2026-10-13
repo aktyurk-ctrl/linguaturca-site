@@ -1,0 +1,413 @@
+/* Living-school refinement: clean viewing, confirmed content, readable mobile copy. */
+.review-only {
+  display: none;
+}
+.review-mode .reviewbar {
+  display: flex;
+}
+.review-mode .state-controls {
+  display: flex;
+}
+.cta-explanation {
+  font-size: 15px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.hero-proof {
+  margin-top: 20px;
+}
+.why {
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+}
+.why-quote {
+  max-width: 620px;
+}
+.why-quote > p {
+  font-size: 14px;
+}
+.why-quote > p span {
+  font-size: 12px;
+}
+.method {
+  grid-template-columns: 1fr 1.05fr;
+  gap: 70px;
+}
+.method-list {
+  margin: 0;
+}
+.method-list p {
+  font-size: 16px;
+  max-width: none;
+}
+.method-list li {
+  padding-bottom: 24px;
+}
+.teachers > .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 70px;
+}
+.teachers .section-head {
+  grid-column: 1 / -1;
+}
+.team-grid {
+  align-content: start;
+}
+.team-grid.compact-team {
+  grid-template-columns: 1fr;
+}
+.team-grid:not(.compact-team) {
+  grid-column: 1 / -1;
+}
+.team-person.text-profile {
+  border-top: 2px solid var(--brand);
+}
+.team-person-copy {
+  padding-top: 20px;
+}
+.team-person p {
+  font-size: 16px;
+}
+.team-introduction {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  color: var(--muted);
+  font-size: 16px;
+}
+.team-introduction p {
+  max-width: 460px;
+  margin-bottom: 20px;
+}
+.lesson-process {
+  grid-template-columns: 1fr 1.05fr;
+  gap: 70px;
+}
+.lesson-process h2 {
+  margin-bottom: 22px;
+}
+.process-steps {
+  margin: 0;
+  gap: 19px;
+}
+.process-steps > div + div {
+  border-top: 1px solid var(--line);
+  padding-top: 19px;
+}
+.process-steps p {
+  font-size: 16px;
+}
+.tariff-description {
+  font-size: 16px;
+  min-height: 48px;
+}
+.tariff li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.tariff-includes {
+  font-size: 13px;
+  color: var(--link);
+  margin-top: 18px;
+}
+.tariff ul {
+  margin-top: 12px;
+  padding-top: 16px;
+}
+.tariff[data-plan='business'] li:first-child {
+  font-weight: 600;
+  color: var(--ink);
+}
+.tariff[data-plan='comfort'] li:last-child {
+  color: var(--ink);
+}
+.price-summary,
+.price-terms {
+  font-size: 15px;
+}
+.price-summary strong {
+  color: var(--ink);
+}
+.price-terms {
+  margin-top: 20px;
+  color: var(--muted);
+}
+.culture-content figure > img {
+  object-position: 50% 67%;
+}
+.phrase-note p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.phrase-card small {
+  font-size: 13px;
+}
+.signup-copy > p:not(.eyebrow) {
+  font-size: 17px;
+  max-width: 370px;
+}
+.demo-note {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 13px;
+}
+#selected-plan {
+  display: block;
+  font-size: 15px;
+  margin-top: 8px;
+  color: var(--link);
+}
+#selected-plan[hidden] {
+  display: none;
+}
+.prototype-link {
+  padding-block: 12px 24px;
+  font-size: 12px;
+  color: #b8c8c9;
+}
+.prototype-link a {
+  color: inherit;
+}
+@media (max-width: 900px) {
+  .why {
+    gap: 36px;
+  }
+  .method,
+  .lesson-process {
+    gap: 36px;
+  }
+  .teachers > .wrap {
+    gap: 0 36px;
+  }
+}
+@media (max-width: 600px) {
+  .cta-explanation {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .hero-proof {
+    margin-top: 17px;
+  }
+  .language-note {
+    transform: rotate(-5deg) scale(0.75);
+    transform-origin: left bottom;
+  }
+  .hero-options > a > strong {
+    font-size: 15px;
+  }
+  .hero-options > p {
+    font-size: 15px;
+  }
+  .why {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+  .why-quote > p {
+    font-size: 14px;
+  }
+  .why-quote > p span {
+    display: block;
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .section-head > p,
+  .format-card > p,
+  .format-card dd,
+  .format-card dt,
+  .help-line p,
+  .method-list p,
+  .team-person p,
+  .team-introduction,
+  .process-steps p,
+  .tariff-description,
+  .tariff li,
+  .price-summary,
+  .individual-prices article > p:not(.price),
+  .schedule-note p,
+  .culture-heading > p:not(.eyebrow),
+  .phrase-note p,
+  .faq > div > p,
+  .faq-list details p,
+  .signup-copy > p:not(.eyebrow) {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .format-card dt {
+    font-size: 15px;
+  }
+  .format-card dl > div {
+    grid-template-columns: 90px 1fr;
+  }
+  .format-bottom small {
+    font-size: 13px;
+  }
+  .method {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .method-list li {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .method-list h3 {
+    font-size: 19px;
+  }
+  .teachers > .wrap {
+    display: block;
+  }
+  .team-person h3 {
+    font-size: 25px;
+  }
+  .team-person .label {
+    font-size: 12px;
+  }
+  .team-introduction {
+    margin-top: 24px;
+    padding-top: 20px;
+  }
+  .team-introduction p {
+    margin-bottom: 14px;
+  }
+  .lesson-process {
+    grid-template-columns: 1fr;
+    gap: 27px;
+  }
+  .lesson-process h2 {
+    margin-bottom: 14px;
+  }
+  .process-steps {
+    gap: 17px;
+  }
+  .process-steps > div + div {
+    padding-top: 17px;
+  }
+  .process-steps h3 {
+    font-size: 18px;
+  }
+  .tariff-description {
+    min-height: 0;
+  }
+  .tariff-includes,
+  .price-terms {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .tariff .price {
+    margin-top: 15px;
+  }
+  .tariff ul {
+    margin-top: 12px;
+    padding-top: 14px;
+  }
+  .tariff li {
+    margin-bottom: 12px;
+  }
+  .tariff li:last-child {
+    margin-bottom: 0;
+  }
+  .culture-content figure > img {
+    height: 245px;
+    object-position: 50% 70%;
+  }
+  .culture-content figcaption {
+    font-size: 12px;
+    gap: 12px;
+  }
+  .phrase-note {
+    margin-top: 16px;
+  }
+  .phrase-card button {
+    font-size: 26px;
+  }
+  .phrase-note > span {
+    font-size: 19px;
+  }
+  .journal-links h3 {
+    font-size: 17px;
+  }
+  .signup-grid {
+    gap: 22px;
+  }
+  .signup-copy h2 {
+    margin-bottom: 14px;
+  }
+  .signup-copy h2 br {
+    display: none;
+  }
+  .signup-copy > p:not(.eyebrow) {
+    margin-bottom: 0;
+  }
+  .field label {
+    font-size: 15px;
+  }
+  .field-hint {
+    font-size: 13px;
+  }
+  .consent {
+    font-size: 12px;
+  }
+  .footer-grid > div > p:not(.footer-language) {
+    font-size: 15px;
+  }
+}
+.hero-actions {
+  align-items: flex-start;
+  gap: 24px;
+}
+.primary-action {
+  min-width: 0;
+}
+.primary-action .cta-explanation {
+  font-size: 13px;
+  white-space: nowrap;
+}
+.hero-actions > .text-link {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .primary-action {
+    width: 100%;
+  }
+  .primary-action .button {
+    width: 100%;
+  }
+  .primary-action .cta-explanation {
+    font-size: 15px;
+    white-space: normal;
+  }
+  .hero-actions {
+    gap: 10px;
+  }
+  .hero-actions > .text-link {
+    min-height: 44px;
+  }
+}
+@media (min-width: 601px) {
+  .format-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .format-card dl {
+    margin-bottom: 25px;
+  }
+  .format-bottom {
+    margin-top: auto;
+  }
+  .culture-content figure > img {
+    object-position: 50% 55%;
+  }
+}
+@media (max-width: 600px) {
+  .lesson-process > div:first-child {
+    grid-row: 1;
+  }
+  .lesson-process > div:last-child {
+    grid-row: auto;
+  }
+  .culture-content figure > img {
+    height: 210px;
+    object-position: 50% 75%;
+  }
+}

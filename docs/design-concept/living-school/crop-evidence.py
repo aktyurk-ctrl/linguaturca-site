@@ -29,7 +29,7 @@ for layout in layouts:
         sections[section['id']] = section_image
         if width in (390, 1440):
             section_image.save(ROOT / f"{section['id']}-{width}.jpg", quality=93)
-    if width in (320, 768, 1024):
+    if width in (320, 360, 768, 1024):
         parts = []
         names = ('hero', 'formats', 'pricing', 'signup')
         for name in names:

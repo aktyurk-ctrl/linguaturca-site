@@ -1,0 +1,107 @@
+[
+  {
+    "focus": "name",
+    "format": "mini",
+    "plan": "Выбран тариф: Базовый",
+    "planHidden": false,
+    "width": 360
+  },
+  {
+    "focus": "name",
+    "format": "mini",
+    "plan": "Выбран тариф: Комфорт",
+    "planHidden": false,
+    "width": 360
+  },
+  {
+    "focus": "name",
+    "format": "mini",
+    "plan": "Выбран тариф: Бизнес",
+    "planHidden": false,
+    "width": 360
+  },
+  {
+    "focus": "name",
+    "format": "individual",
+    "plan": "Выбран тариф: Одно занятие",
+    "planHidden": false,
+    "width": 360
+  },
+  {
+    "focus": "name",
+    "format": "individual",
+    "plan": "Выбран тариф: 5 занятий",
+    "planHidden": false,
+    "width": 360
+  },
+  {
+    "focus": "name",
+    "format": "mini",
+    "plan": "Выбран тариф: Базовый",
+    "planHidden": false,
+    "width": 390
+  },
+  {
+    "focus": "name",
+    "format": "mini",
+    "plan": "Выбран тариф: Комфорт",
+    "planHidden": false,
+    "width": 390
+  },
+  {
+    "focus": "name",
+    "format": "mini",
+    "plan": "Выбран тариф: Бизнес",
+    "planHidden": false,
+    "width": 390
+  },
+  {
+    "focus": "name",
+    "format": "individual",
+    "plan": "Выбран тариф: Одно занятие",
+    "planHidden": false,
+    "width": 390
+  },
+  {
+    "focus": "name",
+    "format": "individual",
+    "plan": "Выбран тариф: 5 занятий",
+    "planHidden": false,
+    "width": 390
+  },
+  {
+    "focus": "name",
+    "format": "mini",
+    "plan": "Выбран тариф: Базовый",
+    "planHidden": false,
+    "width": 1440
+  },
+  {
+    "focus": "name",
+    "format": "mini",
+    "plan": "Выбран тариф: Комфорт",
+    "planHidden": false,
+    "width": 1440
+  },
+  {
+    "focus": "name",
+    "format": "mini",
+    "plan": "Выбран тариф: Бизнес",
+    "planHidden": false,
+    "width": 1440
+  },
+  {
+    "focus": "name",
+    "format": "individual",
+    "plan": "Выбран тариф: Одно занятие",
+    "planHidden": false,
+    "width": 1440
+  },
+  {
+    "focus": "name",
+    "format": "individual",
+    "plan": "Выбран тариф: 5 занятий",
+    "planHidden": false,
+    "width": 1440
+  }
+]
