@@ -4,47 +4,46 @@ window.schoolTariffs = [
     id: 'base',
     title: 'Базовый',
     price: '7 590',
-    description: 'Занятия в мини-группе.',
-    features: ['Общая основа: занятия, материалы и обратная связь.'],
+    description: 'Если хотите сосредоточиться на основном курсе.',
+    features: ['Основная программа без дополнительных лекций и индивидуальных встреч.'],
   },
   {
     id: 'comfort',
     title: 'Комфорт',
     price: '8 600',
-    description: 'К занятиям — культура и общение.',
+    description: 'Если хотите дополнить уроки культурой и общением со школой.',
     features: [
       'Лекция о турецком менталитете или истории Турции',
-      '«Турецкая гостиная»: созвон с Дарьей, чат поддержки и коммьюнити',
-      'Рабочая тетрадь и памятка «Такие похожие слова»',
+      '«Турецкая гостиная»: созвон с Дарьей, чат поддержки и сообщество школы',
+      'Рабочая тетрадь с упражнениями и памятка «Такие похожие слова»',
     ],
   },
   {
     id: 'business',
     title: 'Бизнес',
     price: '13 000',
-    description: 'К занятиям — индивидуальная практика.',
+    description: 'Если к группе хотите добавить индивидуальную работу с преподавателем.',
     features: [
       'Дополнительный индивидуальный урок: 30 минут каждую неделю',
       'Лекция о турецком менталитете или истории Турции',
-      '«Турецкая гостиная»: созвон с Дарьей, чат поддержки и коммьюнити',
+      '«Турецкая гостиная»: созвон с Дарьей, чат поддержки и сообщество школы',
       'Курс по произношению',
     ],
   },
 ];
 
-// Slots are explicitly incomplete review content, not invented teacher identities.
+// Current teacher identity comes from production AboutSection; other names only from review originals.
 window.schoolTeam = [
   {
     id: 'darya',
     name: 'Дарья Колосова',
-    role: 'Основатель и куратор школы',
-    // The only portrait is already in the hero. Add a distinct approved photo here later.
+    role: 'Основатель и преподаватель',
     photo: null,
-    description: 'Лингвист, специалист по турецкому языку.',
-    education: null,
-    note: 'В исходных данных указана аспирантура. Точную формулировку образования нужно сверить.',
+    description:
+      'Лингвист с высшим образованием. Собрала команду тюркологов и создала учебные материалы школы.',
+    detail: 'Преподаёт турецкий и курирует Linguaturca.',
   },
-  { id: 'pending-2', pending: true },
-  { id: 'pending-3', pending: true },
-  { id: 'pending-4', pending: true },
+  { id: 'margarita-review', name: 'Маргарита', sourceOnly: true, review: '1' },
+  { id: 'valeria-review', name: 'Валерия', sourceOnly: true, review: '2' },
+  { id: 'marina-review', name: 'Марина', sourceOnly: true, review: '3' },
 ];

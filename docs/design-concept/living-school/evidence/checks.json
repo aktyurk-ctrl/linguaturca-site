@@ -1,12 +1,8 @@
 {
   "date": "2026-10-13",
-  "scope": "living-school readability/content pass; isolated docs only",
+  "scope": "living-school content + brand authenticity; isolated docs only",
   "browser": "Codex in-app Chromium",
-  "viewports": [
-    1440,
-    390,
-    360
-  ],
+  "viewports": [1440, 390, 360],
   "layout_evidence": "layout.json",
   "local_html_missing_targets": [],
   "duplicate_ids": [],
@@ -114,37 +110,76 @@
       "ratio": 8.23,
       "threshold": 4.5,
       "pass": true
+    },
+    {
+      "role": "language-note text",
+      "foreground": "#282e30",
+      "background": "#e3f7f8",
+      "ratio": 12.42,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "language-note secondary",
+      "foreground": "#606b6d",
+      "background": "#e3f7f8",
+      "ratio": 4.95,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "material placeholder",
+      "foreground": "#606b6d",
+      "background": "#e3f5f5",
+      "ratio": 4.88,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "team text",
+      "foreground": "#606b6d",
+      "background": "#f5f3ec",
+      "ratio": 4.95,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "role": "TODO caption",
+      "foreground": "#006877",
+      "background": "#efeee7",
+      "ratio": 5.56,
+      "threshold": 4.5,
+      "pass": true
     }
   ],
-  "inherited_checks_note": "Font files and palette unchanged; font coverage/contrast records retained from a8b04fe. Current browser confirms both local fonts loaded.",
+  "inherited_checks_note": "Unchanged font-file hashes verified; glyph coverage retained from the earlier audit. Original palette retained; new note surface contrasts recomputed in this pass.",
   "current_checks": {
-    "all_tariff_transfers": "15/15: three mini-group and two individual options at each requested width; selected format/plan visible and focus on name",
-    "evidence": "tariff-form-checks.json",
-    "format_change": "clears incompatible selected plan",
-    "form_required_fields": "empty name and phone show errors; email optional",
-    "form_states": "loading disables submit; error preserves test fields; success explicitly states no sending; return and resubmit work",
-    "mobile_navigation": "opens; pricing anchor closes menu",
-    "faq": "opens/closes",
-    "phrase": "tap shows Чай, пожалуйста.; second tap collapses",
-    "clean_preview": "reviewbar, pending team slots, TODO and state controls absent",
-    "review_mode": "four profile records including three labelled pending slots and state controls visible",
-    "layout": "no missing visible images, no horizontal overflow at all requested widths; onboarding heading precedes steps",
-    "console": "no error/warn at final clean-page check",
-    "mobile_body": "15–16px descriptions and tariff bullets",
-    "language_note": "mobile scale .75",
-    "screenshots": "full 1440/390/360, section crops, form states, selected plan"
-  },
-  "height_comparison": {
-    "baseline": "a8b04fe",
-    "mobile_390_before": 12431,
-    "mobile_390_after": 10260,
-    "desktop_1440_before": 8140,
-    "desktop_1440_after": 6974
+    "all_tariff_transfers": "15/15 at 1440, 390, 360; correct format, visible plan, name focus",
+    "transfer_evidence": "tariff-form-checks.json",
+    "interaction_evidence": "interaction-checks.json",
+    "reviews": "Three original review images open from teacher references",
+    "faq": "Missed-lesson answer expands and collapses",
+    "phrase": "hocam explanation initially visible; tap collapses and expands",
+    "form": "Required fields, format change, error/loading/success, return, local demo completion with optional email checked",
+    "mobile_navigation": "Opens; teachers link closes menu",
+    "layout": "No horizontal overflow or missing visible images on three widths",
+    "mobile_copy": "Descriptions, format metadata and tariff items 15–16 px",
+    "placeholders": "Explicitly requested TODO areas for real material, class photo and teacher portraits; current teacher status caveat visible",
+    "console": "No browser console errors",
+    "screenshots": "Fresh full 1440/390/360, sections, form states, selected plan; overview boards are crops of browser captures"
   },
   "limitations": [
-    "No alternate Darya portrait, approved other teachers or authentic class/lesson material found.",
-    "Content is sourced from repository; current prices, payment period and rights need owner confirmation.",
-    "No production form integration or real submission tested.",
-    "320/768/1024 screenshots belong to previous iterations."
-  ]
+    "Production source text is not confirmation of current commercial terms.",
+    "No current profiles or other teacher portraits, authentic class screenshot or lesson materials found.",
+    "No production FAQ; prototype answers derived from other source facts.",
+    "No active LMS confirmed; source access-duration claims conflict.",
+    "hocam explanation is editorial and needs the school teacher’s approval, not an existing course excerpt.",
+    "No production submission or CRM integration tested.",
+    "320/768/1024 and before-* screenshots are archival."
+  ],
+  "page_heights": {
+    "1440": 7860,
+    "390": 12390,
+    "360": 13019
+  }
 }

@@ -1,0 +1,76 @@
+[
+  {
+    "check": "mobile menu opens",
+    "pass": true
+  },
+  {
+    "check": "navigation closes menu",
+    "pass": true
+  },
+  {
+    "check": "team source 1",
+    "pass": true,
+    "src": "../../../public/images/review-screenshot-1-optimized.webp"
+  },
+  {
+    "check": "team source 2",
+    "pass": true,
+    "src": "../../../public/images/review-screenshot-2-optimized.webp"
+  },
+  {
+    "check": "team source 3",
+    "pass": true,
+    "src": "../../../public/images/review-screenshot-3-optimized.webp"
+  },
+  {
+    "check": "language note collapses",
+    "pass": true
+  },
+  {
+    "check": "language note expands",
+    "pass": true
+  },
+  {
+    "check": "missed lesson FAQ",
+    "text": "Что делать, если пропущу урок?\n+\n\nВ мини-группе есть записи занятий. Срок доступа к ним, условия переноса и отмены уточним перед записью."
+  },
+  {
+    "check": "changing format clears plan",
+    "pass": true
+  },
+  {
+    "check": "required fields",
+    "name": "true",
+    "phone": "true"
+  },
+  {
+    "check": "form error",
+    "disabled": false,
+    "fieldsHidden": false,
+    "nameValue": "Тест макета",
+    "state": "error"
+  },
+  {
+    "check": "form loading",
+    "disabled": true,
+    "fieldsHidden": false,
+    "nameValue": "Тест макета",
+    "state": "loading"
+  },
+  {
+    "check": "form success",
+    "disabled": false,
+    "fieldsHidden": true,
+    "nameValue": "Тест макета",
+    "state": "success"
+  },
+  {
+    "check": "return from success",
+    "pass": true
+  },
+  {
+    "check": "demo submission completes without email",
+    "state": "success",
+    "text": "Спасибо за обращение!\n\nТак будет выглядеть подтверждение. В этом прототипе заявка не отправлена; школа не получила ваши контакты."
+  }
+]

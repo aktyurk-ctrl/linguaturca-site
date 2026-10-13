@@ -68,3 +68,27 @@ board.paste(mobile_hero, (1476, 40))
 ImageDraw.Draw(board).text((20, 14), 'DESKTOP / 1440 px', fill='#282e30')
 ImageDraw.Draw(board).text((1480, 14), 'MOBILE / 390 px', fill='#282e30')
 board.save(ROOT / 'hero-desktop-mobile.jpg', quality=94)
+
+# Content review boards: the same captured section at desktop and mobile widths.
+for section in ('culture', 'method', 'teachers'):
+    large = Image.open(ROOT / f'{section}-1440.jpg')
+    small = Image.open(ROOT / f'{section}-390.jpg')
+    board = Image.new('RGB', (1882, max(large.height, small.height) + 56), '#e8e5df')
+    board.paste(large, (16, 40))
+    board.paste(small, (1476, 40))
+    draw = ImageDraw.Draw(board)
+    draw.text((20, 14), 'DESKTOP / 1440 px', fill='#282e30')
+    draw.text((1480, 14), 'MOBILE / 390 px', fill='#282e30')
+    board.save(ROOT / f'{section}-desktop-mobile.jpg', quality=94)
+
+mobile = next(x for x in layouts if x['requested'] == 390)
+source = Image.open(ROOT / 'full-390.jpg')
+bounds = [0] + [math.floor(s['top']) for s in mobile['sections']
+                if s['id'] in ('method', 'pricing', 'reviews')] + [source.height]
+parts = [source.crop((0, top, 390, bottom)) for top, bottom in zip(bounds, bounds[1:])]
+board = Image.new('RGB', (1620, max(p.height for p in parts) + 50), '#e8e5df')
+for index, part in enumerate(parts):
+    board.paste(part, (12 + index * 402, 38))
+    ImageDraw.Draw(board).text((12 + index * 402, 12),
+                              f'MOBILE 390 - {index + 1}/4', fill='#282e30')
+board.save(ROOT / 'mobile-overview.jpg', quality=93)

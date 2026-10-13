@@ -1,107 +1,122 @@
 [
   {
+    "width": 1440,
+    "plan": "Базовый",
     "focus": "name",
     "format": "mini",
-    "plan": "Выбран тариф: Базовый",
-    "planHidden": false,
-    "width": 360
+    "selected": "Выбран тариф: Базовый",
+    "visible": true
   },
   {
+    "width": 1440,
+    "plan": "Комфорт",
     "focus": "name",
     "format": "mini",
-    "plan": "Выбран тариф: Комфорт",
-    "planHidden": false,
-    "width": 360
+    "selected": "Выбран тариф: Комфорт",
+    "visible": true
   },
   {
+    "width": 1440,
+    "plan": "Бизнес",
     "focus": "name",
     "format": "mini",
-    "plan": "Выбран тариф: Бизнес",
-    "planHidden": false,
-    "width": 360
+    "selected": "Выбран тариф: Бизнес",
+    "visible": true
   },
   {
+    "width": 1440,
+    "plan": "Одно занятие",
     "focus": "name",
     "format": "individual",
-    "plan": "Выбран тариф: Одно занятие",
-    "planHidden": false,
-    "width": 360
+    "selected": "Выбран тариф: Одно занятие",
+    "visible": true
   },
   {
+    "width": 1440,
+    "plan": "5 занятий",
     "focus": "name",
     "format": "individual",
-    "plan": "Выбран тариф: 5 занятий",
-    "planHidden": false,
-    "width": 360
+    "selected": "Выбран тариф: 5 занятий",
+    "visible": true
   },
   {
+    "width": 390,
+    "plan": "Базовый",
     "focus": "name",
     "format": "mini",
-    "plan": "Выбран тариф: Базовый",
-    "planHidden": false,
-    "width": 390
+    "selected": "Выбран тариф: Базовый",
+    "visible": true
   },
   {
+    "width": 390,
+    "plan": "Комфорт",
     "focus": "name",
     "format": "mini",
-    "plan": "Выбран тариф: Комфорт",
-    "planHidden": false,
-    "width": 390
+    "selected": "Выбран тариф: Комфорт",
+    "visible": true
   },
   {
+    "width": 390,
+    "plan": "Бизнес",
     "focus": "name",
     "format": "mini",
-    "plan": "Выбран тариф: Бизнес",
-    "planHidden": false,
-    "width": 390
+    "selected": "Выбран тариф: Бизнес",
+    "visible": true
   },
   {
+    "width": 390,
+    "plan": "Одно занятие",
     "focus": "name",
     "format": "individual",
-    "plan": "Выбран тариф: Одно занятие",
-    "planHidden": false,
-    "width": 390
+    "selected": "Выбран тариф: Одно занятие",
+    "visible": true
   },
   {
+    "width": 390,
+    "plan": "5 занятий",
     "focus": "name",
     "format": "individual",
-    "plan": "Выбран тариф: 5 занятий",
-    "planHidden": false,
-    "width": 390
+    "selected": "Выбран тариф: 5 занятий",
+    "visible": true
   },
   {
+    "width": 360,
+    "plan": "Базовый",
     "focus": "name",
     "format": "mini",
-    "plan": "Выбран тариф: Базовый",
-    "planHidden": false,
-    "width": 1440
+    "selected": "Выбран тариф: Базовый",
+    "visible": true
   },
   {
+    "width": 360,
+    "plan": "Комфорт",
     "focus": "name",
     "format": "mini",
-    "plan": "Выбран тариф: Комфорт",
-    "planHidden": false,
-    "width": 1440
+    "selected": "Выбран тариф: Комфорт",
+    "visible": true
   },
   {
+    "width": 360,
+    "plan": "Бизнес",
     "focus": "name",
     "format": "mini",
-    "plan": "Выбран тариф: Бизнес",
-    "planHidden": false,
-    "width": 1440
+    "selected": "Выбран тариф: Бизнес",
+    "visible": true
   },
   {
+    "width": 360,
+    "plan": "Одно занятие",
     "focus": "name",
     "format": "individual",
-    "plan": "Выбран тариф: Одно занятие",
-    "planHidden": false,
-    "width": 1440
+    "selected": "Выбран тариф: Одно занятие",
+    "visible": true
   },
   {
+    "width": 360,
+    "plan": "5 занятий",
     "focus": "name",
     "format": "individual",
-    "plan": "Выбран тариф: 5 занятий",
-    "planHidden": false,
-    "width": 1440
+    "selected": "Выбран тариф: 5 занятий",
+    "visible": true
   }
 ]

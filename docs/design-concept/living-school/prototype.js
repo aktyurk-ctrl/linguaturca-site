@@ -25,48 +25,60 @@ function node(tag, value, className) {
   if (className) el.className = className;
   return el;
 }
-const reviewMode = document.documentElement.classList.contains('review-mode');
 const team = document.querySelector('#school-team');
-const visibleTeam = window.schoolTeam.filter((person) => !person.pending || reviewMode);
-team.classList.toggle('compact-team', visibleTeam.length === 1);
-visibleTeam.forEach((person) => {
-  const article = node('article', null, 'team-person');
+const confirmedTeam = node('div', null, 'confirmed-team');
+const sourceTeam = node('div', null, 'source-team');
+sourceTeam.append(node('h3', 'Преподаватели в отзывах учеников', 'source-team-title'));
+window.schoolTeam.forEach((person) => {
+  const article = node('article', null, person.sourceOnly ? 'source-person' : 'confirmed-person');
   article.dataset.person = person.id;
-  const copy = node('div', null, 'team-person-copy');
-  if (person.pending) {
-    article.classList.add('pending-profile');
-    const portrait = node('div', null, 'team-portrait-placeholder');
-    portrait.append(node('span', 'Фото преподавателя'), node('small', 'НУЖЕН РЕАЛЬНЫЙ ПОРТРЕТ'));
-    article.append(portrait);
-    copy.append(
-      node('span', 'ПРОФИЛЬ ДЛЯ ЗАПОЛНЕНИЯ', 'label'),
-      node('h3', 'Имя преподавателя'),
-      node('p', 'Образование, специализация и уровни преподавания.'),
-      node('p', 'Здесь — короткий рассказ человека о себе и турецком.', 'person-detail')
-    );
+  if (person.sourceOnly) {
+    const placeholder = node('div', null, 'portrait-slot');
+    placeholder.append(node('span', 'Фото'), node('small', 'TODO'));
+    const copy = node('div');
+    copy.append(node('h4', person.name));
+    const source = node('button', 'Упомянута в отзыве ↗', 'text-link');
+    source.dataset.review = person.review;
+    copy.append(source);
+    article.append(placeholder, copy);
+    sourceTeam.append(article);
   } else {
-    const portrait = node('img');
-    if (person.photo) portrait.src = person.photo;
-    portrait.alt = person.name + ' — ' + person.role;
-    if (person.photo) article.append(portrait);
-    else article.classList.add('text-profile');
-    copy.append(
+    if (person.photo) {
+      const photo = node('img');
+      photo.src = person.photo;
+      photo.alt = person.name;
+      article.append(photo);
+    }
+    article.append(
       node('span', person.role, 'label'),
       node('h3', person.name),
       node('p', person.description)
     );
+    if (person.detail) article.append(node('p', person.detail, 'person-detail'));
+    confirmedTeam.append(article);
   }
-  if (person.education) copy.append(node('p', person.education, 'person-detail'));
-  if (person.note && reviewMode) copy.append(node('small', person.note, 'content-note'));
-  article.append(copy);
-  team.append(article);
 });
+team.append(confirmedTeam);
+if (window.schoolTeam.some((person) => person.sourceOnly)) {
+  sourceTeam.append(
+    node(
+      'p',
+      'TODO: подтвердить текущий состав, фотографии, образование и специализацию. Имена выше взяты из отзывов и не означают подтверждённый состав на сегодня.',
+      'team-source-note'
+    )
+  );
+  team.append(sourceTeam);
+}
 
 const tariffs = document.querySelector('#group-tariffs');
 window.schoolTariffs.forEach((plan) => {
   const card = node('article', null, 'tariff');
   card.dataset.plan = plan.id;
-  card.append(node('h3', plan.title), node('p', plan.description, 'tariff-description'));
+  card.append(
+    node('h3', plan.title),
+    node('p', 'Кому подходит', 'tariff-audience-label'),
+    node('p', plan.description, 'tariff-description')
+  );
   const price = node('p', plan.price + ' ', 'price');
   price.append(node('span', '₽'));
   card.append(price);
