@@ -1,0 +1,136 @@
+.comparison {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 1640px;
+}
+.comparison h1 {
+  font-size: 60px;
+  margin: 20px 0;
+}
+.intro {
+  max-width: 840px;
+  color: var(--muted);
+}
+.controls {
+  margin: 32px 0 24px;
+  padding-block: 18px;
+  border-block: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.widths {
+  display: flex;
+  gap: 8px;
+}
+.controls button,
+.controls select {
+  font: inherit;
+  font-size: 13px;
+  border: 1px solid #7183a0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--ink);
+  padding: 12px;
+  min-height: 44px;
+}
+.controls button[aria-pressed='true'] {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.screens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.screens article {
+  border: 1px solid var(--line);
+  min-width: 0;
+  background: #eee8db;
+}
+.screens header {
+  padding: 18px;
+  background: var(--paper);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+}
+.screens img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+.screens.mobile img {
+  max-width: 390px;
+}
+.screens a:hover {
+  color: var(--blue);
+}
+.rationale {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 30px;
+  font-size: 13px;
+}
+.rationale strong {
+  display: block;
+  color: var(--blue);
+  margin-bottom: 5px;
+}
+.credits {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 24px;
+}
+.credits a {
+  text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .comparison {
+    padding: 24px 16px;
+  }
+  .comparison h1 {
+    font-size: 42px;
+  }
+  .controls {
+    display: block;
+  }
+  .controls label {
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+  .controls select {
+    max-width: 100%;
+  }
+  .controls button {
+    font-size: 11px;
+    padding: 10px;
+  }
+  .screens {
+    grid-template-columns: 1fr;
+  }
+  .screens header {
+    font-size: 10px;
+  }
+  .rationale {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .intro {
+    font-size: 14px;
+  }
+}

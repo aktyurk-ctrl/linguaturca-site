@@ -1,0 +1,68 @@
+{
+  "contrast": [
+    {
+      "role": "body",
+      "foreground": "#09234B",
+      "background": "#F7F5EF",
+      "ratio": 14.23
+    },
+    {
+      "role": "muted",
+      "foreground": "#54647C",
+      "background": "#F7F5EF",
+      "ratio": 5.52
+    },
+    {
+      "role": "muted on sand",
+      "foreground": "#54647C",
+      "background": "#EEE8DB",
+      "ratio": 4.93
+    },
+    {
+      "role": "warm on paper",
+      "foreground": "#A84632",
+      "background": "#F7F5EF",
+      "ratio": 5.37
+    },
+    {
+      "role": "warm on sand",
+      "foreground": "#A84632",
+      "background": "#EEE8DB",
+      "ratio": 4.8
+    },
+    {
+      "role": "CTA",
+      "foreground": "#FFFFFF",
+      "background": "#0057D8",
+      "ratio": 6.26
+    },
+    {
+      "role": "school CTA",
+      "foreground": "#09234B",
+      "background": "#00D2F2",
+      "ratio": 8.5
+    }
+  ],
+  "fonts": [
+    {
+      "font": "onest-Onest[wght].ttf",
+      "sha256": "966c5c29b4755da84b6854d5c21dd4eaa2420225d0e9874de602de176d4a9f31",
+      "tested": "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяÇĞİÖŞÜçğıöşü₽",
+      "missing": [],
+      "source": "../../evidence/font-coverage.json",
+      "unchanged": true
+    },
+    {
+      "font": "manrope-Manrope[wght].ttf",
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
+      "tested": "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяÇĞİÖŞÜçğıöşü₽",
+      "missing": [],
+      "source": "../../evidence/font-coverage.json",
+      "unchanged": true
+    }
+  ],
+  "mobile_menu": "opened and closed by navigation",
+  "word_examples": "Kadıköy / İstanbul / çay switched successfully",
+  "comparison": "1440 and 390 no overflow; mobile language screenshots loaded",
+  "new_page_browser_errors": []
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "side": "before",
+    "width": 1440,
+    "fonts": "loaded",
+    "images": [
+      ""
+    ],
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "bottom": 878,
+        "id": "",
+        "top": 140.046875
+      },
+      {
+        "bottom": 1715.0078125,
+        "id": "formats",
+        "top": 878
+      },
+      {
+        "bottom": 2306.21875,
+        "id": "",
+        "top": 1715.0078125
+      },
+      {
+        "bottom": 3043.8203125,
+        "id": "school",
+        "top": 2306.21875
+      }
+    ]
+  },
+  {
+    "side": "before",
+    "width": 390,
+    "fonts": "loaded",
+    "images": [
+      ""
+    ],
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "bottom": 1017.390625,
+        "id": "",
+        "top": 117
+      },
+      {
+        "bottom": 1955.421875,
+        "id": "formats",
+        "top": 1017.390625
+      },
+      {
+        "bottom": 2794.3203125,
+        "id": "",
+        "top": 1955.421875
+      },
+      {
+        "bottom": 3719.078125,
+        "id": "school",
+        "top": 2794.3203125
+      }
+    ]
+  },
+  {
+    "side": "before",
+    "width": 768,
+    "fonts": "loaded",
+    "images": [
+      ""
+    ],
+    "scrollWidth": 768,
+    "sections": [
+      {
+        "bottom": 852.0078125,
+        "id": "",
+        "top": 132.046875
+      },
+      {
+        "bottom": 1618.796875,
+        "id": "formats",
+        "top": 852.0078125
+      },
+      {
+        "bottom": 2208.25,
+        "id": "",
+        "top": 1618.796875
+      },
+      {
+        "bottom": 3066.453125,
+        "id": "school",
+        "top": 2208.25
+      }
+    ]
+  },
+  {
+    "side": "after",
+    "fonts": "loaded",
+    "images": [],
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "bottom": 901.1484375,
+        "id": "",
+        "top": 140
+      },
+      {
+        "bottom": 1607.7578125,
+        "id": "formats",
+        "top": 901.1484375
+      },
+      {
+        "bottom": 2532.7578125,
+        "id": "language",
+        "top": 1607.7578125
+      },
+      {
+        "bottom": 3407.6328125,
+        "id": "school",
+        "top": 2532.7578125
+      }
+    ],
+    "width": 1440
+  },
+  {
+    "side": "after",
+    "fonts": "loaded",
+    "images": [],
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "bottom": 1207.078125,
+        "id": "",
+        "top": 120
+      },
+      {
+        "bottom": 2026.6484375,
+        "id": "formats",
+        "top": 1207.078125
+      },
+      {
+        "bottom": 3456.8203125,
+        "id": "language",
+        "top": 2026.6484375
+      },
+      {
+        "bottom": 4641.328125,
+        "id": "school",
+        "top": 3456.8203125
+      }
+    ],
+    "width": 390
+  },
+  {
+    "side": "after",
+    "fonts": "loaded",
+    "images": [],
+    "scrollWidth": 768,
+    "sections": [
+      {
+        "bottom": 768.046875,
+        "id": "",
+        "top": 128
+      },
+      {
+        "bottom": 1478.6015625,
+        "id": "formats",
+        "top": 768.046875
+      },
+      {
+        "bottom": 2387.7421875,
+        "id": "language",
+        "top": 1478.6015625
+      },
+      {
+        "bottom": 3182.078125,
+        "id": "school",
+        "top": 2387.7421875
+      }
+    ],
+    "width": 768
+  }
+]
