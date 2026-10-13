@@ -1,0 +1,123 @@
+/* Existing internal-page appearance, scoped to protect the approved homepage. */
+.legacy-content {
+  @apply bg-brand-bg text-brand-text font-sans antialiased;
+}
+.legacy-content h1,
+.legacy-content h2,
+.legacy-content h3 {
+  @apply font-extrabold text-brand-heading;
+}
+
+.legacy-content h2 {
+  @apply text-3xl md:text-4xl mb-6;
+}
+.legacy-content .btn-primary {
+  @apply bg-brand-primary text-white font-semibold py-3 px-5 rounded-full shadow-sm hover:bg-brand-hover hover:shadow-md transition-all duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2;
+}
+.legacy-content .card {
+  @apply bg-brand-card rounded-[20px] shadow-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-hover;
+}
+.legacy-content a {
+  @apply text-brand-primary hover:text-brand-hover transition-colors duration-300;
+}
+
+.legacy-content {
+  --radius: 1.5rem;
+  --mobile-h1-size: 28px;
+  --mobile-h2-size: 22px;
+  --mobile-body-size: 15px;
+  --mobile-small-size: 13px;
+  --mobile-section-padding: 32px;
+  --mobile-card-padding: 14px;
+  --mobile-gap: 12px;
+  --mobile-button-height: 44px;
+  --mobile-button-font: 15px;
+  --mobile-image-max-height: 200px;
+}
+
+.legacy-content {
+  scroll-behavior: smooth;
+}
+.legacy-content {
+  scroll-padding-top: 80px;
+}
+
+.legacy-content {
+  @apply bg-white text-brand-text antialiased leading-relaxed;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .legacy-content .grid {
+    gap: 1.5rem;
+  }
+  .legacy-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .legacy-content h2 {
+    font-size: 2rem;
+  }
+}
+.legacy-content section {
+  @apply py-8 relative overflow-hidden;
+  background-color: white;
+}
+.legacy-content section + section {
+  @apply mt-0;
+}
+.legacy-content h1,
+.legacy-content h2,
+.legacy-content h3,
+.legacy-content h4 {
+  @apply mb-3;
+}
+.legacy-content p {
+  @apply mb-2;
+}
+@media (min-width: 768px) {
+  .legacy-content section {
+    @apply py-20;
+  }
+
+  .legacy-content h1,
+  .legacy-content h2,
+  .legacy-content h3,
+  .legacy-content h4 {
+    @apply mb-4;
+  }
+
+  .legacy-content p {
+    @apply mb-3;
+  }
+}
+@media (max-width: 768px) {
+  .legacy-content h1 {
+    font-size: var(--mobile-h1-size) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .legacy-content h2 {
+    font-size: var(--mobile-h2-size) !important;
+    line-height: 1.3 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .legacy-content .space-y-6 > * + * {
+    margin-top: 14px !important;
+  }
+  .legacy-content img[class*='rounded'] {
+    max-height: var(--mobile-image-max-height) !important;
+    object-fit: cover !important;
+  }
+}
+.legacy-content nav a {
+  color: #1e293b;
+  transition: color 0.2s ease;
+}
+
+.legacy-content nav a:hover {
+  color: #0284c7;
+}
+.legacy-content :focus-visible {
+  @apply outline-none ring-2 ring-brand-primary ring-offset-2;
+}

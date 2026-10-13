@@ -1,0 +1,41 @@
+[
+  {
+    "busy": "false",
+    "errors": [
+      "name",
+      "phone"
+    ],
+    "focus": "name",
+    "test": "empty form"
+  },
+  {
+    "hidden": true,
+    "test": "change format clears plan"
+  },
+  {
+    "test": "mobile menu open",
+    "expanded": "true"
+  },
+  {
+    "test": "Escape menu",
+    "expanded": "false"
+  },
+  {
+    "open": true,
+    "test": "FAQ keyboard"
+  },
+  {
+    "test": "language note",
+    "expanded": "false"
+  },
+  {
+    "alt": "Исходный отзыв: Динара",
+    "open": true,
+    "test": "review original"
+  },
+  {
+    "focus": "Оригинал ↗",
+    "open": false,
+    "test": "review Escape"
+  }
+]

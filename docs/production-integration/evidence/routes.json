@@ -1,0 +1,62 @@
+[
+  {
+    "brokenImages": [],
+    "headings": [
+      "Статьи о турецком языке"
+    ],
+    "nav": [
+      "/#formats",
+      "/#teachers",
+      "/#pricing",
+      "/#reviews"
+    ],
+    "overflow": false,
+    "path": "/articles",
+    "title": "Статьи о турецком языке — LinguaTurca"
+  },
+  {
+    "brokenImages": [],
+    "headings": [
+      "Как выучить турецкий язык с нуля"
+    ],
+    "nav": [
+      "/#formats",
+      "/#teachers",
+      "/#pricing",
+      "/#reviews"
+    ],
+    "overflow": false,
+    "path": "/articles/kak-vyuchit-turetskiy",
+    "title": "Как выучить турецкий язык с нуля — пошаговый план — LinguaTurca"
+  },
+  {
+    "brokenImages": [],
+    "headings": [
+      "Политика в отношении обработки персональных данных"
+    ],
+    "nav": [
+      "/#formats",
+      "/#teachers",
+      "/#pricing",
+      "/#reviews"
+    ],
+    "overflow": false,
+    "path": "/policy",
+    "title": "LinguaTurca — Школа турецкого языка"
+  },
+  {
+    "brokenImages": [],
+    "headings": [
+      "ДОГОВОР-ОФЕРТА"
+    ],
+    "nav": [
+      "/#formats",
+      "/#teachers",
+      "/#pricing",
+      "/#reviews"
+    ],
+    "overflow": false,
+    "path": "/legal",
+    "title": "LinguaTurca — Школа турецкого языка"
+  }
+]

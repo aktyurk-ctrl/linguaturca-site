@@ -1,0 +1,2892 @@
+[
+  {
+    "label": "reference",
+    "client": 320,
+    "elements": [
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 78,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языка\n      \n        Об",
+        "width": 288,
+        "x": 16,
+        "y": 0
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "8px",
+        "fontWeight": "650",
+        "height": 12.796875,
+        "lineHeight": "12.8px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 288,
+        "x": 16,
+        "y": 98
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "38px",
+        "fontWeight": "700",
+        "height": 123.1171875,
+        "lineHeight": "41.04px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 288,
+        "x": 16,
+        "y": 128.796875
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "height": 89.59375,
+        "lineHeight": "22.4px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 288,
+        "x": 16,
+        "y": 272.9140625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "19.6px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 288,
+        "x": 16,
+        "y": 385.5078125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 23.25,
+        "lineHeight": "23.25px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 288,
+        "x": 16,
+        "y": 445.5078125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "550",
+        "height": 44,
+        "lineHeight": "20.15px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 165.296875,
+        "x": 16,
+        "y": 478.7578125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 343.296875,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 288,
+        "x": 16,
+        "y": 581.15625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 285,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 288,
+        "x": 16,
+        "y": 639.453125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "height": 18.90185546875,
+        "lineHeight": "15.5px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 84.69354248046875,
+        "x": 20.437713623046875,
+        "y": 862.321044921875
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 74.296875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 288,
+        "x": 16,
+        "y": 953.453125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 75.296875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 288,
+        "x": 16,
+        "y": 1027.75
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 77.5,
+        "lineHeight": "23.25px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 288,
+        "x": 16,
+        "y": 1103.046875
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 42.25,
+        "lineHeight": "23.25px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 274.0703125,
+        "x": 16,
+        "y": 1121.046875
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 554.953125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человека\n              \n             ",
+        "width": 288,
+        "x": 16,
+        "y": 1901.8828125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 439.15625,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподаватель\n              \n  ",
+        "width": 288,
+        "x": 16,
+        "y": 2474.8359375
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "28px",
+        "fontWeight": "650",
+        "height": 97.4296875,
+        "lineHeight": "32.48px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 288,
+        "x": 16,
+        "y": 3257.3359375
+      },
+      {
+        "font": "Manrope",
+        "fontSize": "23px",
+        "fontWeight": "500",
+        "height": 133.375,
+        "lineHeight": "33.35px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 288,
+        "x": 16,
+        "y": 9309.1328125
+      }
+    ],
+    "height": 13334,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 320,
+    "sections": [
+      {
+        "height": 1105.546875,
+        "id": "hero",
+        "top": 78
+      },
+      {
+        "height": 462.6796875,
+        "id": "school",
+        "top": 1183.546875
+      },
+      {
+        "height": 1538.109375,
+        "id": "formats",
+        "top": 1646.2265625
+      },
+      {
+        "height": 1004.9609375,
+        "id": "method",
+        "top": 3184.3359375
+      },
+      {
+        "height": 967.8515625,
+        "id": "teachers",
+        "top": 4189.296875
+      },
+      {
+        "height": 974.421875,
+        "id": "lessons",
+        "top": 5157.1484375
+      },
+      {
+        "height": 2420.3359375,
+        "id": "pricing",
+        "top": 6131.5703125
+      },
+      {
+        "height": 1246.9921875,
+        "id": "culture",
+        "top": 8551.90625
+      },
+      {
+        "height": 1242.7578125,
+        "id": "reviews",
+        "top": 9798.8984375
+      },
+      {
+        "height": 767.3671875,
+        "id": "faq",
+        "top": 11041.65625
+      },
+      {
+        "height": 955.8515625,
+        "id": "signup",
+        "top": 11809.0234375
+      },
+      {
+        "height": 569.2265625,
+        "id": "footer",
+        "top": 12764.875
+      }
+    ],
+    "width": 320
+  },
+  {
+    "label": "reference",
+    "client": 390,
+    "elements": [
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 78,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языка\n      \n        Об",
+        "width": 350,
+        "x": 20,
+        "y": 0
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "9px",
+        "fontWeight": "650",
+        "height": 14.3984375,
+        "lineHeight": "14.4px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 350,
+        "x": 20,
+        "y": 98
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "43px",
+        "fontWeight": "700",
+        "height": 139.3125,
+        "lineHeight": "46.44px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 350,
+        "x": 20,
+        "y": 130.3984375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 96,
+        "lineHeight": "24px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 350,
+        "x": 20,
+        "y": 290.7109375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "19.6px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 350,
+        "x": 20,
+        "y": 409.7109375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 23.25,
+        "lineHeight": "23.25px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 350,
+        "x": 20,
+        "y": 469.7109375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "550",
+        "height": 44,
+        "lineHeight": "20.15px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 165.296875,
+        "x": 20,
+        "y": 502.9609375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 372.9453125,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 350,
+        "x": 20,
+        "y": 606.90625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 310,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 350,
+        "x": 20,
+        "y": 669.8515625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "height": 19.15972900390625,
+        "lineHeight": "15.5px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 87.64126586914062,
+        "x": 24.437713623046875,
+        "y": 917.4616088867188
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 74.296875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 350,
+        "x": 20,
+        "y": 1008.8515625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 75.296875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 350,
+        "x": 20,
+        "y": 1083.1484375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 54.25,
+        "lineHeight": "23.25px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 350,
+        "x": 20,
+        "y": 1158.4453125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 19,
+        "lineHeight": "23.25px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 194.4453125,
+        "x": 161.421875,
+        "y": 1176.4453125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 472.8203125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человека\n              \n             ",
+        "width": 350,
+        "x": 20,
+        "y": 1851.40625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 450.5703125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподаватель\n              \n  ",
+        "width": 350,
+        "x": 20,
+        "y": 2342.2265625
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "31px",
+        "fontWeight": "650",
+        "height": 71.90625,
+        "lineHeight": "35.96px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 350,
+        "x": 20,
+        "y": 3111.34375
+      },
+      {
+        "font": "Manrope",
+        "fontSize": "23px",
+        "fontWeight": "500",
+        "height": 100.03125,
+        "lineHeight": "33.35px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 350,
+        "x": 20,
+        "y": 8655.3046875
+      }
+    ],
+    "height": 12390,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "height": 1137.6953125,
+        "id": "hero",
+        "top": 78
+      },
+      {
+        "height": 397.8828125,
+        "id": "school",
+        "top": 1215.6953125
+      },
+      {
+        "height": 1424.765625,
+        "id": "formats",
+        "top": 1613.578125
+      },
+      {
+        "height": 882.453125,
+        "id": "method",
+        "top": 3038.34375
+      },
+      {
+        "height": 907.8125,
+        "id": "teachers",
+        "top": 3920.796875
+      },
+      {
+        "height": 884.6875,
+        "id": "lessons",
+        "top": 4828.609375
+      },
+      {
+        "height": 2266.203125,
+        "id": "pricing",
+        "top": 5713.296875
+      },
+      {
+        "height": 1132.2265625,
+        "id": "culture",
+        "top": 7979.5
+      },
+      {
+        "height": 1085.84375,
+        "id": "reviews",
+        "top": 9111.7265625
+      },
+      {
+        "height": 727.921875,
+        "id": "faq",
+        "top": 10197.5703125
+      },
+      {
+        "height": 889.296875,
+        "id": "signup",
+        "top": 10925.4921875
+      },
+      {
+        "height": 575.4140625,
+        "id": "footer",
+        "top": 11814.7890625
+      }
+    ],
+    "width": 390
+  },
+  {
+    "label": "reference",
+    "client": 768,
+    "elements": [
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 86,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языка\n      \n        Об",
+        "width": 720,
+        "x": 24,
+        "y": 0
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "9px",
+        "fontWeight": "650",
+        "height": 14.3984375,
+        "lineHeight": "14.4px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 349,
+        "x": 24,
+        "y": 112
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "height": 160.734375,
+        "lineHeight": "53.58px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 349,
+        "x": 24,
+        "y": 148.3984375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 96,
+        "lineHeight": "24px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 349,
+        "x": 24,
+        "y": 330.1328125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "18.2px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 220.796875,
+        "x": 24,
+        "y": 448.1328125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 20.1484375,
+        "lineHeight": "20.15px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 246.3046875,
+        "x": 24,
+        "y": 510.1328125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "550",
+        "height": 52,
+        "lineHeight": "18.6px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 154.7109375,
+        "x": 24,
+        "y": 554.28125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 419.296875,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 349,
+        "x": 395,
+        "y": 177.9921875
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 360,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 349,
+        "x": 395,
+        "y": 177.9921875
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "height": 27.53466796875,
+        "lineHeight": "15.5px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 116.93032836914062,
+        "x": 391.7442321777344,
+        "y": 472.6545104980469
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 48.7421875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 360,
+        "x": 24,
+        "y": 724.28125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 48.7421875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 360,
+        "x": 384,
+        "y": 724.28125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "height": 31.59375,
+        "lineHeight": "18.6px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 720,
+        "x": 24,
+        "y": 790.0234375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "height": 18.59375,
+        "lineHeight": "18.6px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 155.5625,
+        "x": 137.5,
+        "y": 803.0234375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 468.140625,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человека\n              \n             ",
+        "width": 352,
+        "x": 24,
+        "y": 1366.734375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 468.140625,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподаватель\n              \n  ",
+        "width": 352,
+        "x": 392,
+        "y": 1366.734375
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "33px",
+        "fontWeight": "650",
+        "height": 112.8515625,
+        "lineHeight": "37.62px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 333.65625,
+        "x": 24,
+        "y": 2111.1640625
+      },
+      {
+        "font": "Manrope",
+        "fontSize": "25px",
+        "fontWeight": "500",
+        "height": 108.75,
+        "lineHeight": "36.25px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 370.8046875,
+        "x": 373.1875,
+        "y": 5060.9140625
+      }
+    ],
+    "height": 8086,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 768,
+    "sections": [
+      {
+        "height": 778.6171875,
+        "id": "hero",
+        "top": 86
+      },
+      {
+        "height": 311.2890625,
+        "id": "school",
+        "top": 864.6171875
+      },
+      {
+        "height": 844.6640625,
+        "id": "formats",
+        "top": 1175.90625
+      },
+      {
+        "height": 588.890625,
+        "id": "method",
+        "top": 2020.5703125
+      },
+      {
+        "height": 594.4609375,
+        "id": "teachers",
+        "top": 2609.4609375
+      },
+      {
+        "height": 602.890625,
+        "id": "lessons",
+        "top": 3203.921875
+      },
+      {
+        "height": 1199.1015625,
+        "id": "pricing",
+        "top": 3806.8125
+      },
+      {
+        "height": 815.7890625,
+        "id": "culture",
+        "top": 5005.9140625
+      },
+      {
+        "height": 623.828125,
+        "id": "reviews",
+        "top": 5821.703125
+      },
+      {
+        "height": 561.5625,
+        "id": "faq",
+        "top": 6445.53125
+      },
+      {
+        "height": 702.9375,
+        "id": "signup",
+        "top": 7007.09375
+      },
+      {
+        "height": 375.984375,
+        "id": "footer",
+        "top": 7710.03125
+      }
+    ],
+    "width": 768
+  },
+  {
+    "label": "reference",
+    "client": 1024,
+    "elements": [
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 100,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языка\n      \n        Об",
+        "width": 960,
+        "x": 32,
+        "y": 0
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "650",
+        "height": 17.59375,
+        "lineHeight": "17.6px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 460,
+        "x": 32,
+        "y": 151.3671875
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "57px",
+        "fontWeight": "700",
+        "height": 194.9296875,
+        "lineHeight": "64.98px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 460,
+        "x": 32,
+        "y": 190.9609375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "height": 81.5859375,
+        "lineHeight": "27.2px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 460,
+        "x": 32,
+        "y": 413.890625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "18.2px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 220.796875,
+        "x": 32,
+        "y": 525.4765625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 20.1484375,
+        "lineHeight": "20.15px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 246.3046875,
+        "x": 32,
+        "y": 587.4765625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "550",
+        "height": 52,
+        "lineHeight": "18.6px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 154.7109375,
+        "x": 302.3046875,
+        "y": 525.4765625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 522.0390625,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 460,
+        "x": 532,
+        "y": 136
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 455,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 460,
+        "x": 532,
+        "y": 136
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "height": 31.0125732421875,
+        "lineHeight": "17.05px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 135.54510498046875,
+        "x": 520.0065307617188,
+        "y": 518.8768310546875
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 50.2890625,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 310.1484375,
+        "x": 32,
+        "y": 743.0390625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 50.2890625,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 354.4609375,
+        "x": 342.1484375,
+        "y": 743.0390625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "height": 50.2890625,
+        "lineHeight": "18.6px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 178.5625,
+        "x": 813.4375,
+        "y": 743.0390625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "height": 15,
+        "lineHeight": "18.6px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 155.5625,
+        "x": 836.4375,
+        "y": 763.1328125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 496.9453125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человека\n              \n             ",
+        "width": 468,
+        "x": 32,
+        "y": 1307.390625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 496.9453125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподаватель\n              \n  ",
+        "width": 468,
+        "x": 524,
+        "y": 1307.390625
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "37px",
+        "fontWeight": "650",
+        "height": 84.359375,
+        "lineHeight": "42.18px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 434.140625,
+        "x": 32,
+        "y": 2114.625
+      },
+      {
+        "font": "Manrope",
+        "fontSize": "25px",
+        "fontWeight": "500",
+        "height": 72.5,
+        "lineHeight": "36.25px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 554.8828125,
+        "x": 437.1171875,
+        "y": 4973.7734375
+      }
+    ],
+    "height": 8061,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 1024,
+    "sections": [
+      {
+        "height": 740.328125,
+        "id": "hero",
+        "top": 100
+      },
+      {
+        "height": 285.2890625,
+        "id": "school",
+        "top": 840.328125
+      },
+      {
+        "height": 881.4140625,
+        "id": "formats",
+        "top": 1125.6171875
+      },
+      {
+        "height": 555.34375,
+        "id": "method",
+        "top": 2007.03125
+      },
+      {
+        "height": 619.875,
+        "id": "teachers",
+        "top": 2562.375
+      },
+      {
+        "height": 565.921875,
+        "id": "lessons",
+        "top": 3182.25
+      },
+      {
+        "height": 1153.6015625,
+        "id": "pricing",
+        "top": 3748.171875
+      },
+      {
+        "height": 782.328125,
+        "id": "culture",
+        "top": 4901.7734375
+      },
+      {
+        "height": 636.453125,
+        "id": "reviews",
+        "top": 5684.1015625
+      },
+      {
+        "height": 631.5625,
+        "id": "faq",
+        "top": 6320.5546875
+      },
+      {
+        "height": 746.9375,
+        "id": "signup",
+        "top": 6952.1171875
+      },
+      {
+        "height": 361.96875,
+        "id": "footer",
+        "top": 7699.0546875
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "label": "reference",
+    "client": 1440,
+    "elements": [
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 100,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языка\n      \n        Об",
+        "width": 1280,
+        "x": 80,
+        "y": 0
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "650",
+        "height": 17.59375,
+        "lineHeight": "17.6px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 602,
+        "x": 80,
+        "y": 154.5
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "64px",
+        "fontWeight": "700",
+        "height": 218.859375,
+        "lineHeight": "72.96px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 602,
+        "x": 80,
+        "y": 194.09375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "height": 86.390625,
+        "lineHeight": "28.8px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 510,
+        "x": 80,
+        "y": 440.953125
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "19.6px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 231.109375,
+        "x": 80,
+        "y": 557.34375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 20.1484375,
+        "lineHeight": "20.15px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 246.3046875,
+        "x": 80,
+        "y": 619.34375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "550",
+        "height": 52,
+        "lineHeight": "21.7px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 175.875,
+        "x": 350.3046875,
+        "y": 557.34375
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 557.0390625,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 602,
+        "x": 758,
+        "y": 136
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 490,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 602,
+        "x": 758,
+        "y": 136
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "height": 31.0125732421875,
+        "lineHeight": "17.05px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 135.54510498046875,
+        "x": 751.9020385742188,
+        "y": 549.8822631835938
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 53.390625,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 413.53125,
+        "x": 80,
+        "y": 778.0390625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 53.390625,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 472.6171875,
+        "x": 493.53125,
+        "y": 778.0390625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 53.390625,
+        "lineHeight": "20.15px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 201.5234375,
+        "x": 1158.4765625,
+        "y": 778.0390625
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 16.5,
+        "lineHeight": "20.15px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 168.5234375,
+        "x": 1191.4765625,
+        "y": 799.6875
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 411.6953125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человека\n              \n             ",
+        "width": 628,
+        "x": 80,
+        "y": 1357.1875
+      },
+      {
+        "font": "Onest, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 411.6953125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподаватель\n              \n  ",
+        "width": 628,
+        "x": 732,
+        "y": 1357.1875
+      },
+      {
+        "font": "Manrope, Arial, sans-serif",
+        "fontSize": "42px",
+        "fontWeight": "650",
+        "height": 95.75,
+        "lineHeight": "47.88px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 590.2421875,
+        "x": 80,
+        "y": 2079.171875
+      },
+      {
+        "font": "Manrope",
+        "fontSize": "25px",
+        "fontWeight": "500",
+        "height": 72.5,
+        "lineHeight": "36.25px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 729.2734375,
+        "x": 630.7265625,
+        "y": 4858.78125
+      }
+    ],
+    "height": 7860,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "height": 778.4296875,
+        "id": "hero",
+        "top": 100
+      },
+      {
+        "height": 291.2890625,
+        "id": "school",
+        "top": 878.4296875
+      },
+      {
+        "height": 801.859375,
+        "id": "formats",
+        "top": 1169.71875
+      },
+      {
+        "height": 505.75,
+        "id": "method",
+        "top": 1971.578125
+      },
+      {
+        "height": 605.421875,
+        "id": "teachers",
+        "top": 2477.328125
+      },
+      {
+        "height": 565.921875,
+        "id": "lessons",
+        "top": 3082.75
+      },
+      {
+        "height": 1138.109375,
+        "id": "pricing",
+        "top": 3648.671875
+      },
+      {
+        "height": 747.921875,
+        "id": "culture",
+        "top": 4786.78125
+      },
+      {
+        "height": 584.84375,
+        "id": "reviews",
+        "top": 5534.703125
+      },
+      {
+        "height": 631.5625,
+        "id": "faq",
+        "top": 6119.546875
+      },
+      {
+        "height": 746.9375,
+        "id": "signup",
+        "top": 6751.109375
+      },
+      {
+        "height": 361.96875,
+        "id": "footer",
+        "top": 7498.046875
+      }
+    ],
+    "width": 1440
+  },
+  {
+    "label": "production",
+    "client": 320,
+    "elements": [
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 78,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языкаОбучениеПреподават",
+        "width": 288,
+        "x": 16,
+        "y": 0
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "8px",
+        "fontWeight": "650",
+        "height": 12.796875,
+        "lineHeight": "12.8px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 288,
+        "x": 16,
+        "y": 98
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "38px",
+        "fontWeight": "700",
+        "height": 123.1171875,
+        "lineHeight": "41.04px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 288,
+        "x": 16,
+        "y": 128.796875
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "height": 89.59375,
+        "lineHeight": "22.4px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 288,
+        "x": 16,
+        "y": 272.9140625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "19.6px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 288,
+        "x": 16,
+        "y": 385.5078125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 23.25,
+        "lineHeight": "23.25px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 288,
+        "x": 16,
+        "y": 445.5078125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "550",
+        "height": 44,
+        "lineHeight": "20.15px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 165.296875,
+        "x": 16,
+        "y": 478.7578125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 343.296875,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 288,
+        "x": 16,
+        "y": 581.15625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 285,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 288,
+        "x": 16,
+        "y": 639.453125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "height": 18.90185546875,
+        "lineHeight": "15.5px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 84.69354248046875,
+        "x": 20.437713623046875,
+        "y": 862.321044921875
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 74.296875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 288,
+        "x": 16,
+        "y": 953.453125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 75.296875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 288,
+        "x": 16,
+        "y": 1027.75
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 77.5,
+        "lineHeight": "23.25px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 288,
+        "x": 16,
+        "y": 1103.046875
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 42.25,
+        "lineHeight": "23.25px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 274.0703125,
+        "x": 16,
+        "y": 1121.046875
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 554.953125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человекаВ небольшой группеДля тех, ко",
+        "width": 288,
+        "x": 16,
+        "y": 1901.8828125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 439.15625,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподавательИндивидуальноДля т",
+        "width": 288,
+        "x": 16,
+        "y": 2474.8359375
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "28px",
+        "fontWeight": "650",
+        "height": 97.4296875,
+        "lineHeight": "32.48px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 288,
+        "x": 16,
+        "y": 3257.3359375
+      },
+      {
+        "font": "manrope, \"manrope Fallback\"",
+        "fontSize": "23px",
+        "fontWeight": "500",
+        "height": 133.375,
+        "lineHeight": "33.35px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 288,
+        "x": 16,
+        "y": 9309.1328125
+      }
+    ],
+    "height": 13279,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 320,
+    "sections": [
+      {
+        "height": 1105.546875,
+        "id": "hero",
+        "top": 78
+      },
+      {
+        "height": 462.6796875,
+        "id": "school",
+        "top": 1183.546875
+      },
+      {
+        "height": 1538.109375,
+        "id": "formats",
+        "top": 1646.2265625
+      },
+      {
+        "height": 1004.9609375,
+        "id": "method",
+        "top": 3184.3359375
+      },
+      {
+        "height": 967.8515625,
+        "id": "teachers",
+        "top": 4189.296875
+      },
+      {
+        "height": 974.421875,
+        "id": "lessons",
+        "top": 5157.1484375
+      },
+      {
+        "height": 2420.3359375,
+        "id": "pricing",
+        "top": 6131.5703125
+      },
+      {
+        "height": 1246.9921875,
+        "id": "culture",
+        "top": 8551.90625
+      },
+      {
+        "height": 1242.7578125,
+        "id": "reviews",
+        "top": 9798.8984375
+      },
+      {
+        "height": 767.3671875,
+        "id": "faq",
+        "top": 11041.65625
+      },
+      {
+        "height": 955.8515625,
+        "id": "signup",
+        "top": 11809.0234375
+      },
+      {
+        "height": 514.6328125,
+        "id": "footer",
+        "top": 12764.875
+      }
+    ],
+    "width": 320
+  },
+  {
+    "label": "production",
+    "client": 390,
+    "elements": [
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 78,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языкаОбучениеПреподават",
+        "width": 350,
+        "x": 20,
+        "y": 0
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "9px",
+        "fontWeight": "650",
+        "height": 14.3984375,
+        "lineHeight": "14.4px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 350,
+        "x": 20,
+        "y": 98
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "43px",
+        "fontWeight": "700",
+        "height": 139.3125,
+        "lineHeight": "46.44px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 350,
+        "x": 20,
+        "y": 130.3984375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 96,
+        "lineHeight": "24px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 350,
+        "x": 20,
+        "y": 290.7109375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "19.6px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 350,
+        "x": 20,
+        "y": 409.7109375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 23.25,
+        "lineHeight": "23.25px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 350,
+        "x": 20,
+        "y": 469.7109375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "550",
+        "height": 44,
+        "lineHeight": "20.15px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 165.296875,
+        "x": 20,
+        "y": 502.9609375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 372.9453125,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 350,
+        "x": 20,
+        "y": 606.90625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 310,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 350,
+        "x": 20,
+        "y": 669.8515625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "height": 19.15972900390625,
+        "lineHeight": "15.5px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 87.64126586914062,
+        "x": 24.437713623046875,
+        "y": 917.4616088867188
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 74.296875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 350,
+        "x": 20,
+        "y": 1008.8515625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 75.296875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 350,
+        "x": 20,
+        "y": 1083.1484375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 54.25,
+        "lineHeight": "23.25px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 350,
+        "x": 20,
+        "y": 1158.4453125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 19,
+        "lineHeight": "23.25px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 194.4453125,
+        "x": 161.421875,
+        "y": 1176.4453125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 472.8203125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человекаВ небольшой группеДля тех, ко",
+        "width": 350,
+        "x": 20,
+        "y": 1851.40625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 450.5703125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподавательИндивидуальноДля т",
+        "width": 350,
+        "x": 20,
+        "y": 2342.2265625
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "31px",
+        "fontWeight": "650",
+        "height": 71.90625,
+        "lineHeight": "35.96px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 350,
+        "x": 20,
+        "y": 3111.34375
+      },
+      {
+        "font": "manrope, \"manrope Fallback\"",
+        "fontSize": "23px",
+        "fontWeight": "500",
+        "height": 100.03125,
+        "lineHeight": "33.35px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 350,
+        "x": 20,
+        "y": 8655.3046875
+      }
+    ],
+    "height": 12335,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "height": 1137.6953125,
+        "id": "hero",
+        "top": 78
+      },
+      {
+        "height": 397.8828125,
+        "id": "school",
+        "top": 1215.6953125
+      },
+      {
+        "height": 1424.765625,
+        "id": "formats",
+        "top": 1613.578125
+      },
+      {
+        "height": 882.453125,
+        "id": "method",
+        "top": 3038.34375
+      },
+      {
+        "height": 907.8125,
+        "id": "teachers",
+        "top": 3920.796875
+      },
+      {
+        "height": 884.6875,
+        "id": "lessons",
+        "top": 4828.609375
+      },
+      {
+        "height": 2266.203125,
+        "id": "pricing",
+        "top": 5713.296875
+      },
+      {
+        "height": 1132.2265625,
+        "id": "culture",
+        "top": 7979.5
+      },
+      {
+        "height": 1085.84375,
+        "id": "reviews",
+        "top": 9111.7265625
+      },
+      {
+        "height": 727.921875,
+        "id": "faq",
+        "top": 10197.5703125
+      },
+      {
+        "height": 889.296875,
+        "id": "signup",
+        "top": 10925.4921875
+      },
+      {
+        "height": 520.8203125,
+        "id": "footer",
+        "top": 11814.7890625
+      }
+    ],
+    "width": 390
+  },
+  {
+    "label": "production",
+    "client": 768,
+    "elements": [
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 86,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языкаОбучениеПреподават",
+        "width": 720,
+        "x": 24,
+        "y": 0
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "9px",
+        "fontWeight": "650",
+        "height": 14.3984375,
+        "lineHeight": "14.4px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 349,
+        "x": 24,
+        "y": 112
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "47px",
+        "fontWeight": "700",
+        "height": 160.734375,
+        "lineHeight": "53.58px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 349,
+        "x": 24,
+        "y": 148.3984375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "height": 96,
+        "lineHeight": "24px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 349,
+        "x": 24,
+        "y": 330.1328125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "18.2px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 220.796875,
+        "x": 24,
+        "y": 448.1328125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 20.1484375,
+        "lineHeight": "20.15px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 246.3046875,
+        "x": 24,
+        "y": 510.1328125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "550",
+        "height": 52,
+        "lineHeight": "18.6px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 154.7109375,
+        "x": 24,
+        "y": 554.28125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 419.296875,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 349,
+        "x": 395,
+        "y": 177.9921875
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 360,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 349,
+        "x": 395,
+        "y": 177.9921875
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "height": 27.53466796875,
+        "lineHeight": "15.5px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 116.93032836914062,
+        "x": 391.7442321777344,
+        "y": 472.6545104980469
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 48.7421875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 360,
+        "x": 24,
+        "y": 724.28125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 48.7421875,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 360,
+        "x": 384,
+        "y": 724.28125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "height": 31.59375,
+        "lineHeight": "18.6px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 720,
+        "x": 24,
+        "y": 790.0234375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "height": 18.59375,
+        "lineHeight": "18.6px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 155.5625,
+        "x": 137.5,
+        "y": 803.0234375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 468.140625,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человекаВ небольшой группеДля тех, ко",
+        "width": 352,
+        "x": 24,
+        "y": 1366.734375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 468.140625,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподавательИндивидуальноДля т",
+        "width": 352,
+        "x": 392,
+        "y": 1366.734375
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "33px",
+        "fontWeight": "650",
+        "height": 112.8515625,
+        "lineHeight": "37.62px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 333.65625,
+        "x": 24,
+        "y": 2111.1640625
+      },
+      {
+        "font": "manrope, \"manrope Fallback\"",
+        "fontSize": "25px",
+        "fontWeight": "500",
+        "height": 108.75,
+        "lineHeight": "36.25px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 370.8046875,
+        "x": 373.1875,
+        "y": 5060.9140625
+      }
+    ],
+    "height": 8031,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 768,
+    "sections": [
+      {
+        "height": 778.6171875,
+        "id": "hero",
+        "top": 86
+      },
+      {
+        "height": 311.2890625,
+        "id": "school",
+        "top": 864.6171875
+      },
+      {
+        "height": 844.6640625,
+        "id": "formats",
+        "top": 1175.90625
+      },
+      {
+        "height": 588.890625,
+        "id": "method",
+        "top": 2020.5703125
+      },
+      {
+        "height": 594.4609375,
+        "id": "teachers",
+        "top": 2609.4609375
+      },
+      {
+        "height": 602.890625,
+        "id": "lessons",
+        "top": 3203.921875
+      },
+      {
+        "height": 1199.1015625,
+        "id": "pricing",
+        "top": 3806.8125
+      },
+      {
+        "height": 815.7890625,
+        "id": "culture",
+        "top": 5005.9140625
+      },
+      {
+        "height": 623.828125,
+        "id": "reviews",
+        "top": 5821.703125
+      },
+      {
+        "height": 561.5625,
+        "id": "faq",
+        "top": 6445.53125
+      },
+      {
+        "height": 702.9375,
+        "id": "signup",
+        "top": 7007.09375
+      },
+      {
+        "height": 321.390625,
+        "id": "footer",
+        "top": 7710.03125
+      }
+    ],
+    "width": 768
+  },
+  {
+    "label": "production",
+    "client": 1024,
+    "elements": [
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 100,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языкаОбучениеПреподават",
+        "width": 960,
+        "x": 32,
+        "y": 0
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "650",
+        "height": 17.59375,
+        "lineHeight": "17.6px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 460,
+        "x": 32,
+        "y": 151.3671875
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "57px",
+        "fontWeight": "700",
+        "height": 194.9296875,
+        "lineHeight": "64.98px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 460,
+        "x": 32,
+        "y": 190.9609375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "height": 81.5859375,
+        "lineHeight": "27.2px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 460,
+        "x": 32,
+        "y": 413.890625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "18.2px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 220.796875,
+        "x": 32,
+        "y": 525.4765625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 20.1484375,
+        "lineHeight": "20.15px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 246.3046875,
+        "x": 32,
+        "y": 587.4765625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "550",
+        "height": 52,
+        "lineHeight": "18.6px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 154.7109375,
+        "x": 302.3046875,
+        "y": 525.4765625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 522.0390625,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 460,
+        "x": 532,
+        "y": 136
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 455,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 460,
+        "x": 532,
+        "y": 136
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "height": 31.0125732421875,
+        "lineHeight": "17.05px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 135.54510498046875,
+        "x": 520.0065307617188,
+        "y": 518.8768310546875
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 50.2890625,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 310.1484375,
+        "x": 32,
+        "y": 743.0390625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 50.2890625,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 354.4609375,
+        "x": 342.1484375,
+        "y": 743.0390625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "height": 50.2890625,
+        "lineHeight": "18.6px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 178.5625,
+        "x": 813.4375,
+        "y": 743.0390625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "height": 15,
+        "lineHeight": "18.6px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 155.5625,
+        "x": 836.4375,
+        "y": 763.1328125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 496.9453125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человекаВ небольшой группеДля тех, ко",
+        "width": 468,
+        "x": 32,
+        "y": 1307.390625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 496.9453125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподавательИндивидуальноДля т",
+        "width": 468,
+        "x": 524,
+        "y": 1307.390625
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "37px",
+        "fontWeight": "650",
+        "height": 84.359375,
+        "lineHeight": "42.18px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 434.140625,
+        "x": 32,
+        "y": 2114.625
+      },
+      {
+        "font": "manrope, \"manrope Fallback\"",
+        "fontSize": "25px",
+        "fontWeight": "500",
+        "height": 72.5,
+        "lineHeight": "36.25px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 554.8828125,
+        "x": 437.1171875,
+        "y": 4973.7734375
+      }
+    ],
+    "height": 8006,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 1024,
+    "sections": [
+      {
+        "height": 740.328125,
+        "id": "hero",
+        "top": 100
+      },
+      {
+        "height": 285.2890625,
+        "id": "school",
+        "top": 840.328125
+      },
+      {
+        "height": 881.4140625,
+        "id": "formats",
+        "top": 1125.6171875
+      },
+      {
+        "height": 555.34375,
+        "id": "method",
+        "top": 2007.03125
+      },
+      {
+        "height": 619.875,
+        "id": "teachers",
+        "top": 2562.375
+      },
+      {
+        "height": 565.921875,
+        "id": "lessons",
+        "top": 3182.25
+      },
+      {
+        "height": 1153.6015625,
+        "id": "pricing",
+        "top": 3748.171875
+      },
+      {
+        "height": 782.328125,
+        "id": "culture",
+        "top": 4901.7734375
+      },
+      {
+        "height": 636.453125,
+        "id": "reviews",
+        "top": 5684.1015625
+      },
+      {
+        "height": 631.5625,
+        "id": "faq",
+        "top": 6320.5546875
+      },
+      {
+        "height": 746.9375,
+        "id": "signup",
+        "top": 6952.1171875
+      },
+      {
+        "height": 307.375,
+        "id": "footer",
+        "top": 7699.0546875
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "label": "production",
+    "client": 1440,
+    "elements": [
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 100,
+        "lineHeight": "24.8px",
+        "tag": "HEADER",
+        "text": "Linguaturcaшкола турецкого языкаОбучениеПреподават",
+        "width": 1280,
+        "x": 80,
+        "y": 0
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "650",
+        "height": 17.59375,
+        "lineHeight": "17.6px",
+        "tag": "P",
+        "text": "ОНЛАЙН-ШКОЛА ТУРЕЦКОГО ЯЗЫКА",
+        "width": 602,
+        "x": 80,
+        "y": 154.5
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "64px",
+        "fontWeight": "700",
+        "height": 218.859375,
+        "lineHeight": "72.96px",
+        "tag": "H1",
+        "text": "Турецкий, на котором говорят.",
+        "width": 602,
+        "x": 80,
+        "y": 194.09375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "height": 86.390625,
+        "lineHeight": "28.8px",
+        "tag": "P",
+        "text": "Онлайн-школа турецкого от тюркологов. Для общения ",
+        "width": 510,
+        "x": 80,
+        "y": 440.953125
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "650",
+        "height": 50,
+        "lineHeight": "19.6px",
+        "tag": "A",
+        "text": "Подобрать обучение ↗",
+        "width": 231.109375,
+        "x": 80,
+        "y": 557.34375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 20.1484375,
+        "lineHeight": "20.15px",
+        "tag": "P",
+        "text": "Бесплатная консультация · 10–15 минут",
+        "width": 246.3046875,
+        "x": 80,
+        "y": 619.34375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "550",
+        "height": 52,
+        "lineHeight": "21.7px",
+        "tag": "A",
+        "text": "Посмотреть форматы ↓",
+        "width": 175.875,
+        "x": 350.3046875,
+        "y": 557.34375
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 557.0390625,
+        "lineHeight": "24.8px",
+        "tag": "FIGURE",
+        "text": "Дарья Колосоваоснователь Linguaturca · тюрколог",
+        "width": 602,
+        "x": 758,
+        "y": 136
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 490,
+        "lineHeight": "24.8px",
+        "tag": "IMG",
+        "text": "",
+        "width": 602,
+        "x": 758,
+        "y": 136
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "height": 31.0125732421875,
+        "lineHeight": "17.05px",
+        "tag": "P",
+        "text": "давайте поговорим",
+        "width": 135.54510498046875,
+        "x": 751.9020385742188,
+        "y": 549.8822631835938
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 53.390625,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "В мини-группе2–4 человека · от 7 590 ₽↗",
+        "width": 413.53125,
+        "x": 80,
+        "y": 778.0390625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 53.390625,
+        "lineHeight": "24.8px",
+        "tag": "A",
+        "text": "ИндивидуальноВ своём темпе · 1 900 ₽ / урок↗",
+        "width": 472.6171875,
+        "x": 493.53125,
+        "y": 778.0390625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 53.390625,
+        "lineHeight": "20.15px",
+        "tag": "P",
+        "text": "Начинаете с нуля? Поможем выбрать формат.",
+        "width": 201.5234375,
+        "x": 1158.4765625,
+        "y": 778.0390625
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "height": 16.5,
+        "lineHeight": "20.15px",
+        "tag": "A",
+        "text": "Поможем выбрать формат.",
+        "width": 168.5234375,
+        "x": 1191.4765625,
+        "y": 799.6875
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 411.6953125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Mini grup2–4 человекаВ небольшой группеДля тех, ко",
+        "width": 628,
+        "x": 80,
+        "y": 1357.1875
+      },
+      {
+        "font": "onest, \"onest Fallback\", Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "height": 411.6953125,
+        "lineHeight": "24.8px",
+        "tag": "ARTICLE",
+        "text": "Bire bir1 ученик + преподавательИндивидуальноДля т",
+        "width": 628,
+        "x": 732,
+        "y": 1357.1875
+      },
+      {
+        "font": "manrope, \"manrope Fallback\", Arial, sans-serif",
+        "fontSize": "42px",
+        "fontWeight": "650",
+        "height": 95.75,
+        "lineHeight": "47.88px",
+        "tag": "H2",
+        "text": "Понимать правило. Пользоваться языком.",
+        "width": 590.2421875,
+        "x": 80,
+        "y": 2079.171875
+      },
+      {
+        "font": "manrope, \"manrope Fallback\"",
+        "fontSize": "25px",
+        "fontWeight": "500",
+        "height": 72.5,
+        "lineHeight": "36.25px",
+        "tag": "BLOCKQUOTE",
+        "text": "«Раньше у меня были сильные комплексы, сейчас я на",
+        "width": 729.2734375,
+        "x": 630.7265625,
+        "y": 4858.78125
+      }
+    ],
+    "height": 7805,
+    "missing": [],
+    "overflow": [],
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "height": 778.4296875,
+        "id": "hero",
+        "top": 100
+      },
+      {
+        "height": 291.2890625,
+        "id": "school",
+        "top": 878.4296875
+      },
+      {
+        "height": 801.859375,
+        "id": "formats",
+        "top": 1169.71875
+      },
+      {
+        "height": 505.75,
+        "id": "method",
+        "top": 1971.578125
+      },
+      {
+        "height": 605.421875,
+        "id": "teachers",
+        "top": 2477.328125
+      },
+      {
+        "height": 565.921875,
+        "id": "lessons",
+        "top": 3082.75
+      },
+      {
+        "height": 1138.109375,
+        "id": "pricing",
+        "top": 3648.671875
+      },
+      {
+        "height": 747.921875,
+        "id": "culture",
+        "top": 4786.78125
+      },
+      {
+        "height": 584.84375,
+        "id": "reviews",
+        "top": 5534.703125
+      },
+      {
+        "height": 631.5625,
+        "id": "faq",
+        "top": 6119.546875
+      },
+      {
+        "height": 746.9375,
+        "id": "signup",
+        "top": 6751.109375
+      },
+      {
+        "height": 307.375,
+        "id": "footer",
+        "top": 7498.046875
+      }
+    ],
+    "width": 1440
+  }
+]

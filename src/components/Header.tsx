@@ -1,97 +1,63 @@
-"use client"
-import { useState } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useLeadModal } from '@/contexts/LeadModalContext'
-
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useRef, useState } from 'react';
+import { cx } from './living-school/styles';
+const links = [
+  ['formats', 'Обучение'],
+  ['teachers', 'Преподаватели'],
+  ['pricing', 'Стоимость'],
+  ['reviews', 'Отзывы'],
+] as const;
 export function Header() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const { openModal } = useLeadModal()
-
+  const [open, setOpen] = useState(false);
+  const menu = useRef<HTMLButtonElement>(null);
+  const pathname = usePathname();
+  const homeAnchor = (id: string) => `${pathname === '/' ? '' : '/'}#${id}`;
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-6">
-        {/* Логотип + текст */}
-        <div className="flex items-center gap-3">
-          <div className="relative w-10 h-10 flex-shrink-0">
-            <Image
-              src="/logo.png"
-              alt="LinguaTurca логотип"
-              width={40}
-              height={40}
-              className="rounded-full object-cover"
-              sizes="40px"
-              priority
-              quality={75}
-            />
-          </div>
-          <span className="text-xl font-bold text-[#1F1F1F] tracking-tight">
-            LinguaTurca
+    <div className={cx('scope')}>
+      <a className={cx('skip')} href="#main">
+        К содержимому
+      </a>
+      <header
+        className={cx('header wrap')}
+        onKeyDown={(event) => {
+          if (event.key === 'Escape' && open) {
+            setOpen(false);
+            menu.current?.focus();
+          }
+        }}
+      >
+        <Link className={cx('brand')} href="/" onClick={() => setOpen(false)}>
+          <Image src="/logo.png" width={44} height={44} sizes="44px" alt="" />
+          <span>
+            Linguaturca<small>школа турецкого языка</small>
           </span>
-        </div>
-
-        {/* Навигация */}
-        <nav className="hidden md:flex gap-6 text-gray-800 font-medium">
-          <Link href="/">Главная</Link>
-          <a href="#about">О школе</a>
-          <a href="#teachers">Преподаватели</a>
-          <a href="#learning-options">Курсы</a>
-          <a href="#schedule">Расписание</a>
-          <a href="#reviews">Отзывы</a>
+        </Link>
+        <nav id="navigation" aria-label="Основная навигация" className={cx(open && 'open')}>
+          {links.map(([id, label]) => (
+            <Link key={id} href={homeAnchor(id)} onClick={() => setOpen(false)}>
+              {label}
+            </Link>
+          ))}
         </nav>
-
-        <button 
-          className="hidden md:block header-cta" 
-          onClick={() => openModal({
-            title: "Записаться на занятие",
-            subtitle: "Оставьте контакты, и мы свяжемся с вами в течение 15 минут",
-            source: "header"
-          })}
-        >
-          Записаться
-        </button>
-
-        {/* Мобильное меню - бургер */}
+        <Link className={cx('button header-cta')} href={homeAnchor('signup')}>
+          Подобрать обучение <span aria-hidden="true">↗</span>
+        </Link>
         <button
-          className="md:hidden flex flex-col gap-1.5 w-8 h-8 justify-center items-center"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Меню"
+          ref={menu}
+          type="button"
+          className={cx('menu')}
+          aria-label={open ? 'Закрыть меню' : 'Открыть меню'}
+          aria-controls="navigation"
+          aria-expanded={open}
+          onClick={() => setOpen(!open)}
         >
-          <span className={`block h-0.5 w-6 bg-sky-500 transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-          <span className={`block h-0.5 w-6 bg-sky-500 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-          <span className={`block h-0.5 w-6 bg-sky-500 transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+          <span />
+          <span />
         </button>
-      </div>
-
-      {/* Мобильное меню */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
-          <nav className="px-6 py-6 flex flex-col gap-4">
-            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Главная</Link>
-            <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">О школе</a>
-            <a href="#teachers" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Преподаватели</a>
-            <a href="#courses" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Курсы</a>
-            <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Тарифы</a>
-            <a href="#schedule" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Расписание</a>
-            <a href="#reviews" onClick={() => setIsMobileMenuOpen(false)} className="text-gray-800 font-medium py-2">Отзывы</a>
-            <button 
-              className="mt-4 header-cta text-center" 
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                openModal({
-                  title: "Записаться на занятие",
-                  subtitle: "Оставьте контакты, и мы свяжемся с вами в течение 15 минут",
-                  source: "header"
-                });
-              }}
-            >
-              Записаться
-            </button>
-          </nav>
-        </div>
-      )}
-    </header>
-  )
+      </header>
+    </div>
+  );
 }
-
-

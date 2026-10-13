@@ -1,16 +1,27 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter, Manrope } from 'next/font/google'
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
-import { CookieConsent } from '@/components/CookieConsent'
-import { LeadModalProvider } from '@/contexts/LeadModalContext'
-import LeadModal from '@/components/LeadModal'
-import { Analytics } from '@vercel/analytics/react'
-import YandexMetrika from '@/components/YandexMetrika'
+import './globals.css';
+import '@/styles/legacy-content.css';
+import localFont from 'next/font/local';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { CookieConsent } from '@/components/CookieConsent';
+import { Analytics } from '@vercel/analytics/react';
+import YandexMetrika from '@/components/YandexMetrika';
 
-const inter = Inter({ subsets: ['cyrillic', 'latin'], variable: '--font-inter' })
-const manrope = Manrope({ subsets: ['cyrillic', 'latin'], variable: '--font-manrope' })
+const inter = Inter({ subsets: ['cyrillic', 'latin'], variable: '--font-inter' });
+const manrope = localFont({
+  src: '../src/styles/fonts/manrope.ttf',
+  variable: '--font-living-manrope',
+  weight: '200 800',
+  display: 'swap',
+});
+const onest = localFont({
+  src: '../src/styles/fonts/onest.ttf',
+  variable: '--font-living-onest',
+  weight: '100 900',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'LinguaTurca — Школа турецкого языка',
@@ -42,19 +53,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru" data-scroll-behavior="smooth">
-      <body className={`${inter.variable} ${manrope.variable} font-inter`}>
+      <body className={`${inter.variable} ${manrope.variable} ${onest.variable} font-inter`}>
         <YandexMetrika />
-        <LeadModalProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+        <Header />
+        <main id="main">{children}</main>
+        <Footer />
+        <div className="legacy-content">
           <CookieConsent />
-          <LeadModal />
-          <Analytics />
-        </LeadModalProvider>
+        </div>
+        <Analytics />
       </body>
     </html>
-  )
+  );
 }
-
-

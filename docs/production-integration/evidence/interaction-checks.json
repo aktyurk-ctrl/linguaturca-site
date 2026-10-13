@@ -1,0 +1,72 @@
+[
+  {
+    "caption": "Выбран тариф: Базовый",
+    "focus": "name",
+    "plan": "Базовый",
+    "selected": "mini",
+    "width": 1440
+  },
+  {
+    "caption": "Выбран тариф: Комфорт",
+    "focus": "name",
+    "plan": "Комфорт",
+    "selected": "mini",
+    "width": 1440
+  },
+  {
+    "caption": "Выбран тариф: Бизнес",
+    "focus": "name",
+    "plan": "Бизнес",
+    "selected": "mini",
+    "width": 1440
+  },
+  {
+    "caption": "Выбран тариф: Одно занятие",
+    "focus": "name",
+    "plan": "Одно занятие",
+    "selected": "individual",
+    "width": 1440
+  },
+  {
+    "caption": "Выбран тариф: 5 занятий",
+    "focus": "name",
+    "plan": "5 занятий",
+    "selected": "individual",
+    "width": 1440
+  },
+  {
+    "caption": "Выбран тариф: Базовый",
+    "focus": "name",
+    "plan": "Базовый",
+    "selected": "mini",
+    "width": 390
+  },
+  {
+    "caption": "Выбран тариф: Комфорт",
+    "focus": "name",
+    "plan": "Комфорт",
+    "selected": "mini",
+    "width": 390
+  },
+  {
+    "caption": "Выбран тариф: Бизнес",
+    "focus": "name",
+    "plan": "Бизнес",
+    "selected": "mini",
+    "width": 390
+  },
+  {
+    "caption": "Выбран тариф: Одно занятие",
+    "focus": "name",
+    "plan": "Одно занятие",
+    "selected": "individual",
+    "width": 390
+  },
+  {
+    "caption": "Выбран тариф: 5 занятий",
+    "focus": "name",
+    "plan": "5 занятий",
+    "selected": "individual",
+    "width": 390
+  }
+]
