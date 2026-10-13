@@ -1,0 +1,11 @@
+{
+  "base": "../prototype/index.html",
+  "main_and_header_footer_dialogs_identical": true,
+  "source_sha256": "ca6a1f70094de85004ffd8cd256b8d9b4074dbfe2be32cce22daa6f46ea35b5f",
+  "variants": [
+    "a.html",
+    "b.html",
+    "c.html"
+  ],
+  "production_modified": false
+}

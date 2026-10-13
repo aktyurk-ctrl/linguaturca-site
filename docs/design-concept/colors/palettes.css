@@ -1,0 +1,132 @@
+/* Color overrides only. All layout and typography come from ../prototype/style.css. */
+body[data-palette="a"] {
+  --color-primary: #0057D8;
+  --color-dark-primary: #09234B;
+  --color-accent: #00D2F2;
+  --color-background: #F7F5EF;
+  --color-secondary-background: #EBF2FC;
+  --color-text: #09234B;
+  --color-muted-text: #54647C;
+  --color-border: #C8D1DE;
+  --color-control-border: #7183A0;
+  --color-cta: #0057D8;
+  --color-cta-text: #FFFFFF;
+  --color-hover: #004FC6;
+  --color-hover-text: #FFFFFF;
+  --color-pressed: #0046AD;
+  --color-focus: #0057D8;
+  --color-focus-dark: #00D2F2;
+  --color-disabled-bg: #E1E5EC;
+  --color-disabled-text: #59657A;
+  --color-dark-muted: #C0D0E8;
+  --color-dark-border: #61799D;
+  --color-wash: #EFEDE8;
+  --color-display: #0057D8;
+  --color-note: #00D2F2;
+  --color-note-text: #09234B;
+  --color-small-accent: #DDF3FE;
+  --color-inverse-accent: #00D2F2;
+  --color-method-bg: #EBF2FC;
+  --color-method-line: #B9CBE4;
+  --color-final-bg: #DDF3FE;
+  --color-link: #0057D8;
+}
+body[data-palette="b"] {
+  --color-primary: #0057D8;
+  --color-dark-primary: #09234B;
+  --color-accent: #F7C0BC;
+  --color-background: #F7F5EF;
+  --color-secondary-background: #EBF2FC;
+  --color-text: #09234B;
+  --color-muted-text: #54647C;
+  --color-border: #C8D1DE;
+  --color-control-border: #7183A0;
+  --color-cta: #0057D8;
+  --color-cta-text: #FFFFFF;
+  --color-hover: #004FC6;
+  --color-hover-text: #FFFFFF;
+  --color-pressed: #0046AD;
+  --color-focus: #0057D8;
+  --color-focus-dark: #00D2F2;
+  --color-disabled-bg: #E1E5EC;
+  --color-disabled-text: #59657A;
+  --color-dark-muted: #C0D0E8;
+  --color-dark-border: #61799D;
+  --color-wash: #EFEDE8;
+  --color-display: #0057D8;
+  --color-note: #F7C0BC;
+  --color-note-text: #09234B;
+  --color-small-accent: #F7C0BC;
+  --color-inverse-accent: #F7C0BC;
+  --color-method-bg: #EBF2FC;
+  --color-method-line: #B9CBE4;
+  --color-final-bg: #DDF3FE;
+  --color-link: #0057D8;
+}
+body[data-palette="c"] {
+  --color-primary: #00D2F2;
+  --color-dark-primary: #09234B;
+  --color-accent: #0057D8;
+  --color-background: #F7F5EF;
+  --color-secondary-background: #DDF3FE;
+  --color-text: #09234B;
+  --color-muted-text: #54647C;
+  --color-border: #C8D1DE;
+  --color-control-border: #7183A0;
+  --color-cta: #00D2F2;
+  --color-cta-text: #09234B;
+  --color-hover: #00BCD8;
+  --color-hover-text: #09234B;
+  --color-pressed: #00A8C2;
+  --color-focus: #0057D8;
+  --color-focus-dark: #00D2F2;
+  --color-disabled-bg: #E1E5EC;
+  --color-disabled-text: #59657A;
+  --color-dark-muted: #C0D0E8;
+  --color-dark-border: #61799D;
+  --color-wash: #F1FAFE;
+  --color-display: #0057D8;
+  --color-note: #00D2F2;
+  --color-note-text: #09234B;
+  --color-small-accent: #DDF3FE;
+  --color-inverse-accent: #00D2F2;
+  --color-method-bg: #00D2F2;
+  --color-method-line: #0088A5;
+  --color-final-bg: #00D2F2;
+  --color-link: #0057D8;
+}
+
+body[data-palette] {
+ --paper:var(--color-background); --ink:var(--color-text); --muted:var(--color-muted-text);
+ --teal:var(--color-link); --hover:var(--color-hover); --press:var(--color-pressed);
+ --cyan:var(--color-note); --mint:var(--color-secondary-background); --lime:var(--color-small-accent);
+ --coral:var(--color-accent); --line:var(--color-border); --dark:var(--color-dark-primary);
+ --on-dark:var(--color-background); --wash:var(--color-wash); --focus:var(--color-focus);
+}
+body[data-palette] .button {background:var(--color-cta);color:var(--color-cta-text)}
+body[data-palette] .button:hover {background:var(--color-hover);color:var(--color-hover-text)}
+body[data-palette] .button:active {background:var(--color-pressed);color:var(--color-hover-text)}
+body[data-palette] button:disabled {background:var(--color-disabled-bg);color:var(--color-disabled-text)}
+body[data-palette] h1 span {color:var(--color-display)}
+body[data-palette] .status-dot {background:var(--color-primary)}
+body[data-palette] .hello {background:var(--color-note);color:var(--color-note-text)}
+body[data-palette] .method {background:var(--color-method-bg)}
+body[data-palette] .method-list article {border-bottom-color:var(--color-method-line)}
+body[data-palette] .school h2 em,
+body[data-palette] .role,
+body[data-palette] .team-pending>span {color:var(--color-inverse-accent)}
+body[data-palette] .annotation.inverse,
+body[data-palette] .team-pending small {color:var(--color-dark-muted)}
+body[data-palette] .team-strip,
+body[data-palette] .team-pending {border-color:var(--color-dark-border)}
+body[data-palette] .final-cta {background:var(--color-final-bg)}
+body[data-palette] input {border-color:var(--color-control-border)}
+body[data-palette] dialog::backdrop {background:rgba(9,35,75,.60)}
+body[data-palette] .school :focus-visible,
+body[data-palette] .hero-portrait :focus-visible,
+body[data-palette] .reviewbar :focus-visible {outline-color:var(--color-focus-dark)}
+body[data-palette="c"] .method-list p {color:var(--color-text)}
+body[data-palette="c"] .final-cta .button {background:var(--color-dark-primary);color:#fff}
+body[data-palette="c"] .final-cta .button:hover {background:#004FC6}
+body[data-palette="c"] .final-cta .button:active {background:#0046AD}
+body[data-palette="c"] .final-cta .button:focus-visible {outline-color:var(--color-text)}

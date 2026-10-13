@@ -1,0 +1,407 @@
+{
+  "a": [
+    {
+      "role": "body",
+      "foreground": "#09234B",
+      "background": "#F7F5EF",
+      "ratio": 14.23,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "muted",
+      "foreground": "#54647C",
+      "background": "#F7F5EF",
+      "ratio": 5.52,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "muted surface",
+      "foreground": "#54647C",
+      "background": "#EBF2FC",
+      "ratio": 5.34,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "button",
+      "foreground": "#FFFFFF",
+      "background": "#0057D8",
+      "ratio": 6.26,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "hover",
+      "foreground": "#FFFFFF",
+      "background": "#004FC6",
+      "ratio": 7.16,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "pressed",
+      "foreground": "#FFFFFF",
+      "background": "#0046AD",
+      "ratio": 8.47,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "note",
+      "foreground": "#09234B",
+      "background": "#00D2F2",
+      "ratio": 8.5,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "school",
+      "foreground": "#F7F5EF",
+      "background": "#09234B",
+      "ratio": 14.23,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "school accent",
+      "foreground": "#00D2F2",
+      "background": "#09234B",
+      "ratio": 8.5,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "school muted",
+      "foreground": "#C0D0E8",
+      "background": "#09234B",
+      "ratio": 9.92,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "final",
+      "foreground": "#09234B",
+      "background": "#DDF3FE",
+      "ratio": 13.54,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "focus light",
+      "foreground": "#0057D8",
+      "background": "#F7F5EF",
+      "ratio": 5.74,
+      "target": 3,
+      "pass_": true
+    },
+    {
+      "role": "focus dark",
+      "foreground": "#00D2F2",
+      "background": "#09234B",
+      "ratio": 8.5,
+      "target": 3,
+      "pass_": true
+    },
+    {
+      "role": "control border",
+      "foreground": "#7183A0",
+      "background": "#F7F5EF",
+      "ratio": 3.53,
+      "target": 3,
+      "pass_": true
+    },
+    {
+      "role": "disabled (target, exempt)",
+      "foreground": "#59657A",
+      "background": "#E1E5EC",
+      "ratio": 4.66,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "focus method",
+      "foreground": "#0057D8",
+      "background": "#EBF2FC",
+      "ratio": 5.56,
+      "target": 3,
+      "pass_": true
+    }
+  ],
+  "b": [
+    {
+      "role": "body",
+      "foreground": "#09234B",
+      "background": "#F7F5EF",
+      "ratio": 14.23,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "muted",
+      "foreground": "#54647C",
+      "background": "#F7F5EF",
+      "ratio": 5.52,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "muted surface",
+      "foreground": "#54647C",
+      "background": "#EBF2FC",
+      "ratio": 5.34,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "button",
+      "foreground": "#FFFFFF",
+      "background": "#0057D8",
+      "ratio": 6.26,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "hover",
+      "foreground": "#FFFFFF",
+      "background": "#004FC6",
+      "ratio": 7.16,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "pressed",
+      "foreground": "#FFFFFF",
+      "background": "#0046AD",
+      "ratio": 8.47,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "note",
+      "foreground": "#09234B",
+      "background": "#F7C0BC",
+      "ratio": 9.77,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "school",
+      "foreground": "#F7F5EF",
+      "background": "#09234B",
+      "ratio": 14.23,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "school accent",
+      "foreground": "#F7C0BC",
+      "background": "#09234B",
+      "ratio": 9.77,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "school muted",
+      "foreground": "#C0D0E8",
+      "background": "#09234B",
+      "ratio": 9.92,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "final",
+      "foreground": "#09234B",
+      "background": "#DDF3FE",
+      "ratio": 13.54,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "focus light",
+      "foreground": "#0057D8",
+      "background": "#F7F5EF",
+      "ratio": 5.74,
+      "target": 3,
+      "pass_": true
+    },
+    {
+      "role": "focus dark",
+      "foreground": "#00D2F2",
+      "background": "#09234B",
+      "ratio": 8.5,
+      "target": 3,
+      "pass_": true
+    },
+    {
+      "role": "control border",
+      "foreground": "#7183A0",
+      "background": "#F7F5EF",
+      "ratio": 3.53,
+      "target": 3,
+      "pass_": true
+    },
+    {
+      "role": "disabled (target, exempt)",
+      "foreground": "#59657A",
+      "background": "#E1E5EC",
+      "ratio": 4.66,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "focus method",
+      "foreground": "#0057D8",
+      "background": "#EBF2FC",
+      "ratio": 5.56,
+      "target": 3,
+      "pass_": true
+    }
+  ],
+  "c": [
+    {
+      "role": "body",
+      "foreground": "#09234B",
+      "background": "#F7F5EF",
+      "ratio": 14.23,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "muted",
+      "foreground": "#54647C",
+      "background": "#F7F5EF",
+      "ratio": 5.52,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "muted surface",
+      "foreground": "#54647C",
+      "background": "#DDF3FE",
+      "ratio": 5.25,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "button",
+      "foreground": "#09234B",
+      "background": "#00D2F2",
+      "ratio": 8.5,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "hover",
+      "foreground": "#09234B",
+      "background": "#00BCD8",
+      "ratio": 6.79,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "pressed",
+      "foreground": "#09234B",
+      "background": "#00A8C2",
+      "ratio": 5.45,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "note",
+      "foreground": "#09234B",
+      "background": "#00D2F2",
+      "ratio": 8.5,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "school",
+      "foreground": "#F7F5EF",
+      "background": "#09234B",
+      "ratio": 14.23,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "school accent",
+      "foreground": "#00D2F2",
+      "background": "#09234B",
+      "ratio": 8.5,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "school muted",
+      "foreground": "#C0D0E8",
+      "background": "#09234B",
+      "ratio": 9.92,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "final",
+      "foreground": "#09234B",
+      "background": "#00D2F2",
+      "ratio": 8.5,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "focus light",
+      "foreground": "#0057D8",
+      "background": "#F7F5EF",
+      "ratio": 5.74,
+      "target": 3,
+      "pass_": true
+    },
+    {
+      "role": "focus dark",
+      "foreground": "#00D2F2",
+      "background": "#09234B",
+      "ratio": 8.5,
+      "target": 3,
+      "pass_": true
+    },
+    {
+      "role": "control border",
+      "foreground": "#7183A0",
+      "background": "#F7F5EF",
+      "ratio": 3.53,
+      "target": 3,
+      "pass_": true
+    },
+    {
+      "role": "disabled (target, exempt)",
+      "foreground": "#59657A",
+      "background": "#E1E5EC",
+      "ratio": 4.66,
+      "target": 4.5,
+      "pass_": true
+    },
+    {
+      "role": "focus method",
+      "foreground": "#0057D8",
+      "background": "#00D2F2",
+      "ratio": 3.43,
+      "target": 3,
+      "pass_": true
+    }
+  ],
+  "reference": [
+    {
+      "role": "Actual logo cyan on warm paper",
+      "ratio": 1.67,
+      "use": "Not for small text on paper"
+    },
+    {
+      "role": "Logo blue on warm paper",
+      "ratio": 5.74
+    },
+    {
+      "role": "C final inverse button",
+      "ratio": 15.51
+    }
+  ]
+}

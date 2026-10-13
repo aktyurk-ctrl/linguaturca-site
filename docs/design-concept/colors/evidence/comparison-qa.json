@@ -1,0 +1,18 @@
+[
+  {
+    "width": 1440,
+    "mobileMethodWorks": true,
+    "tabletWorks": true,
+    "scrollWidth": 1440,
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "mobileMethodWorks": true,
+    "tabletWorks": true,
+    "scrollWidth": 390,
+    "brokenImages": [],
+    "errors": []
+  }
+]

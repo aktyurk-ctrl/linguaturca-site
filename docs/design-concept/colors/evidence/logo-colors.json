@@ -1,0 +1,78 @@
+{
+  "source": "public/logo.png",
+  "sha256": "2bc9e80ac96bcbc7c72dfb52cde3ea34f2c0fc44896fab249aa110cf31c11a9e",
+  "size": [
+    3000,
+    3000
+  ],
+  "method": "Exact RGB histogram of pixels with alpha >= 250; no quantization. Percentages refer to this opaque-pixel subset, not the full rectangular image.",
+  "opaque_pixels": 7001758,
+  "colors": [
+    {
+      "hex": "#00D2F2",
+      "role": "Основной голубой фон",
+      "pixels": 4559011,
+      "percent": 65.11
+    },
+    {
+      "hex": "#0057D8",
+      "role": "Синий в одежде",
+      "pixels": 159720,
+      "percent": 2.28
+    },
+    {
+      "hex": "#004FC6",
+      "role": "Тёмный синий в одежде",
+      "pixels": 52182,
+      "percent": 0.75
+    },
+    {
+      "hex": "#F1FAFE",
+      "role": "Светлое оперение",
+      "pixels": 615688,
+      "percent": 8.79
+    },
+    {
+      "hex": "#DDF3FE",
+      "role": "Голубая тень оперения",
+      "pixels": 240281,
+      "percent": 3.43
+    },
+    {
+      "hex": "#F62222",
+      "role": "Красный фески и флага",
+      "pixels": 455269,
+      "percent": 6.5
+    },
+    {
+      "hex": "#D60B0B",
+      "role": "Тень красного",
+      "pixels": 224541,
+      "percent": 3.21
+    },
+    {
+      "hex": "#FFEF7F",
+      "role": "Жёлтый клюва",
+      "pixels": 84884,
+      "percent": 1.21
+    },
+    {
+      "hex": "#F0C948",
+      "role": "Золотистая тень",
+      "pixels": 41624,
+      "percent": 0.59
+    },
+    {
+      "hex": "#000000",
+      "role": "Контур",
+      "pixels": 364644,
+      "percent": 5.21
+    }
+  ],
+  "derivations": {
+    "navy": "#09234B = round(20% #0057D8 + 80% #0B1628), RGB channel blend",
+    "secondary": "#EBF2FC = round(8% #0057D8 + 92% #FFFFFF), RGB channel blend",
+    "warm": "#F7C0BC = round(25% #F62222 + 75% #F7F5EF), RGB channel blend",
+    "pressed": "#0046AD = round(80% #0057D8 + 20% #000000), RGB channel blend"
+  }
+}
