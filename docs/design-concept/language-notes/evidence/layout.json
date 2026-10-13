@@ -1,0 +1,86 @@
+[
+  {
+    "fonts": "loaded",
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "bottom": 1409.390625,
+        "id": "hero",
+        "top": 116
+      },
+      {
+        "bottom": 2623.921875,
+        "id": "formats",
+        "top": 1409.390625
+      },
+      {
+        "bottom": 3855.578125,
+        "id": "workshop",
+        "top": 2623.921875
+      },
+      {
+        "bottom": 5271.1953125,
+        "id": "people",
+        "top": 3855.578125
+      }
+    ],
+    "width": 390
+  },
+  {
+    "fonts": "loaded",
+    "missingImages": [],
+    "scrollWidth": 768,
+    "sections": [
+      {
+        "bottom": 947.3203125,
+        "id": "hero",
+        "top": 128
+      },
+      {
+        "bottom": 2049.9765625,
+        "id": "formats",
+        "top": 947.3203125
+      },
+      {
+        "bottom": 3011.3828125,
+        "id": "workshop",
+        "top": 2049.9765625
+      },
+      {
+        "bottom": 3985.7734375,
+        "id": "people",
+        "top": 3011.3828125
+      }
+    ],
+    "width": 768
+  },
+  {
+    "fonts": "loaded",
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "bottom": 979.34375,
+        "id": "hero",
+        "top": 144
+      },
+      {
+        "bottom": 1936.421875,
+        "id": "formats",
+        "top": 979.34375
+      },
+      {
+        "bottom": 2979.2734375,
+        "id": "workshop",
+        "top": 1936.421875
+      },
+      {
+        "bottom": 4042.765625,
+        "id": "people",
+        "top": 2979.2734375
+      }
+    ],
+    "width": 1440
+  }
+]

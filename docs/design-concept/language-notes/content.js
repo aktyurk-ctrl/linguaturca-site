@@ -1,0 +1,31 @@
+// Review-only data; no connection to Airtable, APIs or future admin.
+window.conceptFormats = [
+  {
+    id: 'mini',
+    label: 'Mini grup',
+    title: 'Вместе, в мини-группе.',
+    description: 'Общаться с другими учениками и практиковаться с преподавателем.',
+    people: '2–4 человека',
+    time: '10 уроков · 5 недель*',
+    place: 'Zoom · записи занятий',
+    price: 'от 7 590 ₽',
+    unit: 'за предложение мини-группы*',
+    url: '../colors/a.html#group-prices',
+    word: 'birlikte',
+    translation: 'вместе',
+  },
+  {
+    id: 'individual',
+    label: 'Bire bir',
+    title: 'Один на один.',
+    description: 'Свой темп и персональная программа. Всё внимание — вашим вопросам.',
+    people: '1 ученик + преподаватель',
+    time: '60 минут',
+    place: 'Zoom · индивидуально',
+    price: '1 900 ₽',
+    unit: 'за одно занятие',
+    url: '../colors/a.html#individual-prices',
+    word: 'sizinle',
+    translation: 'с вами',
+  },
+];

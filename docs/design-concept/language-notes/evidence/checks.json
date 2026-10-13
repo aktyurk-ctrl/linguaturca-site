@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-13",
+  "fontCoverage": [
+    {
+      "font": "onest-Onest[wght].ttf",
+      "sha256": "966c5c29b4755da84b6854d5c21dd4eaa2420225d0e9874de602de176d4a9f31",
+      "matchesCmapEvidence": true,
+      "missing": []
+    },
+    {
+      "font": "manrope-Manrope[wght].ttf",
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
+      "matchesCmapEvidence": true,
+      "missing": []
+    }
+  ],
+  "logo": {
+    "sha256": "2bc9e80ac96bcbc7c72dfb52cde3ea34f2c0fc44896fab249aa110cf31c11a9e",
+    "matchesColorEvidence": true
+  },
+  "contrast": [
+    {
+      "text": "#0057D8",
+      "background": "#F7F5EF",
+      "ratio": 5.74
+    },
+    {
+      "text": "#FFFFFF",
+      "background": "#0057D8",
+      "ratio": 6.26
+    },
+    {
+      "text": "#09234B",
+      "background": "#F7F5EF",
+      "ratio": 14.23
+    },
+    {
+      "text": "#A84632",
+      "background": "#F7F5EF",
+      "ratio": 5.37
+    },
+    {
+      "text": "#54647C",
+      "background": "#F7F5EF",
+      "ratio": 5.52
+    },
+    {
+      "text": "#54647C",
+      "background": "#DDF3FE",
+      "ratio": 5.25
+    },
+    {
+      "text": "#F7F5EF",
+      "background": "#09234B",
+      "ratio": 14.23
+    },
+    {
+      "text": "#00D2F2",
+      "background": "#09234B",
+      "ratio": 8.5
+    },
+    {
+      "text": "#BFD0E8",
+      "background": "#09234B",
+      "ratio": 9.9
+    }
+  ],
+  "links": {
+    "checkedLocalHtmlReferences": 22,
+    "missing": []
+  },
+  "interactionChecks": {
+    "mobileMenu": "opens; closes after anchor navigation",
+    "translation": "opens on tap",
+    "morphemes": "splits on tap; reassembles with Enter",
+    "context": "opens on tap; closes with Enter",
+    "noPhotos": "hides figure images; keeps language and logo",
+    "browserWarningsErrors": []
+  },
+  "comparisonChecks": {
+    "sections": "hero and language selected; correct before/after screenshots loaded",
+    "previewWidths": [
+      1440,
+      390
+    ],
+    "horizontalOverflow": false,
+    "missingImages": 0,
+    "browserErrors": []
+  }
+}
