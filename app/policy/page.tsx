@@ -1,42 +1,26 @@
-import Head from 'next/head'
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { pageMetadata } from '@/seo/site'
 import Link from 'next/link'
+
+export const metadata = { ...pageMetadata("Политика обработки персональных данных — LinguaTurca", "Порядок и принципы обработки персональных данных пользователей сайта LinguaTurca.", '/policy'), robots: { index: false, follow: true } };
 
 export default function PolicyPage() {
   return (
     <>
-      <Head>
-        <title>Политика обработки персональных данных — LinguaTurca</title>
-        <meta name="description" content="Порядок и принципы обработки персональных данных пользователей сайта LinguaTurca." />
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
-      
-      <div 
-        className="min-h-screen"
-        style={{ 
-          backgroundColor: '#F7FAFC',
-          color: '#031E33',
-          fontFamily: 'Inter, system-ui, sans-serif'
-        }}
-      >
-        <div 
-          className="mx-auto"
-          style={{ 
-            maxWidth: '900px',
-            margin: '100px auto',
-            padding: '0 20px'
-          }}
-        >
+<div className="content-page">
+        <div className="content-container">
+        <Breadcrumbs items={[{"name": "Главная", "path": "/"}, {"name": "Политика в отношении обработки персональных данных", "path": "/policy"}]} />
           {/* Заголовок страницы */}
           <h1 
             className="text-4xl font-bold mb-4"
-            style={{ color: '#008CFF' }}
+            style={{ color: 'var(--link)' }}
           >
             Политика в отношении обработки персональных данных
           </h1>
           
           <p 
             className="text-lg mb-8"
-            style={{ color: '#031E33', opacity: 0.8 }}
+            style={{ color: 'var(--ink)', opacity: 0.8 }}
           >
             Действующая редакция от 01.10.2025
           </p>
@@ -45,51 +29,51 @@ export default function PolicyPage() {
           <div 
             className="mb-12 p-6 rounded-lg"
             style={{ 
-              backgroundColor: '#E6F3FF',
-              border: '1px solid #B3E5FC'
+              backgroundColor: 'var(--tint)',
+              border: '1px solid var(--line)'
             }}
           >
             <h2 
               className="text-xl font-semibold mb-4"
-              style={{ color: '#008CFF' }}
+              style={{ color: 'var(--link)' }}
             >
               Содержание
             </h2>
-            <nav className="grid grid-cols-1 md:grid-cols-2 gap-2">
-              <Link href="#general" className="hover:underline" style={{ color: '#031E33' }}>
+            <nav aria-label="Содержание документа" className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <Link href="#general" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 1. Общие положения
               </Link>
-              <Link href="#concepts" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#concepts" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 2. Основные понятия, используемые в Политике
               </Link>
-              <Link href="#operator-rights" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#operator-rights" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 3. Основные права и обязанности Оператора
               </Link>
-              <Link href="#subject-rights" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#subject-rights" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 4. Основные права и обязанности субъектов персональных данных
               </Link>
-              <Link href="#principles" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#principles" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 5. Принципы обработки персональных данных
               </Link>
-              <Link href="#purposes" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#purposes" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 6. Цели обработки персональных данных
               </Link>
-              <Link href="#conditions" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#conditions" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 7. Условия обработки персональных данных
               </Link>
-              <Link href="#procedure" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#procedure" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 8. Порядок сбора, хранения, передачи и других видов обработки персональных данных
               </Link>
-              <Link href="#actions" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#actions" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 9. Перечень действий, производимых Оператором с полученными персональными данными
               </Link>
-              <Link href="#cross-border" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#cross-border" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 10. Трансграничная передача персональных данных
               </Link>
-              <Link href="#confidentiality" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#confidentiality" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 11. Конфиденциальность персональных данных
               </Link>
-              <Link href="#final" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#final" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 12. Заключительные положения
               </Link>
             </nav>
@@ -101,7 +85,7 @@ export default function PolicyPage() {
             <section id="general" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 1. Общие положения
               </h2>
@@ -122,7 +106,7 @@ export default function PolicyPage() {
             <section id="concepts" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 2. Основные понятия, используемые в Политике
               </h2>
@@ -190,7 +174,7 @@ export default function PolicyPage() {
             <section id="operator-rights" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 3. Основные права и обязанности Оператора
               </h2>
@@ -225,7 +209,7 @@ export default function PolicyPage() {
             <section id="subject-rights" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 4. Основные права и обязанности субъектов персональных данных
               </h2>
@@ -261,7 +245,7 @@ export default function PolicyPage() {
             <section id="principles" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 5. Принципы обработки персональных данных
               </h2>
@@ -299,7 +283,7 @@ export default function PolicyPage() {
             <section id="purposes" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 6. Цели обработки персональных данных
               </h2>
@@ -307,7 +291,7 @@ export default function PolicyPage() {
               <div className="overflow-x-auto mb-4">
                 <table className="w-full border-collapse border border-gray-300">
                   <thead>
-                    <tr style={{ backgroundColor: '#E6F3FF' }}>
+                    <tr style={{ backgroundColor: 'var(--tint)' }}>
                       <th className="border border-gray-300 p-3 text-left font-semibold">Цель обработки</th>
                       <th className="border border-gray-300 p-3 text-left font-semibold">Персональные данные</th>
                       <th className="border border-gray-300 p-3 text-left font-semibold">Правовые основания</th>
@@ -340,7 +324,7 @@ export default function PolicyPage() {
             <section id="conditions" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 7. Условия обработки персональных данных
               </h2>
@@ -378,7 +362,7 @@ export default function PolicyPage() {
             <section id="procedure" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 8. Порядок сбора, хранения, передачи и других видов обработки персональных данных
               </h2>
@@ -432,7 +416,7 @@ export default function PolicyPage() {
             <section id="actions" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 9. Перечень действий, производимых Оператором с полученными персональными данными
               </h2>
@@ -450,7 +434,7 @@ export default function PolicyPage() {
             <section id="cross-border" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 10. Трансграничная передача персональных данных
               </h2>
@@ -468,7 +452,7 @@ export default function PolicyPage() {
             <section id="confidentiality" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 11. Конфиденциальность персональных данных
               </h2>
@@ -482,7 +466,7 @@ export default function PolicyPage() {
             <section id="final" className="mb-10">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 12. Заключительные положения
               </h2>
@@ -508,7 +492,7 @@ export default function PolicyPage() {
           >
             <p 
               className="text-center text-sm"
-              style={{ color: '#031E33', opacity: 0.7 }}
+              style={{ color: 'var(--ink)', opacity: 0.7 }}
             >
               © LinguaTurca, 2025 | Электронная почта: study@linguaturca.ru
             </p>

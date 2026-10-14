@@ -42,7 +42,11 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Link className={cx('button header-cta')} href={homeAnchor('signup')}>
+        <Link
+          className={cx('button header-cta')}
+          href={homeAnchor('signup')}
+          onClick={() => setOpen(false)}
+        >
           Подобрать обучение <span aria-hidden="true">↗</span>
         </Link>
         <button
@@ -52,7 +56,13 @@ export function Header() {
           aria-label={open ? 'Закрыть меню' : 'Открыть меню'}
           aria-controls="navigation"
           aria-expanded={open}
-          onClick={() => setOpen(!open)}
+          onClick={() => {
+            setOpen(!open);
+            if (!open)
+              requestAnimationFrame(() =>
+                document.querySelector<HTMLAnchorElement>('#navigation a')?.focus()
+              );
+          }}
         >
           <span />
           <span />

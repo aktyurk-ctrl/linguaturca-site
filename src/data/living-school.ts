@@ -251,7 +251,7 @@ export const languageExample = {
     'Буквально — «мой преподаватель». Но hocam используют и как уважительное обращение к преподавателю. Смысл передаёт отношение к собеседнику, а не только принадлежность.',
   takeaway: 'Грамматика объясняет форму. Ситуация и отношения между людьми — её употребление.',
   source:
-    'https://www.researchgate.net/publication/381837924_How_Do_WE_Address_the_Instructors_in_the_Expanding_Circle_Perspectives_from_Turkish_EFL_Speakers',
+    'https://dergipark.org.tr/en/download/article-file/3460493',
   reviewId: '3',
   editorialStatus:
     'TODO: согласовать редакцию с преподавателем. Разбор слова из реального отзыва, не фрагмент курса.',

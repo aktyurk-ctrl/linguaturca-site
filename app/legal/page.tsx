@@ -1,42 +1,26 @@
-import Head from 'next/head'
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { pageMetadata } from '@/seo/site'
 import Link from 'next/link'
+
+export const metadata = { ...pageMetadata("Публичная оферта — LinguaTurca", "Официальный договор-оферта на оказание консультационных услуг по турецкому языку.", '/legal'), robots: { index: false, follow: true } };
 
 export default function LegalPage() {
   return (
     <>
-      <Head>
-        <title>Публичная оферта — LinguaTurca</title>
-        <meta name="description" content="Официальный договор-оферта на оказание консультационных услуг по турецкому языку." />
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
-      
-      <div 
-        className="min-h-screen"
-        style={{ 
-          backgroundColor: '#F7FAFC',
-          color: '#031E33',
-          fontFamily: 'Inter, system-ui, sans-serif'
-        }}
-      >
-        <div 
-          className="mx-auto"
-          style={{ 
-            maxWidth: '900px',
-            margin: '100px auto',
-            padding: '0 20px'
-          }}
-        >
+<div className="content-page">
+        <div className="content-container">
+        <Breadcrumbs items={[{"name": "Главная", "path": "/"}, {"name": "ДОГОВОР-ОФЕРТА", "path": "/legal"}]} />
           {/* Заголовок страницы */}
           <h1 
             className="text-4xl font-bold mb-4"
-            style={{ color: '#008CFF' }}
+            style={{ color: 'var(--link)' }}
           >
             ДОГОВОР-ОФЕРТА
           </h1>
           
           <p 
             className="text-lg mb-8"
-            style={{ color: '#031E33', opacity: 0.8 }}
+            style={{ color: 'var(--ink)', opacity: 0.8 }}
           >
             Действующая редакция от 21 октября 2025 г.
           </p>
@@ -45,51 +29,51 @@ export default function LegalPage() {
           <div 
             className="mb-12 p-6 rounded-lg"
             style={{ 
-              backgroundColor: '#E6F3FF',
-              border: '1px solid #B3E5FC'
+              backgroundColor: 'var(--tint)',
+              border: '1px solid var(--line)'
             }}
           >
             <h2 
               className="text-xl font-semibold mb-4"
-              style={{ color: '#008CFF' }}
+              style={{ color: 'var(--link)' }}
             >
               Содержание
             </h2>
-            <nav className="grid grid-cols-1 md:grid-cols-2 gap-2">
-              <Link href="#terms" className="hover:underline" style={{ color: '#031E33' }}>
+            <nav aria-label="Содержание документа" className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <Link href="#terms" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 1. Термины и определения
               </Link>
-              <Link href="#acceptance" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#acceptance" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 2. Акцепт Оферты и заключение Договора
               </Link>
-              <Link href="#subject" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#subject" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 3. Предмет Договора
               </Link>
-              <Link href="#order" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#order" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 4. Порядок и правила оказания Услуг
               </Link>
-              <Link href="#cost" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#cost" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 5. Стоимость Услуг и порядок расчетов
               </Link>
-              <Link href="#refund" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#refund" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 6. Порядок осуществления возвратов
               </Link>
-              <Link href="#responsibility" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#responsibility" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 7. Ответственность
               </Link>
-              <Link href="#force-majeure" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#force-majeure" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 8. Обстоятельства непреодолимой силы (форс-мажор)
               </Link>
-              <Link href="#changes" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#changes" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 9. Срок действия и изменение Оферты
               </Link>
-              <Link href="#termination" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#termination" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 10. Срок действия, изменение и расторжение Договора
               </Link>
-              <Link href="#other" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#other" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 11. Прочие условия
               </Link>
-              <Link href="#details" className="hover:underline" style={{ color: '#031E33' }}>
+              <Link href="#details" className="hover:underline" style={{ color: 'var(--ink)' }}>
                 12. Реквизиты
               </Link>
             </nav>
@@ -105,7 +89,7 @@ export default function LegalPage() {
             <section id="terms" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 1. Термины и определения
               </h2>
@@ -156,7 +140,7 @@ export default function LegalPage() {
             <section id="acceptance" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 2. Акцепт Оферты и заключение Договора
               </h2>
@@ -190,7 +174,7 @@ export default function LegalPage() {
             <section id="subject" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 3. Предмет Договора
               </h2>
@@ -208,7 +192,7 @@ export default function LegalPage() {
             <section id="order" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 4. Порядок и правила оказания Услуг
               </h2>
@@ -321,7 +305,7 @@ export default function LegalPage() {
             <section id="cost" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 5. Стоимость Услуг и порядок расчетов
               </h2>
@@ -363,7 +347,7 @@ export default function LegalPage() {
             <section id="refund" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 6. Порядок осуществления возвратов
               </h2>
@@ -417,7 +401,7 @@ export default function LegalPage() {
             <section id="responsibility" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 7. Ответственность
               </h2>
@@ -477,7 +461,7 @@ export default function LegalPage() {
             <section id="force-majeure" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 8. Обстоятельства непреодолимой силы (форс-мажор)
               </h2>
@@ -495,7 +479,7 @@ export default function LegalPage() {
             <section id="changes" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 9. Срок действия и изменение Оферты
               </h2>
@@ -517,7 +501,7 @@ export default function LegalPage() {
             <section id="termination" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 10. Срок действия, изменение и расторжение Договора
               </h2>
@@ -555,7 +539,7 @@ export default function LegalPage() {
             <section id="other" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 11. Прочие условия
               </h2>
@@ -593,7 +577,7 @@ export default function LegalPage() {
             <section id="details" className="mb-8">
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ color: '#008CFF' }}
+                style={{ color: 'var(--link)' }}
               >
                 12. Реквизиты
               </h2>
@@ -616,7 +600,7 @@ export default function LegalPage() {
           >
             <p 
               className="text-center text-sm"
-              style={{ color: '#031E33', opacity: 0.7 }}
+              style={{ color: 'var(--ink)', opacity: 0.7 }}
             >
               © LinguaTurca, 2025 | Электронная почта: study@linguaturca.ru
             </p>

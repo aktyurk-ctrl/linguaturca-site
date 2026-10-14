@@ -8,10 +8,36 @@ html {
 }
 body {
   margin: 0;
-  background: #faf8f3;
+  background: var(--paper);
+  font-family: var(--font-living-onest), Arial, sans-serif;
+  color: var(--ink);
 }
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+}
+
+:root {
+  --brand: #00d2f2;
+  --brand-hover: #16bfd8;
+  --brand-active: #00abc5;
+  --link: #006877;
+  --ink: #282e30;
+  --muted: #606b6d;
+  --paper: #faf8f3;
+  --white: #fff;
+  --tint: #e3f7f8;
+  --tint-strong: #c6eff2;
+  --line: #d7dedc;
+  --warm: #a84935;
+  --warm-tint: #f5e9df;
+  --radius: 12px;
+  --content-width: 1280px;
+  --section-space: 72px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--link);
+  outline-offset: 4px;
 }

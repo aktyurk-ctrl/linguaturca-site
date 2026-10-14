@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { CookieSettingsButton } from './CookieConsent';
 import Image from 'next/image';
 import { cx } from './living-school/styles';
 export function Footer() {
@@ -7,7 +8,7 @@ export function Footer() {
       <div className={cx('wrap footer-grid')}>
         <div>
           <Link className={cx('brand')} href="/">
-            <Image src="/logo.png" width={44} height={44} alt="" />
+            <Image src="/logo.png" width={44} height={44} sizes="44px" alt="" />
             <span>Linguaturca</span>
           </Link>
           <p>
@@ -24,6 +25,7 @@ export function Footer() {
           <Link href="/#teachers">Преподаватели</Link>
           <Link href="/#pricing">Стоимость</Link>
           <Link href="/#culture">Язык и культура</Link>
+          <Link href="/articles">Статьи</Link>
         </div>
         <div>
           <h2>Связаться</h2>
@@ -35,6 +37,7 @@ export function Footer() {
         <span>© Linguaturca 2026</span>
         <Link href="/legal">Публичная оферта</Link>
         <Link href="/policy">Политика обработки данных</Link>
+        <CookieSettingsButton />
         <Link href="/#hero">Наверх ↑</Link>
       </div>
     </footer>

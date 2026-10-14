@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import Script from "next/script";
+import Script from 'next/script';
 
 export default function YandexMetrika() {
   return (
@@ -9,7 +9,8 @@ export default function YandexMetrika() {
         id="yandex-metrika"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
-          __html: `
+          __html: `(function(){
+            try { if (localStorage.getItem('cookie-consent') !== 'accepted') return; } catch { return; }
             (function(m,e,t,r,i,k,a){
                 m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
                 m[i].l=1*new Date();
@@ -18,18 +19,9 @@ export default function YandexMetrika() {
             })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106221032', 'ym');
 
             ym(106221032, 'init', {ssr:true, webvisor:true, clickmap:true, referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-          `,
+          })();`,
         }}
       />
-      <noscript>
-        <div>
-          <img
-            src="https://mc.yandex.ru/watch/106221032"
-            style={{ position: "absolute", left: "-9999px" }}
-            alt=""
-          />
-        </div>
-      </noscript>
     </>
   );
 }

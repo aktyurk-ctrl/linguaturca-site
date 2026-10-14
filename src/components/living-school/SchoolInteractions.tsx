@@ -11,13 +11,14 @@ interface Interactions {
   selection: Selection;
   select: (selection: Selection) => void;
   enroll: (selection: Selection) => void;
-  openReview: (id: string) => void;
+  openReview: (id: string, trigger: HTMLElement) => void;
 }
 const Context = createContext<Interactions | null>(null);
 export function SchoolProvider({ children }: { children: ReactNode }) {
   const [selection, select] = useState<Selection>({ format: 'help' });
   const [reviewId, setReviewId] = useState(reviews[0]?.id);
   const dialog = useRef<HTMLDialogElement>(null);
+  const reviewTrigger = useRef<HTMLElement | null>(null);
   const review = reviews.find((review) => review.id === reviewId);
   function enroll(next: Selection) {
     select(next);
@@ -26,7 +27,8 @@ export function SchoolProvider({ children }: { children: ReactNode }) {
     });
     requestAnimationFrame(() => document.getElementById('name')?.focus({ preventScroll: true }));
   }
-  function openReview(id: string) {
+  function openReview(id: string, trigger: HTMLElement) {
+    reviewTrigger.current = trigger;
     setReviewId(id);
     dialog.current?.showModal();
   }
@@ -37,6 +39,7 @@ export function SchoolProvider({ children }: { children: ReactNode }) {
         ref={dialog}
         id="review-dialog"
         aria-label="Оригинал отзыва"
+        onClose={() => reviewTrigger.current?.focus()}
         onClick={(event) => {
           if (event.target === event.currentTarget) {
             const box = event.currentTarget.getBoundingClientRect();
@@ -109,7 +112,7 @@ export function ReviewButton({ reviewId, children }: { reviewId: string; childre
       type="button"
       className={cx('text-link')}
       data-review={reviewId}
-      onClick={() => openReview(reviewId)}
+      onClick={(event) => openReview(reviewId, event.currentTarget)}
     >
       {children || 'Оригинал ↗'}
     </button>

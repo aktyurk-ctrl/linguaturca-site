@@ -1,33 +1,20 @@
-import type { Metadata } from 'next'
+import { ArticleData } from '@/components/StructuredData';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { pageMetadata } from '@/seo/site'
 import Link from 'next/link'
 
-export const metadata: Metadata = {
-  title: 'Турецкий язык с нуля — как начать обучение и не бросить — LinguaTurca',
-  description: 'Турецкий язык с нуля: с чего начать обучение, какие шаги пройти новичку и как быстрее выйти на разговорный уровень без перегруза.',
-}
+export const metadata = pageMetadata("Турецкий язык с нуля — как начать обучение и не бросить — LinguaTurca", "Турецкий язык с нуля: с чего начать обучение, какие шаги пройти новичку и как быстрее выйти на разговорный уровень без перегруза.", '/articles/turetskiy-yazyk-s-nulya', true);
 
 export default function ArticlePage() {
   return (
-    <div 
-      className="min-h-screen"
-      style={{ 
-        backgroundColor: '#F7FAFC',
-        color: '#031E33',
-        fontFamily: 'Inter, system-ui, sans-serif'
-      }}
-    >
-      <div 
-        className="mx-auto"
-        style={{ 
-          maxWidth: '900px',
-          margin: '100px auto',
-          padding: '0 20px'
-        }}
-      >
+    <div className="content-page">
+      <div className="content-container">
+        <Breadcrumbs items={[{"name": "Главная", "path": "/"}, {"name": "Статьи", "path": "/articles"}, {"name": "Турецкий язык с нуля: пошаговое руководство для начинающих", "path": "/articles/turetskiy-yazyk-s-nulya"}]} />
+        <ArticleData title={"Турецкий язык с нуля: пошаговое руководство для начинающих"} description={"Турецкий язык с нуля: с чего начать обучение, какие шаги пройти новичку и как быстрее выйти на разговорный уровень без перегруза."} path="/articles/turetskiy-yazyk-s-nulya" />
         {/* Заголовок страницы */}
         <h1 
           className="text-4xl font-bold mb-6"
-          style={{ color: '#008CFF' }}
+          style={{ color: 'var(--link)' }}
         >
           Турецкий язык с нуля: пошаговое руководство для начинающих
         </h1>
@@ -38,7 +25,7 @@ export default function ArticlePage() {
             Начать изучение турецкого языка с нуля проще, чем кажется. Турецкий — логичный и структурный язык, в котором почти нет исключений. Главная сложность для новичков — не язык, а неправильный старт.
           </p>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Кому подходит обучение турецкому с нуля
           </h2>
           
@@ -57,7 +44,7 @@ export default function ArticlePage() {
             Независимо от цели, базовый подход будет одинаковым.
           </p>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             С чего начинать турецкий язык новичку
           </h2>
           
@@ -76,7 +63,7 @@ export default function ArticlePage() {
             ❌ <strong>Ошибка</strong> — начинать с времён и сложной грамматики.
           </p>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Как учить слова, чтобы они запоминались
           </h2>
           
@@ -95,7 +82,7 @@ export default function ArticlePage() {
             Зубрёжка списков почти всегда приводит к выгоранию.
           </p>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Нужна ли грамматика на старте
           </h2>
           
@@ -113,7 +100,7 @@ export default function ArticlePage() {
             Цель начального уровня — начать говорить, а не знать все правила.
           </p>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Как не бросить обучение
           </h2>
           
@@ -137,7 +124,7 @@ export default function ArticlePage() {
             <li>поддержка преподавателя</li>
           </ul>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Какой формат обучения самый эффективный
           </h2>
           
@@ -160,19 +147,19 @@ export default function ArticlePage() {
         <div 
           className="mt-12 p-6 rounded-lg"
           style={{ 
-            backgroundColor: '#E6F3FF',
-            border: '1px solid #B3E5FC'
+            backgroundColor: 'var(--tint)',
+            border: '1px solid var(--line)'
           }}
         >
-          <p className="text-lg mb-4 font-semibold" style={{ color: '#031E33' }}>
+          <p className="text-lg mb-4 font-semibold" style={{ color: 'var(--ink)' }}>
             Хотите начать изучать турецкий язык с нуля и не бросить?
           </p>
-          <p className="text-lg mb-4" style={{ color: '#031E33' }}>
+          <p className="text-lg mb-4" style={{ color: 'var(--ink)' }}>
             В школе LinguaTurca мы выстраиваем обучение с нуля — понятно, структурно и с упором на разговорную практику.
           </p>
           <Link
             href="/"
-            className="inline-block px-6 py-3 bg-[#008CFF] text-white rounded-lg font-semibold hover:bg-[#0077CC] transition-colors"
+            className="inline-block px-6 py-3 bg-[var(--link)] text-white rounded-lg font-semibold hover:bg-[#0077CC] transition-colors"
           >
             Перейти на главную страницу →
           </Link>

@@ -13,10 +13,10 @@ export function LessonExperienceSection() {
           Урок в Zoom. <br />
           Материалы после.
         </h2>
-        <div className={cx('class-slot')} aria-label="Место для настоящего кадра занятия">
-          <span className={cx('asset-status')}>TODO · КАДР ЗАНЯТИЯ</span>
+        <div className={cx('class-slot')} aria-label="Онлайн-занятия">
+          <span className={cx('asset-status')}>ОНЛАЙН-ЗАНЯТИЯ</span>
           <h3>Преподаватель и ученики в Zoom</h3>
-          <p>Здесь будет кадр реального урока, с разрешения участников.</p>
+          <p>В мини-группе — 2–4 ученика. Индивидуально — один на один.</p>
         </div>
       </div>
       <div className={cx('process-steps')}>

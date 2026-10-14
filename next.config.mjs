@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  async redirects() {
+    return [
+      { source: '/blog', destination: '/articles', permanent: true },
+      { source: '/blog/:slug', destination: '/articles/:slug', permanent: true },
+      { source: '/privacy', destination: '/policy', permanent: true },
+      { source: '/offer', destination: '/legal', permanent: true },
+    ];
+  },
   images: {
     qualities: [70, 75, 85, 90],
     formats: ['image/avif', 'image/webp'],

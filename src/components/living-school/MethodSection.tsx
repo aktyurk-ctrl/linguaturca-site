@@ -9,10 +9,10 @@ export function MethodSection() {
           Понимать правило. <br />
           Пользоваться языком.
         </h2>
-        <div className={cx('material-slot')} aria-label="Место для настоящего учебного материала">
-          <span className={cx('asset-status')}>TODO · МАТЕРИАЛ ШКОЛЫ</span>
-          <h3>Фрагмент авторского материала</h3>
-          <p>Здесь будет реальное упражнение из рабочей тетради и заметка преподавателя.</p>
+        <div className={cx('material-slot')} aria-label="Учебные материалы">
+          <span className={cx('asset-status')}>УЧЕБНЫЕ МАТЕРИАЛЫ</span>
+          <h3>Авторские материалы школы</h3>
+          <p>Авторские учебные материалы и еженедельные памятки со словами по теме.</p>
         </div>
       </div>
       <ol className={cx('method-list')}>

@@ -1,43 +1,84 @@
-'use client'
+'use client';
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import { readConsent, saveConsent, type Consent } from '@/lib/consent';
 
-export function CookieConsent() {
-  const [visible, setVisible] = useState(false)
+const ConsentedAnalytics = dynamic(() => import('./ConsentedAnalytics'), { ssr: false });
 
-  useEffect(() => {
-    const accepted = typeof window !== 'undefined' && localStorage.getItem('cookie-consent')
-    // Read browser storage after hydration, preserving the server's hidden banner.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (!accepted) setVisible(true)
-  }, [])
-
-  if (!visible) return null
+export function CookieSettingsButton() {
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-w-xl w-[92%] card p-4">
-      <div className="text-sm text-gray-800">
-        Мы используем cookies для улучшения работы сайта. Продолжая пользоваться сайтом, вы
-        соглашаетесь с нашей политикой конфиденциальности.
-      </div>
-      <div className="mt-3 flex justify-end gap-2">
-        <button
-          className="px-4 py-2 rounded-full border border-gray-200 hover:bg-gray-50"
-          onClick={() => setVisible(false)}
-        >
-          Отклонить
-        </button>
-        <button
-          className="btn-primary"
-          onClick={() => {
-            localStorage.setItem('cookie-consent', 'accepted')
-            setVisible(false)
-          }}
-        >
-          Принять
-        </button>
-      </div>
-    </div>
-  )
+    <button
+      type="button"
+      className="cookie-settings"
+      onClick={() => window.dispatchEvent(new Event('open-cookie-settings'))}
+    >
+      Настройки cookies
+    </button>
+  );
 }
 
-
+export function CookieConsent() {
+  const [consent, setConsent] = useState<Consent>(null);
+  const [visible, setVisible] = useState(false);
+  const panel = useRef<HTMLDivElement>(null);
+  const trigger = useRef<HTMLElement | null>(null);
+  useEffect(() => {
+    const saved = readConsent();
+    // Browser storage is unavailable during server rendering.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setConsent(saved);
+    setVisible(!saved);
+    const open = () => {
+      trigger.current = document.activeElement as HTMLElement;
+      setVisible(true);
+      requestAnimationFrame(() => panel.current?.focus());
+    };
+    // Reload on cross-tab changes so a previously initialized tracker cannot keep running.
+    const sync = (event: StorageEvent) => {
+      if (event.key === 'cookie-consent' || event.key === null) window.location.reload();
+    };
+    window.addEventListener('open-cookie-settings', open);
+    window.addEventListener('storage', sync);
+    return () => {
+      window.removeEventListener('open-cookie-settings', open);
+      window.removeEventListener('storage', sync);
+    };
+  }, []);
+  function choose(next: Exclude<Consent, null>) {
+    const persisted = saveConsent(next);
+    // If storage is denied, never initialize optional analytics; the banner remains usable.
+    setConsent(persisted ? next : 'declined');
+    setVisible(false);
+    trigger.current?.focus();
+    if (consent === 'accepted' && next === 'declined') window.location.reload();
+  }
+  return (
+    <>
+      {consent === 'accepted' && <ConsentedAnalytics />}
+      {visible && (
+        <div
+          ref={panel}
+          className="cookie-banner"
+          role="region"
+          aria-label="Настройки cookies"
+          tabIndex={-1}
+        >
+          <p>
+            Разрешить необязательную аналитику Яндекс Метрики и Vercel? Вы можете отказаться и
+            пользоваться сайтом. <Link href="/policy">Политика обработки данных</Link>.
+          </p>
+          <div className="cookie-actions">
+            <button type="button" onClick={() => choose('declined')}>
+              Отклонить
+            </button>
+            <button type="button" className="cookie-accept" onClick={() => choose('accepted')}>
+              Принять
+            </button>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}

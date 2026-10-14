@@ -46,7 +46,7 @@ export function TeachersSection() {
                     <article key={person.id} className={cx('source-person')}>
                       <div className={cx('portrait-slot')}>
                         <span>Фото</span>
-                        <small>TODO</small>
+                        <small>нет фото</small>
                       </div>
                       <div>
                         <h4>{person.name}</h4>
@@ -56,8 +56,7 @@ export function TeachersSection() {
                   )
               )}
               <p className={cx('team-source-note')}>
-                TODO: подтвердить текущий состав, фотографии, образование и специализацию. Имена
-                выше взяты из отзывов и не означают подтверждённый состав на сегодня.
+                Имена приведены из отзывов учеников. Текущий состав преподавателей уточняйте на консультации.
               </p>
             </div>
           )}

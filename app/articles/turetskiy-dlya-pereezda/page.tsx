@@ -1,33 +1,20 @@
-import type { Metadata } from 'next'
+import { ArticleData } from '@/components/StructuredData';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { pageMetadata } from '@/seo/site'
 import Link from 'next/link'
 
-export const metadata: Metadata = {
-  title: 'Турецкий язык для переезда в Турцию — что нужно знать — LinguaTurca',
-  description: 'Турецкий язык для переезда: какие темы нужны в первую очередь, сколько времени требуется и как подготовиться к жизни в Турции.',
-}
+export const metadata = pageMetadata("Турецкий язык для переезда в Турцию — что нужно знать — LinguaTurca", "Турецкий язык для переезда: какие темы нужны в первую очередь, сколько времени требуется и как подготовиться к жизни в Турции.", '/articles/turetskiy-dlya-pereezda', true);
 
 export default function ArticlePage() {
   return (
-    <div 
-      className="min-h-screen"
-      style={{ 
-        backgroundColor: '#F7FAFC',
-        color: '#031E33',
-        fontFamily: 'Inter, system-ui, sans-serif'
-      }}
-    >
-      <div 
-        className="mx-auto"
-        style={{ 
-          maxWidth: '900px',
-          margin: '100px auto',
-          padding: '0 20px'
-        }}
-      >
+    <div className="content-page">
+      <div className="content-container">
+        <Breadcrumbs items={[{"name": "Главная", "path": "/"}, {"name": "Статьи", "path": "/articles"}, {"name": "Турецкий язык для переезда в Турцию", "path": "/articles/turetskiy-dlya-pereezda"}]} />
+        <ArticleData title={"Турецкий язык для переезда в Турцию"} description={"Турецкий язык для переезда: какие темы нужны в первую очередь, сколько времени требуется и как подготовиться к жизни в Турции."} path="/articles/turetskiy-dlya-pereezda" />
         {/* Заголовок страницы */}
         <h1 
           className="text-4xl font-bold mb-6"
-          style={{ color: '#008CFF' }}
+          style={{ color: 'var(--link)' }}
         >
           Турецкий язык для переезда в Турцию
         </h1>
@@ -38,7 +25,7 @@ export default function ArticlePage() {
             Переезд в Турцию без знания турецкого языка возможен, но сильно усложняет жизнь. Даже базовый уровень языка экономит время, деньги и нервы в первые месяцы после переезда.
           </p>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Нужен ли турецкий для жизни в Турции
           </h2>
           
@@ -56,7 +43,7 @@ export default function ArticlePage() {
             Минимальный уровень языка даёт самостоятельность.
           </p>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Какой уровень турецкого нужен для переезда
           </h2>
           
@@ -80,7 +67,7 @@ export default function ArticlePage() {
             <li>общаться без переводчика</li>
           </ul>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Какие темы важны в первую очередь
           </h2>
           
@@ -100,7 +87,7 @@ export default function ArticlePage() {
             Редкая грамматика на старте не нужна.
           </p>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Сколько времени готовиться к переезду
           </h2>
           
@@ -118,7 +105,7 @@ export default function ArticlePage() {
             Главное — практика и разговор.
           </p>
           
-          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: '#008CFF' }}>
+          <h2 className="text-2xl font-bold mb-4 mt-8" style={{ color: 'var(--link)' }}>
             Самостоятельно или с преподавателем
           </h2>
           
@@ -141,19 +128,19 @@ export default function ArticlePage() {
         <div 
           className="mt-12 p-6 rounded-lg"
           style={{ 
-            backgroundColor: '#E6F3FF',
-            border: '1px solid #B3E5FC'
+            backgroundColor: 'var(--tint)',
+            border: '1px solid var(--line)'
           }}
         >
-          <p className="text-lg mb-4 font-semibold" style={{ color: '#031E33' }}>
+          <p className="text-lg mb-4 font-semibold" style={{ color: 'var(--ink)' }}>
             Планируете переезд в Турцию и хотите чувствовать себя уверенно?
           </p>
-          <p className="text-lg mb-4" style={{ color: '#031E33' }}>
+          <p className="text-lg mb-4" style={{ color: 'var(--ink)' }}>
             В LinguaTurca мы готовим к жизни в Турции с упором на реальную речь и бытовые ситуации.
           </p>
           <Link
             href="/"
-            className="inline-block px-6 py-3 bg-[#008CFF] text-white rounded-lg font-semibold hover:bg-[#0077CC] transition-colors"
+            className="inline-block px-6 py-3 bg-[var(--link)] text-white rounded-lg font-semibold hover:bg-[#0077CC] transition-colors"
           >
             Перейти на главную страницу →
           </Link>
