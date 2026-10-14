@@ -1,0 +1,7 @@
+commit 9e33135b1bfcc1269fa9bc8e72888847cbbe54ef
+Author:     Денис <denis@Mac-mini-Denis.local>
+AuthorDate: Wed Oct 14 01:01:04 2026 +0300
+Commit:     Денис <denis@Mac-mini-Denis.local>
+CommitDate: Wed Oct 14 01:01:04 2026 +0300
+
+    Integrate approved living-school homepage into Next.js

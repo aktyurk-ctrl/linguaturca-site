@@ -1,0 +1,304 @@
+[
+  {
+    "width": 320,
+    "sections": [
+      {
+        "id": "hero",
+        "heightDelta": 0.0,
+        "yDelta": 0
+      },
+      {
+        "id": "school",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "formats",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "method",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "teachers",
+        "heightDelta": -43.375,
+        "yDelta": 0.0
+      },
+      {
+        "id": "lessons",
+        "heightDelta": 0.0,
+        "yDelta": -43.375
+      },
+      {
+        "id": "pricing",
+        "heightDelta": 0.0,
+        "yDelta": -43.375
+      },
+      {
+        "id": "culture",
+        "heightDelta": 0.0,
+        "yDelta": -43.375
+      },
+      {
+        "id": "reviews",
+        "heightDelta": 0.0,
+        "yDelta": -43.375
+      },
+      {
+        "id": "faq",
+        "heightDelta": 0.0,
+        "yDelta": -43.375
+      },
+      {
+        "id": "signup",
+        "heightDelta": 0.0,
+        "yDelta": -43.375
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "sections": [
+      {
+        "id": "hero",
+        "heightDelta": 0.0,
+        "yDelta": 0
+      },
+      {
+        "id": "school",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "formats",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "method",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "teachers",
+        "heightDelta": -21.688,
+        "yDelta": 0.0
+      },
+      {
+        "id": "lessons",
+        "heightDelta": 0.0,
+        "yDelta": -21.688
+      },
+      {
+        "id": "pricing",
+        "heightDelta": 0.0,
+        "yDelta": -21.688
+      },
+      {
+        "id": "culture",
+        "heightDelta": 0.0,
+        "yDelta": -21.688
+      },
+      {
+        "id": "reviews",
+        "heightDelta": 0.0,
+        "yDelta": -21.688
+      },
+      {
+        "id": "faq",
+        "heightDelta": 0.0,
+        "yDelta": -21.688
+      },
+      {
+        "id": "signup",
+        "heightDelta": 0.0,
+        "yDelta": -21.688
+      }
+    ],
+    "headerHeroPixelMeanDifference": 0.5668585526315789
+  },
+  {
+    "width": 768,
+    "sections": [
+      {
+        "id": "hero",
+        "heightDelta": 0.0,
+        "yDelta": 0
+      },
+      {
+        "id": "school",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "formats",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "method",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "teachers",
+        "heightDelta": -40.281,
+        "yDelta": 0.0
+      },
+      {
+        "id": "lessons",
+        "heightDelta": 0.0,
+        "yDelta": -40.281
+      },
+      {
+        "id": "pricing",
+        "heightDelta": 0.0,
+        "yDelta": -40.281
+      },
+      {
+        "id": "culture",
+        "heightDelta": 0.0,
+        "yDelta": -40.281
+      },
+      {
+        "id": "reviews",
+        "heightDelta": 0.0,
+        "yDelta": -40.281
+      },
+      {
+        "id": "faq",
+        "heightDelta": 0.0,
+        "yDelta": -40.281
+      },
+      {
+        "id": "signup",
+        "heightDelta": 0.0,
+        "yDelta": -40.281
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "sections": [
+      {
+        "id": "hero",
+        "heightDelta": 0.0,
+        "yDelta": 0
+      },
+      {
+        "id": "school",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "formats",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "method",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "teachers",
+        "heightDelta": -20.141,
+        "yDelta": 0.0
+      },
+      {
+        "id": "lessons",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "pricing",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "culture",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "reviews",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "faq",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "signup",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "sections": [
+      {
+        "id": "hero",
+        "heightDelta": 0.0,
+        "yDelta": 0
+      },
+      {
+        "id": "school",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "formats",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "method",
+        "heightDelta": 0.0,
+        "yDelta": 0.0
+      },
+      {
+        "id": "teachers",
+        "heightDelta": -20.141,
+        "yDelta": 0.0
+      },
+      {
+        "id": "lessons",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "pricing",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "culture",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "reviews",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "faq",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      },
+      {
+        "id": "signup",
+        "heightDelta": 0.0,
+        "yDelta": -20.141
+      }
+    ],
+    "headerHeroPixelMeanDifference": 0.28674544419134396
+  }
+]

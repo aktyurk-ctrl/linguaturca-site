@@ -1,0 +1,432 @@
+[
+  {
+    "width": 320,
+    "sections": [
+      {
+        "id": "hero",
+        "y": 78,
+        "height": 1105.484375
+      },
+      {
+        "id": "school",
+        "y": 1183.484375,
+        "height": 462.671875
+      },
+      {
+        "id": "formats",
+        "y": 1646.15625,
+        "height": 1538.875
+      },
+      {
+        "id": "method",
+        "y": 3185.03125,
+        "height": 1004.9375
+      },
+      {
+        "id": "teachers",
+        "y": 4189.96875,
+        "height": 967.796875
+      },
+      {
+        "id": "lessons",
+        "y": 5157.765625,
+        "height": 974.40625
+      },
+      {
+        "id": "pricing",
+        "y": 6132.171875,
+        "height": 2420.265625
+      },
+      {
+        "id": "culture",
+        "y": 8552.4375,
+        "height": 1247.46875
+      },
+      {
+        "id": "reviews",
+        "y": 9799.90625,
+        "height": 1242.734375
+      },
+      {
+        "id": "faq",
+        "y": 11042.640625,
+        "height": 767.3125
+      },
+      {
+        "id": "signup",
+        "y": 11809.953125,
+        "height": 956.296875
+      }
+    ],
+    "js": [
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/main-app.js?v=1792009641208",
+        "size": 3127412
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app-pages-internals.js",
+        "size": 58955
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/page.js",
+        "size": 164655
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/layout.js",
+        "size": 210381
+      },
+      {
+        "name": "https://mc.yandex.ru/metrika/tag.js?id=106221032",
+        "size": 0
+      },
+      {
+        "name": "https://va.vercel-scripts.com/v1/script.debug.js",
+        "size": 0
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "sections": [
+      {
+        "id": "hero",
+        "y": 78,
+        "height": 1137.671875
+      },
+      {
+        "id": "school",
+        "y": 1215.671875,
+        "height": 397.875
+      },
+      {
+        "id": "formats",
+        "y": 1613.546875,
+        "height": 1425.515625
+      },
+      {
+        "id": "method",
+        "y": 3039.0625,
+        "height": 882.453125
+      },
+      {
+        "id": "teachers",
+        "y": 3921.515625,
+        "height": 907.765625
+      },
+      {
+        "id": "lessons",
+        "y": 4829.28125,
+        "height": 884.671875
+      },
+      {
+        "id": "pricing",
+        "y": 5713.953125,
+        "height": 2266.140625
+      },
+      {
+        "id": "culture",
+        "y": 7980.09375,
+        "height": 1132.703125
+      },
+      {
+        "id": "reviews",
+        "y": 9112.796875,
+        "height": 1085.828125
+      },
+      {
+        "id": "faq",
+        "y": 10198.625,
+        "height": 727.890625
+      },
+      {
+        "id": "signup",
+        "y": 10926.515625,
+        "height": 889.75
+      }
+    ],
+    "js": [
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app-pages-internals.js",
+        "size": 58955
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/page.js",
+        "size": 164655
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/layout.js",
+        "size": 210381
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/main-app.js?v=1792009643852",
+        "size": 3127412
+      },
+      {
+        "name": "https://mc.yandex.ru/metrika/tag.js?id=106221032",
+        "size": 0
+      },
+      {
+        "name": "https://va.vercel-scripts.com/v1/script.debug.js",
+        "size": 0
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "sections": [
+      {
+        "id": "hero",
+        "y": 86,
+        "height": 778.59375
+      },
+      {
+        "id": "school",
+        "y": 864.59375,
+        "height": 311.28125
+      },
+      {
+        "id": "formats",
+        "y": 1175.875,
+        "height": 844.625
+      },
+      {
+        "id": "method",
+        "y": 2020.5,
+        "height": 588.890625
+      },
+      {
+        "id": "teachers",
+        "y": 2609.390625,
+        "height": 594.421875
+      },
+      {
+        "id": "lessons",
+        "y": 3203.8125,
+        "height": 602.890625
+      },
+      {
+        "id": "pricing",
+        "y": 3806.703125,
+        "height": 1199.0625
+      },
+      {
+        "id": "culture",
+        "y": 5005.765625,
+        "height": 816.234375
+      },
+      {
+        "id": "reviews",
+        "y": 5822,
+        "height": 623.8125
+      },
+      {
+        "id": "faq",
+        "y": 6445.8125,
+        "height": 561.5625
+      },
+      {
+        "id": "signup",
+        "y": 7007.375,
+        "height": 703.375
+      }
+    ],
+    "js": [
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app-pages-internals.js",
+        "size": 58955
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/page.js",
+        "size": 164655
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/layout.js",
+        "size": 210381
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/main-app.js?v=1792009645949",
+        "size": 3127412
+      },
+      {
+        "name": "https://mc.yandex.ru/metrika/tag.js?id=106221032",
+        "size": 0
+      },
+      {
+        "name": "https://va.vercel-scripts.com/v1/script.debug.js",
+        "size": 0
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "sections": [
+      {
+        "id": "hero",
+        "y": 100,
+        "height": 740.3125
+      },
+      {
+        "id": "school",
+        "y": 840.3125,
+        "height": 285.28125
+      },
+      {
+        "id": "formats",
+        "y": 1125.59375,
+        "height": 881.890625
+      },
+      {
+        "id": "method",
+        "y": 2007.484375,
+        "height": 555.34375
+      },
+      {
+        "id": "teachers",
+        "y": 2562.828125,
+        "height": 619.84375
+      },
+      {
+        "id": "lessons",
+        "y": 3182.671875,
+        "height": 565.921875
+      },
+      {
+        "id": "pricing",
+        "y": 3748.59375,
+        "height": 1153.5625
+      },
+      {
+        "id": "culture",
+        "y": 4902.15625,
+        "height": 782.796875
+      },
+      {
+        "id": "reviews",
+        "y": 5684.953125,
+        "height": 636.4375
+      },
+      {
+        "id": "faq",
+        "y": 6321.390625,
+        "height": 631.5625
+      },
+      {
+        "id": "signup",
+        "y": 6952.953125,
+        "height": 747.375
+      }
+    ],
+    "js": [
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app-pages-internals.js",
+        "size": 58955
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/page.js",
+        "size": 164655
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/main-app.js?v=1792009647894",
+        "size": 3127412
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/layout.js",
+        "size": 210381
+      },
+      {
+        "name": "https://mc.yandex.ru/metrika/tag.js?id=106221032",
+        "size": 0
+      },
+      {
+        "name": "https://va.vercel-scripts.com/v1/script.debug.js",
+        "size": 0
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "sections": [
+      {
+        "id": "hero",
+        "y": 100,
+        "height": 778.421875
+      },
+      {
+        "id": "school",
+        "y": 878.421875,
+        "height": 291.28125
+      },
+      {
+        "id": "formats",
+        "y": 1169.703125,
+        "height": 802.34375
+      },
+      {
+        "id": "method",
+        "y": 1972.046875,
+        "height": 505.75
+      },
+      {
+        "id": "teachers",
+        "y": 2477.796875,
+        "height": 605.40625
+      },
+      {
+        "id": "lessons",
+        "y": 3083.203125,
+        "height": 565.921875
+      },
+      {
+        "id": "pricing",
+        "y": 3649.125,
+        "height": 1138.078125
+      },
+      {
+        "id": "culture",
+        "y": 4787.203125,
+        "height": 748.40625
+      },
+      {
+        "id": "reviews",
+        "y": 5535.609375,
+        "height": 584.84375
+      },
+      {
+        "id": "faq",
+        "y": 6120.453125,
+        "height": 631.5625
+      },
+      {
+        "id": "signup",
+        "y": 6752.015625,
+        "height": 747.375
+      }
+    ],
+    "js": [
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app-pages-internals.js",
+        "size": 58955
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/page.js",
+        "size": 164655
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/main-app.js?v=1792009649896",
+        "size": 3127412
+      },
+      {
+        "name": "http://127.0.0.1:3014/_next/static/chunks/app/layout.js",
+        "size": 210381
+      },
+      {
+        "name": "https://mc.yandex.ru/metrika/tag.js?id=106221032",
+        "size": 0
+      },
+      {
+        "name": "https://va.vercel-scripts.com/v1/script.debug.js",
+        "size": 0
+      }
+    ]
+  }
+]

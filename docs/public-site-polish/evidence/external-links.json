@@ -1,0 +1,16 @@
+{
+  "telegram": {
+    "url": "https://t.me/Daria_Kolosova",
+    "status": 200
+  },
+  "hocam_source": {
+    "url": "https://dergipark.org.tr/en/download/article-file/3460493",
+    "status": 200,
+    "same_paper": "How Do WE Address the Instructors in the Expanding Circle? Perspectives from Turkish EFL Speakers",
+    "doi": "10.18492/dad.1372683"
+  },
+  "replaced_source": {
+    "host": "www.researchgate.net",
+    "automated_status": 403
+  }
+}

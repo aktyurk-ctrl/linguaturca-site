@@ -1,0 +1,1034 @@
+{
+  "endpoints": [
+    {
+      "path": "/blog",
+      "status": 308,
+      "destination": "/articles"
+    },
+    {
+      "path": "/privacy",
+      "status": 308,
+      "destination": "/policy"
+    },
+    {
+      "path": "/offer",
+      "status": 308,
+      "destination": "/legal"
+    },
+    {
+      "path": "/blog/kak-vyuchit-turetskiy",
+      "status": 308,
+      "destination": "/articles/kak-vyuchit-turetskiy"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "type": "text/plain"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "type": "application/xml"
+    },
+    {
+      "path": "/og",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "path": "/favicon/site.webmanifest",
+      "status": 200,
+      "type": "application/manifest+json"
+    },
+    {
+      "path": "/favicon/favicon.ico",
+      "status": 200,
+      "type": "image/x-icon"
+    },
+    {
+      "path": "/favicon/favicon-32x32.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "path": "/favicon/favicon-16x16.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "path": "/favicon/apple-touch-icon.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "path": "/favicon/android-chrome-192x192.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "path": "/favicon/android-chrome-512x512.png",
+      "status": 200,
+      "type": "image/png"
+    }
+  ],
+  "textPreservation": [
+    {
+      "path": "/articles",
+      "identical": true
+    },
+    {
+      "path": "/articles/kak-vyuchit-turetskiy",
+      "identical": true
+    },
+    {
+      "path": "/articles/turetskiy-yazyk-s-nulya",
+      "identical": true
+    },
+    {
+      "path": "/articles/turetskiy-dlya-pereezda",
+      "identical": true
+    },
+    {
+      "path": "/policy",
+      "identical": true
+    },
+    {
+      "path": "/legal",
+      "identical": true
+    }
+  ],
+  "links": [
+    {
+      "path": "/#main",
+      "label": "К содержимому",
+      "status": 200
+    },
+    {
+      "path": "/",
+      "label": "Linguaturca",
+      "status": 200
+    },
+    {
+      "path": "/#formats",
+      "label": "Форматы обучения",
+      "status": 200
+    },
+    {
+      "path": "/#teachers",
+      "label": "Преподаватели",
+      "status": 200
+    },
+    {
+      "path": "/#pricing",
+      "label": "Стоимость",
+      "status": 200
+    },
+    {
+      "path": "/#reviews",
+      "label": "Отзывы",
+      "status": 200
+    },
+    {
+      "path": "/#signup",
+      "label": "Подобрать обучение ↗",
+      "status": 200
+    },
+    {
+      "path": "/articles/turetskiy-yazyk-s-nulya",
+      "label": "Читать статью →",
+      "status": 200
+    },
+    {
+      "path": "/articles/turetskiy-dlya-pereezda",
+      "label": "Читать статью →",
+      "status": 200
+    },
+    {
+      "path": "/policy",
+      "label": "Политика обработки данных",
+      "status": 200
+    },
+    {
+      "path": "/#culture",
+      "label": "Язык и культура",
+      "status": 200
+    },
+    {
+      "path": "/articles",
+      "label": "Статьи",
+      "status": 200
+    },
+    {
+      "path": "/legal",
+      "label": "Публичная оферта",
+      "status": 200
+    },
+    {
+      "path": "/#hero",
+      "label": "Наверх ↑",
+      "status": 200
+    },
+    {
+      "path": "/articles#main",
+      "label": "К содержимому",
+      "status": 200
+    },
+    {
+      "path": "/articles/kak-vyuchit-turetskiy",
+      "label": "Читать статью →",
+      "status": 200
+    },
+    {
+      "path": "/articles/kak-vyuchit-turetskiy#main",
+      "label": "К содержимому",
+      "status": 200
+    },
+    {
+      "path": "/articles/turetskiy-yazyk-s-nulya#main",
+      "label": "К содержимому",
+      "status": 200
+    },
+    {
+      "path": "/articles/turetskiy-dlya-pereezda#main",
+      "label": "К содержимому",
+      "status": 200
+    },
+    {
+      "path": "/policy#main",
+      "label": "К содержимому",
+      "status": 200
+    },
+    {
+      "path": "/policy#general",
+      "label": "1. Общие положения",
+      "status": 200
+    },
+    {
+      "path": "/policy#concepts",
+      "label": "2. Основные понятия, используемые в Политике",
+      "status": 200
+    },
+    {
+      "path": "/policy#operator-rights",
+      "label": "3. Основные права и обязанности Оператора",
+      "status": 200
+    },
+    {
+      "path": "/policy#subject-rights",
+      "label": "4. Основные права и обязанности субъектов персональных данных",
+      "status": 200
+    },
+    {
+      "path": "/policy#principles",
+      "label": "5. Принципы обработки персональных данных",
+      "status": 200
+    },
+    {
+      "path": "/policy#purposes",
+      "label": "6. Цели обработки персональных данных",
+      "status": 200
+    },
+    {
+      "path": "/policy#conditions",
+      "label": "7. Условия обработки персональных данных",
+      "status": 200
+    },
+    {
+      "path": "/policy#procedure",
+      "label": "8. Порядок сбора, хранения, передачи и других видов обработки персональных данных",
+      "status": 200
+    },
+    {
+      "path": "/policy#actions",
+      "label": "9. Перечень действий, производимых Оператором с полученными персональными данными",
+      "status": 200
+    },
+    {
+      "path": "/policy#cross-border",
+      "label": "10. Трансграничная передача персональных данных",
+      "status": 200
+    },
+    {
+      "path": "/policy#confidentiality",
+      "label": "11. Конфиденциальность персональных данных",
+      "status": 200
+    },
+    {
+      "path": "/policy#final",
+      "label": "12. Заключительные положения",
+      "status": 200
+    },
+    {
+      "path": "/legal#main",
+      "label": "К содержимому",
+      "status": 200
+    },
+    {
+      "path": "/legal#terms",
+      "label": "1. Термины и определения",
+      "status": 200
+    },
+    {
+      "path": "/legal#acceptance",
+      "label": "2. Акцепт Оферты и заключение Договора",
+      "status": 200
+    },
+    {
+      "path": "/legal#subject",
+      "label": "3. Предмет Договора",
+      "status": 200
+    },
+    {
+      "path": "/legal#order",
+      "label": "4. Порядок и правила оказания Услуг",
+      "status": 200
+    },
+    {
+      "path": "/legal#cost",
+      "label": "5. Стоимость Услуг и порядок расчетов",
+      "status": 200
+    },
+    {
+      "path": "/legal#refund",
+      "label": "6. Порядок осуществления возвратов",
+      "status": 200
+    },
+    {
+      "path": "/legal#responsibility",
+      "label": "7. Ответственность",
+      "status": 200
+    },
+    {
+      "path": "/legal#force-majeure",
+      "label": "8. Обстоятельства непреодолимой силы (форс-мажор)",
+      "status": 200
+    },
+    {
+      "path": "/legal#changes",
+      "label": "9. Срок действия и изменение Оферты",
+      "status": 200
+    },
+    {
+      "path": "/legal#termination",
+      "label": "10. Срок действия, изменение и расторжение Договора",
+      "status": 200
+    },
+    {
+      "path": "/legal#other",
+      "label": "11. Прочие условия",
+      "status": 200
+    },
+    {
+      "path": "/legal#details",
+      "label": "12. Реквизиты",
+      "status": 200
+    }
+  ],
+  "performance": [
+    {
+      "width": 390,
+      "run": 1,
+      "cls": 0,
+      "lcp": 44,
+      "load": 58.200000047683716,
+      "resources": [
+        {
+          "name": "/_next/static/media/35e4ca6c48af60ae-s.p.woff2",
+          "bytes": 53640,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e72c5587afb86d7c.css",
+          "bytes": 8135,
+          "type": "link"
+        },
+        {
+          "name": "/_next/image?url=%2Fimages%2Ffounder-optimized.webp&w=384&q=90",
+          "bytes": 18555,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/media/d0a4d0acb0357768-s.p.woff2",
+          "bytes": 83900,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/21e383dfceb0bf32.css",
+          "bytes": 10322,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e5090d4bd4c67ebe.css",
+          "bytes": 722,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/webpack-fa747af56e19bb42.js",
+          "bytes": 1726,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "bytes": 64057,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+          "bytes": 513,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+          "bytes": 3246,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/772-e5bd1791aee81a20.js",
+          "bytes": 5599,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+          "bytes": 6747,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+          "bytes": 4852,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+          "bytes": 67335,
+          "type": "script"
+        },
+        {
+          "name": "/_next/image?url=%2Flogo.png&w=48&q=75",
+          "bytes": 1200,
+          "type": "img"
+        },
+        {
+          "name": "/?_rsc=5CB68i4pnAekjehf",
+          "bytes": 268,
+          "type": "fetch"
+        },
+        {
+          "name": "/favicon/favicon.ico",
+          "bytes": 5154,
+          "type": "other"
+        },
+        {
+          "name": "/?_rsc=yIp22O3xgPPxC28X",
+          "bytes": 2081,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=8nTjltbQWvg6NcbE",
+          "bytes": 8064,
+          "type": "fetch"
+        }
+      ],
+      "scripts": [
+        "http://127.0.0.1:3015/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+        "http://127.0.0.1:3015/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+        "http://127.0.0.1:3015/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+        "http://127.0.0.1:3015/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+        "http://127.0.0.1:3015/_next/static/chunks/772-e5bd1791aee81a20.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+        "http://127.0.0.1:3015/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "http://127.0.0.1:3015/_next/static/chunks/webpack-fa747af56e19bb42.js"
+      ]
+    },
+    {
+      "width": 390,
+      "run": 2,
+      "cls": 0,
+      "lcp": 68,
+      "load": 58.200000047683716,
+      "resources": [
+        {
+          "name": "/_next/static/media/35e4ca6c48af60ae-s.p.woff2",
+          "bytes": 53640,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e5090d4bd4c67ebe.css",
+          "bytes": 722,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e72c5587afb86d7c.css",
+          "bytes": 8135,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/21e383dfceb0bf32.css",
+          "bytes": 10322,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/media/d0a4d0acb0357768-s.p.woff2",
+          "bytes": 83900,
+          "type": "link"
+        },
+        {
+          "name": "/_next/image?url=%2Fimages%2Ffounder-optimized.webp&w=384&q=90",
+          "bytes": 18555,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/webpack-fa747af56e19bb42.js",
+          "bytes": 1726,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+          "bytes": 513,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+          "bytes": 3246,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/772-e5bd1791aee81a20.js",
+          "bytes": 5599,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+          "bytes": 4852,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "bytes": 64057,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+          "bytes": 67335,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+          "bytes": 6747,
+          "type": "script"
+        },
+        {
+          "name": "/_next/image?url=%2Flogo.png&w=48&q=75",
+          "bytes": 1200,
+          "type": "img"
+        },
+        {
+          "name": "/favicon/favicon.ico",
+          "bytes": 5154,
+          "type": "other"
+        },
+        {
+          "name": "/?_rsc=5CB68i4pnAekjehf",
+          "bytes": 268,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=yIp22O3xgPPxC28X",
+          "bytes": 2081,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=8nTjltbQWvg6NcbE",
+          "bytes": 8064,
+          "type": "fetch"
+        }
+      ],
+      "scripts": [
+        "http://127.0.0.1:3015/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+        "http://127.0.0.1:3015/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+        "http://127.0.0.1:3015/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+        "http://127.0.0.1:3015/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+        "http://127.0.0.1:3015/_next/static/chunks/772-e5bd1791aee81a20.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+        "http://127.0.0.1:3015/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "http://127.0.0.1:3015/_next/static/chunks/webpack-fa747af56e19bb42.js"
+      ]
+    },
+    {
+      "width": 390,
+      "run": 3,
+      "cls": 0,
+      "lcp": 84,
+      "load": 86.79999995231628,
+      "resources": [
+        {
+          "name": "/_next/static/media/35e4ca6c48af60ae-s.p.woff2",
+          "bytes": 53640,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/media/d0a4d0acb0357768-s.p.woff2",
+          "bytes": 83900,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e72c5587afb86d7c.css",
+          "bytes": 8135,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e5090d4bd4c67ebe.css",
+          "bytes": 722,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/21e383dfceb0bf32.css",
+          "bytes": 10322,
+          "type": "link"
+        },
+        {
+          "name": "/_next/image?url=%2Fimages%2Ffounder-optimized.webp&w=384&q=90",
+          "bytes": 18555,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/webpack-fa747af56e19bb42.js",
+          "bytes": 1726,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+          "bytes": 67335,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "bytes": 64057,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+          "bytes": 513,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+          "bytes": 3246,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/772-e5bd1791aee81a20.js",
+          "bytes": 5599,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+          "bytes": 4852,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+          "bytes": 6747,
+          "type": "script"
+        },
+        {
+          "name": "/_next/image?url=%2Flogo.png&w=48&q=75",
+          "bytes": 1200,
+          "type": "img"
+        },
+        {
+          "name": "/favicon/favicon.ico",
+          "bytes": 5154,
+          "type": "other"
+        },
+        {
+          "name": "/?_rsc=5CB68i4pnAekjehf",
+          "bytes": 268,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=yIp22O3xgPPxC28X",
+          "bytes": 2081,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=8nTjltbQWvg6NcbE",
+          "bytes": 8064,
+          "type": "fetch"
+        }
+      ],
+      "scripts": [
+        "http://127.0.0.1:3015/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+        "http://127.0.0.1:3015/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+        "http://127.0.0.1:3015/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+        "http://127.0.0.1:3015/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+        "http://127.0.0.1:3015/_next/static/chunks/772-e5bd1791aee81a20.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+        "http://127.0.0.1:3015/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "http://127.0.0.1:3015/_next/static/chunks/webpack-fa747af56e19bb42.js"
+      ]
+    },
+    {
+      "width": 1440,
+      "run": 1,
+      "cls": 0,
+      "lcp": 72,
+      "load": 74.5,
+      "resources": [
+        {
+          "name": "/_next/static/media/35e4ca6c48af60ae-s.p.woff2",
+          "bytes": 53640,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e72c5587afb86d7c.css",
+          "bytes": 8135,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e5090d4bd4c67ebe.css",
+          "bytes": 722,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/21e383dfceb0bf32.css",
+          "bytes": 10322,
+          "type": "link"
+        },
+        {
+          "name": "/_next/image?url=%2Fimages%2Ffounder-optimized.webp&w=750&q=90",
+          "bytes": 57048,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/media/d0a4d0acb0357768-s.p.woff2",
+          "bytes": 83900,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/webpack-fa747af56e19bb42.js",
+          "bytes": 1726,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+          "bytes": 513,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+          "bytes": 3246,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "bytes": 64057,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+          "bytes": 67335,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/772-e5bd1791aee81a20.js",
+          "bytes": 5599,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+          "bytes": 4852,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+          "bytes": 6747,
+          "type": "script"
+        },
+        {
+          "name": "/_next/image?url=%2Flogo.png&w=48&q=75",
+          "bytes": 1200,
+          "type": "img"
+        },
+        {
+          "name": "/favicon/favicon.ico",
+          "bytes": 5154,
+          "type": "other"
+        },
+        {
+          "name": "/?_rsc=5CB68i4pnAekjehf",
+          "bytes": 268,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=yIp22O3xgPPxC28X",
+          "bytes": 2081,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=8nTjltbQWvg6NcbE",
+          "bytes": 8064,
+          "type": "fetch"
+        }
+      ],
+      "scripts": [
+        "http://127.0.0.1:3015/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+        "http://127.0.0.1:3015/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+        "http://127.0.0.1:3015/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+        "http://127.0.0.1:3015/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+        "http://127.0.0.1:3015/_next/static/chunks/772-e5bd1791aee81a20.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+        "http://127.0.0.1:3015/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "http://127.0.0.1:3015/_next/static/chunks/webpack-fa747af56e19bb42.js"
+      ]
+    },
+    {
+      "width": 1440,
+      "run": 2,
+      "cls": 0,
+      "lcp": 80,
+      "load": 74.60000002384186,
+      "resources": [
+        {
+          "name": "/_next/static/media/35e4ca6c48af60ae-s.p.woff2",
+          "bytes": 53640,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e72c5587afb86d7c.css",
+          "bytes": 8135,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/21e383dfceb0bf32.css",
+          "bytes": 10322,
+          "type": "link"
+        },
+        {
+          "name": "/_next/image?url=%2Fimages%2Ffounder-optimized.webp&w=750&q=90",
+          "bytes": 57048,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/media/d0a4d0acb0357768-s.p.woff2",
+          "bytes": 83900,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e5090d4bd4c67ebe.css",
+          "bytes": 722,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/webpack-fa747af56e19bb42.js",
+          "bytes": 1726,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+          "bytes": 513,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/772-e5bd1791aee81a20.js",
+          "bytes": 5599,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+          "bytes": 3246,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "bytes": 64057,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+          "bytes": 67335,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+          "bytes": 4852,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+          "bytes": 6747,
+          "type": "script"
+        },
+        {
+          "name": "/_next/image?url=%2Flogo.png&w=48&q=75",
+          "bytes": 1200,
+          "type": "img"
+        },
+        {
+          "name": "/favicon/favicon.ico",
+          "bytes": 5154,
+          "type": "other"
+        },
+        {
+          "name": "/?_rsc=5CB68i4pnAekjehf",
+          "bytes": 268,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=yIp22O3xgPPxC28X",
+          "bytes": 2081,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=8nTjltbQWvg6NcbE",
+          "bytes": 8064,
+          "type": "fetch"
+        }
+      ],
+      "scripts": [
+        "http://127.0.0.1:3015/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+        "http://127.0.0.1:3015/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+        "http://127.0.0.1:3015/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+        "http://127.0.0.1:3015/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+        "http://127.0.0.1:3015/_next/static/chunks/772-e5bd1791aee81a20.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+        "http://127.0.0.1:3015/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "http://127.0.0.1:3015/_next/static/chunks/webpack-fa747af56e19bb42.js"
+      ]
+    },
+    {
+      "width": 1440,
+      "run": 3,
+      "cls": 0,
+      "lcp": 88,
+      "load": 73.5,
+      "resources": [
+        {
+          "name": "/_next/static/media/35e4ca6c48af60ae-s.p.woff2",
+          "bytes": 53640,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/media/d0a4d0acb0357768-s.p.woff2",
+          "bytes": 83900,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e72c5587afb86d7c.css",
+          "bytes": 8135,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/e5090d4bd4c67ebe.css",
+          "bytes": 722,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/css/21e383dfceb0bf32.css",
+          "bytes": 10322,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/webpack-fa747af56e19bb42.js",
+          "bytes": 1726,
+          "type": "link"
+        },
+        {
+          "name": "/_next/image?url=%2Fimages%2Ffounder-optimized.webp&w=750&q=90",
+          "bytes": 57048,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+          "bytes": 513,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+          "bytes": 3246,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/772-e5bd1791aee81a20.js",
+          "bytes": 5599,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+          "bytes": 4852,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "bytes": 64057,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+          "bytes": 67335,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+          "bytes": 6747,
+          "type": "script"
+        },
+        {
+          "name": "/_next/image?url=%2Flogo.png&w=48&q=75",
+          "bytes": 1200,
+          "type": "img"
+        },
+        {
+          "name": "/favicon/favicon.ico",
+          "bytes": 5154,
+          "type": "other"
+        },
+        {
+          "name": "/?_rsc=5CB68i4pnAekjehf",
+          "bytes": 268,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=yIp22O3xgPPxC28X",
+          "bytes": 2081,
+          "type": "fetch"
+        },
+        {
+          "name": "/?_rsc=8nTjltbQWvg6NcbE",
+          "bytes": 8064,
+          "type": "fetch"
+        }
+      ],
+      "scripts": [
+        "http://127.0.0.1:3015/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+        "http://127.0.0.1:3015/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+        "http://127.0.0.1:3015/_next/static/chunks/main-app-4ca89bf0271deddd.js",
+        "http://127.0.0.1:3015/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+        "http://127.0.0.1:3015/_next/static/chunks/772-e5bd1791aee81a20.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/layout-d34a09e4497e3a34.js",
+        "http://127.0.0.1:3015/_next/static/chunks/app/page-7a5ab6544ba83a9c.js",
+        "http://127.0.0.1:3015/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "http://127.0.0.1:3015/_next/static/chunks/webpack-fa747af56e19bb42.js"
+      ]
+    }
+  ],
+  "formUi": {
+    "error": {
+      "mocked": true,
+      "focusOnAnnouncement": true,
+      "role": "alert"
+    },
+    "success": {
+      "mocked": true,
+      "focusOnAnnouncement": true,
+      "role": "status"
+    }
+  },
+  "consent": {
+    "crossTabRevocation": true
+  }
+}

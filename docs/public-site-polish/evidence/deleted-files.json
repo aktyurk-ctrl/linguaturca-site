@@ -1,0 +1,8 @@
+[
+  "src/components/SeoProvider.tsx",
+  "src/seo/default.ts",
+  "next-sitemap.config.js",
+  "src/components/MobileCarousel.tsx",
+  "src/styles/ui-kit.css",
+  "src/test/page.tsx"
+]

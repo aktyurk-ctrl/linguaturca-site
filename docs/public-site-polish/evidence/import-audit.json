@@ -1,0 +1,285 @@
+{
+  "active": [
+    "app/api/airtable/route.ts",
+    "app/articles/kak-vyuchit-turetskiy/page.tsx",
+    "app/articles/layout.tsx",
+    "app/articles/page.tsx",
+    "app/articles/turetskiy-dlya-pereezda/page.tsx",
+    "app/articles/turetskiy-yazyk-s-nulya/page.tsx",
+    "app/globals.css",
+    "app/layout.tsx",
+    "app/legal/layout.tsx",
+    "app/legal/page.tsx",
+    "app/og/route.tsx",
+    "app/page.tsx",
+    "app/policy/layout.tsx",
+    "app/policy/page.tsx",
+    "app/robots.ts",
+    "app/sitemap.ts",
+    "src/components/Breadcrumbs.tsx",
+    "src/components/ConsentedAnalytics.tsx",
+    "src/components/CookieConsent.tsx",
+    "src/components/Footer.tsx",
+    "src/components/Header.tsx",
+    "src/components/StructuredData.tsx",
+    "src/components/YandexMetrika.tsx",
+    "src/components/living-school/CultureSection.tsx",
+    "src/components/living-school/FaqSection.tsx",
+    "src/components/living-school/HeroSection.tsx",
+    "src/components/living-school/LanguageNote.tsx",
+    "src/components/living-school/LeadForm.tsx",
+    "src/components/living-school/LeadSection.tsx",
+    "src/components/living-school/LearningFormatsSection.tsx",
+    "src/components/living-school/LessonExperienceSection.tsx",
+    "src/components/living-school/LivingSchool.module.css",
+    "src/components/living-school/MethodSection.tsx",
+    "src/components/living-school/PricingSection.tsx",
+    "src/components/living-school/PricingTabs.tsx",
+    "src/components/living-school/ReviewsSection.tsx",
+    "src/components/living-school/SchoolInteractions.tsx",
+    "src/components/living-school/SchoolSection.tsx",
+    "src/components/living-school/TeachersSection.tsx",
+    "src/components/living-school/styles.ts",
+    "src/data/living-school.ts",
+    "src/lib/consent.ts",
+    "src/lib/lead-request.ts",
+    "src/seo/site.ts",
+    "src/styles/legacy-content.css"
+  ],
+  "inactive_preserved": [
+    "src/app/api/airtable/route.ts",
+    "src/components/AboutSection.tsx",
+    "src/components/AdvantagesSection.tsx",
+    "src/components/CourseMiniGroupSection.tsx",
+    "src/components/ExampleUI.tsx",
+    "src/components/FinalCTASection.tsx",
+    "src/components/FreeConsultationSection.tsx",
+    "src/components/HeroForm.tsx",
+    "src/components/HeroFormButton.tsx",
+    "src/components/HowWeTeachSection.tsx",
+    "src/components/ImageModal.tsx",
+    "src/components/IndividualPricing.tsx",
+    "src/components/LeadModal.tsx",
+    "src/components/ModalForm.tsx",
+    "src/components/PricingSection.tsx",
+    "src/components/ReviewsCarousel.tsx",
+    "src/components/ReviewsSection.tsx",
+    "src/components/ScheduleSection.tsx",
+    "src/components/SignupModal.tsx",
+    "src/components/TeacherModal.tsx",
+    "src/components/TeachersSection.tsx",
+    "src/components/WhyUsSection.tsx",
+    "src/contexts/LeadModalContext.tsx",
+    "src/data/teachers.ts",
+    "src/lib/utils.ts"
+  ],
+  "graph": {
+    "app/layout.tsx": [
+      "app/globals.css",
+      "src/styles/legacy-content.css",
+      "src/seo/site.ts",
+      "src/components/StructuredData.tsx",
+      "src/components/Header.tsx",
+      "src/components/Footer.tsx",
+      "src/components/CookieConsent.tsx"
+    ],
+    "app/page.tsx": [
+      "src/components/living-school/HeroSection.tsx",
+      "src/components/living-school/SchoolSection.tsx",
+      "src/components/living-school/LearningFormatsSection.tsx",
+      "src/components/living-school/MethodSection.tsx",
+      "src/components/living-school/TeachersSection.tsx",
+      "src/components/living-school/LessonExperienceSection.tsx",
+      "src/components/living-school/PricingSection.tsx",
+      "src/components/living-school/CultureSection.tsx",
+      "src/components/living-school/ReviewsSection.tsx",
+      "src/components/living-school/FaqSection.tsx",
+      "src/components/living-school/LeadSection.tsx",
+      "src/components/living-school/SchoolInteractions.tsx",
+      "src/components/living-school/styles.ts"
+    ],
+    "app/articles/layout.tsx": [],
+    "app/articles/page.tsx": [
+      "src/components/Breadcrumbs.tsx",
+      "src/seo/site.ts"
+    ],
+    "app/articles/turetskiy-yazyk-s-nulya/page.tsx": [
+      "src/components/StructuredData.tsx",
+      "src/components/Breadcrumbs.tsx",
+      "src/seo/site.ts"
+    ],
+    "app/articles/turetskiy-dlya-pereezda/page.tsx": [
+      "src/components/StructuredData.tsx",
+      "src/components/Breadcrumbs.tsx",
+      "src/seo/site.ts"
+    ],
+    "app/articles/kak-vyuchit-turetskiy/page.tsx": [
+      "src/components/StructuredData.tsx",
+      "src/components/Breadcrumbs.tsx",
+      "src/seo/site.ts"
+    ],
+    "app/og/route.tsx": [],
+    "app/legal/layout.tsx": [],
+    "app/legal/page.tsx": [
+      "src/components/Breadcrumbs.tsx",
+      "src/seo/site.ts"
+    ],
+    "app/policy/layout.tsx": [],
+    "app/policy/page.tsx": [
+      "src/components/Breadcrumbs.tsx",
+      "src/seo/site.ts"
+    ],
+    "app/robots.ts": [
+      "src/seo/site.ts"
+    ],
+    "app/sitemap.ts": [
+      "src/seo/site.ts"
+    ],
+    "app/api/airtable/route.ts": [],
+    "src/contexts/LeadModalContext.tsx": [],
+    "src/components/ScheduleSection.tsx": [
+      "src/contexts/LeadModalContext.tsx"
+    ],
+    "src/components/SignupModal.tsx": [],
+    "src/components/ReviewsCarousel.tsx": [
+      "src/contexts/LeadModalContext.tsx"
+    ],
+    "src/components/TeacherModal.tsx": [
+      "src/data/teachers.ts"
+    ],
+    "src/components/AboutSection.tsx": [],
+    "src/components/ReviewsSection.tsx": [
+      "src/contexts/LeadModalContext.tsx",
+      "src/components/ImageModal.tsx"
+    ],
+    "src/components/AdvantagesSection.tsx": [],
+    "src/components/TeachersSection.tsx": [
+      "src/data/teachers.ts",
+      "src/components/TeacherModal.tsx"
+    ],
+    "src/components/IndividualPricing.tsx": [
+      "src/contexts/LeadModalContext.tsx"
+    ],
+    "src/components/WhyUsSection.tsx": [],
+    "src/components/ImageModal.tsx": [],
+    "src/components/StructuredData.tsx": [
+      "src/seo/site.ts"
+    ],
+    "src/components/CourseMiniGroupSection.tsx": [
+      "src/contexts/LeadModalContext.tsx"
+    ],
+    "src/components/LeadModal.tsx": [
+      "src/contexts/LeadModalContext.tsx"
+    ],
+    "src/components/HowWeTeachSection.tsx": [],
+    "src/components/Breadcrumbs.tsx": [
+      "src/components/StructuredData.tsx",
+      "src/seo/site.ts"
+    ],
+    "src/components/FreeConsultationSection.tsx": [
+      "src/contexts/LeadModalContext.tsx"
+    ],
+    "src/components/HeroFormButton.tsx": [],
+    "src/components/ConsentedAnalytics.tsx": [
+      "src/components/YandexMetrika.tsx",
+      "src/lib/consent.ts"
+    ],
+    "src/components/Footer.tsx": [
+      "src/components/CookieConsent.tsx",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/FinalCTASection.tsx": [
+      "src/contexts/LeadModalContext.tsx"
+    ],
+    "src/components/CookieConsent.tsx": [
+      "src/lib/consent.ts",
+      "src/components/ConsentedAnalytics.tsx"
+    ],
+    "src/components/ModalForm.tsx": [],
+    "src/components/YandexMetrika.tsx": [],
+    "src/components/Header.tsx": [
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/PricingSection.tsx": [
+      "src/contexts/LeadModalContext.tsx"
+    ],
+    "src/components/ExampleUI.tsx": [],
+    "src/components/HeroForm.tsx": [],
+    "src/components/living-school/LessonExperienceSection.tsx": [
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/MethodSection.tsx": [
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/ReviewsSection.tsx": [
+      "src/data/living-school.ts",
+      "src/components/living-school/SchoolInteractions.tsx",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/LearningFormatsSection.tsx": [
+      "src/data/living-school.ts",
+      "src/components/living-school/SchoolInteractions.tsx",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/TeachersSection.tsx": [
+      "src/data/living-school.ts",
+      "src/components/living-school/SchoolInteractions.tsx",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/PricingTabs.tsx": [
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/SchoolInteractions.tsx": [
+      "src/data/living-school.ts",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/LanguageNote.tsx": [
+      "src/data/living-school.ts",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/LeadForm.tsx": [
+      "src/data/living-school.ts",
+      "src/lib/lead-request.ts",
+      "src/components/living-school/SchoolInteractions.tsx",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/LeadSection.tsx": [
+      "src/components/living-school/LeadForm.tsx",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/CultureSection.tsx": [
+      "src/components/living-school/styles.ts",
+      "src/components/living-school/LanguageNote.tsx",
+      "src/components/living-school/SchoolInteractions.tsx"
+    ],
+    "src/components/living-school/FaqSection.tsx": [
+      "src/data/living-school.ts",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/HeroSection.tsx": [
+      "src/components/living-school/styles.ts",
+      "src/data/living-school.ts"
+    ],
+    "src/components/living-school/PricingSection.tsx": [
+      "src/data/living-school.ts",
+      "src/components/living-school/SchoolInteractions.tsx",
+      "src/components/living-school/PricingTabs.tsx",
+      "src/components/living-school/styles.ts"
+    ],
+    "src/components/living-school/SchoolSection.tsx": [
+      "src/components/living-school/styles.ts"
+    ],
+    "src/app/api/airtable/route.ts": [],
+    "src/components/living-school/styles.ts": [
+      "src/components/living-school/LivingSchool.module.css"
+    ],
+    "src/lib/consent.ts": [],
+    "src/lib/utils.ts": [],
+    "src/lib/lead-request.ts": [
+      "src/data/living-school.ts"
+    ],
+    "src/seo/site.ts": [],
+    "src/data/living-school.ts": [],
+    "src/data/teachers.ts": []
+  }
+}
